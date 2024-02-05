@@ -7,28 +7,27 @@ use Tymon\JWTAuth\Facades\JWTAuth;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\UserResource;
 use App\Models\User;
+use App\Services\Authentication\WPPassValidationService;
 use Tymon\JWTAuth\Exceptions\JWTException;
 
 class LoginController extends Controller
 {
+    public function __construct(protected WPPassValidationService $WPPassValidationService)
+    {
+    }
     public function login(Request $request)
     {
         // Validate request data
         $request->validate([
-            'email' => 'required|email',
-            'password' => 'required',
+            'email'    => 'required | email | max:255',
+            'password' => 'required | ',
         ]);
 
         // Check if the user is a Client
         if ($user = User::where('email', $request->email)->first()) {
             try {
-                require_once base_path('helpers/class-phpass.php');
-
-                // Instantiate PasswordHash
-                $wp_hasher = new \PasswordHash(8, true);
-
-                // Check if the password matches the hashed password using WordPress's method
-                $passwordMatches = $wp_hasher->CheckPassword($request->password, $user->password);
+                // Validate password using WordPress's hashing method
+                $passwordMatches = $this->WPPassValidationService->validatePassword($request->password, $user->password);
 
                 // If user not found or password doesn't match, return error
                 if (!$passwordMatches) {

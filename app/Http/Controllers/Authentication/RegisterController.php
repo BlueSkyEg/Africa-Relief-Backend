@@ -9,26 +9,30 @@ use App\Http\Controllers\Controller;
 use App\Http\Resources\UserResource;
 use Tymon\JWTAuth\Facades\JWTAuth;
 use Tymon\JWTAuth\Exceptions\JWTException;
+use App\Services\Authentication\WPPassValidationService;
 
 class RegisterController extends Controller
 {
+    public function __construct(protected WPPassValidationService $WPPassValidationService)
+    {
+    }
     public function register(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'name'     => 'required|string|max:255',
-            'email'    => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6',
+            'name'     => 'required | string | max:255',
+            'email'    => 'required | string | email | max:255 | unique:users',
+            'password' => 'required | string | min:6',
         ]);
 
         if ($validator->fails()) {
             return $this->validationResponse($validator->errors()->toArray());
         }
-
+        // return $this->WPPassValidationService->hashPassword($request->password);
         try {
             $user = User::create([
                 'name'     => $request->name,
                 'email'    => $request->email,
-                'password' => bcrypt($request->password),
+                'password' => $this->WPPassValidationService->hashPassword($request->password),
             ]);
 
             $token = JWTAuth::fromUser($user);
@@ -37,7 +41,6 @@ class RegisterController extends Controller
                 "user"  =>  new UserResource($user),
                 "token" => $token,
             ], 201);
-
         } catch (JWTException $e) {
             return $this->errorResponse('could not create token');
         }
