@@ -14,7 +14,7 @@ class Authenticate
     public function handle($request, Closure $next)
     {
         /*==================================================================
-        =================== JWT VALIDATION SECTION  ========================
+        =================== JWT VALIDATION SECTION =========================
         ==================================================================*/
         try {
             $token = $request->bearerToken();
