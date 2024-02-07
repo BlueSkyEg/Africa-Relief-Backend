@@ -10,7 +10,6 @@ use App\Mail\PasswordResetMail;
 use App\Http\Requests\Auth\RestPasswordRequest;
 use App\Http\Requests\Auth\SendPasswordRestLinkMail;
 use App\Services\Authentication\WPPassValidationService;
-use Illuminate\Support\Facades\Hash;
 
 class PasswordResetController extends Controller
 {
@@ -67,7 +66,7 @@ class PasswordResetController extends Controller
 
                 return $this->successResponse("password updated successfully");
             } else {
-                return $this->errorResponse("user not found", 400);
+                return $this->errorResponse("invalid remember token", 400);
             }
         } catch (\Exception $e) {
             return $this->errorResponse("server error: " . $e->getMessage());
