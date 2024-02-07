@@ -27,7 +27,7 @@ class Authenticate
             return $this->errorResponse("invalid token", 401);
         } catch (TokenExpiredException $e) {
             // Check if not request is for the refresh token route
-            if (!$request->is('refresh-token')) {
+            if (!$request->is('auth/refresh-token')) {
                 return $this->errorResponse("token has expired", 401);
             }
         }
