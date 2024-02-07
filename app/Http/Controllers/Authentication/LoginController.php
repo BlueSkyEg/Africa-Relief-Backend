@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Authentication;
 use Illuminate\Http\Request;
 use Tymon\JWTAuth\Facades\JWTAuth;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Auth\LoginRequest;
 use App\Http\Resources\UserResource;
 use App\Models\User;
 use App\Services\Authentication\WPPassValidationService;
@@ -15,14 +16,8 @@ class LoginController extends Controller
     public function __construct(protected WPPassValidationService $WPPassValidationService)
     {
     }
-    public function login(Request $request)
+    public function login(LoginRequest $request)
     {
-        // Validate request data
-        $request->validate([
-            'email'    => 'required | email | max:255',
-            'password' => 'required | ',
-        ]);
-
         // Check if the user is a Client
         if ($user = User::where('email', $request->email)->first()) {
             try {

@@ -4,8 +4,63 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0559d74e3316f738f644cd3d224a15bc",
+    "content-hash": "43347b25e1f69a6cf0b2d5dd71cca480",
     "packages": [
+        {
+            "name": "appoly/api-password-helper",
+            "version": "2.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/appoly/Laravel-API-Password-Recover.git",
+                "reference": "2fa4875f2dfc8ce22dd67cd54d8415b020f21b70"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/appoly/Laravel-API-Password-Recover/zipball/2fa4875f2dfc8ce22dd67cd54d8415b020f21b70",
+                "reference": "2fa4875f2dfc8ce22dd67cd54d8415b020f21b70",
+                "shasum": ""
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Appoly\\LaravelApiPasswordHelper\\ApiPasswordServiceProvider"
+                    ],
+                    "aliases": {
+                        "ApiPasswords": "Appoly\\LaravelApiPasswordHelper\\Facades\\ApiPassword"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Appoly\\LaravelApiPasswordHelper\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Calum Chamberlain",
+                    "email": "calum@appoly.co.uk"
+                },
+                {
+                    "name": "James Merrix",
+                    "email": "james@appoly.co.uk"
+                }
+            ],
+            "description": "Allow the users to request a forgotten password and reset over api requests",
+            "support": {
+                "issues": "https://github.com/appoly/Laravel-API-Password-Recover/issues",
+                "source": "https://github.com/appoly/Laravel-API-Password-Recover/tree/2.3.1"
+            },
+            "time": "2023-05-26T15:07:00+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.11.0",
@@ -1306,72 +1361,6 @@
                 "source": "https://github.com/laravel/prompts/tree/v0.1.15"
             },
             "time": "2023-12-29T22:37:42+00:00"
-        },
-        {
-            "name": "laravel/sanctum",
-            "version": "v3.3.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/sanctum.git",
-                "reference": "8c104366459739f3ada0e994bcd3e6fd681ce3d5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sanctum/zipball/8c104366459739f3ada0e994bcd3e6fd681ce3d5",
-                "reference": "8c104366459739f3ada0e994bcd3e6fd681ce3d5",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "illuminate/console": "^9.21|^10.0",
-                "illuminate/contracts": "^9.21|^10.0",
-                "illuminate/database": "^9.21|^10.0",
-                "illuminate/support": "^9.21|^10.0",
-                "php": "^8.0.2"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.0",
-                "orchestra/testbench": "^7.28.2|^8.8.3",
-                "phpstan/phpstan": "^1.10",
-                "phpunit/phpunit": "^9.6"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.x-dev"
-                },
-                "laravel": {
-                    "providers": [
-                        "Laravel\\Sanctum\\SanctumServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Laravel\\Sanctum\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
-                }
-            ],
-            "description": "Laravel Sanctum provides a featherweight authentication system for SPAs and simple APIs.",
-            "keywords": [
-                "auth",
-                "laravel",
-                "sanctum"
-            ],
-            "support": {
-                "issues": "https://github.com/laravel/sanctum/issues",
-                "source": "https://github.com/laravel/sanctum"
-            },
-            "time": "2023-12-19T18:44:48+00:00"
         },
         {
             "name": "laravel/serializable-closure",
