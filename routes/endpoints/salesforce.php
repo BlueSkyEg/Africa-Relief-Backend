@@ -1,10 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Salesforce\SalesforceController;
+use App\Http\Controllers\Salesforce\AuthController;
 
 Route::prefix('salesforce')->group(function () {
 
-    Route::get('/accounts', [SalesforceController::class, 'getAccounts']);
-    Route::get('/get-jwt-key', [SalesforceController::class, 'generateJwtToken']);
+    // Route::get('/accounts', [SalesforceController::class, 'getAccounts']);
+
+    Route::prefix('auth')->group(function () {
+        Route::get('/jwt', [AuthController::class, 'generateJwtToken']);
+        Route::get('/user-pass-flow', [AuthController::class, 'userPassFlow']);
+    });
+
 });

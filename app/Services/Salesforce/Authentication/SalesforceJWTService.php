@@ -1,10 +1,12 @@
 <?php
 
-namespace App\Services\Salesforce;
+namespace App\Services\Salesforce\Authentication;
 
 use Firebase\JWT\JWT;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
-class SalesforceAuthService
+class SalesforceJWTService
 {
     public function generateJwtToken()
     {

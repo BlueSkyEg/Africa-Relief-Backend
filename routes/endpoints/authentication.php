@@ -8,9 +8,12 @@ use App\Http\Controllers\Authentication\PasswordResetController;
 use App\Http\Controllers\Authentication\AuthController;
 
 Route::prefix('auth')->group(function () {
+
+    // Register
     Route::post('login', [LoginController::class, 'login']);
     Route::post('register', [RegisterController::class, 'register']);
 
+    // Reset Password Endpoints
     Route::post('forget-password', [PasswordResetController::class, 'forgotPassword']);
     Route::post('reset-password', [PasswordResetController::class, 'resetPassword']);
 
