@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\PasswordResetMail;
+use App\Mail\Auth\PasswordResetMail;
 use App\Http\Requests\Auth\RestPasswordRequest;
 use App\Http\Requests\Auth\SendPasswordRestLinkMail;
 use App\Services\Authentication\WPPassValidationService;
@@ -30,12 +30,13 @@ class PasswordResetController extends Controller
                 return $this->validationResponse($errors);
             } else {
                 // Update the user's remember_token
-                $user->setRememberToken(Str::random(10));
+                $rememberToken = Str::random(10);
+                $user->setRememberToken($rememberToken);
                 $user->save();
 
                 $mailData = [
                     "user" => $user,
-                    "resetUrl" => env("APP_URL") . 'reset-password/?remember_token=' . $user->rememberToken,
+                    "resetUrl" => env("APP_URL") . 'reset-password/?remember_token=' . $rememberToken,
                 ];
 
                 // Send mail

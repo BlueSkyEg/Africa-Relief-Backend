@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Mail;
+namespace App\Mail\Auth;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
@@ -10,7 +10,7 @@ use Illuminate\Queue\SerializesModels;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class PasswordResetMail extends Mailable
+class WelcomeMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -28,7 +28,7 @@ class PasswordResetMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Password Reset Mail',
+            subject: 'New Registration',
         );
     }
 
@@ -38,7 +38,7 @@ class PasswordResetMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            markdown: 'emails.password_reset',
+            markdown: 'emails.auth.welcome',
             with: [
                 'mailData' => $this->mailData,
             ],

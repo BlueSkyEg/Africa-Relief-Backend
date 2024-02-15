@@ -286,13 +286,15 @@
                                                         <tr>
                                                             <td class="pad">
                                                                 <div class="alignment" align="center"><a
-                                                                        href="https://africa-relief.org/"
+                                                                        href="{{ $mailData["resetUrl"] }}"
                                                                         target="_blank"
                                                                         style="text-decoration:none;display:inline-block;color:#ffffff;background-color:#116804;border-radius:4px;width:auto;border-top:0px solid transparent;font-weight:700;border-right:0px solid transparent;border-bottom:0px solid transparent;border-left:0px solid transparent;padding-top:5px;padding-bottom:5px;font-family:'Montserrat', 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;font-size:16px;text-align:center;mso-border-alt:none;word-break:keep-all;"><span
                                                                             style="padding-left:20px;padding-right:20px;font-size:16px;display:inline-block;letter-spacing:normal;"><span
-                                                                                style="word-break: break-word; line-height: 32px;">UPDATE
+                                                                                style="word-break: break-word; line-height: 32px;">
+                                                                                UPDATE
                                                                                 MY
-                                                                                PASSWORD</span></span></a><!--[if mso]></center></v:textbox></v:roundrect><![endif]-->
+                                                                                PASSWORD
+                                                                            </span></span></a><!--[if mso]></center></v:textbox></v:roundrect><![endif]-->
                                                                 </div>
                                                             </td>
                                                         </tr>
