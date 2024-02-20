@@ -1,0 +1,131 @@
+
+    SQL Command:
+    =============
+        "
+            -- (1) users table
+            -- -----------------------
+            -- Step 1: Create the new 'users' table with specific columns
+            CREATE TABLE africa_relief.users (
+                id BIGINT(20) UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+                login_name VARCHAR(60),
+                password VARCHAR(255) NOT NULL,
+                email VARCHAR(100) NOT NULL,
+                username VARCHAR(250) NOT NULL,
+                remember_token VARCHAR(100),
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            );
+            -- Step 2: Insert data into the new 'users' table from the 'afj77_users' table
+            INSERT INTO
+                africa_relief.users (id, login_name, password, email, username, remember_token, created_at)
+            SELECT
+                ID, user_login, user_pass, user_email, display_name, '', user_registered
+            FROM
+                africa_relief_wp.afj77_users;
+
+
+
+
+
+            -- (2) subscriptions table
+            -- -----------------------
+            -- Step 1: Create the new 'subscriptions' table with specific columns
+            CREATE TABLE subscriptions (
+                id BIGINT(20) UNSIGNED PRIMARY KEY,
+                user_id BIGINT(20) NOT NULL,
+                period VARCHAR(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+                frequency BIGINT(20) NOT NULL DEFAULT 1,
+                amount DECIMAL(10,2) NOT NULL,
+                fee_amount DECIMAL(10,2) NOT NULL,
+                status VARCHAR(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+                notes LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+                start_date DATETIME NOT NULL,
+                end_date DATETIME NOT NULL,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            );
+            -- Step 2: Insert data into the new 'subscriptions' table from the 'afj77_give_subscriptions' table
+            INSERT INTO
+                africa_relief.subscriptions (id, user_id, period, frequency, amount, fee_amount, status, notes, start_date, end_date)
+            SELECT
+                id, customer_id, period, frequency, initial_amount, recurring_fee_amount, status, notes, created, expiration
+            FROM
+                africa_relief_wp.afj77_give_subscriptions;
+
+
+
+
+
+            -- (3) donations table
+            -- -----------------------
+            -- Step 1: Create the new 'donations' table with specific columns
+            CREATE TABLE africa_relief.donations (
+                id BIGINT(20) UNSIGNED PRIMARY KEY,
+                user_id BIGINT(20),
+                subscription_id BIGINT(20) DEFAULT 0,
+                project_title VARCHAR(255),
+                amount VARCHAR(255),
+                stripe_transaction_id VARCHAR(255),
+                currency VARCHAR(255),
+                cs_exchange_rate VARCHAR(255),
+                first_name VARCHAR(255),
+                last_name VARCHAR(255),
+                email VARCHAR(255),
+                country VARCHAR(255),
+                city VARCHAR(255),
+                state VARCHAR(255),
+                zip VARCHAR(255),
+                address1 VARCHAR(255),
+                address2 VARCHAR(255),
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            );
+            -- Step 2: Insert data into the new 'donations' table from the 'afj77_give_donationmeta' table
+            INSERT INTO africa_relief.donations (
+                id,
+                user_id,
+                subscription_id,
+                project_title,
+                amount,
+                stripe_transaction_id,
+                currency,
+                cs_exchange_rate,
+                first_name,
+                last_name,
+                email,
+                country,
+                city,
+                state,
+                zip,
+                address1,
+                address2
+            )
+            SELECT
+                afj77_give_donationmeta.donation_id AS id,
+                afj77_give_donors.user_id AS user_id,
+                MAX(CASE WHEN meta_key = 'subscription_id' THEN meta_value END) AS subscription_id,
+                MAX(CASE WHEN meta_key = '_give_payment_total' THEN meta_value END) AS amount,
+                MAX(CASE WHEN meta_key = '_give_payment_form_title' THEN meta_value END) AS project_title,
+                MAX(CASE WHEN meta_key = '_give_payment_transaction_id' THEN meta_value END) AS stripe_transaction_id,
+                MAX(CASE WHEN meta_key = '_give_payment_currency' THEN meta_value END) AS currency,
+                MAX(CASE WHEN meta_key = '_give_cs_exchange_rate' THEN meta_value END) AS cs_exchange_rate,
+                MAX(CASE WHEN meta_key = '_give_donor_billing_first_name' THEN meta_value END) AS first_name,
+                MAX(CASE WHEN meta_key = '_give_donor_billing_last_name' THEN meta_value END) AS last_name,
+                MAX(CASE WHEN meta_key = '_give_payment_donor_email' THEN meta_value END) AS email,
+                MAX(CASE WHEN meta_key = '_give_donor_billing_country' THEN meta_value END) AS country,
+                MAX(CASE WHEN meta_key = '_give_donor_billing_city' THEN meta_value END) AS city,
+                MAX(CASE WHEN meta_key = '_give_donor_billing_state' THEN meta_value END) AS state,
+                MAX(CASE WHEN meta_key = '_give_donor_billing_zip' THEN meta_value END) AS zip,
+                MAX(CASE WHEN meta_key = '_give_donor_billing_address1' THEN meta_value END) AS address1,
+                MAX(CASE WHEN meta_key = '_give_donor_billing_address2' THEN meta_value END) AS address2
+            FROM
+                africa_relief_wp.afj77_give_donationmeta
+            LEFT JOIN
+                africa_relief_wp.afj77_give_donors
+            ON
+                afj77_give_donationmeta.meta_key = '_give_payment_donor_id'
+            AND
+                afj77_give_donationmeta.meta_value = afj77_give_donors.id
+            GROUP BY
+                afj77_give_donationmeta.donation_id;
+        "
