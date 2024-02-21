@@ -1,1 +1,0 @@
-client_id=3MVG9H_KVs6V9LiPw8LAUwdlnkNdcJBXm2ibbMchGeHgZf9vnwc22lb8s7rv2kLBIAZlYkezYOEmPs7bDx41D&client_secret=870BB2DE55CDB9FB538334FA59D67F135E4306C1FD07745487F21B3F690B748D&redirect_uri=http://localhost:8000&password=Abdo@7015CtmZ7o21NYiQsQos0eN0lpscQ&username=abdlrahmn.ismael@gmail.com&grant_type=password

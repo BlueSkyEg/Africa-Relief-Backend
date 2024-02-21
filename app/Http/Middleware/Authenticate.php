@@ -2,36 +2,16 @@
 
 namespace App\Http\Middleware;
 
-use Closure;
-use App\Traits\ApiResponse;
-use Tymon\JWTAuth\Facades\JWTAuth;
-use Tymon\JWTAuth\Exceptions\TokenExpiredException;
-use Tymon\JWTAuth\Exceptions\TokenInvalidException;
+use Illuminate\Auth\Middleware\Authenticate as Middleware;
+use Illuminate\Http\Request;
 
-class Authenticate
+class Authenticate extends Middleware
 {
-    use ApiResponse;
-    public function handle($request, Closure $next)
+    /**
+     * Get the path the user should be redirected to when they are not authenticated.
+     */
+    protected function redirectTo(Request $request): ?string
     {
-        /*==================================================================
-        =================== JWT VALIDATION SECTION =========================
-        ==================================================================*/
-        try {
-            $token = $request->bearerToken();
-            if (!$token) {
-                return $this->errorResponse("token not provided", 401);
-            }
-            // Validate the token
-            JWTAuth::setToken($token)->getPayload();
-        } catch (TokenInvalidException $e) {
-            return $this->errorResponse("invalid token", 401);
-        } catch (TokenExpiredException $e) {
-            // Check if not request is for the refresh token route
-            if (!$request->is('auth/refresh-token')) {
-                return $this->errorResponse("token has expired", 401);
-            }
-        }
-
-        return $next($request);
+        return $request->expectsJson() ? null : route('login');
     }
 }

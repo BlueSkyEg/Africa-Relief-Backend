@@ -4,13 +4,10 @@ namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Validation\ValidationException;
-use Illuminate\Database\Eloquent\ModelNotFoundException;
-use App\Traits\ApiResponse;
 use Throwable;
 
 class Handler extends ExceptionHandler
 {
-    use ApiResponse;
 
     /**
      * The list of the inputs that are never flashed to the session on validation exceptions.
@@ -33,39 +30,12 @@ class Handler extends ExceptionHandler
         });
     }
 
-
-    /**
-     * Convert the given exception to an HTTP response.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Throwable  $exception
-     * @return \Symfony\Component\HttpFoundation\Response|\Illuminate\Http\Response|\Illuminate\Http\JsonResponse
-     *
-     * @throws \Throwable
-     */
-    public function render($request, Throwable $exception)
+    public function render($request, Throwable $e)
     {
-        if ($exception instanceof ValidationException && $request->expectsJson()) {
-            return $this->convertValidationExceptionToResponse($exception, $request);
+        if ($e instanceof ValidationException && $request->expectsJson()) {
+            return response()->api(false, 'validation error', null, $e->errors());
         }
 
-        if ($exception  instanceof ModelNotFoundException) {
-            return $this->errorResponse("resource not found", 404);
-        }
-
-        return parent::render($request, $exception);
-    }
-
-    /**
-     * Create a response object from the given validation exception.
-     *
-     * @param  \Illuminate\Validation\ValidationException  $e
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Symfony\Component\HttpFoundation\Response
-     */
-    protected function convertValidationExceptionToResponse(ValidationException $e, $request)
-    {
-        $errors = $e->validator->errors()->toArray();
-        return $this->validationResponse($errors);
+        return parent::render($request, $e);
     }
 }
