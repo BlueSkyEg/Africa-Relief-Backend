@@ -9,11 +9,14 @@ class UserResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'id'      => $this->id,
-            'name'    => $this->name,
-            'email'   => $this->email,
-            'phone'   => $this->phone,
-            'address' => $this->address,
+            'id'            => $this->id,
+            'name'          => $this->name,
+            'img'           => $this->img,
+            'email'         => $this->email,
+            'phone'         => $this->phone,
+            'address'       => $this->address,
+            'donations'     => DonationResource::collection($this->donations),
+            'subscriptions' => SubscriptionResource::collection($this->subscriptions),
         ];
     }
 }
