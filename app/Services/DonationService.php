@@ -6,9 +6,14 @@ use App\Models\Donation;
 
 class DonationService
 {
-    public function getDonationsByUserId($userId)
+    public function store(array $data)
     {
-        // Retrieve donations for the specified user
-        return Donation::where('user_id', $userId)->get();
+        try {
+            // Process the donation and store it in the database
+            $donation = Donation::create($data);
+            return ['message' => 'Donation processed successfully', 'donation' => $donation];
+        } catch (\Exception $e) {
+            return ['error' => $e->getMessage()];
+        }
     }
 }
