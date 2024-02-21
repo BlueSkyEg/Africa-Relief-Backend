@@ -10,7 +10,10 @@
                 login_name VARCHAR(60),
                 password VARCHAR(255) NOT NULL,
                 email VARCHAR(100) NOT NULL,
-                username VARCHAR(250) NOT NULL,
+                name VARCHAR(255) NOT NULL,
+                phone VARCHAR(255),
+                address VARCHAR(255),
+                img VARCHAR(255),
                 remember_token VARCHAR(100),
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
