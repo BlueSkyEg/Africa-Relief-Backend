@@ -8,3 +8,4 @@
 require __DIR__.'/endpoints/authentication.php';
 require __DIR__.'/endpoints/user.php';
 require __DIR__.'/endpoints/salesforce.php';
+require __DIR__.'/endpoints/payment.php';
