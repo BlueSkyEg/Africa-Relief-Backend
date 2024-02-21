@@ -14,15 +14,15 @@ class CreateCustomerService extends BaseStripeService
     {
         try {
             $customer =  $this->stripe->customers->create([
-                'name' => $this->user->name,
+                'name'  => $this->user->name,
                 'email' => $this->user->email
             ]);
 
-            // Save
+            // Save customerId at DB
             $this->user->stripe_id = $customer->id;
             $this->user->save();
 
-            return response()->api(true, 'Customer created successfully', ['customerId' => $customer->id]);
+            return response()->api(true, 'customer created successfully', ['customerId' => $customer->id]);
         } catch (ApiErrorException $e) {
             return response()->api(false, $e->getMessage());
         }
