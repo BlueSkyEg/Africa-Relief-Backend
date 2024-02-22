@@ -4,17 +4,16 @@ namespace App\Modules\Stripe\Services;
 
 use Stripe\Stripe;
 use Stripe\StripeClient;
-use App\Models\User;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
 class BaseStripeService
 {
     protected StripeClient $stripe;
-    protected User $user;
-
+    protected $user;
     public function __construct()
     {
         Stripe::setApiKey(env('STRIPE_SECRET'));
         $this->stripe = new StripeClient(env('STRIPE_SECRET'));
-        $this->user = User::find(1);
+        $this->user = JWTAuth::user();
     }
 }
