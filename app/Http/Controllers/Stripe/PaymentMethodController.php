@@ -6,13 +6,13 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Stripe\PaymentMethod\SavePaymentMethodRequest;
 use App\Http\Requests\Stripe\PaymentMethod\UpdateDefaultPaymentMethodRequest;
 use App\Http\Requests\Stripe\PaymentMethod\UpdatePaymentMethodRequest;
-use App\Modules\Stripe\Services\PaymentMethod\DeletePaymentMethodService;
-use App\Modules\Stripe\Services\PaymentMethod\ListPaymentMethodsService;
-use App\Modules\Stripe\Services\PaymentMethod\RetrievePaymentMethodService;
-use App\Modules\Stripe\Services\PaymentMethod\SavePaymentMethodService;
-use App\Modules\Stripe\Services\PaymentMethod\UpdateDefaultPaymentMethodService;
-use App\Modules\Stripe\Services\PaymentMethod\UpdatePaymentMethodService;
-use App\Modules\Stripe\Services\SetupIntent\CreateSetupIntentService;
+use App\Services\Stripe\PaymentMethod\DeletePaymentMethodService;
+use App\Services\Stripe\PaymentMethod\ListPaymentMethodsService;
+use App\Services\Stripe\PaymentMethod\RetrievePaymentMethodService;
+use App\Services\Stripe\PaymentMethod\SavePaymentMethodService;
+use App\Services\Stripe\PaymentMethod\UpdateDefaultPaymentMethodService;
+use App\Services\Stripe\PaymentMethod\UpdatePaymentMethodService;
+use App\Services\Stripe\SetupIntent\CreateSetupIntentService;
 use Illuminate\Http\JsonResponse;
 
 class PaymentMethodController extends Controller

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\Stripe\Services;
+namespace App\Services\Stripe;
 
 use Stripe\Stripe;
 use Stripe\StripeClient;

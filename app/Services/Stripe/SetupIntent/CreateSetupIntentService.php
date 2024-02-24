@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Modules\Stripe\Services\SetupIntent;
+namespace App\Services\Stripe\SetupIntent;
 
-use App\Modules\Stripe\Services\BaseStripeService;
+use App\Services\Stripe\BaseStripeService;
 use Illuminate\Http\JsonResponse;
 use Stripe\Exception\ApiErrorException;
 use Stripe\SetupIntent;

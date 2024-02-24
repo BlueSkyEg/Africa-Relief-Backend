@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\Stripe\Services\Subscription;
+namespace App\Services\Stripe\Subscription;
 
 use App\Http\Requests\Stripe\Subscription\CancelSubscriptionRequest;
-use App\Modules\Stripe\Services\BaseStripeService;
+use App\Services\Stripe\BaseStripeService;
 use Illuminate\Http\JsonResponse;
 use Stripe\Exception\ApiErrorException;
 

@@ -38,9 +38,10 @@
     -- Step 1: Create the new 'subscriptions' table with specific columns
         CREATE TABLE subscriptions (
             id BIGINT(20) UNSIGNED PRIMARY KEY,
-            user_id BIGINT(20) NOT NULL,
+            donor_id BIGINT(20) NOT NULL,
+            donation_id BIGINT(20) NOT NULL,
+            stripe_subscription_id VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
             period VARCHAR(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-            frequency BIGINT(20) NOT NULL DEFAULT 1,
             amount DECIMAL(10,2) NOT NULL,
             fee_amount DECIMAL(10,2) NOT NULL,
             status VARCHAR(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -52,9 +53,19 @@
         );
     -- Step 2: Insert data into the new 'subscriptions' table from the 'afj77_give_subscriptions' table
         INSERT INTO
-            africa_relief.subscriptions (id, user_id, period, frequency, amount, fee_amount, status, notes, start_date, end_date)
+            africa_relief.subscriptions (id, donor_id, period, amount, fee_amount, status, notes, start_date, end_date)
         SELECT
-            id, customer_id, period, frequency, initial_amount, recurring_fee_amount, status, notes, created, expiration
+            id,
+            customer_id As donor_id,
+            pa As donation_id,
+            profile_id As stripe_subscription_id,
+            period,
+            initial_amount As amount,
+            recurring_fee_amount As fee_amount,
+            status,
+            notes,
+            created As start_date,
+            expiration As end_date
         FROM
             africa_relief_wp.afj77_give_subscriptions;
 

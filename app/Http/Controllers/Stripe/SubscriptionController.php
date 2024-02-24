@@ -5,9 +5,9 @@ namespace App\Http\Controllers\Stripe;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Stripe\Subscription\CancelSubscriptionRequest;
 use App\Http\Requests\Stripe\Subscription\CreateSubscriptionRequest;
-use App\Modules\Stripe\Services\Subscription\CancelSubscriptionService;
-use App\Modules\Stripe\Services\Subscription\CreateSubscriptionService;
-use App\Modules\Stripe\Services\Subscription\RetrieveSubscriptionService;
+use App\Services\Stripe\Subscription\CancelSubscriptionService;
+use App\Services\Stripe\Subscription\CreateSubscriptionService;
+use App\Services\Stripe\Subscription\RetrieveSubscriptionService;
 use Illuminate\Http\JsonResponse;
 
 class SubscriptionController extends Controller

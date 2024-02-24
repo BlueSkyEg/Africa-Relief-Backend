@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Modules\Stripe\Services\SingleCharge;
+namespace App\Services\Stripe\SingleCharge;
 
 use App\Http\Requests\Stripe\SingleCharge\CreateSingleChargeRequest;
-use App\Modules\Stripe\Services\BaseStripeService;
+use App\Services\Stripe\BaseStripeService;
 use Illuminate\Http\JsonResponse;
 use Stripe\Exception\ApiErrorException;
 use Stripe\PaymentIntent;
