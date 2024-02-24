@@ -66,13 +66,8 @@ class User extends Authenticatable implements JWTSubject
         return [];
     }
 
-    public function donations()
+    public function donor()
     {
-        return $this->hasMany(Donation::class, 'user_id');
-    }
-
-    public function subscriptions()
-    {
-        return $this->hasMany(Subscription::class, 'user_id');
+        return $this->hasOne(Donor::class, 'user_id');
     }
 }

@@ -4,7 +4,7 @@ namespace App\Services\Salesforce;
 
 use GuzzleHttp\Client;
 
-class SalesforceService
+class BaseSalesforceService
 {
     public function authenticate()
     {

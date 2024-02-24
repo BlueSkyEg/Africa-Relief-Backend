@@ -13,12 +13,13 @@ trait ApiResponse
      * @param  int  $statusCode
      * @return \Illuminate\Http\JsonResponse
     */
-    protected static function apiResponse($status = "success", $message = null, $data = null, $statusCode)
+    protected static function apiResponse(bool $success, string $message, $data = null, $errors = null, int $statusCode)
     {
         $response = [
-            'status'  => $status,
+            'success' => $success,
             'message' => $message,
             'data'    => $data,
+            'errors'  => $errors,
         ];
 
         return response()->json($response, $statusCode);
@@ -33,7 +34,7 @@ trait ApiResponse
      */
     protected function successResponse($message = null, $data = null, $statusCode = 200)
     {
-        return $this->apiResponse("success", $message, $data, $statusCode);
+        return $this->apiResponse(true, $message, $data, $errors = null, $statusCode);
     }
 
     /**
@@ -44,7 +45,7 @@ trait ApiResponse
      */
     protected function validationResponse($errors = [])
     {
-        return $this->apiResponse("error", "validation error", ['errors' => $errors], 200);
+        return $this->apiResponse(false, "validation error", $data = null,  ['errors' => $errors], 403);
     }
 
     /**
@@ -56,6 +57,6 @@ trait ApiResponse
     */
     protected function errorResponse($message = "server error", $statusCode = 500)
     {
-        return $this->apiResponse("error", $message, null, $statusCode);
+        return $this->apiResponse(false, $message, $data = null, $errors = null, $statusCode);
     }
 }

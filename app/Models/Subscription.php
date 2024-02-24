@@ -8,11 +8,11 @@ class Subscription extends Model
 {
     protected $fillable = [
         'id',
-        'user_id',
+        'donor_id',
+        'donation_id',
+        'stripe_subscription_id',
         'period',
-        'frequency',
         'amount',
-        'fee_amount',
         'status',
         'notes',
         'start_date',
@@ -21,9 +21,9 @@ class Subscription extends Model
 
     protected $dates = ['start_date', 'end_date'];
 
-    public function user()
+    public function donor()
     {
-        return $this->belongsTo(User::class, 'user_id');
+        return $this->belongsTo(Donor::class, 'donor_id');
     }
 
     public function donations()

@@ -11,20 +11,16 @@
             phone VARCHAR(255),
             address VARCHAR(255),
             img VARCHAR(255),
-            stripe_id VARCHAR(255),
-            pm_type VARCHAR(255),
-            pm_last_four VARCHAR(4),
-            trial_ends_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Specify CURRENT_TIMESTAMP as default
             remember_token VARCHAR(100),
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-            INDEX(email, login_name, stripe_id)
+            INDEX(email, login_name)
         );
     -- Step 2: Insert data into the new 'users' table from the 'afj77_users' table
         INSERT INTO
-            africa_relief.users (id, login_name, password, email, name, remember_token, created_at)
+            africa_relief.users (id, login_name, password, email, name)
         SELECT
-            ID, user_login, user_pass, user_email, display_name, '', user_registered
+            ID, user_login, user_pass, user_email, display_name
         FROM
             africa_relief_wp.afj77_users;
 

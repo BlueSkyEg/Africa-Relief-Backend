@@ -24,5 +24,13 @@ class Donor extends Model
     {
         return $this->belongsTo(User::class, 'user_id');
     }
+    public function donations()
+    {
+        return $this->hasMany(Donation::class, 'donor_id');
+    }
 
+    public function subscriptions()
+    {
+        return $this->hasMany(Subscription::class, 'donor_id');
+    }
 }

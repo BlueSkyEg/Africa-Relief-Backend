@@ -10,11 +10,11 @@ class SubscriptionResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'user_id' => $this->user_id,
+            'donor_id' => $this->donor_id,
+            'donation_id' => $this->donation_id,
+            'stripe_subscription_id' => $this->stripe_subscription_id,
             'period' => $this->period,
-            'frequency' => $this->frequency,
             'amount' => $this->amount,
-            'fee_amount' => $this->fee_amount,
             'status' => $this->status,
             'notes' => $this->notes,
             'start_date' => $this->start_date,

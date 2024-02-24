@@ -15,8 +15,7 @@ class UserResource extends JsonResource
             'email'         => $this->email,
             'phone'         => $this->phone,
             'address'       => $this->address,
-            'donations'     => DonationResource::collection($this->donations),
-            'subscriptions' => SubscriptionResource::collection($this->subscriptions),
+            'donor_info'    => new DonorResource($this->donor)
         ];
     }
 }
