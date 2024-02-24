@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Auth\LoginRequest;
 use App\Http\Resources\UserResource;
 use App\Models\User;
-use App\Services\Authentication\WPPassValidationService;
+use App\Services\User\Authentication\WPPassValidationService;
 use Tymon\JWTAuth\Exceptions\JWTException;
 
 class LoginController extends Controller

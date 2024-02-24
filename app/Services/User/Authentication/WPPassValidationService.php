@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\Authentication;
+namespace App\Services\User\Authentication;
 
 class WPPassValidationService
 {

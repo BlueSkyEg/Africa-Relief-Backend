@@ -9,16 +9,18 @@ class Donation extends Model
 
     protected $fillable = [
         'id',
-        'user_id',
+        'donor_id',
         'subscription_id',
         'project_title',
         'amount',
-        'stripe_transaction_id',
         'currency',
-        'cs_exchange_rate',
+        'ip_address',
+        'payment_mode',
+        'payment_gateway',
+        'payment_transaction_id',
         'first_name',
         'last_name',
-        'email',
+        'phone',
         'country',
         'city',
         'state',
@@ -29,13 +31,13 @@ class Donation extends Model
 
     protected $casts = [
         'id' => 'integer',
-        'user_id' => 'integer',
+        'donor_id' => 'integer',
         'subscription_id' => 'integer',
     ];
 
-    public function user()
+    public function donor()
     {
-        return $this->belongsTo(User::class, 'user_id');
+        return $this->belongsTo(Donor::class, 'donor_id');
     }
 
     public function subscription()

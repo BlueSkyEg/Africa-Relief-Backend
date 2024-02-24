@@ -4,13 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Donation extends Model
+class Donor extends Model
 {
 
     protected $fillable = [
         'id',
         'user_id',
-        'address2',
+        'email',
+        'stripe_customer_id',
     ];
 
     protected $casts = [

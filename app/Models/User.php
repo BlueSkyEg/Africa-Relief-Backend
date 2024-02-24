@@ -24,10 +24,6 @@ class User extends Authenticatable implements JWTSubject
         'phone',
         'address',
         'img',
-        'stripe_id ',
-        'pm_type',
-        'pm_last_four',
-        'trial_ends_at',
         'remember_token',
     ];
 

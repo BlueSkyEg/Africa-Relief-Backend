@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Mail;
 use App\Mail\Auth\PasswordResetMail;
 use App\Http\Requests\Auth\RestPasswordRequest;
 use App\Http\Requests\Auth\SendPasswordRestLinkMail;
-use App\Services\Authentication\WPPassValidationService;
+use App\Services\User\Authentication\WPPassValidationService;
 
 class PasswordResetController extends Controller
 {
