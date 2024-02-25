@@ -2,18 +2,18 @@
 
 namespace App\Services\Stripe\SetupIntent;
 
+use App\Http\Requests\Stripe\PaymentIntent\CreatePaymentIntentRequest;
 use App\Services\Stripe\BaseStripeService;
 use Illuminate\Http\JsonResponse;
 use Stripe\Exception\ApiErrorException;
-use Stripe\SetupIntent;
 
 class CreateSetupIntentService extends BaseStripeService
 {
-    public function create(): JsonResponse
+    public function create(CreatePaymentIntentRequest $request): JsonResponse
     {
         try {
             $intent = $this->stripe->setupIntents->create([
-                'customer' => $this->user->stripe_id,
+                'customer' => $this->stripeCustomerId ?? $request->customerId,
                 'payment_method_types' => ['card'],
             ]);
 

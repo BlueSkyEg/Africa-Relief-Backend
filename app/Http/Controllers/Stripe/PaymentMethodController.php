@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Stripe;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Stripe\PaymentIntent\CreatePaymentIntentRequest;
 use App\Http\Requests\Stripe\PaymentMethod\ListPaymentMethodsRequest;
 use App\Http\Requests\Stripe\PaymentMethod\RetreivePaymentMethodRequest;
 use App\Http\Requests\Stripe\PaymentMethod\SavePaymentMethodRequest;
@@ -19,9 +20,9 @@ use Illuminate\Http\JsonResponse;
 
 class PaymentMethodController extends Controller
 {
-    public function setupPaymentMethodIntent(CreateSetupIntentService $createSetupIntentService): JsonResponse
+public function setupPaymentMethodIntent(CreateSetupIntentService $createSetupIntentService, CreatePaymentIntentRequest $request): JsonResponse
     {
-        return $createSetupIntentService->create();
+        return $createSetupIntentService->create($request);
     }
 
     public function savePaymentMethod(SavePaymentMethodService $savePaymentMethodService, SavePaymentMethodRequest $request)
