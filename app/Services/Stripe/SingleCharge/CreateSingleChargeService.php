@@ -54,9 +54,15 @@ class CreateSingleChargeService extends BaseStripeService
 
     private function generateIntentResponse(PaymentIntent $intent): JsonResponse
     {
+        // Retrieve PaymentIntent with expanded customer and payment method details
+        $intent = $this->stripe->paymentIntents->retrieve(
+            $intent->id,
+            ['expand' => ['customer', 'payment_method']]
+        );
+
         if ($intent->status === 'succeeded') {
 
-
+            // Store Donation Record
             $this->donationService->store($intent);
 
             return response()->api(true, 'payment created successfully', $intent);
