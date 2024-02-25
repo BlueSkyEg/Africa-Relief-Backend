@@ -2,17 +2,18 @@
 
 namespace App\Services\Stripe\PaymentMethod;
 
+use App\Http\Requests\Stripe\PaymentMethod\ListPaymentMethodsRequest;
 use App\Services\Stripe\BaseStripeService;
 use Illuminate\Http\JsonResponse;
 use Stripe\Exception\ApiErrorException;
 
 class ListPaymentMethodsService extends BaseStripeService
 {
-    public function list(): JsonResponse
+    public function list(ListPaymentMethodsRequest $request): JsonResponse
     {
         try {
             $paymentMethods = $this->stripe->customers->allPaymentMethods(
-                $this->user->stripe_id
+                $this->stripeCustomerId ?? $request->customerId
             );
 
             return response()->api(true, 'payment methods retrieved successfully', $paymentMethods->data);
