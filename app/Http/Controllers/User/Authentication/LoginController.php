@@ -1,11 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Authentication;
+namespace App\Http\Controllers\User\Authentication;
 
-use Illuminate\Http\Request;
 use Tymon\JWTAuth\Facades\JWTAuth;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Auth\LoginRequest;
+use App\Http\Requests\User\Auth\LoginRequest;
 use App\Http\Resources\UserResource;
 use App\Models\User;
 use App\Services\User\Authentication\WPPassValidationService;

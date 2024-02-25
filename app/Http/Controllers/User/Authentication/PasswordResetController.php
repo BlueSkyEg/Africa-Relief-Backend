@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\Authentication;
+namespace App\Http\Controllers\User\Authentication;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\Auth\PasswordResetMail;
-use App\Http\Requests\Auth\RestPasswordRequest;
-use App\Http\Requests\Auth\SendPasswordRestLinkMail;
+use App\Http\Requests\User\Auth\RestPasswordRequest;
+use App\Http\Requests\User\Auth\SendPasswordRestLinkMail;
 use App\Services\User\Authentication\WPPassValidationService;
 
 class PasswordResetController extends Controller

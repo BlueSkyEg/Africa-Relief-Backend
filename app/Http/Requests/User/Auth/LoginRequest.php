@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Auth;
+namespace App\Http\Requests\User\Auth;
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -26,5 +26,4 @@ class LoginRequest extends FormRequest
             'password' => 'required | string | max:55',
         ];
     }
-
 }

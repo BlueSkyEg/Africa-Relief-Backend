@@ -5,7 +5,7 @@
 | Endpoint Groups
 |--------------------------------------------------------------------------
 */
-require __DIR__.'/endpoints/authentication.php';
-require __DIR__.'/endpoints/user.php';
-require __DIR__.'/endpoints/salesforce.php';
-require __DIR__.'/endpoints/payment.php';
+require __DIR__ . '/Endpoints/User/AuthenticationRoutes.php';
+require __DIR__ . '/Endpoints/User/ProfileRoutes.php';
+require __DIR__ . '/Endpoints/PaymentRoutes.php';
+require __DIR__ . '/Endpoints/SalesforceRoutes.php';

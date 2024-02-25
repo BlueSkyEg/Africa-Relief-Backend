@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\User;
 
 use App\Http\Resources\UserResource;
 use Tymon\JWTAuth\Facades\JWTAuth;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Profile\UpdateProfileRequest;
+use App\Http\Requests\User\Profile\UpdateProfileRequest;
 use App\Models\Subscription;
 
-class UserController extends Controller
+class ProfileController extends Controller
 {
     protected $user;
     public function __construct()

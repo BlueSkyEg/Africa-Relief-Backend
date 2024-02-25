@@ -1,11 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Authentication\LoginController;
-use App\Http\Controllers\Authentication\RegisterController;
-use App\Http\Controllers\Authentication\LogoutController;
-use App\Http\Controllers\Authentication\PasswordResetController;
-use App\Http\Controllers\Authentication\AuthController;
+use App\Http\Controllers\User\Authentication\LoginController;
+use App\Http\Controllers\User\Authentication\RegisterController;
+use App\Http\Controllers\User\Authentication\LogoutController;
+use App\Http\Controllers\User\Authentication\PasswordResetController;
+use App\Http\Controllers\User\Authentication\AuthController;
 
 Route::prefix('auth')->group(function () {
 

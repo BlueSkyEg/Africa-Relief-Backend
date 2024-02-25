@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Authentication;
+namespace App\Http\Controllers\User\Authentication;
 
 use App\Mail\Auth\WelcomeMail;
 use App\Models\User;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Auth\RegisterRequest;
+use App\Http\Requests\User\Auth\RegisterRequest;
 use App\Http\Resources\UserResource;
 use App\Services\User\Authentication\WPPassValidationService;
 use Illuminate\Support\Facades\Mail;
@@ -29,8 +29,8 @@ class RegisterController extends Controller
             ]);
             $this->donorService->registerNewDonor($user);
 
-            // // Send mail
-            // Mail::to($user->email)->send(new WelcomeMail(["user" => $user]));
+            // Send mail
+            Mail::to($user->email)->send(new WelcomeMail(["user" => $user]));
 
             return $this->successResponse("registerd successfully", [
                 "user"  =>  new UserResource($user),

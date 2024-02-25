@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Auth;
+namespace App\Http\Requests\User\Auth;
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -25,5 +25,4 @@ class SendPasswordRestLinkMail extends FormRequest
             'email' => 'required | email | max:55',
         ];
     }
-
 }
