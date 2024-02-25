@@ -3,6 +3,7 @@
 namespace App\Http\Requests\Stripe\Subscription;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
 class CreateSubscriptionRequest extends FormRequest
 {
@@ -21,11 +22,18 @@ class CreateSubscriptionRequest extends FormRequest
      */
     public function rules(): array
     {
-        return [
-            'paymentMethodId' => 'required|string',
-            'amount' => 'required|numeric',
-            'recurringPeriod' => 'required|in:day,week,month,quarter,year',
+        $rules = [
+            'paymentMethodId'  => 'required|string',
+            'amount'           => 'required|numeric',
+            'recurringPeriod'  => 'required|in:day,week,month,quarter,year',
             'subscriptionName' => 'required|string'
         ];
+
+        // Check if the user is not authenticated, then add validation for customerId
+        if (!JWTAuth::user()) {
+            $rules['customerId'] = 'required|string';
+        }
+
+        return $rules;
     }
 }

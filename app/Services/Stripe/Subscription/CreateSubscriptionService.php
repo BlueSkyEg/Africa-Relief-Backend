@@ -54,7 +54,7 @@ class CreateSubscriptionService extends BaseStripeService
     {
         try {
             return $this->stripe->subscriptions->create([
-                'customer' => $this->user->stripe_id,
+                'customer' => $this->stripeCustomerId || $request->customerId,
                 'items' => [['price' => $priceId]],
                 'expand' => ['latest_invoice.payment_intent'],
                 'payment_behavior' => 'default_incomplete',
