@@ -16,12 +16,35 @@
                             <input type="text" id="name" name="name" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="address">Billing Address</label>
-                            <input type="text" id="address" name="address" class="form-control">
-                        </div>
-                        <div class="form-group">
                             <label for="email">Email Address</label>
                             <input type="email" id="email" name="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" name="phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address Line 1</label>
+                            <input type="text" id="address1" name="address1" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address Line 2</label>
+                            <input type="text" id="address2" name="address2" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <select id="country" name="country" class="form-control">
+                                <option value="US">United States</option>
+                                <!-- Add more country options if needed -->
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State</label>
+                            <input type="text" id="state" name="state" class="form-control">
                         </div>
                         <button id="submit" class="btn btn-primary">Save Payment Method</button>
                     </form>
@@ -51,8 +74,15 @@
             card: cardElement,
             billing_details: {
                 name: document.getElementById('name').value,
-                address: document.getElementById('address').value,
-                email: document.getElementById('email').value
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                address: {
+                    line1: document.getElementById('address1').value,
+                    line2: document.getElementById('address2').value,
+                    city: document.getElementById('city').value,
+                    state: document.getElementById('state').value,
+                    country: document.getElementById('country').value,
+                }
             }
         }).then(function(result) {
             if (result.error) {

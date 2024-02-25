@@ -41,17 +41,6 @@ class CreateSingleChargeService extends BaseStripeService
         }
     }
 
-    private function confirmPaymentIntent(CreateSingleChargeRequest $request): JsonResponse
-    {
-        try {
-            $intent = $this->stripe->paymentIntents->retrieve($request->paymentIntentId)->confirm();
-
-            return response()->api(true, 'payment created successfully', $intent);
-        } catch (ApiErrorException $e) {
-            return response()->api(false, $e->getMessage());
-        }
-    }
-
     private function generateIntentResponse(PaymentIntent $intent): JsonResponse
     {
         // Retrieve PaymentIntent with expanded customer and payment method details
@@ -61,10 +50,8 @@ class CreateSingleChargeService extends BaseStripeService
         );
 
         if ($intent->status === 'succeeded') {
-
-            // Store Donation Record
-            $this->donationService->store($intent);
-
+            // Store Transaction at DB
+            $this->storePaymentService->processStorePaymentIntoDB($intent);
             return response()->api(true, 'payment created successfully', $intent);
         }
 
@@ -76,5 +63,24 @@ class CreateSingleChargeService extends BaseStripeService
         }
 
         return response()->api(false, 'Invalid Payment Intent');
+    }
+    
+    private function confirmPaymentIntent(CreateSingleChargeRequest $request): JsonResponse
+    {
+        try {
+            
+            // Retrieve PaymentIntent with expanded customer and payment method details
+            $intent = $this->stripe->paymentIntents->retrieve(
+                $request->paymentIntentId,
+                ['expand' => ['customer', 'payment_method']]
+            );
+            
+            // Store Transaction at DB
+            $this->storePaymentService->processStorePaymentIntoDB($intent);
+            return response()->api(true, 'payment created successfully', $intent);
+
+        } catch (ApiErrorException $e) {
+            return response()->api(false, $e->getMessage());
+        }
     }
 }
