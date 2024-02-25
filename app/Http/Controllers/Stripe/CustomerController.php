@@ -21,12 +21,11 @@ class CustomerController extends Controller
 
             $user = JWTAuth::user();
             if (!$user) {
-                $stripe_customer_id = $this->createCustomerService->create($request->email);
+                $stripe_customer_id = $this->createCustomerService->create($request);
                 return $this->successResponse('customer id retrieved successfully', ['customer_id' => $stripe_customer_id]);
             }
 
-            return $this->successResponse('customer id retrieved successfully', ['customer_id' =>$user->donor->stripe_customer_id]);
-
+            return $this->successResponse('customer id retrieved successfully', ['customer_id' => $user->donor->stripe_customer_id]);
         } catch (\Exception $e) {
             return $this->errorResponse('error ' . $e->getMessage());
         }

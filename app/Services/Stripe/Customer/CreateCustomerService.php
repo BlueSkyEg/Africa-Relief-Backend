@@ -6,10 +6,11 @@ use App\Services\Stripe\BaseStripeService;
 
 class CreateCustomerService extends BaseStripeService
 {
-    public function create($email)
+    public function create($request)
     {
         $customer =  $this->stripe->customers->create([
-            'email' => $email
+            'name' => $request->name,
+            'email' => $request->email,
         ]);
         return $customer->id;
     }

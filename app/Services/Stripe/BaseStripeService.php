@@ -9,11 +9,14 @@ use Tymon\JWTAuth\Facades\JWTAuth;
 class BaseStripeService
 {
     protected StripeClient $stripe;
-    protected $user;
+    protected string $stripeCustomerId;
     public function __construct()
     {
         Stripe::setApiKey(env('STRIPE_SECRET'));
         $this->stripe = new StripeClient(env('STRIPE_SECRET'));
-        $this->user = JWTAuth::user();
+
+        // define stripe_customer_id
+        $user = JWTAuth::user();
+        $this->stripeCustomerId = $user ? $user->donor->stripe_customer_id : null;
     }
 }

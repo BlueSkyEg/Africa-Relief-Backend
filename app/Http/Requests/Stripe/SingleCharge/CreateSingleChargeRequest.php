@@ -3,6 +3,7 @@
 namespace App\Http\Requests\Stripe\SingleCharge;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
 class CreateSingleChargeRequest extends FormRequest
 {
@@ -21,11 +22,18 @@ class CreateSingleChargeRequest extends FormRequest
      */
     public function rules(): array
     {
-        return [
+        $rules = [
             'paymentMethodId' => 'required_if:paymentIntentId,null|string',
             'amount' => 'required_with:paymentMethodId|numeric',
             'paymentDescription' => 'required_with:paymentMethodId|string',
             'paymentIntentId' => 'required_without_all:paymentMethodId,amount|string'
         ];
+
+        // Check if the user is not authenticated, then add validation for customerId
+        if (!JWTAuth::user()) {
+            $rules['customerId'] = 'required|string';
+        }
+
+        return $rules;
     }
 }

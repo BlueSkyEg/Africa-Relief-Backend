@@ -34,7 +34,7 @@ trait ApiResponse
      */
     protected function successResponse($message = null, $data = null, $statusCode = 200)
     {
-        return $this->apiResponse(true, $message, $data, $errors = null, $statusCode);
+        return $this->apiResponse(true, $message, $data, null, $statusCode);
     }
 
     /**
@@ -45,7 +45,7 @@ trait ApiResponse
      */
     protected function validationResponse($errors = [])
     {
-        return $this->apiResponse(false, "validation error", $data = null,  ['errors' => $errors], 403);
+        return $this->apiResponse(false, "validation error", null, $errors, 403);
     }
 
     /**
@@ -57,6 +57,6 @@ trait ApiResponse
     */
     protected function errorResponse($message = "server error", $statusCode = 500)
     {
-        return $this->apiResponse(false, $message, $data = null, $errors = null, $statusCode);
+        return $this->apiResponse(false, $message, null, null, $statusCode);
     }
 }

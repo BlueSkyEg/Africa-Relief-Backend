@@ -16,7 +16,7 @@ class DonorService
         Donor::create([
             "user_id"             => $user->id,
             "email"               => $user->email,
-            "stripe_customer_id"  => $this->createCustomerService->create($user->email),
+            "stripe_customer_id"  => $this->createCustomerService->create($user),
         ]);
     }
 }
