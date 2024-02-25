@@ -3,6 +3,7 @@
 namespace App\Http\Requests\Stripe\PaymentMethod;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Tymon\JWTAuth\Facades\JWTAuth;
 
 class SavePaymentMethodRequest extends FormRequest
 {
@@ -21,8 +22,15 @@ class SavePaymentMethodRequest extends FormRequest
      */
     public function rules(): array
     {
-        return [
+        $rules = [
             'paymentMethodId' => 'required|string'
         ];
+
+        // Check if the user is not authenticated, then add validation for customerId
+        if (!JWTAuth::user()) {
+            $rules['customerId'] = 'required|string';
+        }
+
+        return $rules;
     }
 }

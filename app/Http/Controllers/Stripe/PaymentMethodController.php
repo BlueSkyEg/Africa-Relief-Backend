@@ -22,9 +22,9 @@ class PaymentMethodController extends Controller
         return $createSetupIntentService->create();
     }
 
-    public function savePaymentMethod(SavePaymentMethodService $savePaymentMethodService, SavePaymentMethodRequest $request): JsonResponse
+    public function savePaymentMethod(SavePaymentMethodService $savePaymentMethodService, SavePaymentMethodRequest $request)
     {
-        return $savePaymentMethodService->save($request->paymentMethodId);
+        return $savePaymentMethodService->save($request);
     }
 
     public function updatePaymentMethod(UpdatePaymentMethodService $updatePaymentMethodService, UpdatePaymentMethodRequest $request): JsonResponse

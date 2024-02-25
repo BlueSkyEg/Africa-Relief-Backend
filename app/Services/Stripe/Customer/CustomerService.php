@@ -4,7 +4,7 @@ namespace App\Services\Stripe\Customer;
 
 use App\Services\Stripe\BaseStripeService;
 
-class CreateCustomerService extends BaseStripeService
+class CustomerService extends BaseStripeService
 {
     public function create($request)
     {

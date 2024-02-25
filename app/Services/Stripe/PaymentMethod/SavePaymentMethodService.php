@@ -2,18 +2,19 @@
 
 namespace App\Services\Stripe\PaymentMethod;
 
+use App\Http\Requests\Stripe\PaymentMethod\SavePaymentMethodRequest;
 use App\Services\Stripe\BaseStripeService;
 use Illuminate\Http\JsonResponse;
 use Stripe\Exception\ApiErrorException;
 
 class SavePaymentMethodService extends BaseStripeService
 {
-    public function save(string $paymentMethodId): JsonResponse
+    public function save(SavePaymentMethodRequest $request)
     {
         try {
             $paymentMethod = $this->stripe->paymentMethods->attach(
-                $paymentMethodId,
-                ['customer' => $this->user->stripe_id]
+                $request->paymentMethodId,
+                ['customer' => $this->stripeCustomerId ?? $request->customerId]
             );
 
             return response()->api(true, 'payment method saved successfully', $paymentMethod);

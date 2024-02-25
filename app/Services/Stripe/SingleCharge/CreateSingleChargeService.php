@@ -25,7 +25,7 @@ class CreateSingleChargeService extends BaseStripeService
             $intent = $this->stripe->paymentIntents->create([
                 'amount' => $request->amount * 100, // The amount in cents
                 'currency' => 'usd',
-                'customer' => $this->stripeCustomerId || $request->customerId,
+                'customer' => $this->stripeCustomerId ?? $request->customerId,
                 'payment_method' => $request->paymentMethodId,
                 'description' => $request->paymentDescription,
                 'payment_method_types' => ['card'],

@@ -3,14 +3,14 @@
 namespace App\Http\Controllers\Stripe;
 
 use App\Http\Controllers\Controller;
-use App\Services\Stripe\Customer\CreateCustomerService;
+use App\Services\Stripe\Customer\CustomerService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Tymon\JWTAuth\Facades\JWTAuth;
 
 class CustomerController extends Controller
 {
-    public function __construct(public CreateCustomerService $createCustomerService)
+    public function __construct(public CustomerService $customerService)
     {
     }
 
@@ -21,7 +21,7 @@ class CustomerController extends Controller
 
             $user = JWTAuth::user();
             if (!$user) {
-                $stripe_customer_id = $this->createCustomerService->create($request);
+                $stripe_customer_id = $this->customerService->create($request);
                 return $this->successResponse('customer id retrieved successfully', ['customer_id' => $stripe_customer_id]);
             }
 
