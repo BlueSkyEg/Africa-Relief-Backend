@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Stripe;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Stripe\Customer\CreateCustomerRequest;
 use App\Services\Stripe\Customer\CustomerService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -15,7 +16,7 @@ class CustomerController extends Controller
     }
 
     // create stripe customer
-    public function createCustomer(Request $request): JsonResponse
+    public function createCustomer(CreateCustomerRequest $request): JsonResponse
     {
         try {
 
