@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Stripe;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Stripe\PaymentMethod\ListPaymentMethodsRequest;
+use App\Http\Requests\Stripe\PaymentMethod\RetreivePaymentMethodRequest;
 use App\Http\Requests\Stripe\PaymentMethod\SavePaymentMethodRequest;
 use App\Http\Requests\Stripe\PaymentMethod\UpdateDefaultPaymentMethodRequest;
 use App\Http\Requests\Stripe\PaymentMethod\UpdatePaymentMethodRequest;
@@ -38,9 +39,9 @@ class PaymentMethodController extends Controller
         return $listPaymentMethodsService->list($request);
     }
 
-    public function retrievePaymentMethod(RetrievePaymentMethodService $retrievePaymentMethodService, string $paymentMethodId): JsonResponse
+    public function retrievePaymentMethod(RetrievePaymentMethodService $retrievePaymentMethodService, RetreivePaymentMethodRequest $request)
     {
-        return $retrievePaymentMethodService->retrieve($paymentMethodId);
+        return $retrievePaymentMethodService->retrieve($request);
     }
 
     public function updateDefaultPaymentMethod(UpdateDefaultPaymentMethodService $defaultPaymentMethodService, UpdateDefaultPaymentMethodRequest $request): JsonResponse

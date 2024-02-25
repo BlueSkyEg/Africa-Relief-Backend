@@ -16,7 +16,7 @@ Route::controller(PaymentMethodController::class)->prefix('payment-method')->gro
     Route::post('/save', 'savePaymentMethod');
     Route::put('/update', 'updatePaymentMethod');
     Route::get('/retrieve/all', 'retrieveAllPaymentMethods');
-    Route::get('/retrieve/{paymentMethodId}', 'retrievePaymentMethod');
+    Route::get('/retrieve', 'retrievePaymentMethod');
     Route::put('/default', 'updateDefaultPaymentMethod');
     Route::delete('/delete/{paymentMethodId}', 'deletePaymentMethod');
 });
