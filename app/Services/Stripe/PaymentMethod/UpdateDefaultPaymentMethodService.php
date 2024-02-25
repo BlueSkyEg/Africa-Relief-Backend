@@ -2,19 +2,20 @@
 
 namespace App\Services\Stripe\PaymentMethod;
 
+use App\Http\Requests\Stripe\PaymentMethod\UpdateDefaultPaymentMethodRequest;
 use App\Services\Stripe\BaseStripeService;
 use Illuminate\Http\JsonResponse;
 use Stripe\Exception\ApiErrorException;
 
 class UpdateDefaultPaymentMethodService extends BaseStripeService
 {
-    public function update(string $paymentMethodId): JsonResponse
+    public function update(UpdateDefaultPaymentMethodRequest $request): JsonResponse
     {
         try {
             $defaultPaymentMethod = $this->stripe->customers->update(
-                $this->user->stripe_id,
+                $this->stripeCustomerId ?? $request->customerId,
                 [
-                    'invoice_settings' => ['default_payment_method' => $paymentMethodId]
+                    'invoice_settings' => ['default_payment_method' => $request->paymentMethodId]
                 ]
             );
 

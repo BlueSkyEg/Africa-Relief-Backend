@@ -46,7 +46,7 @@ class PaymentMethodController extends Controller
 
     public function updateDefaultPaymentMethod(UpdateDefaultPaymentMethodService $defaultPaymentMethodService, UpdateDefaultPaymentMethodRequest $request): JsonResponse
     {
-        return $defaultPaymentMethodService->update($request->paymentMethodId);
+        return $defaultPaymentMethodService->update($request);
     }
 
     public function deletePaymentMethod(DeletePaymentMethodService $deletePaymentMethodService, string $paymentMethodId): JsonResponse
