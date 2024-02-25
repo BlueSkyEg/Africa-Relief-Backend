@@ -2,6 +2,7 @@
 
 namespace App\Services\Stripe;
 
+use App\Services\Donation\DonationService;
 use Stripe\Stripe;
 use Stripe\StripeClient;
 use Tymon\JWTAuth\Facades\JWTAuth;
@@ -10,7 +11,7 @@ class BaseStripeService
 {
     protected StripeClient $stripe;
     protected ?string $stripeCustomerId;
-    public function __construct()
+    public function __construct(public DonationService $donationService)
     {
         Stripe::setApiKey(env('STRIPE_SECRET'));
         $this->stripe = new StripeClient(env('STRIPE_SECRET'));

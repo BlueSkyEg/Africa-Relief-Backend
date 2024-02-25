@@ -60,28 +60,30 @@
                 errorElement.textContent = result.error.message;
                 submitButton.disabled = false;
             } else {
-                fetch('/single-charge/create', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'X-CSRF-TOKEN': "{{ csrf_token() }}"
-                        },
-                        body: JSON.stringify({
-                            paymentMethodId: result.paymentMethod.id,
-                            amount: 400,
-                            paymentDescription: "Student Sponsership",
-                            customerId: "cus_PcsA5zBlwf5ghF"
-                            // You can add additional data here if needed
-                        })
-                    })
-                    .then(response => response.json())
-                    .then(data => {
-                        document.getElementById('payment-result').innerHTML =
-                            'Payment Method Saved: ' + JSON.stringify(data);
-                    })
-                    .catch(error => {
-                        console.error('Error:', error);
-                    });
+                // fetch('/single-charge/create', {
+                //         method: 'POST',
+                //         headers: {
+                //             'Content-Type': 'application/json',
+                //             'X-CSRF-TOKEN': "{{ csrf_token() }}"
+                //         },
+                //         body: JSON.stringify({
+                //             paymentMethodId: result.paymentMethod.id,
+                //             customerId: "cus_PcsA5zBlwf5ghF",
+                //             amount: 400,
+                //             paymentDescription: "Student Sponsership",
+                //             // You can add additional data here if needed
+                //         })
+                //     })
+                //     .then(response => response.json())
+                //     .then(data => {
+                //         document.getElementById('payment-result').innerHTML =
+                //             'Payment Method Saved: ' + JSON.stringify(data);
+                //     })
+                //     .catch(error => {
+                    //         console.error('Error:', error);
+                    //     });
+                document.getElementById('payment-result').innerHTML =
+                    'Payment Method Saved: ' + result.paymentMethod.id;
             }
         });
     });

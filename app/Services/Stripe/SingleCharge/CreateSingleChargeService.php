@@ -3,6 +3,7 @@
 namespace App\Services\Stripe\SingleCharge;
 
 use App\Http\Requests\Stripe\SingleCharge\CreateSingleChargeRequest;
+use App\Services\Donation\DonationService;
 use App\Services\Stripe\BaseStripeService;
 use Illuminate\Http\JsonResponse;
 use Stripe\Exception\ApiErrorException;
@@ -54,6 +55,10 @@ class CreateSingleChargeService extends BaseStripeService
     private function generateIntentResponse(PaymentIntent $intent): JsonResponse
     {
         if ($intent->status === 'succeeded') {
+
+
+            $this->donationService->store($intent);
+
             return response()->api(true, 'payment created successfully', $intent);
         }
 

@@ -53,7 +53,7 @@
         FROM
             africa_relief_wp.afj77_give_donors AS donors
         JOIN
-            africa_relief_wp.afj77_give_donormeta AS donormeta 
+            africa_relief_wp.afj77_give_donormeta AS donormeta
         ON
             donors.id = donormeta.donor_id
         WHERE
@@ -72,7 +72,7 @@
 -- -----------------------
     -- Step 1: Create the new 'subscriptions' table with specific columns
         CREATE TABLE subscriptions (
-            id BIGINT(20) UNSIGNED PRIMARY KEY,
+            id BIGINT(20) UNSIGNED PRIMARY KEY AUTO_INCREMENT,
             donor_id BIGINT(20) NOT NULL,
             donation_id BIGINT(20) NOT NULL,
             stripe_subscription_id VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
@@ -113,7 +113,7 @@
 -- -----------------------
     -- Step 1: Create the new 'donations' table with specific columns
         CREATE TABLE africa_relief.donations (
-            id BIGINT(20) UNSIGNED PRIMARY KEY,
+            id BIGINT(20) UNSIGNED PRIMARY KEY AUTO_INCREMENT,
             donor_id BIGINT(20),
             subscription_id BIGINT(20) DEFAULT 0,
             project_title VARCHAR(255),
