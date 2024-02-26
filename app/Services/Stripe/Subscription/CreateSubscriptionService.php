@@ -15,25 +15,25 @@ class CreateSubscriptionService extends BaseStripeService
 
     public function create(CreateSubscriptionRequest $request): JsonResponse
     {
+        // Create Price Object
         $priceResult = $this->createProductPrice($request);
-
         if (is_string($priceResult)) {
             return response()->api(false, $priceResult);
         }
 
+        // Create Subscription Object
         $subscriptionResult = $this->createSubscription($request, $priceResult->id);
-
         if (is_string($subscriptionResult)) {
             return response()->api(false, $subscriptionResult);
         }
 
+        // Create payment Intent Object
         $paymentIntentResult = $this->confirmPaymentIntent($subscriptionResult->latest_invoice->payment_intent->id);
-
         if (is_string($paymentIntentResult)) {
             return response()->api(false, $paymentIntentResult);
         }
 
-        return $this->generateIntentResponse($paymentIntentResult);
+        return $this->generateIntentResponse($paymentIntentResult, $subscriptionResult);
     }
 
     private function createProductPrice(CreateSubscriptionRequest $request): Price|string
@@ -53,6 +53,11 @@ class CreateSubscriptionService extends BaseStripeService
     private function createSubscription(CreateSubscriptionRequest $request, string $priceId): Subscription|string
     {
         try {
+            // Attach the payment method to the customer
+            $this->stripe->paymentMethods->attach(
+                $request->paymentMethodId,
+                ['customer' => $this->stripeCustomerId ?? $request->customerId]
+            );
             return $this->stripe->subscriptions->create([
                 'customer' => $this->stripeCustomerId ?? $request->customerId,
                 'items' => [['price' => $priceId]],
@@ -75,10 +80,23 @@ class CreateSubscriptionService extends BaseStripeService
         }
     }
 
-    private function generateIntentResponse(PaymentIntent $intent): JsonResponse
+    private function generateIntentResponse(PaymentIntent $intent, $subscriptionResult): JsonResponse
     {
         if ($intent->status === 'succeeded') {
-            return response()->api(true, 'Subscription created successfully', $intent);
+
+            // Retrieve PaymentIntent with expanded customer and payment method details
+            $intent = $this->stripe->paymentIntents->retrieve(
+                $intent->id,
+                ['expand' => ['customer', 'payment_method']]
+            );
+
+            // Store Transaction at DB
+            $this->storePaymentService->processStorePaymentIntoDB($intent ,$subscriptionResult);
+
+            return response()->api(true, 'Subscription created successfully', [
+                'paymentIntent' => $intent,
+                'subscription'  => $subscriptionResult,
+            ]);
         }
 
         if ($intent->status === 'requires_action') {

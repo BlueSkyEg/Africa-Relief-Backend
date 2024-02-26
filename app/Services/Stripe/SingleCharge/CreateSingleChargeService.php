@@ -64,17 +64,17 @@ class CreateSingleChargeService extends BaseStripeService
 
         return response()->api(false, 'Invalid Payment Intent');
     }
-    
+
     private function confirmPaymentIntent(CreateSingleChargeRequest $request): JsonResponse
     {
         try {
-            
+
             // Retrieve PaymentIntent with expanded customer and payment method details
             $intent = $this->stripe->paymentIntents->retrieve(
                 $request->paymentIntentId,
                 ['expand' => ['customer', 'payment_method']]
             );
-            
+
             // Store Transaction at DB
             $this->storePaymentService->processStorePaymentIntoDB($intent);
             return response()->api(true, 'payment created successfully', $intent);
