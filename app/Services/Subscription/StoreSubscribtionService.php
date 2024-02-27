@@ -22,11 +22,12 @@ class StoreSubscribtionService
         return Subscription::create([
             "donor_id"                => $donor->id,
             "donation_id"             => $donation->id,
-            "amount"                  => $donation->amount,
+            "initial_amount"          => $donation->amount,
+            "recurring_amount"        => $subscriptionData->items->data[0]->plan->amount,
             "stripe_subscription_id"  => $subscriptionData->id,
             "period"                  => $subscriptionData->plan->interval,
-            "start_date"              => date('Y-m-d H:i:s', $subscriptionData->current_period_start),
-            "end_date"                => date('Y-m-d H:i:s', $subscriptionData->current_period_end),
+            "created"                 => date('Y-m-d H:i:s', $subscriptionData->current_period_start),
+            "expiration"              => date('Y-m-d H:i:s', $subscriptionData->current_period_end),
             "status"                  => "active",
             "notes"                   => "notes",
         ]);

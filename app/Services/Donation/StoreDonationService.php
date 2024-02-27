@@ -36,7 +36,11 @@ class StoreDonationService
             "state"                  => $paymentIntentData->payment_method->billing_details->address->state,
             "zip"                    => $paymentIntentData->payment_method->billing_details->address->postal_code,
             "address1"               => $paymentIntentData->payment_method->billing_details->address->line1,
-            "address2"               => $paymentIntentData->payment_method->billing_details->address->line2, // Fixed typo
+            "address2"               => $paymentIntentData->payment_method->billing_details->address->line2,
+            "comment"                => $paymentIntentData->description,
+            "completed_date"         => date('Y-m-d H:i:s', $paymentIntentData->created),
+            "anonymous_donation"     => "1",
+            "cs_exchange_rate"       => isset($paymentIntentData->exchange_rate) ? $paymentIntentData->exchange_rate : 1,
         ]);
     }
 
@@ -54,3 +58,4 @@ class StoreDonationService
         return [$firstName, $lastName];
     }
 }
+
