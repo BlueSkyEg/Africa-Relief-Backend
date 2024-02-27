@@ -27,6 +27,10 @@ class Donation extends Model
         'zip',
         'address1',
         'address2',
+        'comment',
+        'completed_date',
+        'anonymous_donation',
+        'cs_exchange_rate',
     ];
 
     protected $casts = [
