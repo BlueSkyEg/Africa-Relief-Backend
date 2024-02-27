@@ -3,7 +3,6 @@
 namespace App\Services\Donor;
 
 use App\Models\Donor;
-use Tymon\JWTAuth\Facades\JWTAuth;
 use App\Services\Stripe\Customer\CustomerService;
 
 class DonorService

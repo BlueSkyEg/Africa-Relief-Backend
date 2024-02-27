@@ -13,6 +13,7 @@ Route::controller(CustomerController::class)->prefix('customer')->group(function
 
 Route::controller(PaymentMethodController::class)->prefix('payment-method')->group(function () {
     Route::get('/setup-intent', 'setupPaymentMethodIntent');
+    Route::post('/confirm-intent', 'confirmPaymentMethodIntent');
     Route::post('/save', 'savePaymentMethod');
     Route::put('/update', 'updatePaymentMethod');
     Route::get('/retrieve/all', 'retrieveAllPaymentMethods');

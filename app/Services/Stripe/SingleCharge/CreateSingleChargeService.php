@@ -3,7 +3,6 @@
 namespace App\Services\Stripe\SingleCharge;
 
 use App\Http\Requests\Stripe\SingleCharge\CreateSingleChargeRequest;
-use App\Services\Donation\DonationService;
 use App\Services\Stripe\BaseStripeService;
 use Illuminate\Http\JsonResponse;
 use Stripe\Exception\ApiErrorException;
@@ -12,15 +11,6 @@ use Stripe\PaymentIntent;
 class CreateSingleChargeService extends BaseStripeService
 {
     public function create(CreateSingleChargeRequest $request): JsonResponse
-    {
-        if (isset($request->paymentMethodId)) {
-            return $this->createPaymentIntent($request);
-        }
-
-        return $this->confirmPaymentIntent($request);
-    }
-
-    private function createPaymentIntent(CreateSingleChargeRequest $request): JsonResponse
     {
         try {
             $intent = $this->stripe->paymentIntents->create([
@@ -33,6 +23,7 @@ class CreateSingleChargeService extends BaseStripeService
                 'confirm' => true,
                 'confirmation_method' => 'manual',
                 'use_stripe_sdk' => true,
+                ['expand' => ['customer', 'payment_method']]
             ]);
 
             return $this->generateIntentResponse($intent);
@@ -43,16 +34,11 @@ class CreateSingleChargeService extends BaseStripeService
 
     private function generateIntentResponse(PaymentIntent $intent): JsonResponse
     {
-        // Retrieve PaymentIntent with expanded customer and payment method details
-        $intent = $this->stripe->paymentIntents->retrieve(
-            $intent->id,
-            ['expand' => ['customer', 'payment_method']]
-        );
 
         if ($intent->status === 'succeeded') {
             // Store Transaction at DB
             $this->storePaymentService->processStorePaymentIntoDB($intent);
-            return response()->api(true, 'payment created successfully', $intent);
+            return response()->api(true, 'payment created successfully');
         }
 
         if ($intent->status === 'requires_action') {
@@ -63,24 +49,5 @@ class CreateSingleChargeService extends BaseStripeService
         }
 
         return response()->api(false, 'Invalid Payment Intent');
-    }
-
-    private function confirmPaymentIntent(CreateSingleChargeRequest $request): JsonResponse
-    {
-        try {
-
-            // Retrieve PaymentIntent with expanded customer and payment method details
-            $intent = $this->stripe->paymentIntents->retrieve(
-                $request->paymentIntentId,
-                ['expand' => ['customer', 'payment_method']]
-            );
-
-            // Store Transaction at DB
-            $this->storePaymentService->processStorePaymentIntoDB($intent);
-            return response()->api(true, 'payment created successfully', $intent);
-
-        } catch (ApiErrorException $e) {
-            return response()->api(false, $e->getMessage());
-        }
     }
 }

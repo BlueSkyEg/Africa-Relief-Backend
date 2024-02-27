@@ -91,18 +91,16 @@ class CreateSubscriptionService extends BaseStripeService
             );
 
             // Store Transaction at DB
-            $this->storePaymentService->processStorePaymentIntoDB($intent ,$subscriptionResult);
+            $this->storePaymentService->processStorePaymentIntoDB($intent, $subscriptionResult);
 
-            return response()->api(true, 'Subscription created successfully', [
-                'paymentIntent' => $intent,
-                'subscription'  => $subscriptionResult,
-            ]);
+            return response()->api(true, 'subscription created successfully');
         }
 
         if ($intent->status === 'requires_action') {
             return response()->api(false, 'payment method requires action', [
                 'requiresAction' => true,
-                'clientSecret' => $intent->client_secret,
+                'clientSecret'   => $intent->client_secret,
+                'subscriptionID' => $subscriptionResult->id,
             ]);
         }
 
