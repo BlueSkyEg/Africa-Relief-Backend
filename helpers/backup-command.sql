@@ -74,32 +74,34 @@
         CREATE TABLE subscriptions (
             id BIGINT(20) UNSIGNED PRIMARY KEY AUTO_INCREMENT,
             donor_id BIGINT(20) NOT NULL,
-            donation_id BIGINT(20) NOT NULL,
+            donation_id BIGINT(20) NOT NULL, -- parent donation id
             stripe_subscription_id VARCHAR(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
             period VARCHAR(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-            amount DECIMAL(10,2) NOT NULL,
+            initial_amount DECIMAL(10,2) NOT NULL,
+            recurring_amount DECIMAL(10,2) NOT NULL,
             status VARCHAR(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
             notes LONGTEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-            start_date DATETIME NOT NULL,
-            end_date DATETIME NOT NULL,
+            created DATETIME NOT NULL,
+            expiration DATETIME NOT NULL,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             INDEX(donor_id, donation_id)
         );
     -- Step 2: Insert data into the new 'subscriptions' table from the 'afj77_give_subscriptions' table from old db
         INSERT INTO
-            africa_relief.subscriptions (id, donor_id, donation_id, stripe_subscription_id, period, amount, status, notes, start_date, end_date)
+            africa_relief.subscriptions (id, donor_id, donation_id, stripe_subscription_id, period, initial_amount, recurring_amount, status, notes, created, expiration)
         SELECT
             id,
             customer_id As donor_id,
             parent_payment_id As donation_id,
             profile_id As stripe_subscription_id,
             period,
-            initial_amount As amount,
+            initial_amount,
+            recurring_amount,
             status,
             notes,
-            created As start_date,
-            expiration As end_date
+            created,
+            expiration
         FROM
             africa_relief_wp.afj77_give_subscriptions;
 

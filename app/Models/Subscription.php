@@ -12,11 +12,12 @@ class Subscription extends Model
         'donation_id',
         'stripe_subscription_id',
         'period',
-        'amount',
+        'initial_amount',
+        'recurring_amount',
         'status',
         'notes',
-        'start_date',
-        'end_date',
+        'created',
+        'expiration',
     ];
 
     protected $dates = ['start_date', 'end_date'];
