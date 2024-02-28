@@ -13,7 +13,7 @@ class CreateSetupIntentService extends BaseStripeService
     {
         try {
             $intent = $this->stripe->setupIntents->create([
-                'customer' => $this->user->stripe_id,
+//                'customer' => $this->user->stripe_id,
                 'payment_method_types' => ['card'],
             ]);
 

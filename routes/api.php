@@ -4,6 +4,7 @@ use App\Http\Controllers\Stripe\CustomerController;
 use App\Http\Controllers\Stripe\PaymentMethodController;
 use App\Http\Controllers\Stripe\SingleChargeController;
 use App\Http\Controllers\Stripe\SubscriptionController;
+use App\Http\Controllers\Stripe\WebhookController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,3 +41,5 @@ Route::controller(SubscriptionController::class)->prefix('subscription')->group(
     Route::post('/cancel', 'cancelSubscription');
     Route::get('/retrieve/{subscriptionId}', 'retrieveSubscription');
 });
+
+Route::post('/stripe-webhook', WebhookController::class);
