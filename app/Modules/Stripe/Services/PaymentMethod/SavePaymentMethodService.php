@@ -8,12 +8,12 @@ use Stripe\Exception\ApiErrorException;
 
 class SavePaymentMethodService extends BaseStripeService
 {
-    public function save(string $paymentMethodId): JsonResponse
+    public function save(string $paymentMethodId, string $customerId): JsonResponse
     {
         try {
             $paymentMethod = $this->stripe->paymentMethods->attach(
                 $paymentMethodId,
-                ['customer' => $this->user->stripe_id]
+                ['customer' => $customerId]
             );
 
             return response()->api(true, 'payment method saved successfully', $paymentMethod);

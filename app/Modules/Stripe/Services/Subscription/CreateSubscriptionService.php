@@ -3,7 +3,9 @@
 namespace App\Modules\Stripe\Services\Subscription;
 
 use App\Http\Requests\Stripe\Subscription\CreateSubscriptionRequest;
+use App\Models\Donor;
 use App\Modules\Stripe\Services\BaseStripeService;
+use App\Modules\Stripe\Services\PaymentMethod\SavePaymentMethodService;
 use Illuminate\Http\JsonResponse;
 use Stripe\Exception\ApiErrorException;
 use Stripe\PaymentIntent;
@@ -15,13 +17,27 @@ class CreateSubscriptionService extends BaseStripeService
 
     public function create(CreateSubscriptionRequest $request): JsonResponse
     {
+        $isUser = auth('sanctum')->check();
+        if (!$isUser) {
+            $donor = Donor::where('email', $request->email)->first();
+            if (!$donor) {
+                $stripeCustomer = $this->createCustomer($request->firstName .' '. $request->lastName, $request->email);
+
+                $donor = Donor::create([
+                    'email' => $request->email,
+                    'stripe_customer_id' => $stripeCustomer->id
+                ]);
+
+                (new SavePaymentMethodService())->save($request->paymentMethodId, $donor->stripe_customer_id);
+            }
+        }
         $priceResult = $this->createProductPrice($request);
 
         if (is_string($priceResult)) {
             return response()->api(false, $priceResult);
         }
 
-        $subscriptionResult = $this->createSubscription($request, $priceResult->id);
+        $subscriptionResult = $this->createSubscription($request, $priceResult->id, $donor);
 
         if (is_string($subscriptionResult)) {
             return response()->api(false, $subscriptionResult);
@@ -50,11 +66,11 @@ class CreateSubscriptionService extends BaseStripeService
         }
     }
 
-    private function createSubscription(CreateSubscriptionRequest $request, string $priceId): Subscription|string
+    private function createSubscription(CreateSubscriptionRequest $request, string $priceId, Donor $donor): Subscription|string
     {
         try {
             return $this->stripe->subscriptions->create([
-                'customer' => $this->user->stripe_id,
+                'customer' => $donor->stripe_customer_id,
                 'items' => [['price' => $priceId]],
                 'expand' => ['latest_invoice.payment_intent'],
                 'payment_behavior' => 'default_incomplete',
@@ -89,5 +105,12 @@ class CreateSubscriptionService extends BaseStripeService
         }
 
         return response()->api(false, 'Invalid Payment Intent');
+    }
+
+    private function createCustomer(string $name, string $email) {
+        return $this->stripe->customers->create([
+            'name' => $name,
+            'email' => $email
+        ]);
     }
 }

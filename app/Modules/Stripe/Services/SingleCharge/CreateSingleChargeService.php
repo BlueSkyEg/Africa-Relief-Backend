@@ -2,6 +2,7 @@
 
 namespace App\Modules\Stripe\Services\SingleCharge;
 
+use App\Models\Donor;
 use App\Http\Requests\Stripe\SingleCharge\CreateSingleChargeRequest;
 use App\Modules\Stripe\Services\BaseStripeService;
 use Illuminate\Http\JsonResponse;
@@ -12,26 +13,47 @@ class CreateSingleChargeService extends BaseStripeService
 {
     public function create(CreateSingleChargeRequest $request): JsonResponse
     {
-        if (isset($request->paymentMethodId)) {
-            return $this->createPaymentIntent($request);
+        $isUser = auth('sanctum')->check();
+        if (isset($request->paymentMethodId) && !$isUser) {
+            $donor = Donor::where('email', $request->email)->first();
+
+            if (!$donor) {
+                $stripeCustomer = $this->createCustomer($request->firstName .' '. $request->lastName, $request->email);
+
+                $donor = Donor::create([
+                    'email' => $request->email,
+                    'stripe_customer_id' => $stripeCustomer->id
+                ]);
+            }
+
+            return $this->createPaymentIntent($request, $donor);
         }
 
         return $this->confirmPaymentIntent($request);
     }
 
-    private function createPaymentIntent(CreateSingleChargeRequest $request): JsonResponse
+    private function createPaymentIntent(CreateSingleChargeRequest $request, Donor $donor): JsonResponse
     {
         try {
             $intent = $this->stripe->paymentIntents->create([
                 'amount' => $request->amount * 100, // The amount in cents
                 'currency' => 'usd',
-//                'customer' => $this->user->stripe_id,
+                'customer' => $donor->stripe_customer_id,
                 'payment_method' => $request->paymentMethodId,
                 'description' => $request->paymentDescription,
                 'payment_method_types' => ['card'],
                 'confirm' => true,
                 'confirmation_method' => 'manual',
-                'use_stripe_sdk' => true,
+                'statement_descriptor' => 'AFRICA-RELIEF.ORG',
+                'expand' => ['customer', 'review', 'payment_method'],
+                'metadata' => [
+                    'first_name' => $request->firstName,
+                    'last_name' => $request->lastName,
+                    'comment' => $request->billingComment,
+                    'anonymous_donation' => $request->anonymousDonation,
+                    'project_id' => $request->projectId,
+                    'donor_id' => $donor->id
+                ]
             ]);
 
             return $this->generateIntentResponse($intent);
@@ -65,5 +87,12 @@ class CreateSingleChargeService extends BaseStripeService
         }
 
         return response()->api(false, 'Invalid Payment Intent');
+    }
+
+    private function createCustomer(string $name, string $email) {
+        return $this->stripe->customers->create([
+            'name' => $name,
+            'email' => $email
+        ]);
     }
 }

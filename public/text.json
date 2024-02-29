@@ -1,32 +1,41 @@
 Stripe\PaymentIntent JSON: {
-    "id": "pi_3Ooo5WGSVOIDq2nF2493LmZp",
+    "id": "pi_3Op6SyGSVOIDq2nF3qUeWWFo",
     "object": "payment_intent",
-    "amount": 90000,
+    "amount": 8000,
     "amount_capturable": 0,
     "amount_details": {
         "tip": []
     },
-    "amount_received": 90000,
+    "amount_received": 8000,
     "application": null,
     "application_fee_amount": null,
     "automatic_payment_methods": null,
     "canceled_at": null,
     "cancellation_reason": null,
     "capture_method": "automatic",
-    "client_secret": "pi_3Ooo5WGSVOIDq2nF2493LmZp_secret_20XsjpMIGwar3LtQSpgIjh7z7",
-    "confirmation_method": "automatic",
-    "created": 1709130386,
+    "client_secret": "pi_3Op6SyGSVOIDq2nF3qUeWWFo_secret_4Oy9XwarMWQaPILGDIM1BOv7I",
+    "confirmation_method": "manual",
+    "created": 1709201032,
     "currency": "usd",
-    "customer": "cus_PVQE2mSC8N98XJ",
-    "description": "Subscription update",
-    "invoice": "in_1Oon91GSVOIDq2nFnQNZ7Gus",
+    "customer": "cus_PeO1en9A4lYRdR",
+    "description": "Donation for Egypt",
+    "invoice": null,
     "last_payment_error": null,
-    "latest_charge": "ch_3Ooo5WGSVOIDq2nF2ms3UwHf",
+    "latest_charge": "ch_3Op6SyGSVOIDq2nF3clQGoHg",
     "livemode": false,
-    "metadata": [],
+    "metadata": {
+        "address_country": "EG",
+        "address_state": "AlAsafraa",
+        "address_line1": "Mahad Eldiny",
+        "project_id": "333333",
+        "address_postal_code": "21539",
+        "donor_id": "1572",
+        "address_city": "Alexandria",
+        "address_line2": ""
+    },
     "next_action": null,
     "on_behalf_of": null,
-    "payment_method": "pm_1OhBx3GSVOIDq2nFkFnnANtt",
+    "payment_method": "pm_1Op6RqGSVOIDq2nFqlUE4nft",
     "payment_method_configuration_details": null,
     "payment_method_options": {
         "card": {
@@ -34,21 +43,10 @@ Stripe\PaymentIntent JSON: {
             "mandate_options": null,
             "network": null,
             "request_three_d_secure": "automatic"
-        },
-        "cashapp": [],
-        "link": {
-            "persistent_token": null
-        },
-        "us_bank_account": {
-            "mandate_options": [],
-            "verification_method": "automatic"
         }
     },
     "payment_method_types": [
-        "card",
-        "cashapp",
-        "link",
-        "us_bank_account"
+        "card"
     ],
     "processing": null,
     "receipt_email": null,
@@ -56,9 +54,13 @@ Stripe\PaymentIntent JSON: {
     "setup_future_usage": null,
     "shipping": null,
     "source": null,
-    "statement_descriptor": null,
+    "statement_descriptor": "AFRICA-RELIEF.ORG",
     "statement_descriptor_suffix": null,
     "status": "succeeded",
     "transfer_data": null,
     "transfer_group": null
 }
+Trying to access array offset on value of type null
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updated_at' in 'field list' (Connection: mysql, SQL: insert into `donations` (`donor_id`, `stripe_source_id`, `stripe_transaction_id`, `payment_total`, `project_id`, `donor_billing_first_name`, `donor_billing_last_name`, `donor_billing_comment`, `anonymous_donation`, `donor_billing_phone`, `donor_billing_country`, `donor_billing_city`, `donor_billing_state`, `donor_billing_address_1`, `donor_billing_address_2`, `donor_billing_zip`, `payment_mode`, `completed_date`, `payment_currency`, `updated_at`, `created_at`)
+values (1572, pm_1Op9NNGSVOIDq2nFiinPFch8, pi_3Op9NZGSVOIDq2nF1V6fsjAc, 80, 333333, Mohamed, Elsayeh, Sadaka Garia for booody, 0, 01010181734, EG, Alexandria, Alasfraaa, Abd allah ibn masoud st, ?, 78998, test, 2024-02-29 13:10:30, usd, 2024-02-29 13:10:33, 2024-02-29 13:10:33))
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'updated_at' in 'field list' (Connection: mysql, SQL: insert into `donations` (`donor_id`, `stripe_source_id`, `stripe_transaction_id`, `payment_total`, `project_id`, `donor_billing_first_name`, `donor_billing_last_name`, `donor_billing_comment`, `anonymous_donation`, `donor_billing_phone`, `donor_billing_country`, `donor_billing_city`, `donor_billing_state`, `donor_billing_address_1`, `donor_billing_zip`, `payment_mode`, `completed_date`, `payment_currency`, `updated_at`, `created_at`) values (1572, pm_1Op9TgGSVOIDq2nF61TZbZTk, pi_3Op9TtGSVOIDq2nF3Zk1CmXA, 80, 333333, Mohamed, Elsayeh, Sadaka Garia for booody, 0, 01010181734, EG, Alexandria, Alasfraaa, Abd allah ibn masoud st, 78998, test, 2024-02-29 13:17:02, usd, 2024-02-29 13:17:04, 2024-02-29 13:17:04))

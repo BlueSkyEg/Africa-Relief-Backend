@@ -10,12 +10,12 @@ use Stripe\Exception\ApiErrorException;
 class CreateCustomerService extends BaseStripeService
 {
 
-    public function create(): JsonResponse
+    public function create(string $name, string $email): JsonResponse
     {
         try {
             $customer =  $this->stripe->customers->create([
-                'name' => $this->user->name,
-                'email' => $this->user->email
+                'name' => $name,
+                'email' => $email
             ]);
 
             return response()->api(true, 'Customer created successfully', ['customerId' => $customer->id]);
