@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\ServiceProvider;
+use Stripe\Stripe;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -20,6 +21,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        Stripe::setApiKey(env('STRIPE_SECRET'));
+
         Response::macro('api', function (bool $success, string $message, $data = null, $errors = null) {
             return Response::json([
                 'success' => $success,

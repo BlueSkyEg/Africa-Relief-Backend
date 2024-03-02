@@ -6,13 +6,15 @@ use App\Http\Controllers\Controller;
 use App\Models\Donation;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Stripe\Stripe;
 use Stripe\StripeClient;
 
 class WebhookController extends Controller
 {
     public function __invoke()
     {
-        $stripe = new StripeClient(env('STRIPE_SECRET'));
+
+//        $stripe = new StripeClient(env('STRIPE_SECRET'));
 
         // This is your Stripe CLI webhook secret for testing your endpoint locally.
         $endpoint_secret = env('STRIPE_WEBHOOK_SECRET');

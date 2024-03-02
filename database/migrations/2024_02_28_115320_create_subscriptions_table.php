@@ -14,15 +14,16 @@ return new class extends Migration
         Schema::create('subscriptions', function (Blueprint $table) {
             $table->id();
             $table->foreignId('donor_id')->nullable()->constrained();
-            $table->string('period')->nullable();
-            $table->string('recurring_amount')->nullable();
-            $table->string('initial_amount')->nullable();
+            $table->foreignId('donation_form_id')->nullable()->constrained();
+            $table->string('period', 20)->nullable();
+            $table->decimal('initial_amount', 18, 10)->nullable();
+            $table->decimal('recurring_amount', 18, 10)->nullable();
             $table->string('stripe_subscription_id')->nullable();
-            $table->string('parent_payment_id')->nullable();
-            $table->string('created')->nullable();
-            $table->string('expiration')->nullable();
-            $table->string('status')->nullable();
-            $table->text('notes')->nullable();
+            $table->bigInteger('parent_payment_id')->nullable();
+            $table->dateTime('created')->nullable();
+            $table->dateTime('expiration')->nullable();
+            $table->string('status', 20)->nullable();
+            $table->longText('notes')->nullable();
         });
     }
 

@@ -13,7 +13,6 @@ class BaseStripeService
 
     public function __construct()
     {
-        Stripe::setApiKey(env('STRIPE_SECRET'));
         $this->stripe = new StripeClient(env('STRIPE_SECRET'));
         $this->user = User::find(3);
     }
