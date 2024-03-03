@@ -14,10 +14,10 @@ class Donation extends Model
     protected $fillable = [
         'donor_id',
         'subscription_id',
+        'donation_form_id',
         'stripe_source_id',
         'stripe_transaction_id',
         'payment_amount',
-        'donation_form_id',
         'payment_currency',
         'donor_billing_phone',
         'donor_billing_country',
@@ -29,9 +29,12 @@ class Donation extends Model
         'donor_billing_zip',
         'donor_billing_comment',
         'completed_date',
+        'status',
         'anonymous_donation',
         'payment_mode',
         'payment_donor_ip',
         'cs_exchange_rate'
     ];
+
+
 }

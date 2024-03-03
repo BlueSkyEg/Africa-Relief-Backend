@@ -8,12 +8,9 @@ use App\Models\User;
 
 class BaseStripeService
 {
-    protected StripeClient $stripe;
-    protected User $user;
 
-    public function __construct()
+    public function __construct(protected StripeClient $stripe)
     {
         $this->stripe = new StripeClient(env('STRIPE_SECRET'));
-        $this->user = User::find(3);
     }
 }
