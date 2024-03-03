@@ -24,7 +24,7 @@ class PaymentMethodController extends Controller
 
     public function savePaymentMethod(SavePaymentMethodService $savePaymentMethodService, SavePaymentMethodRequest $request): JsonResponse
     {
-        return $savePaymentMethodService->save($request->paymentMethodId);
+        return $savePaymentMethodService->SavePaymentMethod($request->paymentMethodId, $request->stripeCustomerId);
     }
 
     public function updatePaymentMethod(UpdatePaymentMethodService $updatePaymentMethodService, UpdatePaymentMethodRequest $request): JsonResponse

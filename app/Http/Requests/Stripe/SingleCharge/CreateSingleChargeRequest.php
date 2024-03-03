@@ -29,8 +29,9 @@ class CreateSingleChargeRequest extends FormRequest
             'name' => 'required_with:paymentMethodId|string',
             'email' => 'required_with:paymentMethodId|string',
             'billingComment' => 'required_with:paymentMethodId|string',
-            'anonymousDonation' => 'required_with:paymentMethodId|in:0,1',
-            'paymentIntentId' => 'required_without_all:paymentMethodId,amount|string'
+            'paymentIntentId' => 'required_without_all:paymentMethodId,amount|string',
+            'anonymousDonation' => 'required_with:paymentMethodId|boolean',
+            'savePaymentMethod' => 'required|boolean'
         ];
     }
 }

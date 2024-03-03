@@ -25,7 +25,11 @@ class CreateSubscriptionRequest extends FormRequest
             'paymentMethodId' => 'required|string',
             'amount' => 'required|numeric',
             'recurringPeriod' => 'required|in:day,week,month,quarter,year',
-            'subscriptionName' => 'required|string'
+            'subscriptionName' => 'required|string',
+            'name' => 'required|string',
+            'email' => 'required|email',
+            'donationFormId' => 'required|string',
+            'anonymousDonation' => 'required|boolean'
         ];
     }
 }

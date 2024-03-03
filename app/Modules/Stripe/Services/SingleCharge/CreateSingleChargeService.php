@@ -23,7 +23,7 @@ class CreateSingleChargeService extends BaseStripeService
     public function create(CreateSingleChargeRequest $request): JsonResponse
     {
         if (isset($request->paymentMethodId)) {
-            $donor = $this->getDonorService->getOrCreateDonor($request->name, $request->email);
+            $donor = $this->getDonorService->getOrCreateDonor($request->name, $request->email, $request->paymentMethodId, $request->savePaymentMethod);
 
             return $this->createPaymentIntent($request, $donor);
         }

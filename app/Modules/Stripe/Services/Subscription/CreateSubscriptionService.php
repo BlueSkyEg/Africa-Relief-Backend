@@ -4,33 +4,26 @@ namespace App\Modules\Stripe\Services\Subscription;
 
 use App\Http\Requests\Stripe\Subscription\CreateSubscriptionRequest;
 use App\Models\Donor;
+use App\Modules\Donor\Services\GetDonorService;
 use App\Modules\Stripe\Services\BaseStripeService;
-use App\Modules\Stripe\Services\PaymentMethod\SavePaymentMethodService;
 use Illuminate\Http\JsonResponse;
 use Stripe\Exception\ApiErrorException;
 use Stripe\PaymentIntent;
 use Stripe\Price;
+use Stripe\StripeClient;
 use Stripe\Subscription;
 
 class CreateSubscriptionService extends BaseStripeService
 {
+    public function __construct(StripeClient $stripe, private GetDonorService $getDonorService)
+    {
+        parent::__construct($stripe);
+    }
 
     public function create(CreateSubscriptionRequest $request): JsonResponse
     {
-        $isUser = auth('sanctum')->check();
-        if (!$isUser) {
-            $donor = Donor::where('email', $request->email)->first();
-            if (!$donor) {
-                $stripeCustomer = $this->createCustomer($request->firstName .' '. $request->lastName, $request->email);
+        $donor = $this->getDonorService->getOrCreateDonor($request->name, $request->email, $request->paymentMethodId, true);
 
-                $donor = Donor::create([
-                    'email' => $request->email,
-                    'stripe_customer_id' => $stripeCustomer->id
-                ]);
-
-                (new SavePaymentMethodService())->save($request->paymentMethodId, $donor->stripe_customer_id);
-            }
-        }
         $priceResult = $this->createProductPrice($request);
 
         if (is_string($priceResult)) {
@@ -49,7 +42,9 @@ class CreateSubscriptionService extends BaseStripeService
             return response()->api(false, $paymentIntentResult);
         }
 
-        return $this->generateIntentResponse($paymentIntentResult);
+
+
+        return $this->generateIntentResponse($paymentIntentResult, $subscriptionResult,);
     }
 
     private function createProductPrice(CreateSubscriptionRequest $request): Price|string
@@ -91,10 +86,10 @@ class CreateSubscriptionService extends BaseStripeService
         }
     }
 
-    private function generateIntentResponse(PaymentIntent $intent): JsonResponse
+    private function generateIntentResponse(PaymentIntent $intent, $subscriptionResult): JsonResponse
     {
         if ($intent->status === 'succeeded') {
-            return response()->api(true, 'Subscription created successfully', $intent);
+            return response()->api(true, 'Subscription created successfully', ['intent' => $intent, 'subscription' => $subscriptionResult]);
         }
 
         if ($intent->status === 'requires_action') {

@@ -22,7 +22,8 @@ class SavePaymentMethodRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'paymentMethodId' => 'required|string'
+            'paymentMethodId' => 'required|string',
+            'stripeCustomerId' => 'required|string'
         ];
     }
 }
