@@ -4,6 +4,7 @@ namespace App\Modules\Stripe\Services\Subscription;
 
 use App\Http\Requests\Stripe\Subscription\CreateSubscriptionRequest;
 use App\Models\Donor;
+use App\Modules\Donation\Services\CreateDonationService;
 use App\Modules\Donor\Services\GetDonorService;
 use App\Modules\Stripe\Services\BaseStripeService;
 use Illuminate\Http\JsonResponse;
@@ -11,18 +12,22 @@ use Stripe\Exception\ApiErrorException;
 use Stripe\PaymentIntent;
 use Stripe\Price;
 use Stripe\StripeClient;
-use Stripe\Subscription;
 
 class CreateSubscriptionService extends BaseStripeService
 {
-    public function __construct(StripeClient $stripe, private GetDonorService $getDonorService)
+    public function __construct(
+        protected StripeClient $stripe,
+        private GetDonorService $getDonorService,
+        private CreateDonationService $createDonationService,
+        private \App\Modules\Subscription\Services\CreateSubscriptionService $createSubscriptionService
+    )
     {
         parent::__construct($stripe);
     }
 
     public function create(CreateSubscriptionRequest $request): JsonResponse
     {
-        $donor = $this->getDonorService->getOrCreateDonor($request->name, $request->email, $request->paymentMethodId, true);
+        $donor = $this->getDonorService->getOrCreateDonor($request->name, $request->email, $request->paymentMethodId, $request->savePaymentMethod);
 
         $priceResult = $this->createProductPrice($request);
 
@@ -42,9 +47,9 @@ class CreateSubscriptionService extends BaseStripeService
             return response()->api(false, $paymentIntentResult);
         }
 
-
-
-        return $this->generateIntentResponse($paymentIntentResult, $subscriptionResult,);
+        $donation = $this->createDonationService->createDonation($subscriptionResult->latest_invoice->payment_intent, $donor, $request->donationFormId, $request->donorBillingComment, $request->anonymousDonation);
+        $this->createSubscriptionService->createSubscription($subscriptionResult, $donor, $request->donationFormId, $donation->id);
+        return $this->generateIntentResponse($paymentIntentResult, $subscriptionResult);
     }
 
     private function createProductPrice(CreateSubscriptionRequest $request): Price|string
@@ -61,13 +66,13 @@ class CreateSubscriptionService extends BaseStripeService
         }
     }
 
-    private function createSubscription(CreateSubscriptionRequest $request, string $priceId, Donor $donor): Subscription|string
+    private function createSubscription(CreateSubscriptionRequest $request, string $priceId, Donor $donor): \Stripe\Subscription|string
     {
         try {
             return $this->stripe->subscriptions->create([
                 'customer' => $donor->stripe_customer_id,
                 'items' => [['price' => $priceId]],
-                'expand' => ['latest_invoice.payment_intent'],
+                'expand' => ['latest_invoice.payment_intent.payment_method'],
                 'payment_behavior' => 'default_incomplete',
                 'default_payment_method' => $request->paymentMethodId,
                 'payment_settings' => ['save_default_payment_method' => 'on_subscription'],
@@ -89,7 +94,7 @@ class CreateSubscriptionService extends BaseStripeService
     private function generateIntentResponse(PaymentIntent $intent, $subscriptionResult): JsonResponse
     {
         if ($intent->status === 'succeeded') {
-            return response()->api(true, 'Subscription created successfully', ['intent' => $intent, 'subscription' => $subscriptionResult]);
+            return response()->api(true, 'Subscription created successfully', $intent);
         }
 
         if ($intent->status === 'requires_action') {
@@ -100,12 +105,5 @@ class CreateSubscriptionService extends BaseStripeService
         }
 
         return response()->api(false, 'Invalid Payment Intent');
-    }
-
-    private function createCustomer(string $name, string $email) {
-        return $this->stripe->customers->create([
-            'name' => $name,
-            'email' => $email
-        ]);
     }
 }

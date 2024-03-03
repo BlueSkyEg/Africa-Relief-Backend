@@ -29,7 +29,9 @@ class CreateSubscriptionRequest extends FormRequest
             'name' => 'required|string',
             'email' => 'required|email',
             'donationFormId' => 'required|string',
-            'anonymousDonation' => 'required|boolean'
+            'donorBillingComment' => 'required|string',
+            'anonymousDonation' => 'required|boolean',
+            'savePaymentMethod' => 'required|boolean'
         ];
     }
 }

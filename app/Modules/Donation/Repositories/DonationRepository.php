@@ -4,11 +4,14 @@ namespace App\Modules\Donation\Repositories;
 
 use App\Models\Donation;
 use App\Models\Donor;
-use Carbon\Carbon;
 use Stripe\PaymentIntent;
 
 class DonationRepository
 {
+    public function getDonationById(int $donationId)
+    {
+        return Donation::where('id', $donationId)->first();
+    }
     public function createDonation(PaymentIntent $paymentIntent, Donor $donor, int $donationFormId, string $donorBillingComment, int $anonymousDonation)
     {
         return Donation::create([
@@ -28,7 +31,7 @@ class DonationRepository
             'donor_billing_address_2' => $paymentIntent->payment_method->billing_details->address->line2,
             'donor_billing_zip' => $paymentIntent->payment_method->billing_details->address->postal_code,
             'payment_mode' => $paymentIntent->livemode ? 'live' : 'test',
-            'completed_date' => Carbon::createFromTimestamp($paymentIntent->created)->format('Y-m-d H:i:s'),
+            'completed_date' => $paymentIntent->created,
             'status' => $paymentIntent->status,
             'payment_currency' => $paymentIntent->currency
         ]);
@@ -36,9 +39,18 @@ class DonationRepository
 
     public function updateDonationStatus(string $paymentIntentId, string $paymentIntentStatus)
     {
-        return Donation::where('stripe_transaction_id', $paymentIntentId)
-            ->update([
-                'status' => $paymentIntentStatus
-            ]);
+        $donation = Donation::where('stripe_transaction_id', $paymentIntentId)->first();
+        $donation->status = $paymentIntentStatus;
+        $donation->save();
+        return $donation;
+    }
+
+    public function updateSubscriptionParentDonation(int $parentDonationId, int $subscriptionId, string $status)
+    {
+        $donation = $this->getDonationById($parentDonationId);
+        $donation->subscription_id = $subscriptionId;
+        $donation->status = $status;
+        $donation->save();
+        return $donation;
     }
 }

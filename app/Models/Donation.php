@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -36,5 +38,10 @@ class Donation extends Model
         'cs_exchange_rate'
     ];
 
-
+    protected function completedDate(): Attribute
+    {
+        return Attribute::make(
+            set: fn (string $value) => Carbon::createFromTimestamp($value)->format('Y-m-d H:i:s'),
+        );
+    }
 }

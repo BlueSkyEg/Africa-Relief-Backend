@@ -20,8 +20,8 @@ return new class extends Migration
             $table->decimal('recurring_amount', 18, 10)->nullable();
             $table->string('stripe_subscription_id')->nullable();
             $table->bigInteger('parent_payment_id')->nullable();
-            $table->dateTime('created')->nullable();
-            $table->dateTime('expiration')->nullable();
+            $table->dateTime('created_at')->nullable();
+            $table->dateTime('expiration_at')->nullable();
             $table->string('status', 20)->nullable();
             $table->longText('notes')->nullable();
         });

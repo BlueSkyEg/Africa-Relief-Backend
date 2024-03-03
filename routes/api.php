@@ -42,4 +42,4 @@ Route::controller(SubscriptionController::class)->prefix('subscription')->group(
     Route::get('/retrieve/{subscriptionId}', 'retrieveSubscription');
 });
 
-Route::post('/stripe-webhook', WebhookController::class);
+Route::post('/stripe-webhook', [WebhookController::class, 'listenStripeWebhook']);

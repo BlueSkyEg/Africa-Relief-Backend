@@ -14,4 +14,9 @@ class UpdateDonationService
     {
         return $this->donationRepository->updateDonationStatus($paymentIntentId, $status);
     }
+
+    public function updateSubscriptionParentDonation(int $parentDonationId, int $subscriptionId, string $status)
+    {
+        return $this->donationRepository->updateSubscriptionParentDonation($parentDonationId, $subscriptionId, $status);
+    }
 }
