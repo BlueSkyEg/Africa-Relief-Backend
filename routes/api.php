@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Stripe\CustomerController;
 use App\Http\Controllers\Stripe\PaymentMethodController;
 use App\Http\Controllers\Stripe\SingleChargeController;
@@ -42,3 +43,7 @@ Route::controller(SubscriptionController::class)->prefix('subscription')->group(
 });
 
 Route::post('/stripe-webhook', [WebhookController::class, 'listenStripeWebhook']);
+
+Route::controller(AuthController::class)->group(function () {
+    Route::post('/login', 'login');
+});
