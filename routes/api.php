@@ -39,7 +39,6 @@ Route::controller(SingleChargeController::class)->prefix('single-charge')->group
 Route::controller(SubscriptionController::class)->prefix('subscription')->group(function () {
     Route::post('/create', 'createSubscription');
     Route::post('/cancel', 'cancelSubscription');
-    Route::get('/retrieve/{subscriptionId}', 'retrieveSubscription');
 });
 
 Route::post('/stripe-webhook', [WebhookController::class, 'listenStripeWebhook']);

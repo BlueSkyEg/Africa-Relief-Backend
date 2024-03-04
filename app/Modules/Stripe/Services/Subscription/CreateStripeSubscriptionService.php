@@ -7,19 +7,20 @@ use App\Models\Donor;
 use App\Modules\Donation\Services\CreateDonationService;
 use App\Modules\Donor\Services\GetDonorService;
 use App\Modules\Stripe\Services\BaseStripeService;
+use App\Modules\Subscription\Services\CreateSubscriptionService;
 use Illuminate\Http\JsonResponse;
 use Stripe\Exception\ApiErrorException;
 use Stripe\PaymentIntent;
 use Stripe\Price;
 use Stripe\StripeClient;
 
-class CreateSubscriptionService extends BaseStripeService
+class CreateStripeSubscriptionService extends BaseStripeService
 {
     public function __construct(
         protected StripeClient $stripe,
         private GetDonorService $getDonorService,
         private CreateDonationService $createDonationService,
-        private \App\Modules\Subscription\Services\CreateSubscriptionService $createSubscriptionService
+        private CreateSubscriptionService $createSubscriptionService
     )
     {
         parent::__construct($stripe);
@@ -49,7 +50,7 @@ class CreateSubscriptionService extends BaseStripeService
 
         $donation = $this->createDonationService->createDonation($subscriptionResult->latest_invoice->payment_intent, $donor, $request->donationFormId, $request->donorBillingComment, $request->anonymousDonation);
         $this->createSubscriptionService->createSubscription($subscriptionResult, $donor, $request->donationFormId, $donation->id);
-        return $this->generateIntentResponse($paymentIntentResult, $subscriptionResult);
+        return $this->generateIntentResponse($paymentIntentResult);
     }
 
     private function createProductPrice(CreateSubscriptionRequest $request): Price|string
@@ -75,7 +76,7 @@ class CreateSubscriptionService extends BaseStripeService
                 'expand' => ['latest_invoice.payment_intent.payment_method'],
                 'payment_behavior' => 'default_incomplete',
                 'default_payment_method' => $request->paymentMethodId,
-                'payment_settings' => ['save_default_payment_method' => 'on_subscription'],
+                'payment_settings' => ['save_default_payment_method' => 'on_subscription']
             ]);
         } catch (ApiErrorException $e) {
             return $e->getMessage();
@@ -91,7 +92,7 @@ class CreateSubscriptionService extends BaseStripeService
         }
     }
 
-    private function generateIntentResponse(PaymentIntent $intent, $subscriptionResult): JsonResponse
+    private function generateIntentResponse(PaymentIntent $intent): JsonResponse
     {
         if ($intent->status === 'succeeded') {
             return response()->api(true, 'Subscription created successfully', $intent);

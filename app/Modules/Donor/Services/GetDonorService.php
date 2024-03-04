@@ -22,6 +22,9 @@ class GetDonorService
     {
         $donor = $this->donorRepository->getDonorByEmail($email);
         if ($donor) {
+            if ($savePaymentMethod) {
+                $this->savePaymentMethodService->SavePaymentMethod($paymentMethodId, $donor->stripe_customer_id);
+            }
             return $donor;
         }
 

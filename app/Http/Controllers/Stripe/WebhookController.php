@@ -3,15 +3,9 @@
 namespace App\Http\Controllers\Stripe;
 
 use App\Http\Controllers\Controller;
-use App\Models\Donation;
 use App\Modules\Donation\Services\GetDonationService;
 use App\Modules\Donation\Services\UpdateDonationService;
-use App\Modules\Subscription\Services\GetSubscriptionService;
 use App\Modules\Subscription\Services\UpdateSubscriptionService;
-use Carbon\Carbon;
-use Illuminate\Http\Request;
-use Stripe\Stripe;
-use Stripe\StripeClient;
 
 class WebhookController extends Controller
 {
@@ -63,6 +57,11 @@ class WebhookController extends Controller
                 'completed_date' => $invoice->created,
             ]);
             $newRecurringDonation->save();
+        }
+
+        if ($event->type === 'customer.subscription.deleted') {
+            $subscription = $event->data->object;
+            $this->updateSubscriptionService->updateSubscriptionStatus($subscription->id, 'canceled');
         }
 
         http_response_code(200);
