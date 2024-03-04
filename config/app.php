@@ -159,6 +159,7 @@ return [
         /*
          * Package Service Providers...
          */
+        MikeMcLin\WpPassword\WpPasswordProvider::class,
 
         /*
          * Application Service Providers...

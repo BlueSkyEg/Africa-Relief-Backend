@@ -4,26 +4,25 @@ namespace App\Modules\Authentication\Services;
 
 use App\Http\Requests\Auth\LoginRequest;
 use App\Modules\User\Services\GetUserService;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
+use MikeMcLin\WpPassword\Facades\WpPassword;
 
 class AuthenticateService
 {
-    public function __construct(
-        private GetUserService $getUserService
-    )
+    public function __construct(private GetUserService $getUserService)
     {
     }
 
     public function login(LoginRequest $request)
     {
-        if (! Auth::attempt($request->validated())) {
+        $user = $this->getUserService->getUserByEmail($request->email);
+
+        if (! ($user && WpPassword::check($request->password, $user?->password))) {
             throw ValidationException::withMessages([
-                'email' => __('auth.failed'),
+                'email' => 'Invalid credentials',
             ]);
         }
 
-        $user = $this->getUserService->getUserByEmail($request->email);
         $token = $user->createToken('apiToken')->plainTextToken;
 
         return response()->api(true, 'User logged successfully', ['user' => $user, 'accessToken' => $token]);
