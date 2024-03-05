@@ -15,7 +15,7 @@ class AuthenticateService
 
     public function login(LoginRequest $request)
     {
-        $user = $this->getUserService->getUserByEmail($request->email);
+        $user = $this->getUserService->getUserByEmailOrUsername($request->email);
 
         if (! ($user && WpPassword::check($request->password, $user?->password))) {
             throw ValidationException::withMessages([

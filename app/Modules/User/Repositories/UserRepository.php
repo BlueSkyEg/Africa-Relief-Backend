@@ -15,11 +15,12 @@ class UserRepository
 
     public function getUserByEmail(string $email)
     {
-        try {
-            return User::where('email', $email)->first();
-        } catch (\Exception $e) {
-            return response()->api(false, 'user not found', $e->getMessage());
-        }
+        return User::where('email', $email)->first();
+    }
+
+    public function getUserByEmailOrUsername(string $emailOrUsername)
+    {
+        return User::where('email', $emailOrUsername)->orWhere('username', $emailOrUsername)->first();
     }
 
     public function updateUserPassword(User $user, string $newPassword)

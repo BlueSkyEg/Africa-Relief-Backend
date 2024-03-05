@@ -19,4 +19,9 @@ class GetUserService
     {
         return $this->userRepository->getUserByEmail($email);
     }
+
+    public function getUserByEmailOrUsername(string $emailOrUsername)
+    {
+        return $this->userRepository->getUserByEmailOrUsername($emailOrUsername);
+    }
 }
