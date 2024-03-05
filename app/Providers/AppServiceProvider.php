@@ -23,13 +23,13 @@ class AppServiceProvider extends ServiceProvider
     {
         Stripe::setApiKey(env('STRIPE_SECRET'));
 
-        Response::macro('api', function (bool $success, string $message, $data = null, $errors = null) {
+        Response::macro('api', function (bool $success, string $message, $data = null, $errors = null, $status = 200) {
             return Response::json([
                 'success' => $success,
                 'message' => $message,
                 'data' => $data,
                 'errors' => $errors
-            ]);
+            ], $status);
         });
     }
 }

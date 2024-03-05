@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class EmailVerificationService
 {
     // Send a new email verification notification.
-    public function sendNewEmailVerification(Request $request)
+    public function resendEmailVerificationNotification(Request $request)
     {
         if ($request->user()->hasVerifiedEmail()) {
             return response()->api(false, 'email already verified');
@@ -25,7 +25,7 @@ class EmailVerificationService
     {
         if ($request->user()->hasVerifiedEmail()) {
             return redirect()->intended(
-                env('FRONTEND_URL').'/home?verified=1'
+                config('app.frontend_url').'/home?verified=1'
             );
         }
 
@@ -34,7 +34,7 @@ class EmailVerificationService
         }
 
         return redirect()->intended(
-            env('FRONTEND_URL').'/home?verified=1'
+            config('app.frontend_url').'/home?verified=1'
         );
     }
 }

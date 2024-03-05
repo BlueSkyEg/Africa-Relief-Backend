@@ -47,7 +47,7 @@ class AuthController extends Controller
     // Send a new email verification notification.
     public function sendEmailVerificationNotification(Request $request)
     {
-        return $this->emailVerificationService->sendNewEmailVerification($request);
+        return $this->emailVerificationService->resendEmailVerificationNotification($request);
     }
 
     public function verifyEmail(EmailVerificationRequest $request)

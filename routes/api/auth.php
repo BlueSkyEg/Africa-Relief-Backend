@@ -6,13 +6,14 @@ use App\Http\Controllers\AuthController;
 Route::controller(AuthController::class)->group(function () {
     Route::post('/login', 'login');
     Route::post('/register', 'register');
-    Route::post('/send-password-reset-link', 'sendPasswordResetLink');
-    Route::post('/create-new-password', 'createNewPassword');
+    Route::post('/forgot-password', 'sendPasswordResetLink');
+    Route::post('/reset-password', 'createNewPassword');
 });
 
 Route::controller(AuthController::class)->middleware('auth:sanctum')->group(function () {
     Route::post('/logout', 'logout');
     Route::post('/logout-all-devices', 'logoutFromAllDevices');
-    Route::post('/send-new-email-verification', 'sendEmailVerificationNotification');
+    Route::get('/verify-email/{id}/{hash}', 'verifyEmail')->name('verification.verify');
+    Route::post('/email/verification-notification', 'resendEmailVerificationNotification');
     Route::post('/change-password', 'changePassword');
 });
