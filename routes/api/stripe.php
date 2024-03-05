@@ -13,17 +13,14 @@ Route::controller(PaymentMethodController::class)->prefix('payment-method')->gro
     Route::put('/update', 'updatePaymentMethod');
     Route::get('/retrieve/all', 'retrieveAllPaymentMethods');
     Route::get('/retrieve/{paymentMethodId}', 'retrievePaymentMethod');
-    Route::put('/default', 'updateDefaultPaymentMethod');
     Route::delete('/delete/{paymentMethodId}', 'deletePaymentMethod');
 });
 
-Route::controller(SingleChargeController::class)->prefix('single-charge')->group(function () {
-    Route::post('/create', 'createSingleCharge');
-});
+Route::post('/create-single-charge', [SingleChargeController::class, 'createSingleCharge']);
 
 Route::controller(SubscriptionController::class)->prefix('subscription')->group(function () {
-    Route::post('/create', 'createSubscription');
-    Route::post('/cancel', 'cancelSubscription');
+    Route::post('/create-subscription', [SubscriptionController::class, 'createSubscription']);
+    Route::post('/cancel-subscription', [SubscriptionController::class, 'cancelSubscription']);
 });
 
 Route::post('/stripe-webhook', [WebhookController::class, 'listenStripeWebhook']);

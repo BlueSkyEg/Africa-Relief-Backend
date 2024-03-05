@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\DonationController;
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -16,3 +19,5 @@ require __DIR__ . '/api/auth.php';
 
 // Stripe
 require __DIR__ . '/api/stripe.php';
+
+Route::get('/user/donations', [DonationController::class, 'getUserDonations']);

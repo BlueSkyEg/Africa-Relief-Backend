@@ -12,6 +12,12 @@ class DonationRepository
     {
         return Donation::where('id', $donationId)->first();
     }
+
+	public function getUserDonations($user)
+	{
+		return $user->donations;
+	}
+
     public function createDonation(PaymentIntent $paymentIntent, Donor $donor, int $donationFormId, string $donorBillingComment, int $anonymousDonation)
     {
         return Donation::create([
