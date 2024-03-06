@@ -38,4 +38,9 @@ class User extends Authenticatable implements MustVerifyEmail
 	{
 		return $this->hasManyThrough(Donation::class, Donor::class);
 	}
+
+	public function subscription(): HasManyThrough
+	{
+		return $this->hasManyThrough(Subscription::class, Donor::class);
+	}
 }

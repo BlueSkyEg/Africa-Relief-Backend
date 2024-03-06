@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthController;
 
 Route::controller(AuthController::class)->group(function () {
     Route::post('/login', 'login');
+    Route::post('/new-login', 'newLogin');
     Route::post('/register', 'register');
     Route::post('/forgot-password', 'sendPasswordResetLink');
     Route::post('/reset-password', 'createNewPassword');

@@ -22,7 +22,7 @@ class CancelSubscriptionRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'subscriptionId' => 'required|string'
+            'subscriptionId' => 'required|string|exists:subscriptions'
         ];
     }
 }

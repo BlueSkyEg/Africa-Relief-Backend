@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DonationController;
+use App\Http\Controllers\SubscriptionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,4 +21,8 @@ require __DIR__ . '/api/auth.php';
 // Stripe
 require __DIR__ . '/api/stripe.php';
 
-Route::get('/user/donations', [DonationController::class, 'getUserDonations']);
+Route::middleware('auth:sanctum')->group(function () {
+    Route::get('/user/donations', [DonationController::class, 'getUserDonations']);
+    Route::get('/user/subscriptions', [SubscriptionController::class, 'getUserSubscriptions']);
+    Route::Delete('/user/subscription', [SubscriptionController::class, 'cancelUserSubscription']);
+});

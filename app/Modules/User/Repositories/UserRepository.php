@@ -4,7 +4,7 @@ namespace App\Modules\User\Repositories;
 
 use App\Http\Requests\Auth\RegisterRequest;
 use App\Models\User;
-use MikeMcLin\WpPassword\Facades\WpPassword;
+use Illuminate\Support\Facades\Hash;
 
 class UserRepository
 {
@@ -29,7 +29,7 @@ class UserRepository
     // Update user password
     public function updateUserPassword(User $user, string $newPassword)
     {
-        $user->password = WpPassword::make($newPassword);
+        $user->password = Hash::make($newPassword);
         $user->save();
         return $user;
     }
@@ -40,7 +40,7 @@ class UserRepository
         return User::create([
             'name' => $request->name,
             'email' => $request->email,
-            'password' => WpPassword::make($request->password),
+            'password' => Hash::make($request->password),
         ]);
     }
 }

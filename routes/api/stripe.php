@@ -7,8 +7,9 @@ use App\Http\Controllers\Stripe\WebhookController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::controller(PaymentMethodController::class)->prefix('payment-method')->group(function () {
-    Route::get('/setup-intent', 'setupPaymentMethodIntent');
+    Route::get('/payment-method/setup-intent', [PaymentMethodController::class, 'setupPaymentMethodIntent']);
+
+Route::controller(PaymentMethodController::class)->middleware('auth:sanctum')->prefix('user/payment-method')->group(function () {
     Route::post('/save', 'savePaymentMethod');
     Route::put('/update', 'updatePaymentMethod');
     Route::get('/retrieve/all', 'retrieveAllPaymentMethods');

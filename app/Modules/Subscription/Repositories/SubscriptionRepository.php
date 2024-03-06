@@ -4,9 +4,15 @@ namespace App\Modules\Subscription\Repositories;
 
 use App\Models\Donor;
 use App\Models\Subscription;
+use Illuminate\Http\Request;
 
 class SubscriptionRepository
 {
+    public function getUserSubscriptions($user)
+    {
+        return $user->subscriptions;
+    }
+
     public function getSubscriptionByStripeSubscriptionId(string $stripeSubscriptionId)
     {
         return Subscription::where('stripe_subscription_id', $stripeSubscriptionId)->first();

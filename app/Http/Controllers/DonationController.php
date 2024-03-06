@@ -14,6 +14,5 @@ class DonationController extends Controller
 	public function getUserDonations()
 	{
 		return $this->getDonationService->getUserDonations();
-//		return auth('sanctum')->user()->donations;
 	}
 }
