@@ -34,7 +34,7 @@ class Handler extends ExceptionHandler
     public function render($request, Throwable $e)
     {
         if ($e instanceof ValidationException && $request->expectsJson()) {
-            return response()->api(false, 'validation error', null, $e->errors(), 422);
+            return response()->api(false, 'validation error', null, $e->errors());
         }
 
         if ($e instanceof AuthenticationException && $request->expectsJson() && $request->is('api/*')) {

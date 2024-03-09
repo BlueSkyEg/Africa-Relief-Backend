@@ -41,6 +41,10 @@ class UserRepository
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
+            'username' => null,
+            'phone' => null,
+            'address' => null,
+            'img' => null
         ]);
     }
 }

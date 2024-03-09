@@ -25,7 +25,7 @@ class AuthServiceProvider extends ServiceProvider
     public function boot(): void
     {
 	    VerifyEmail::toMailUsing(function (object $notifiable, string $url) {
-			$frontUrl = config('app.frontend_url')."/verify-email?emailVerifyUrl=".$url;
+			$frontUrl = config('app.frontend_url')."/verify-email?verifyEmailUrl=".$url;
 
 		    return (new MailMessage)
 			    ->subject('Verify Email Address')
@@ -34,7 +34,7 @@ class AuthServiceProvider extends ServiceProvider
 	    });
 
         ResetPassword::createUrlUsing(function (object $notifiable, string $token) {
-            return config('app.frontend_url')."/reset-password/$token?email={$notifiable->getEmailForPasswordReset()}";
+            return config('app.frontend_url')."/reset-password?token=$token&email={$notifiable->getEmailForPasswordReset()}";
         });
     }
 }

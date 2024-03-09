@@ -24,17 +24,13 @@ class EmailVerificationService
     public function verifyEmail(EmailVerificationRequest $request)
     {
         if ($request->user()->hasVerifiedEmail()) {
-            return redirect()->intended(
-                config('app.frontend_url').'/home?verified=1'
-            );
+            return response()->api(false, 'email already verified');
         }
 
         if ($request->user()->markEmailAsVerified()) {
             event(new Verified($request->user()));
         }
 
-        return redirect()->intended(
-            config('app.frontend_url').'/home?verified=1'
-        );
+        return response()->api(true, 'email verified successfully');
     }
 }

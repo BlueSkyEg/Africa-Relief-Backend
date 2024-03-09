@@ -7,6 +7,7 @@ use App\Http\Requests\Auth\RegisterRequest;
 use App\Modules\User\Services\CreateUserService;
 use App\Modules\User\Services\GetUserService;
 use App\Modules\User\Services\UpdateUserService;
+use Carbon\Carbon;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -26,7 +27,7 @@ class AuthenticateService
         try {
             if ($user && WpPassword::check($request->password, $user?->password)) {
                 $this->updateUserService->updateUserPassword($user, $request->password);
-            } else if (! Auth::attempt($request->validated())) {
+            } else if (!Auth::attempt($request->validated())) {
                 throw ValidationException::withMessages([
                     'email' => 'Invalid credentials',
                 ]);
@@ -37,9 +38,18 @@ class AuthenticateService
             ]);
         }
 
+        $tokenExpiresAt = Carbon::now()->addMinutes(config('sanctum.expiration'));
         $token = $user->createToken('apiToken')->plainTextToken;
 
-        return response()->api(true, 'User logged in successfully', ['user' => $user, 'accessToken' => $token]);
+        return response()->api(
+            true,
+            'User logged in successfully',
+            [
+                'user' => $user,
+                'accessToken' => $token,
+                'tokenExpiresAt' => $tokenExpiresAt->getTimestampMs()
+            ]
+        );
     }
 
     public function register(RegisterRequest $request)
@@ -49,9 +59,18 @@ class AuthenticateService
         // Send email verification
         event(new Registered($user));
 
+        $tokenExpiresAt = Carbon::now()->addMinutes(config('sanctum.expiration'));
         $token = $user->createToken('apiToken')->plainTextToken;
 
-        return response()->api(true, 'User created successfully', ['user' => $user, 'accessToken' => $token]);
+        return response()->api(
+            true,
+            'User created successfully',
+            [
+                'user' => $user,
+                'accessToken' => $token,
+                'tokenExpiresAt' => $tokenExpiresAt->getTimestampMs()
+            ]
+        );
     }
 
     public function logout(Request $request)
