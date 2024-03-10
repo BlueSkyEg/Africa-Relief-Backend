@@ -15,7 +15,7 @@ class DonationRepository
 
 	public function getUserDonations($user)
 	{
-		return $user->donations;
+        return $user->donations()->where('payment_mode', 'live')->with('donationForm')->get();
 	}
 
     public function createDonation(PaymentIntent $paymentIntent, Donor $donor, int $donationFormId, string $donorBillingComment, int $anonymousDonation)

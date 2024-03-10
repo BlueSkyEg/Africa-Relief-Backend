@@ -10,7 +10,7 @@ class SubscriptionRepository
 {
     public function getUserSubscriptions($user)
     {
-        return $user->subscriptions;
+        return $user->subscriptions->load('donationForm');
     }
 
     public function getSubscriptionByStripeSubscriptionId(string $stripeSubscriptionId)

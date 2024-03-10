@@ -23,9 +23,9 @@ class CreateSingleChargeRequest extends FormRequest
     {
         return [
             'paymentMethodId' => 'required_if:paymentIntentId,null|string',
-            'amount' => 'required_with:paymentMethodId|numeric',
+            'amount' => 'required_with:paymentMethodId|string',
             'paymentDescription' => 'required_with:paymentMethodId|string',
-            'donationFormId' => 'required_with:paymentMethodId|numeric',
+            'donationFormId' => 'required|string|exists:donation_forms,id',
             'name' => 'required_with:paymentMethodId|string',
             'email' => 'required_with:paymentMethodId|string',
             'billingComment' => 'nullable|string',

@@ -18,7 +18,7 @@ return new class extends Migration
             $table->foreignId('donation_form_id')->nullable()->constrained();
             $table->string('stripe_source_id')->nullable();
             $table->string('stripe_transaction_id')->nullable();
-            $table->string('payment_amount')->nullable();
+            $table->decimal('payment_amount', 18, 10)->nullable();
             $table->string('payment_currency')->nullable();
             $table->string('donor_billing_phone')->nullable();
             $table->string('donor_billing_country')->nullable();
@@ -31,7 +31,7 @@ return new class extends Migration
             $table->longText('donor_billing_comment')->nullable();
             $table->dateTime('completed_date')->nullable();
             $table->string('status')->nullable();
-            $table->string('anonymous_donation')->nullable();
+            $table->integer('anonymous_donation')->nullable();
             $table->string('payment_mode')->nullable();
             $table->string('payment_donor_ip')->nullable();
             $table->string('cs_exchange_rate')->nullable();

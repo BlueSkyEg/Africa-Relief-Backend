@@ -23,12 +23,12 @@ class CreateSubscriptionRequest extends FormRequest
     {
         return [
             'paymentMethodId' => 'required|string',
-            'amount' => 'required|numeric',
+            'amount' => 'required|string',
             'recurringPeriod' => 'required|in:day,week,month,quarter,year',
             'subscriptionName' => 'required|string',
             'name' => 'required|string',
             'email' => 'required|email',
-            'donationFormId' => 'required|string',
+            'donationFormId' => 'required|string|exists:donation_forms,id',
             'donorBillingComment' => 'required|string',
             'anonymousDonation' => 'required|boolean',
             'savePaymentMethod' => 'required|boolean'

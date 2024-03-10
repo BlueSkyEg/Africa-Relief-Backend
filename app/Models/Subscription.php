@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Subscription extends Model
 {
@@ -26,6 +27,16 @@ class Subscription extends Model
         'status',
         'notes'
     ];
+
+    protected $hidden = [
+        'donation_form_id',
+        'laravel_through_key'
+    ];
+
+    public function donationForm(): BelongsTo
+    {
+        return $this->belongsTo(DonationForm::class)->select(['id', 'title']);
+    }
 
     protected function createdAt(): Attribute
     {
