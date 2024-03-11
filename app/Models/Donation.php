@@ -59,7 +59,7 @@ class Donation extends Model
     protected function status(): Attribute
     {
         return Attribute::make(
-            get: fn (string $value) => in_array($value, ['succeeded', 'abandoned', 'failed', 'refunded', 'pending']) ? $value : 'pending',
+            get: fn (string $value) => in_array($value, ['succeeded', 'failed', 'refunded']) ? $value : 'incomplete',
         );
     }
 }

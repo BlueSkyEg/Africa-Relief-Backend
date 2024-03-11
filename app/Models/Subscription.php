@@ -38,6 +38,14 @@ class Subscription extends Model
         return $this->belongsTo(DonationForm::class)->select(['id', 'title']);
     }
 
+
+    protected function status(): Attribute
+    {
+        return Attribute::make(
+            get: fn (string $value) => in_array($value, ['active', 'cancelled']) ? $value : 'incomplete',
+        );
+    }
+
     protected function createdAt(): Attribute
     {
         return Attribute::make(
