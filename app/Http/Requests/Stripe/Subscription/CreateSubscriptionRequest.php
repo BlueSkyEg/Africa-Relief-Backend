@@ -29,7 +29,7 @@ class CreateSubscriptionRequest extends FormRequest
             'name' => 'required|string',
             'email' => 'required|email',
             'donationFormId' => 'required|string|exists:donation_forms,id',
-            'donorBillingComment' => 'required|string',
+            'billingComment' => 'required|string',
             'anonymousDonation' => 'required|boolean',
             'savePaymentMethod' => 'required|boolean'
         ];

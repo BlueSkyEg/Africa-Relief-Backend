@@ -42,7 +42,7 @@ class Subscription extends Model
     protected function status(): Attribute
     {
         return Attribute::make(
-            get: fn (string $value) => in_array($value, ['active', 'cancelled']) ? $value : 'incomplete',
+            get: fn (string $value) => in_array($value, ['active', 'canceled']) ? $value : 'incomplete',
         );
     }
 

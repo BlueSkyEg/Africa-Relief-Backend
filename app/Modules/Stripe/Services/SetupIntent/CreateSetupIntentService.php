@@ -13,11 +13,10 @@ class CreateSetupIntentService extends BaseStripeService
     {
         try {
             $intent = $this->stripe->setupIntents->create([
-//                'customer' => $this->user->stripe_id,
                 'payment_method_types' => ['card'],
             ]);
 
-            return response()->api(true, 'intent created successfully', ['clientSecret' => $intent->client_secret]);
+            return response()->api(true, 'intent created successfully', $intent);
         } catch (ApiErrorException $e) {
             return response()->api(false, $e->getMessage());
         }

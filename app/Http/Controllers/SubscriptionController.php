@@ -20,6 +20,6 @@ class SubscriptionController extends Controller
 
     public function cancelUserSubscription(CancelSubscriptionRequest $request)
     {
-        return $this->cancelStripeSubscriptionService->cancel($request->subscriptionId);
+        return $this->cancelStripeSubscriptionService->cancel($request);
     }
 }
