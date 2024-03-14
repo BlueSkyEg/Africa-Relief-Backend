@@ -12,9 +12,9 @@ class CreateDonationService
     {
     }
 
-    public function createDonation(PaymentIntent $paymentIntent, Donor $donor, int $donationFormId, string $donorBillingComment, int $anonymousDonation)
+    public function createDonation(PaymentIntent $paymentIntent, Donor $donor, int $donationFormId, string|null $billingComment, int $anonymousDonation)
     {
-        return $this->donationRepository->createDonation($paymentIntent, $donor, $donationFormId, $donorBillingComment, $anonymousDonation);
+        return $this->donationRepository->createDonation($paymentIntent, $donor, $donationFormId, $billingComment, $anonymousDonation);
     }
 
 }

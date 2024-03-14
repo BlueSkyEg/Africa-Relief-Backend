@@ -45,6 +45,10 @@ class CreateSingleChargeService extends BaseStripeService
 				'confirmation_method' => 'manual',
 				'statement_descriptor' => 'AFRICA-RELIEF.ORG',
 				'expand' => ['customer', 'review', 'payment_method'],
+                'metadata' => [
+                    'Donation Post Id' => '666666',
+                    'Sequential Id' => '666666'
+                ]
 			]);
 
 			$this->createDonationService->createDonation($intent, $donor, $request->donationFormId, $request->billingComment, $request->anonymousDonation);
@@ -62,7 +66,7 @@ class CreateSingleChargeService extends BaseStripeService
 
 			$this->updateDonationService->updateDonationStatus($intent->id, $intent->status);
 
-			return response()->api(true, 'payment created successfully', $intent);
+			return response()->api(true, 'payment created successfully');
 		} catch (ApiErrorException $e) {
 			return response()->api(false, $e->getMessage());
 		}
@@ -71,7 +75,7 @@ class CreateSingleChargeService extends BaseStripeService
 	private function generateIntentResponse(PaymentIntent $intent): JsonResponse
 	{
 		if ($intent->status === 'succeeded') {
-			return response()->api(true, 'payment created successfully', $intent);
+			return response()->api(true, 'payment created successfully');
 		}
 
 		if ($intent->status === 'requires_action') {

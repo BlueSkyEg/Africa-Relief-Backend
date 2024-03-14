@@ -19,7 +19,7 @@ class DonationRepository
 //        return $user->donations()->where('payment_mode', 'live')->with('donationForm')->get();
 	}
 
-    public function createDonation(PaymentIntent $paymentIntent, Donor $donor, int $donationFormId, string $donorBillingComment, int $anonymousDonation)
+    public function createDonation(PaymentIntent $paymentIntent, Donor $donor, int $donationFormId, string|null $billingComment, int $anonymousDonation)
     {
         return Donation::create([
             'donor_id' => $donor->id,
@@ -27,7 +27,7 @@ class DonationRepository
             'stripe_transaction_id' => $paymentIntent->id,
             'payment_amount' => $paymentIntent->amount / 100, // This amount in dollar
             'donation_form_id' => $donationFormId,
-            'donor_billing_comment' => $donorBillingComment,
+            'donor_billing_comment' => $billingComment,
             'anonymous_donation' => $anonymousDonation,
             'donor_billing_name' => $paymentIntent->payment_method->billing_details->name,
             'donor_billing_phone' => $paymentIntent->payment_method->billing_details->phone,

@@ -76,7 +76,11 @@ class CreateStripeSubscriptionService extends BaseStripeService
                 'expand' => ['latest_invoice.payment_intent.payment_method'],
                 'payment_behavior' => 'default_incomplete',
                 'default_payment_method' => $request->paymentMethodId,
-                'payment_settings' => ['save_default_payment_method' => 'on_subscription']
+                'payment_settings' => ['save_default_payment_method' => 'on_subscription'],
+                'metadata' => [
+                    'Donation Post Id' => '7777',
+                    'Sequential Id' => '55555'
+                ]
             ]);
         } catch (ApiErrorException $e) {
             return $e->getMessage();
@@ -95,13 +99,13 @@ class CreateStripeSubscriptionService extends BaseStripeService
     private function generateIntentResponse(PaymentIntent $intent): JsonResponse
     {
         if ($intent->status === 'succeeded') {
-            return response()->api(true, 'Subscription created successfully', $intent);
+            return response()->api(true, 'Subscription created successfully');
         }
 
         if ($intent->status === 'requires_action') {
             return response()->api(false, 'payment method requires action', [
                 'requiresAction' => true,
-                'clientSecret' => $intent->client_secret,
+                'clientSecret' => $intent->client_secret
             ]);
         }
 
