@@ -27,4 +27,6 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/user/donations', [DonationController::class, 'getUserDonations']);
     Route::get('/user/subscriptions', [SubscriptionController::class, 'getUserSubscriptions']);
     Route::Delete('/user/subscription', [SubscriptionController::class, 'cancelUserSubscription']);
+    Route::put('/user', [UserController::class, 'updateUserInfo']);
+    Route::post('/user/img', [UserController::class, 'updateUserImage']);
 });

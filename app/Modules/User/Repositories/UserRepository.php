@@ -4,6 +4,7 @@ namespace App\Modules\User\Repositories;
 
 use App\Http\Requests\Auth\RegisterRequest;
 use App\Models\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
 class UserRepository
@@ -46,5 +47,17 @@ class UserRepository
             'address' => null,
             'img' => null
         ]);
+    }
+
+    public function updateUserInfo(User $user)
+    {
+        $user->save();
+
+        return response()->api(true, 'User updated successfully', $user);
+    }
+
+    public function updateUserImage()
+    {
+        
     }
 }
