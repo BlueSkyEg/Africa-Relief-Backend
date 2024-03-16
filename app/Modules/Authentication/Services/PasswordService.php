@@ -64,7 +64,7 @@ class PasswordService
         $user = $request->user();
         if (! WpPassword::check($request->currentPassword, $user->password)) {
             throw ValidationException::withMessages([
-                'currentPassword' => 'The old password is incorrect.'
+                'currentPassword' => 'The current password is incorrect.'
             ]);
         }
 

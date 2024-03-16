@@ -39,7 +39,7 @@ class User extends Authenticatable implements MustVerifyEmail
     protected function img(): Attribute
     {
         return Attribute::make(
-            get: fn (string $value) => $value ? asset('storage/users/images/'.$value) : null,
+            get: fn (string|null $value) => $value ? asset('storage/users/images/'.$value) : null,
         );
     }
 

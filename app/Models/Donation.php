@@ -40,15 +40,23 @@ class Donation extends Model
     ];
 
     protected $hidden = [
+        'donor_id',
         'donation_form_id',
         'laravel_through_key'
     ];
 
+    // Relations
     public function donationForm(): BelongsTo
     {
         return $this->belongsTo(DonationForm::class)->select(['id', 'title']);
     }
 
+    public function donor(): BelongsTo
+    {
+        return $this->belongsTo(Donor::class)->select(['id', 'email']);
+    }
+
+    // Accessors and Mutators
     protected function completedDate(): Attribute
     {
         return Attribute::make(
