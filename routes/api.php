@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DonationController;
+use App\Http\Controllers\QuickBooks\QuickBooksController;
 use App\Http\Controllers\SubscriptionController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -30,3 +31,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::put('/user/info', [UserController::class, 'updateUserInfo']);
     Route::post('/user/img', [UserController::class, 'updateUserImage']);
 });
+
+Route::get('/quickbooks/{entity}', [QuickBooksController::class, 'getTransactions']);
+//Route::get('/quickbooks/authorize', [QuickBooksController::class, 'authorizeQB'])->name('quickbooks.authorize');
+//Route::get('/quickbooks/callback', [QuickBooksController::class, 'handleCallback'])->name('quickbooks.callback');

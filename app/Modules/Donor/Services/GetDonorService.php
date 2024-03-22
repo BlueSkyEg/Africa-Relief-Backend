@@ -10,10 +10,10 @@ use App\Modules\User\Services\GetUserService;
 class GetDonorService
 {
     public function __construct(
-        private DonorRepository $donorRepository,
-        private GetUserService $getUserService,
-        private CreateCustomerService $createCustomerService,
-        private SavePaymentMethodService $savePaymentMethodService
+        private readonly DonorRepository $donorRepository,
+        private readonly GetUserService $getUserService,
+        private readonly CreateCustomerService $createCustomerService,
+        private readonly SavePaymentMethodService $savePaymentMethodService
     )
     {
     }

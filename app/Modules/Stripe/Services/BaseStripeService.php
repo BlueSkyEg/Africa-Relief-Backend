@@ -2,9 +2,7 @@
 
 namespace App\Modules\Stripe\Services;
 
-use Stripe\Stripe;
 use Stripe\StripeClient;
-use App\Models\User;
 
 class BaseStripeService
 {
