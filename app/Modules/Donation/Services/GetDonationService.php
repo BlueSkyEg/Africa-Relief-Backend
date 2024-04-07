@@ -7,13 +7,21 @@ use App\Modules\User\Services\GetUserService;
 
 class GetDonationService
 {
-    public function __construct(private DonationRepository $donationRepository, private GetUserService $getUserService)
+    public function __construct(
+        private readonly DonationRepository $donationRepository,
+        private readonly GetUserService $getUserService
+    )
     {
     }
 
     public function getDonationById(int $donationId)
     {
         return $this->donationRepository->getDonationById($donationId);
+    }
+
+    public function getDonationByStripeTransactionId(string $stripeTransactionId)
+    {
+        return $this->donationRepository->getDonationByStripeTransactionId($stripeTransactionId);
     }
 
 	public function getUserDonations()

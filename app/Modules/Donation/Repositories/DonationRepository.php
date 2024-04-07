@@ -4,6 +4,7 @@ namespace App\Modules\Donation\Repositories;
 
 use App\Models\Donation;
 use App\Models\Donor;
+use Stripe\Charge;
 use Stripe\PaymentIntent;
 
 class DonationRepository
@@ -13,35 +14,20 @@ class DonationRepository
         return Donation::where('id', $donationId)->first();
     }
 
+    public function getDonationByStripeTransactionId(string $stripeTransactionId)
+    {
+        return Donation::where('stripe_transaction_id', $stripeTransactionId)->first();
+    }
+
 	public function getUserDonations($user)
 	{
         return $user->donations()->with('donationForm', 'donor')->get();
 //        return $user->donations()->where('payment_mode', 'live')->with('donationForm', 'donor')->get();
 	}
 
-    public function createDonation(PaymentIntent $paymentIntent, Donor $donor, int $donationFormId, string|null $billingComment, int $anonymousDonation)
+    public function createDonation(array $donationAttributes)
     {
-        return Donation::create([
-            'donor_id' => $donor->id,
-            'stripe_source_id' => $paymentIntent->payment_method->id,
-            'stripe_transaction_id' => $paymentIntent->id,
-            'payment_amount' => $paymentIntent->amount / 100, // This amount in dollar
-            'donation_form_id' => $donationFormId,
-            'donor_billing_comment' => $billingComment,
-            'anonymous_donation' => $anonymousDonation,
-            'donor_billing_name' => $paymentIntent->payment_method->billing_details->name,
-            'donor_billing_phone' => $paymentIntent->payment_method->billing_details->phone,
-            'donor_billing_country' => $paymentIntent->payment_method->billing_details->address->country,
-            'donor_billing_city' => $paymentIntent->payment_method->billing_details->address->city,
-            'donor_billing_state' => $paymentIntent->payment_method->billing_details->address->state,
-            'donor_billing_address_1' => $paymentIntent->payment_method->billing_details->address->line1,
-            'donor_billing_address_2' => $paymentIntent->payment_method->billing_details->address->line2,
-            'donor_billing_zip' => $paymentIntent->payment_method->billing_details->address->postal_code,
-            'payment_mode' => $paymentIntent->livemode ? 'live' : 'test',
-            'completed_date' => $paymentIntent->created,
-            'status' => $paymentIntent->status,
-            'payment_currency' => $paymentIntent->currency
-        ]);
+        return Donation::create($donationAttributes);
     }
 
     public function updateDonationStatus(string $paymentIntentId, string $paymentIntentStatus)

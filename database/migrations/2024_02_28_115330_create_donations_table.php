@@ -20,11 +20,12 @@ return new class extends Migration
             $table->string('stripe_transaction_id')->nullable();
             $table->decimal('payment_amount', 18, 10)->nullable();
             $table->string('payment_currency')->nullable();
+            $table->string('donor_billing_name')->nullable();
+            $table->string('donor_billing_email')->nullable();
             $table->string('donor_billing_phone')->nullable();
             $table->string('donor_billing_country')->nullable();
             $table->string('donor_billing_city')->nullable();
             $table->string('donor_billing_state')->nullable();
-            $table->string('donor_billing_name')->nullable();
             $table->string('donor_billing_address_1')->nullable();
             $table->string('donor_billing_address_2')->nullable();
             $table->string('donor_billing_zip')->nullable();
