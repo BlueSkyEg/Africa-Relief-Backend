@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('phone')->nullable();
             $table->json('address')->nullable();
             $table->string('img')->nullable();
+            $table->enum('active', [0,1])->default(1);
             $table->timestamps();
         });
     }

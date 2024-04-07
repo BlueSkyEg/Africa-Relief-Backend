@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Str;
-use App\Http\Requests\User\UpdateUserImageRequest;
+use App\Modules\User\Requests\UpdateUserImageRequest;
+use App\Modules\User\Requests\UpdateUserInfoRequest;
 use App\Modules\User\Services\GetUserService;
 use App\Modules\User\Services\UpdateUserService;
-use App\Http\Requests\User\UpdateUserInfoRequest;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class UserController extends Controller
 {
@@ -29,12 +30,16 @@ class UserController extends Controller
 
     public function updateUserImage(UpdateUserImageRequest $request)
     {
-        $user = $request->user();
-        $imagePath = $request->file('img')->store('users/images');
-        Storage::delete('users/images/'.$user->img);
-        $user->img = Str::afterLast($imagePath, '/');
-        $user->save();
+        return $this->updateUserService->updateUserImage($request);
+    }
 
-        return response()->api(true, 'user image updated successfully', $user);
+    public function deleteUser(Request $request)
+    {
+        $user = $request->user();
+        $user->active = '0';
+        $user->save();
+        $user->tokens()->delete();
+
+        return response()->api(true, 'user deleted successfully');
     }
 }

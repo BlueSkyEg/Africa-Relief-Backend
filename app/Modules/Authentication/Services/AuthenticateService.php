@@ -2,8 +2,9 @@
 
 namespace App\Modules\Authentication\Services;
 
-use App\Http\Requests\Auth\LoginRequest;
-use App\Http\Requests\Auth\RegisterRequest;
+use App\Modules\Authentication\Requests\LoginRequest;
+use App\Modules\Authentication\Requests\RegisterRequest;
+use App\Modules\Donor\Services\GetDonorService;
 use App\Modules\User\Services\CreateUserService;
 use App\Modules\User\Services\GetUserService;
 use App\Modules\User\Services\UpdateUserService;
@@ -16,7 +17,12 @@ use MikeMcLin\WpPassword\Facades\WpPassword;
 
 class AuthenticateService
 {
-    public function __construct(private GetUserService $getUserService, private CreateUserService $createUserService, private UpdateUserService $updateUserService)
+    public function __construct(
+        private readonly GetUserService $getUserService,
+        private readonly CreateUserService $createUserService,
+        private readonly UpdateUserService $updateUserService,
+        private readonly GetDonorService $getDonorService
+    )
     {
     }
 
@@ -25,9 +31,9 @@ class AuthenticateService
         $user = $this->getUserService->getUserByEmailOrUsername($request->email);
 
         try {
-            if ($user && WpPassword::check($request->password, $user?->password)) {
+            if ($user && $user?->active && WpPassword::check($request->password, $user?->password)) {
                 $this->updateUserService->updateUserPassword($user, $request->password);
-            } else if (!Auth::attempt($request->validated())) {
+            } else if (!Auth::attempt(['email' => $request->email, 'password' => $request->password, 'active' => '1'])) {
                 throw ValidationException::withMessages([
                     'email' => 'Invalid credentials',
                 ]);
@@ -55,6 +61,13 @@ class AuthenticateService
     public function register(RegisterRequest $request)
     {
         $user = $this->createUserService->createUser($request);
+
+        // Assign user to donor if existing
+        $donor = $this->getDonorService->getDonorByEmail($request->email);
+        if ($donor) {
+            $donor->user_id = $user->id;
+            $donor->save();
+        }
 
         // Send email verification
         event(new Registered($user));

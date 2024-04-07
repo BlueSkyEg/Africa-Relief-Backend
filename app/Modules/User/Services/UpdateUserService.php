@@ -4,7 +4,11 @@ namespace App\Modules\User\Services;
 
 use App\Models\User;
 use App\Modules\User\Repositories\UserRepository;
-use App\Http\Requests\User\UpdateUserInfoRequest;
+use App\Modules\User\Requests\UpdateUserImageRequest;
+use App\Modules\User\Requests\UpdateUserInfoRequest;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
+use Illuminate\Validation\ValidationException;
 
 class UpdateUserService
 {
@@ -42,5 +46,22 @@ class UpdateUserService
         }
 
         return $this->userRepository->updateUserInfo($user);
+    }
+
+    public function updateUserImage(UpdateUserImageRequest $request)
+    {
+        try {
+            $user = $request->user();
+            $imagePath = $request->file('img')->store('users/images');
+            Storage::delete('users/images/'.$user->img);
+            $user->img = Str::afterLast($imagePath, '/');
+            $user->save();
+
+            return response()->api(true, 'user image updated successfully', $user);
+        } catch (\Exception $e) {
+            throw ValidationException::withMessages([
+                "img" => "An error occur, image not updated"
+            ]);
+        }
     }
 }

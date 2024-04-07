@@ -2,17 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\Auth\ChangePasswordRequest;
-use App\Http\Requests\Auth\LoginRequest;
-use App\Http\Requests\Auth\NewPasswordRequest;
-use App\Http\Requests\Auth\RegisterRequest;
+use App\Modules\Authentication\Requests\ChangePasswordRequest;
+use App\Modules\Authentication\Requests\LoginRequest;
+use App\Modules\Authentication\Requests\NewPasswordRequest;
+use App\Modules\Authentication\Requests\RegisterRequest;
 use App\Modules\Authentication\Services\AuthenticateService;
 use App\Modules\Authentication\Services\EmailVerificationService;
 use App\Modules\Authentication\Services\PasswordService;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Password;
-use Illuminate\Validation\ValidationException;
 
 class AuthController extends Controller
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Requests\Auth;
+namespace App\Modules\User\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\Rules;
+use Illuminate\Validation\Rule;
 
-class ChangePasswordRequest extends FormRequest
+class UpdateUserInfoRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,8 +23,11 @@ class ChangePasswordRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'currentPassword' => ['required'],
-            'password' => ['required', 'confirmed', Rules\Password::defaults()]
+            'name' => 'nullable|string',
+            'email' => ['nullable', 'email', Rule::unique('users')->ignore($this->user())],
+            'phone' => 'nullable|string',
+            'address' => 'nullable|string',
+            'username' => ['nullable', 'string', Rule::unique('users')->ignore($this->user())]
         ];
     }
 }

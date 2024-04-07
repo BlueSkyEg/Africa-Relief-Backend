@@ -2,8 +2,8 @@
 
 namespace App\Modules\Authentication\Services;
 
-use App\Http\Requests\Auth\ChangePasswordRequest;
-use App\Http\Requests\Auth\NewPasswordRequest;
+use App\Modules\Authentication\Requests\ChangePasswordRequest;
+use App\Modules\Authentication\Requests\NewPasswordRequest;
 use App\Modules\User\Services\UpdateUserService;
 use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Http\Request;
