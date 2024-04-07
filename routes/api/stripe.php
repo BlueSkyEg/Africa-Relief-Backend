@@ -1,26 +1,24 @@
 <?php
 
-use App\Http\Controllers\Stripe\PaymentMethodController;
-use App\Http\Controllers\Stripe\SingleChargeController;
-use App\Http\Controllers\Stripe\SubscriptionController;
-use App\Http\Controllers\Stripe\WebhookController;
+use App\Http\Controllers\Stripe\StripePaymentController;
+use App\Http\Controllers\Stripe\StripePaymentMethodController;
+use App\Http\Controllers\Stripe\StripeWebhookController;
 use Illuminate\Support\Facades\Route;
 
 
 
-Route::controller(PaymentMethodController::class)->middleware('auth:sanctum')->prefix('user/payment-method')->group(function () {
-    Route::post('/save', 'savePaymentMethod');
-    Route::put('/update', 'updatePaymentMethod');
-    Route::get('/retrieve/all', 'retrieveAllPaymentMethods');
-    Route::get('/retrieve/{paymentMethodId}', 'retrievePaymentMethod');
-    Route::delete('/delete/{paymentMethodId}', 'deletePaymentMethod');
+Route::controller(StripePaymentMethodController::class)->middleware('auth:sanctum')->prefix('user/payment-methods')->group(function () {
+    Route::get('', 'listPaymentMethods');
+    Route::get('/{paymentMethodId}', 'getPaymentMethod');
+    Route::post('/save', 'attachPaymentMethod');
+    Route::delete('/{paymentMethodId}', 'deletePaymentMethod');
 });
 
-Route::get('/payment-method/setup-intent', [PaymentMethodController::class, 'setupPaymentMethodIntent']);
-Route::post('/create-single-charge', [SingleChargeController::class, 'createSingleCharge']);
-
-Route::controller(SubscriptionController::class)->prefix('subscription')->group(function () {
-    Route::post('/create', [SubscriptionController::class, 'createSubscription']);
+Route::controller(StripePaymentController::class)->prefix('payment')->group(function () {
+    Route::post('', 'createStripePayment');
+    Route::get('/setup-intent', 'setupStripeIntent');
 });
 
-Route::post('/stripe-webhook', [WebhookController::class, 'listenStripeWebhook']);
+Route::prefix('webhook')->group(function () {
+    Route::post('/stripe', [StripeWebhookController::class, 'listenStripeWebhook']);
+});

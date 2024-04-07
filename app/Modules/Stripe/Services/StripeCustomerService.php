@@ -1,17 +1,15 @@
 <?php
 
-namespace App\Modules\Stripe\Services\Customer;
+namespace App\Modules\Stripe\Services;
 
-use App\Modules\Stripe\Services\BaseStripeService;
-use Illuminate\Http\JsonResponse;
 use Stripe\Customer;
 use Stripe\Exception\ApiErrorException;
 
 
-class CreateCustomerService extends BaseStripeService
+class StripeCustomerService extends BaseStripeService
 {
 
-    public function create(string $name, string $email): Customer|string
+    public function createCustomer(string $name, string $email): Customer|string
     {
         try {
             return $this->stripe->customers->create([

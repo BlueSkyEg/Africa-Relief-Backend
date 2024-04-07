@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\Stripe\PaymentMethod;
+namespace App\Modules\Stripe\Requests\PaymentMethod;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UpdateDefaultPaymentMethodRequest extends FormRequest
+class attachPaymentMethodRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,7 +22,8 @@ class UpdateDefaultPaymentMethodRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'paymentMethodId' => 'required|string'
+            'paymentMethodId' => 'required|string',
+            'stripeCustomerId' => 'required|string'
         ];
     }
 }

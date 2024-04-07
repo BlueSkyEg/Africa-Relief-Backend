@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DonationController;
 use App\Http\Controllers\QuickBooks\QuickBooksController;
+use App\Http\Controllers\Stripe\StripePaymentController;
 use App\Http\Controllers\SubscriptionController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -27,11 +28,12 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/user', [UserController::class, 'getAuthUser']);
     Route::get('/user/donations', [DonationController::class, 'getUserDonations']);
     Route::get('/user/subscriptions', [SubscriptionController::class, 'getUserSubscriptions']);
-    Route::Delete('/user/subscription', [SubscriptionController::class, 'cancelUserSubscription']);
+    Route::Delete('/user/subscriptions/{subscriptionId}', [StripePaymentController::class, 'cancelStripeSubscription']);
     Route::put('/user/info', [UserController::class, 'updateUserInfo']);
     Route::post('/user/img', [UserController::class, 'updateUserImage']);
+    Route::Delete('/user', [UserController::class, 'deleteUser']);
 });
 
 Route::get('/quickbooks/{entity}', [QuickBooksController::class, 'getTransactions']);
-//Route::get('/quickbooks/authorize', [QuickBooksController::class, 'authorizeQB'])->name('quickbooks.authorize');
-//Route::get('/quickbooks/callback', [QuickBooksController::class, 'handleCallback'])->name('quickbooks.callback');
+
+Route::post('/test', [DonationController::class, 'test']);
