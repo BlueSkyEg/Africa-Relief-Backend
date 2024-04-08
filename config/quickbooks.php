@@ -6,6 +6,7 @@ return [
     'redirect_uri' => env('QUICKBOOKS_REDIRECT_URI'),
     'access_token' => env('QUICKBOOKS_ACCESS_TOKEN'),
     'refresh_token' => env('QUICKBOOKS_REFRESH_TOKEN'),
+    'webhooks_verify_token' => env('QUICKBOOKS_WEBHOOK_VERIFIER_TOKEN'),
     'realm_id' => env('QUICKBOOKS_REALM_ID'),
     'base_url' => env('QUICKBOOKS_BASE_URL')
 ];

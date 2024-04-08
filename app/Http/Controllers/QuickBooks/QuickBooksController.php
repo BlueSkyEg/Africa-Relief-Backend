@@ -34,21 +34,20 @@ class QuickBooksController extends Controller
         ));
 
         // Retrieve transactions
-//        $allTransactions = $dataService->Query("Select * from $entity");
+        $allTransactions = $dataService->Query("Select * from $entity");
 
-        $serviceContext = $dataService->getServiceContext();
+//        $serviceContext = $dataService->getServiceContext();
+//
+//        $reportService = new ReportService($serviceContext);
+//
+//        $reportService->setStartDate("2015-01-01");
+//        $reportService->setAccountingMethod("Accrual");
+//        $reportService->setTransactionType('Deposit');
+//        $profitAndLossReport = $reportService->executeReport(ReportName::GENERALLEDGER);
+//        if (!$profitAndLossReport) {
+//            return response()->json("ProfitAndLossReport Is Null.");
+//        }
 
-        // Prep Data Services
-        $reportService = new ReportService($serviceContext);
-
-        $reportService->setStartDate("2015-01-01");
-        $reportService->setAccountingMethod("Accrual");
-        $reportService->setTransactionType('Deposit');
-        $profitAndLossReport = $reportService->executeReport(ReportName::GENERALLEDGER);
-        if (!$profitAndLossReport) {
-            return response()->json("ProfitAndLossReport Is Null.");
-        }
-
-        return response()->json($profitAndLossReport);
+        return response()->json($allTransactions);
     }
 }

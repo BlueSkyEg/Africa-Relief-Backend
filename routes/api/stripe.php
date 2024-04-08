@@ -18,7 +18,3 @@ Route::controller(StripePaymentController::class)->prefix('payment')->group(func
     Route::post('', 'createStripePayment');
     Route::get('/setup-intent', 'setupStripeIntent');
 });
-
-Route::prefix('webhook')->group(function () {
-    Route::post('/stripe', [StripeWebhookController::class, 'listenStripeWebhook']);
-});

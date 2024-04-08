@@ -2,7 +2,9 @@
 
 use App\Http\Controllers\DonationController;
 use App\Http\Controllers\QuickBooks\QuickBooksController;
+use App\Http\Controllers\QuickBooks\QuickBooksWebhookController;
 use App\Http\Controllers\Stripe\StripePaymentController;
+use App\Http\Controllers\Stripe\StripeWebhookController;
 use App\Http\Controllers\SubscriptionController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -32,6 +34,11 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::put('/user/info', [UserController::class, 'updateUserInfo']);
     Route::post('/user/img', [UserController::class, 'updateUserImage']);
     Route::Delete('/user', [UserController::class, 'deleteUser']);
+});
+
+Route::prefix('webhook')->group(function () {
+    Route::post('/stripe', [StripeWebhookController::class, 'listenStripeWebhook']);
+    Route::post('/quickbooks', [QuickBooksWebhookController::class, 'listenQuickbooksWebhook']);
 });
 
 Route::get('/quickbooks/{entity}', [QuickBooksController::class, 'getTransactions']);
