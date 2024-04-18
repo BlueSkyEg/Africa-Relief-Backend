@@ -41,6 +41,8 @@ Route::prefix('webhook')->group(function () {
     Route::post('/quickbooks', [QuickBooksWebhookController::class, 'listenQuickbooksWebhook']);
 });
 
+Route::get('/quickbooks/authorize', [QuickBooksController::class, 'getAuthorizationUrl']);
+Route::get('/quickbooks/callback', [QuickBooksController::class, 'handleCallback']);
 Route::get('/quickbooks/{entity}', [QuickBooksController::class, 'getTransactions']);
 
 Route::post('/test', [DonationController::class, 'test']);
