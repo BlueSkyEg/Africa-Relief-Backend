@@ -13,22 +13,24 @@ return new class extends Migration
     {
         Schema::create('quickbooks_transactions', function (Blueprint $table) {
             $table->id();
-            $table->string('quickbooks_id');
-            $table->string('doc_number');
-            $table->date('txn_date');
-            $table->date('due_date');
-            $table->string('currency');
-            $table->decimal('total_amount', 18);
-            $table->text('description');
-            $table->text('customer_memo');
-            $table->string('billing_email');
-            $table->string('billing_address_1');
-            $table->string('billing_address_2');
-            $table->string('billing_city');
-            $table->string('billing_country');
-            $table->string('billing_postal_code');
-            $table->string('payment_method_ref');
-            $table->timestamps();
+            $table->string('quickbooks_id')->nullable();
+            $table->string('doc_number')->nullable();
+            $table->string('type')->nullable();
+            $table->date('txn_date')->nullable();
+            $table->date('due_date')->nullable();
+            $table->string('currency')->nullable();
+            $table->decimal('total_amount', 18)->nullable();
+            $table->text('description')->nullable();
+            $table->text('customer_memo')->nullable();
+            $table->string('billing_email')->nullable();
+            $table->string('billing_address_1')->nullable();
+            $table->string('billing_address_2')->nullable();
+            $table->string('billing_city')->nullable();
+            $table->string('billing_country')->nullable();
+            $table->string('billing_postal_code')->nullable();
+            $table->string('payment_method_ref')->nullable();
+            $table->dateTimeTz('created_time')->nullable();
+            $table->dateTimeTz('last_updated_time')->nullable();
         });
     }
 

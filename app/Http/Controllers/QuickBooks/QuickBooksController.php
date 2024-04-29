@@ -4,20 +4,19 @@ namespace App\Http\Controllers\QuickBooks;
 
 use App\Http\Controllers\Controller;
 use App\Mail\Quickbooks\ReauthorizeReminder;
+use App\Models\QuickbooksTransaction;
 use App\Modules\SiteOptions\Services\GetSiteOptionService;
 use App\Modules\SiteOptions\Services\UpdateSiteOptionService;
 use Illuminate\Http\Request;
-use Illuminate\Notifications\Messages\MailMessage;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use QuickBooksOnline\API\Core\OAuth\OAuth2\OAuth2LoginHelper;
 use QuickBooksOnline\API\DataService\DataService;
 use QuickBooksOnline\API\Exception\SdkException;
-use QuickBooksOnline\API\Exception\SdkExceptions\InvalidParameterException;
 use QuickBooksOnline\API\Exception\ServiceException;
-use QuickBooksOnline\API\ReportService\ReportName;
-use QuickBooksOnline\API\ReportService\ReportService;
+
+// Set QuickBooks API timeout to 60 seconds
+define('QUICKBOOKS_API_TIMEOUT', 60);
 
 class QuickBooksController extends Controller
 {
@@ -30,20 +29,20 @@ class QuickBooksController extends Controller
 
     public function getAuthorizationUrl()
     {
-        $dataService = DataService::Configure(array(
+        $dataService = DataService::Configure([
             'auth_mode' => 'oauth2',
             'ClientID' => env('QUICKBOOKS_CLIENT_ID'),
             'ClientSecret' => env('QUICKBOOKS_CLIENT_SECRET'),
             'RedirectURI' => env('QUICKBOOKS_REDIRECT_URI'),
             'scope' => env('QUICKBOOKS_SCOPE'),
             'baseUrl' => env('QUICKBOOKS_BASE_URL')
-        ));
+        ]);
 
         $OAuth2LoginHelper = $dataService->getOAuth2LoginHelper();
 
         // Generate authorization URL
         $authorizationUrl = $OAuth2LoginHelper->getAuthorizationCodeURL();
-//        return response()->json($authorizationUrl);
+
         // Send authorization URL email
         Mail::to(env('QUICKBOOKS_REAUTHORIZE_REMINDER_EMAIL'))
             ->cc(['abdelrahman@bluskyint.com', 'support@bluskyint.com'])
@@ -53,14 +52,14 @@ class QuickBooksController extends Controller
     public function handleCallback(Request $request)
     {
         try {
-            $dataService = DataService::Configure(array(
+            $dataService = DataService::Configure([
                 'auth_mode' => 'oauth2',
                 'ClientID' => env('QUICKBOOKS_CLIENT_ID'),
                 'ClientSecret' => env('QUICKBOOKS_CLIENT_SECRET'),
                 'RedirectURI' => env('QUICKBOOKS_REDIRECT_URI'),
                 'scope' => env('QUICKBOOKS_SCOPE'),
                 'baseUrl' => env('QUICKBOOKS_BASE_URL')
-            ));
+            ]);
 
             $OAuth2LoginHelper = $dataService->getOAuth2LoginHelper();
             $accessTokenObj = $OAuth2LoginHelper->exchangeAuthorizationCodeForToken($request->query('code'), $request->query('realmId'));
@@ -79,43 +78,73 @@ class QuickBooksController extends Controller
      * @throws SdkException
      * @throws ServiceException
      */
-    public function getTransactions(string $entity)
+    public function getTransactions()
     {
+        ini_set('max_execution_time', 7200);
+
         // Get QuickBooks Options
         $options = $this->getSiteOptionService->getQuickbooksOptions();
 
-        // Configure DataService
-        $dataService = DataService::Configure(array(
-            'auth_mode' => 'oauth2',
-            'ClientID' => env('QUICKBOOKS_CLIENT_ID'),
-            'ClientSecret' => env('QUICKBOOKS_CLIENT_SECRET'),
-            'refreshTokenKey' => $options['quickbooks_refresh_token'][0]->value,
-            'accessTokenKey' => $options['quickbooks_access_token'][0]->value,
-            'QBORealmID' => $options['quickbooks_realm_id'][0]->value,
-            'baseUrl' => env('QUICKBOOKS_BASE_URL')
-        ));
+        try {
 
-        // Get data
-        $allTransactions = $dataService->Query("Select * from $entity");
+            // Configure DataService
+            $dataService = DataService::Configure([
+                'auth_mode' => 'oauth2',
+                'ClientID' => env('QUICKBOOKS_CLIENT_ID'),
+                'ClientSecret' => env('QUICKBOOKS_CLIENT_SECRET'),
+                'refreshTokenKey' => $options['quickbooks_refresh_token'][0]->value,
+                'accessTokenKey' => $options['quickbooks_access_token'][0]->value,
+                'QBORealmID' => $options['quickbooks_realm_id'][0]->value,
+                'baseUrl' => env('QUICKBOOKS_BASE_URL')
+            ]);
 
-        // Get dataService last error if exists
-        $error = $dataService->getLastError();
+            $dataService->throwExceptionOnError(true);
 
-        if ($error && $error->getHttpStatusCode() === 401) {
-            // Refresh OAuth2 Tokens
-            $oauth2LoginHelper = new OAuth2LoginHelper(env('QUICKBOOKS_CLIENT_ID'),env('QUICKBOOKS_CLIENT_SECRET'));
-            $accessTokenObj = $oauth2LoginHelper->refreshAccessTokenWithRefreshToken($options['quickbooks_refresh_token'][0]->value);
-            $this->updateSiteOptionService->updateSiteOption('quickbooks_access_token', $accessTokenObj->getAccessToken());
-            $this->updateSiteOptionService->updateSiteOption('quickbooks_refresh_token', $accessTokenObj->getRefreshToken());
+            foreach (['Invoice', 'SalesReceipt'] as $entity) {
+                    $startPosition = 1;
+                    $transactions = $dataService->Query("Select * from $entity where Balance = '0'", $startPosition);
+                    while ($transactions !== null) {
+                        foreach ($transactions as $transaction) {
+                            QuickbooksTransaction::create([
+                                'quickbooks_id' => $transaction->Id,
+                                'doc_number' => $transaction->DocNumber,
+                                'txn_date' => $transaction->TxnDate,
+                                'due_date' => $transaction->DueDate,
+                                'currency' => $transaction->CurrencyRef,
+                                'total_amount' => $transaction->TotalAmt,
+                                'description' => $transaction->Line[0]->Description,
+                                'customer_memo' => $transaction->CustomerMemo,
+                                'billing_email' => $transaction->BillEmail?->Address,
+                                'billing_address_1' => $transaction->BillAddr?->Line1,
+                                'billing_address_2' => $transaction->BillAddr?->Line2,
+                                'billing_city' => $transaction->BillAddr?->City,
+                                'billing_country' => $transaction->BillAddr?->Country,
+                                'billing_postal_code' => $transaction->BillAddr?->PostalCode,
+                                'payment_method_ref' => $transaction->PaymentMethodRef,
+                                'created_time' => $transaction->MetaData?->CreateTime,
+                                'last_updated_time' => $transaction->MetaData?->LastUpdatedTime,
+                                'type' => $entity
+                            ]);
+                        }
 
-            // Update DataService with the new access token
-            $dataService->updateOAuth2Token($accessTokenObj);
+                        $startPosition += 100;
+                        $transactions = $dataService->Query("Select * from $entity where Balance = '0'", $startPosition);
+                    }
+                }
 
-            // Get data again
-            $allTransactions = $dataService->Query("Select * from $entity");
-            return response()->json($allTransactions);
-        } else {
-            return response()->json($allTransactions);
+            return response()->json('Mission Done');
+        } catch (\Exception $e) {
+            if ($e->getCode() === 401) {
+                // Refresh OAuth2 Tokens
+                $oauth2LoginHelper = new OAuth2LoginHelper(env('QUICKBOOKS_CLIENT_ID'),env('QUICKBOOKS_CLIENT_SECRET'));
+                $accessTokenObj = $oauth2LoginHelper->refreshAccessTokenWithRefreshToken($options['quickbooks_refresh_token'][0]->value);
+                $this->updateSiteOptionService->updateSiteOption('quickbooks_access_token', $accessTokenObj->getAccessToken());
+                $this->updateSiteOptionService->updateSiteOption('quickbooks_refresh_token', $accessTokenObj->getRefreshToken());
+
+                $this->getTransactions();
+            }
+
+            Log::error('QuickBooks Error Message: ' . $e->getMessage() . ', With Status Code: ' . $e->getCode());
         }
     }
 }

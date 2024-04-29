@@ -33,6 +33,11 @@ class Subscription extends Model
         'laravel_through_key'
     ];
 
+    protected $casts = [
+        'created_at' => 'datetime:Y-m-d\TH:i:s\Z',
+        'expiration_at' => 'datetime:Y-m-d\TH:i:s\Z'
+    ];
+
     public function donationForm(): BelongsTo
     {
         return $this->belongsTo(DonationForm::class)->select(['id', 'title']);
@@ -42,21 +47,21 @@ class Subscription extends Model
     protected function status(): Attribute
     {
         return Attribute::make(
-            get: fn (string $value) => in_array($value, ['active', 'canceled']) ? $value : 'incomplete',
+            get: fn (string|null $value) => $value ? (in_array($value, ['active', 'canceled']) ? $value : 'incomplete') : null
         );
     }
 
     protected function createdAt(): Attribute
     {
         return Attribute::make(
-            set: fn (string $value) => Carbon::createFromTimestamp($value)->format('Y-m-d H:i:s'),
+            set: fn (string|null $value) => $value ? Carbon::parse($value)->toDateTimeString() : null
         );
     }
 
     protected function expirationAt(): Attribute
     {
         return Attribute::make(
-            set: fn (string $value) => Carbon::createFromTimestamp($value)->format('Y-m-d H:i:s'),
+            set: fn (string|null $value) => $value ? Carbon::parse($value)->toDateTimeString() : null
         );
     }
 }
