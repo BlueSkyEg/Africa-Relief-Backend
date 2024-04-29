@@ -46,6 +46,10 @@ class Donation extends Model
         'laravel_through_key'
     ];
 
+    protected $casts = [
+      'completed_date' => 'datetime:Y-m-d\TH:i:s\Z'
+    ];
+
     // Relations
     public function donationForm(): BelongsTo
     {
@@ -61,14 +65,14 @@ class Donation extends Model
     protected function completedDate(): Attribute
     {
         return Attribute::make(
-            set: fn (string $value) => Carbon::createFromTimestamp($value)->format('Y-m-d H:i:s'),
+            set: fn (string|null $value) => $value ? Carbon::parse($value)->toDateTimeString() : null
         );
     }
 
     protected function status(): Attribute
     {
         return Attribute::make(
-            get: fn (string $value) => in_array($value, ['succeeded', 'failed', 'refunded']) ? $value : 'incomplete',
+            get: fn (string|null $value) => $value ? (in_array($value, ['succeeded', 'failed', 'refunded']) ? $value : 'incomplete') : null
         );
     }
 }

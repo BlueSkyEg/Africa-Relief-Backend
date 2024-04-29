@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class DonationForm extends Model
 {
+    use HasFactory;
+
     protected $fillable = [
         'title',
         'status',
@@ -14,5 +16,8 @@ class DonationForm extends Model
         'levels'
     ];
 
-    use HasFactory;
+    protected $casts = [
+        'created_at' => 'datetime:Y-m-d\TH:i:s\Z',
+        'updated_at' => 'datetime:Y-m-d\TH:i:s\Z'
+    ];
 }

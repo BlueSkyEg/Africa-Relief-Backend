@@ -34,6 +34,8 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
+        'created_at' => 'datetime:Y-m-d\TH:i:s\Z',
+        'updated_at' => 'datetime:Y-m-d\TH:i:s\Z'
     ];
 
     protected function img(): Attribute
