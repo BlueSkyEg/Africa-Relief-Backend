@@ -19,7 +19,7 @@ class StripeWebhookController extends Controller
     {
     }
 
-    public function listenStripeWebhook()
+    public function triggerStripeWebhook()
     {
         // This is your Stripe CLI webhook secret for testing your endpoint locally.
         $endpoint_secret = env('STRIPE_WEBHOOK_SECRET');
