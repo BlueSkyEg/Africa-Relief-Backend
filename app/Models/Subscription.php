@@ -54,14 +54,14 @@ class Subscription extends Model
     protected function createdAt(): Attribute
     {
         return Attribute::make(
-            set: fn (string|null $value) => $value ? Carbon::parse($value)->toDateTimeString() : null
+            set: fn (string|int|null $value) => $value ? Carbon::parse($value)->toDateTimeString() : null
         );
     }
 
     protected function expirationAt(): Attribute
     {
         return Attribute::make(
-            set: fn (string|null $value) => $value ? Carbon::parse($value)->toDateTimeString() : null
+            set: fn (string|int|null $value) => $value ? Carbon::parse($value)->toDateTimeString() : null
         );
     }
 }

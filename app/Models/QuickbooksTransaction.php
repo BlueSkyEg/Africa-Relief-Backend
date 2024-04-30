@@ -42,14 +42,14 @@ class QuickbooksTransaction extends Model
     protected function createdTime(): Attribute
     {
         return Attribute::make(
-            set: fn (string $value) => Carbon::parse($value)->toDateTimeString()
+            set: fn (string|int|null $value) => Carbon::parse($value)->toDateTimeString()
         );
     }
 
     protected function lastUpdatedTime(): Attribute
     {
         return Attribute::make(
-            set: fn (string $value) => Carbon::parse($value)->toDateTimeString()
+            set: fn (string|int|null $value) => Carbon::parse($value)->toDateTimeString()
         );
     }
 }
