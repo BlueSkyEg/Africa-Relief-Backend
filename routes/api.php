@@ -6,6 +6,7 @@ use App\Http\Controllers\Stripe\StripePaymentController;
 use App\Http\Controllers\Stripe\StripeWebhookController;
 use App\Http\Controllers\SubscriptionController;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -42,3 +43,14 @@ Route::prefix('webhook')->group(function () {
 //Route::get('/quickbooks/authorize', [QuickBooksController::class, 'getAuthorizationUrl']);
 //Route::get('/quickbooks/callback', [QuickBooksController::class, 'handleCallback']);
 //Route::get('/quickbooks/{entity}', [QuickBooksController::class, 'getTransactions']);
+
+Route::prefix('/notification')->group(function () {
+    Route::get('/public/{message}', function (string $message) {
+        event(new \App\Events\PublicNotificationSent($message));
+        return 'Notification Sent';
+    });
+    Route::get('/private/{message}', function (string $message) {
+        Notification::send(\App\Models\User::all(), new \App\Notifications\ProjectNotification($message));
+        return 'Notification Sent';
+    });
+});
