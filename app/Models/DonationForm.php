@@ -17,6 +17,7 @@ class DonationForm extends Model
     ];
 
     protected $casts = [
+        'levels' => 'array',
         'created_at' => 'datetime:Y-m-d\TH:i:s\Z',
         'updated_at' => 'datetime:Y-m-d\TH:i:s\Z'
     ];

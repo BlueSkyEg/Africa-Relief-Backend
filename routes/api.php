@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\DonationController;
-use App\Http\Controllers\QuickBooks\QuickBooksController;
 use App\Http\Controllers\Stripe\StripePaymentController;
 use App\Http\Controllers\Stripe\StripeWebhookController;
 use App\Http\Controllers\SubscriptionController;
@@ -25,6 +24,9 @@ require __DIR__ . '/api/auth.php';
 
 // Stripe
 require __DIR__ . '/api/stripe.php';
+
+// Posts
+require __DIR__ . '/api/posts.php';
 
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/user', [UserController::class, 'getAuthUser']);
