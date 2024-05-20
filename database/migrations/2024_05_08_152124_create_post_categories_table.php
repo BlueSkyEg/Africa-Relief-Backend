@@ -14,9 +14,9 @@ return new class extends Migration
     {
         Schema::create('post_categories', function (Blueprint $table) {
             $table->id();
-            $table->string('post_type')->default(PostTypeEnum::PROJECT->value);
             $table->string('name');
-            $table->string('slug')->unique();
+            $table->string('slug');
+            $table->string('post_type')->default(PostTypeEnum::PROJECT->value);
             $table->string('meta_title')->nullable();
             $table->text('meta_keywords')->nullable();
             $table->text('meta_description')->nullable();
@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string('meta_og_title')->nullable();
             $table->string('meta_og_type')->nullable();
             $table->timestamps();
+            $table->unique(['post_type', 'slug']);
         });
     }
 
@@ -32,6 +33,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('categories');
+        Schema::dropIfExists('post_categories');
     }
 };

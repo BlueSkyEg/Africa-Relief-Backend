@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -21,8 +23,6 @@ class Blog extends Model
         'implementation_date'
     ];
 
-    protected $with = ['post', 'featuredImage'];
-
     // Blog belongs to one post
     public function post(): BelongsTo
     {
@@ -32,7 +32,7 @@ class Blog extends Model
     // Blog belongs to one featured image
     public function featuredImage(): BelongsTo
     {
-        return $this->belongsTo(PostImage::class, 'featured_image_id');
+        return $this->belongsTo(Image::class, 'featured_image_id');
     }
 
     // Blog belongs to one donation form

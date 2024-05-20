@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('slug')->unique();
             $table->foreignId('post_id')->constrained();
-            $table->foreignId('featured_image_id')->constrained('post_images');
+            $table->foreignId('featured_image_id')->constrained('images');
             $table->foreignId('donation_form_id')->constrained();
             $table->string('location')->nullable();
             $table->date('implementation_date')->nullable();

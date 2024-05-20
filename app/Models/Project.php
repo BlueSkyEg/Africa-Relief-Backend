@@ -28,7 +28,7 @@ class Project extends Model
     // Project belongs to one featured image
     public function featuredImage(): BelongsTo
     {
-        return $this->belongsTo(PostImage::class, 'featured_image_id');
+        return $this->belongsTo(Image::class, 'featured_image_id');
     }
 
     // Project belongs to one donation form

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('image_post', function (Blueprint $table) {
             $table->foreignId('post_id')->constrained();
-            $table->foreignId('image_id')->constrained('post_images');
+            $table->foreignId('image_id')->constrained();
         });
     }
 
@@ -22,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('media_post');
+        Schema::dropIfExists('image_post');
     }
 };

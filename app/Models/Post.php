@@ -16,6 +16,7 @@ class Post extends Model
     protected $fillable = [
         'title',
         'excerpt',
+        'published',
         'meta_title',
         'meta_keywords',
         'meta_description',
@@ -35,7 +36,7 @@ class Post extends Model
     // Image belongs to many posts
     public function images(): BelongsToMany
     {
-        return $this->belongsToMany(PostImage::class, 'image_post', 'post_id', 'image_id');
+        return $this->belongsToMany(Image::class, 'image_post');
     }
 
     // Post has many contents
