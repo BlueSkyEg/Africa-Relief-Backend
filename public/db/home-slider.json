@@ -1,0 +1,47 @@
+[
+  {
+    "summary": "Rebuilding live for future",
+    "description": "Your Care Makes a Difference",
+    "image": {
+      "src": "/assets/db/home-slider/images/water.webp",
+      "alt": null
+    },
+    "destination": "/project-category/water"
+  },
+  {
+    "summary": "No one should go hungry",
+    "description": "Join Hands to Nourish Communities in Need",
+    "image": {
+      "src": "/assets/db/home-slider/images/food-aid.webp",
+      "alt": null
+    },
+    "destination": "/project-category/food-aid"
+  },
+  {
+    "summary": "Help Us",
+    "description": "Clean Water, Is a Basic Necessity for Life.",
+    "image": {
+      "src": "/assets/db/home-slider/images/water-banner.webp",
+      "alt": null
+    },
+    "destination": "/project-category/water"
+  },
+  {
+    "summary": "Join us in shaping Africa's future",
+    "description": "Empowerment Starts with Education",
+    "image": {
+      "src": "/assets/db/home-slider/images/education.webp",
+      "alt": null
+    },
+    "destination": "/project-category/education"
+  },
+  {
+    "summary": "Stand with us to ensure healthcare for all",
+    "description": "Healthcare Is a Right Not a Privilege.",
+    "image": {
+      "src": "/assets/db/home-slider/images/medical-help.webp",
+      "alt": null
+    },
+    "destination": "/project-category/medical-help"
+  }
+]

@@ -21,8 +21,7 @@ class DonationRepository
 
 	public function getUserDonations($user)
 	{
-        return $user->donations()->with('donationForm', 'donor')->get();
-//        return $user->donations()->where('payment_mode', 'live')->with('donationForm', 'donor')->get();
+        return $user->donations()->where('payment_mode', env('PAYMENT_MODE'))->with('donationForm', 'donor')->get();
 	}
 
     public function createDonation(array $donationAttributes)

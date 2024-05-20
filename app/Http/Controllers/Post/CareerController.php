@@ -1,9 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Post;
 
+use App\Http\Controllers\Controller;
 use App\Modules\Post\Career\Services\GetCareerService;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 
 class CareerController extends Controller
 {
@@ -11,13 +13,16 @@ class CareerController extends Controller
     {
     }
 
-    public function getCareers(): JsonResponse
+    public function getPublishedCareers(Request $request): JsonResponse
     {
-        return $this->getCareerService->getCareers();
+        return $this->getCareerService->getCareers(
+            $request->query('perPage') ?: env('DEFAULT_PAGINATION_PER_PAGE'),
+            true
+        );
     }
 
-    public function getCareer(string $careerSlug): JsonResponse
+    public function getPublishedCareer(string $careerSlug): JsonResponse
     {
-        return $this->getCareerService->getCareer($careerSlug);
+        return $this->getCareerService->getCareer($careerSlug, true);
     }
 }

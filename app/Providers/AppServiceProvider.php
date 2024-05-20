@@ -31,5 +31,22 @@ class AppServiceProvider extends ServiceProvider
                 'errors' => $errors
             ], $status);
         });
+
+        Response::macro('apiWithPagination', function (bool $success, string $message, $data, $pagination, $status = 200) {
+            return Response::json([
+                'success' => $success,
+                'message' => $message,
+                'data' => [
+                    'data' => $data,
+                    'pagination' => [
+                        'current_page' => $pagination->currentPage(),
+                        'per_page' => $pagination->perPage(),
+                        'total' => $pagination->total(),
+                        'last_page' => $pagination->lastPage()
+                    ]
+                ],
+                'errors' => null
+            ], $status);
+        });
     }
 }

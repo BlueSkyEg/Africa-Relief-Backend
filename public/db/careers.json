@@ -1,0 +1,64 @@
+{
+  "success": true,
+  "message": "gallery retrived successfully",
+  "data": [
+    {
+      "title" : "Donor Care Associate",
+      "slug" : "donor-care-associate",
+      "content": [
+        {
+          "heading": "summary",
+          "description": "The Donor Care Specialist is responsible for the recording and acknowledgement of Africa Relief & Community Development (ARCD) constituents’ data and donations, as well as scanning checks and creating deposit information which feeds into the general ledger. This position works closely with the ARCD Accounting teams, and ARCD Doner Care Team primarily, ensuring efficiency and timeliness in processing donor information and donations using best practice techniques to maintain optimal data integrity. This position plays a key role in maintaining database integrity and in maintaining donor communication and satisfaction through timely donor acknowledgement. This is an In-person position."
+        },
+        {
+          "heading": "Essential Functions",
+          "description": [
+            "Responsible for the processing and posting of donation checks into the bank within 24 hours of receipt.",
+            "Responsible for receiving and processing credit cards, ACH, pledges, recurring gifts, and in-kind donations across multiple software platforms.",
+            "Conduct reconciliation following established audit-trail procedures for daily feed of gift entries into the general ledger.",
+            "Perform daily update and maintain the CRM system (Salesforce).",
+            "Perform monthly donation reconciliation with ARCD Accounting teams.",
+            "Maintain the Matching Gift process.",
+            "Responsible for on-line gift form creation and management to receive on-line donations."
+          ]
+        },
+        {
+          "heading": "Provide administrative and operational support",
+          "description": [
+            "Responsible to produce timely gift receipts to donors with a target of 48 hours of receipt of donation.",
+            "Generates lists for and performs mail merge for gift receipts, pledge reminders and recognition letters for mailing/emails.",
+            "Assist the Director in updating and implementing new systems and workflows and in documenting cash management internal controls and procedures.",
+            "Produce and maintain various event reports for various entities.",
+            "Participate in special projects and handle other related duties as assigned.",
+            "Produce and maintain giving reports for various entities, fundraisers, etc."
+          ]
+        },
+        {
+          "heading": "Knowledge, Skills and Abilities",
+          "description": [
+            "CRM or donor database experience preferred.",
+            "Experience assessing and implementing system and policy protocols preferred.",
+            "Exceptional written and oral communication skills.",
+            "Extremely detail oriented.",
+            "Ability to maintain the confidentiality of donor information.",
+            "Ability to independently manage priorities.",
+            "Demonstrated ability to build working relationships with individuals of various ages, cultures, socioeconomic backgrounds, and abilities.",
+            "Ability and aptitude with Microsoft Office Suite and other technology necessary for successful day-to-day functioning in a business environment. Advanced knowledge of Excel is a plus.",
+            "Ability to work unsociable hours during peak campaigns.",
+            "Ability to communicate in Arabic and English.",
+            "Must clear nationwide criminal background check and driving record background check."
+          ]
+        },
+        {
+          "heading": "Qualifications / Requirements",
+          "description": [
+            "Associate degree, or vocational/technical school degree required: bookkeeping, data entry, computer sciences, accounting.",
+            "Bachelor’s degree preferred: computer science, management information systems, accounting, management",
+            "1 – 3 years relevant work experience required"
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": null
+}

@@ -1,0 +1,1850 @@
+[
+  {
+    "title": "Surface Water Well",
+    "slug": "surface-water-well",
+    "category": {
+      "name": "water",
+      "slug": "water"
+    },
+    "summary": "Provide easy access to clean water for the vilage, supports 200-400 individuals. These wells sustain livelihoods, ensuring a continuous flow of clean water for those in need.",
+    "featuredImage": {
+      "src": "assets/db/projects/images/surface-water-well.webp",
+      "alt": "Villagers celebrating the completion of the well, a life-changing moment for the community"
+    },
+    "content": [
+      {
+        "heading": "Each well stands as a paving the way for healthier, thriving livelihoods",
+        "description": "Sub-Saharan Africa grapples with a staggering 40% of its population—approximately 783 million people—deprived of clean drinking water. In this context, each surface well acts as a beacon of hope, serving not only as a source of life but also as a vital lifeline for those lacking access, offering a means to quench the thirst and preserve the lives of many."
+      },
+      {
+        "heading": "How is ARCD's Relief responding?",
+        "description": "ARCD’s Relief establishes surface water wells, utilizing natural resources to create accessible water sources for communities in need."
+      },
+      {
+        "heading": "A Surface water well can be the community's Lifeline",
+        "description": "A Surface water well can be the community’s Lifeline"
+      }
+    ],
+    "donationForm": {
+      "id": 14586,
+      "title": "Surface Water Well",
+      "levels": [
+        {
+          "amount": 100,
+          "name": null
+        },
+        {
+          "amount": 300,
+          "name": null
+        },
+        {
+          "amount": 500,
+          "name": null
+        },
+        {
+          "amount": 2500,
+          "name": null
+        }
+      ],
+      "fullyFundLevel": 2500,
+      "recurringPeriods": [
+        "day",
+        "week",
+        "month",
+        "Quarter",
+        "year"
+      ]
+    },
+    "latestUpdates": [
+      {
+        "title": "Emergency Morocco Earthquake Response",
+        "slug": "emergency-morocco-earthquake-response",
+        "categories": [
+          {
+            "name": "food aid",
+            "slug": "food-aid"
+          },
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "October 12, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
+          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
+        }
+      },
+      {
+        "title": "Mariame Diawara and Fatoumata Tiemoko Well",
+        "slug": "mariame-diawara-and-fatoumata-tiemoko-well",
+        "categories": [
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "September 29, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame6-1024x802.webp",
+          "alt": "Mariame Diawara and Fatoumata Tiemoko on the well built by Africa Relief"
+        }
+      },
+      {
+        "title": "Sadaqah Wells",
+        "slug": "sadaqah-wells",
+        "categories": [
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "September 29, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/sadaqah-wells/Sadaqah1-scaled.webp",
+          "alt": "Learn About our project Sadaqah Wells - Africa Relief"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Artisanal Water Well",
+    "slug": "artisanal-water-well",
+    "category": {
+      "name": "water",
+      "slug": "water"
+    },
+    "summary": "Provide easy access to clean water for the vilage, supports 400-600 individuals. Crafting lifelines from the earth, artisanal wells bring sustenance to parched lands.",
+    "featuredImage": {
+      "src": "assets/db/projects/images/artisanal-water-well.webp",
+      "alt": "Wells in Africa: Villagers gathering water from a new well in a rural village"
+    },
+    "content": [
+      {
+        "heading": "Each well stands as a paving the way for healthier, thriving livelihoods.",
+        "description": "Artisanal Water Wells are more than sources; they’re symbols of community strength. Join us in providing vital access to clean water"
+      },
+      {
+        "heading": "How is ARCD's Relief responding?",
+        "description": "ARCD’s Relief constructs artisanal water wells, utilizing cost-effective methods to create sustainable water sources for communities lacking access."
+      },
+      {
+        "heading": "Building a well, Crafting Hope",
+        "description": "Your donation facilitates the construction of artisanal water wells, offering communities reliable access to clean water, fostering resilience, and nurturing sustainable livelihoods."
+      }
+    ],
+    "donationForm": {
+      "id": 14588,
+      "title": "Artisanal Water Well",
+      "levels": [
+        {
+          "amount": 100,
+          "name": null
+        },
+        {
+          "amount": 300,
+          "name": null
+        },
+        {
+          "amount": 500,
+          "name": null
+        },
+        {
+          "amount": 4600,
+          "name": null
+        }
+      ],
+      "fullyFundLevel": 4600,
+      "recurringPeriods": [
+        "day",
+        "week",
+        "month",
+        "Quarter",
+        "year"
+      ]
+    },
+    "latestUpdates": [
+      {
+        "title": "Emergency Morocco Earthquake Response",
+        "slug": "emergency-morocco-earthquake-response",
+        "categories": [
+          {
+            "name": "food aid",
+            "slug": "food-aid"
+          },
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "October 12, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
+          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
+        }
+      },
+      {
+        "title": "Mariame Diawara and Fatoumata Tiemoko Well",
+        "slug": "mariame-diawara-and-fatoumata-tiemoko-well",
+        "categories": [
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "September 29, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame6-1024x802.webp",
+          "alt": "Mariame Diawara and Fatoumata Tiemoko on the well built by Africa Relief"
+        }
+      },
+      {
+        "title": "Sadaqah Wells",
+        "slug": "sadaqah-wells",
+        "categories": [
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "September 29, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/sadaqah-wells/Sadaqah1-scaled.webp",
+          "alt": "Learn About our project Sadaqah Wells - Africa Relief"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Solar Water Well",
+    "slug": "solar-water-well",
+    "category": {
+      "name": "water",
+      "slug": "water"
+    },
+    "summary": "Provide easy access to clean water for the vilage, supports 800+ individuals. Harnessing sunlight to quench thirst, illuminating lives with sustainable water solutions.",
+    "featuredImage": {
+      "src": "assets/db/projects/images/solar-water-well.webp",
+      "alt": "Learn About our project Sadaqah Wells - Africa Relief"
+    },
+    "content": [
+      {
+        "heading": "Every drop, powered by the sun, a life-changing oasis in arid lands",
+        "description": "Solar Water Wells signify more than water; they represent hope and sustainability. Join us in providing enduring access to clean water"
+      },
+      {
+        "heading": "How is ARCD's Relief responding?",
+        "description": "RCD’s Relief installs solar-powered water wells, ensuring reliable access to clean water in regions facing water scarcity due to limited resources."
+      },
+      {
+        "heading": "Building a well, Crafting Hope",
+        "description": "Your donation fuels the installation of solar water wells, enabling communities to thrive sustainably by providing access to clean, reliable water sources, transforming lives for generations."
+      }
+    ],
+    "donationForm": {
+      "id": "17543",
+      "title": "Morocco Emergency Relief",
+      "levels": [
+        {
+          "amount": 100,
+          "name": null
+        },
+        {
+          "amount": 300,
+          "name": null
+        },
+        {
+          "amount": 500,
+          "name": null
+        },
+        {
+          "amount": 5500,
+          "name": null
+        }
+      ],
+      "fullyFundLevel": 5500,
+      "recurringPeriods": [
+        "day",
+        "week",
+        "month",
+        "Quarter",
+        "year"
+      ]
+    },
+    "latestUpdates": [
+      {
+        "title": "Emergency Morocco Earthquake Response",
+        "slug": "emergency-morocco-earthquake-response",
+        "categories": [
+          {
+            "name": "food aid",
+            "slug": "food-aid"
+          },
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "October 12, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
+          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
+        }
+      },
+      {
+        "title": "Mariame Diawara and Fatoumata Tiemoko Well",
+        "slug": "mariame-diawara-and-fatoumata-tiemoko-well",
+        "categories": [
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "September 29, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame6-1024x802.webp",
+          "alt": "Mariame Diawara and Fatoumata Tiemoko on the well built by Africa Relief"
+        }
+      },
+      {
+        "title": "Sadaqah Wells",
+        "slug": "sadaqah-wells",
+        "categories": [
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "September 29, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/sadaqah-wells/Sadaqah1-scaled.webp",
+          "alt": "Learn About our project Sadaqah Wells - Africa Relief"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Emergency Earthquake Relief Needed",
+    "slug": "earthquake-in-morocco",
+    "category": {
+      "name": "crisis",
+      "slug": "crisis"
+    },
+    "summary": "The vulnerable communities in Morocco faced severe impacts from the 6.8-magnitude earthquake. Tragically, over 2,000 lives were lost, with thousands more injured. Many awaiting rescue.",
+    "featuredImage": {
+      "src": "assets/db/projects/images/earthquake-in-morocco.webp",
+      "alt": "Africa Relief: Morocco Earthquake Relief Fund Aid"
+    },
+    "content": [
+      {
+        "heading": "More than 300,000 people have been affected in Marrakech and surrounding areas. Join ARCD USA in rebuilding shattered lives and sparking new hope.",
+        "description": "Amidst the aftermath of a catastrophic earthquake, Morocco mourns over 2,800 lives lost and the deep impact on 100,000 children. Urgent needs include shelter, clean water, medical aid, and nourishment. Let’s unite and extend a lifeline, rebuilding shattered lives."
+      },
+      {
+        "heading": "How is ARCD's Relief responding?",
+        "description": "ARCD’s Relief team swiftly mobilized in response to the catastrophic earthquake in Morocco. As families grapple with the loss of over 2,800 lives, our focus was on urgent necessities: providing shelter, clean water, medical aid, and essential nourishment. Our unified efforts now aim to extend a lifeline, aiding in the reconstruction of shattered lives and offering hope amidst the devastation."
+      },
+      {
+        "heading": "Critical Aid Needed",
+        "description": "1- Clean Water: Essential to prevent waterborne diseases caused by contaminated floodwaters.\n2- Food Supplies: Including feeding projects and non-perishable food items.\n3- Clothing, Blankets, and Mattresses: Vital necessities for those who have lost everything in the floods.\n4- Shelters: Build safe havens to restore security amidst turmoil\n5- Your support ensures these essentials reach those in need, safeguarding lives and fostering recovery in the aftermath of the disaster."
+      },
+      {
+        "heading": "Empower Survivors",
+        "description": "United for igniting change. Your contribution powers our rapid response, reaching those affected by the crisis with the necessary aid"
+      }
+    ],
+    "donationForm": {
+      "id": "17543",
+      "title": "Morocco Emergency Relief",
+      "levels": [
+        {
+          "amount": 50,
+          "name": null
+        },
+        {
+          "amount": 100,
+          "name": null
+        },
+        {
+          "amount": 150,
+          "name": null
+        },
+        {
+          "amount": 200,
+          "name": null
+        }
+      ],
+      "fullyFundLevel": null,
+      "recurringPeriods": [
+        "day",
+        "week",
+        "month",
+        "Quarter",
+        "year"
+      ]
+    },
+    "latestUpdates": [
+      {
+        "title": "Strategic Partnerships in Tanzania",
+        "slug": "strategic-partnerships-in-tanzania",
+        "categories": [
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "orphan support",
+            "slug": "orphan-support"
+          }
+        ],
+        "date": "September 1, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/strategic-partnerships-in-tanzania/Tanzania2.webp",
+          "alt": "Impact non profit: Team analyzing data for community improvement projects"
+        }
+      },
+      {
+        "title": "Emergency Morocco Earthquake Response",
+        "slug": "emergency-morocco-earthquake-response",
+        "categories": [
+          {
+            "name": "food aid",
+            "slug": "food-aid"
+          },
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "October 12, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
+          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
+        }
+      },
+      {
+        "title": "Mariame Diawara and Fatoumata Tiemoko Well",
+        "slug": "mariame-diawara-and-fatoumata-tiemoko-well",
+        "categories": [
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "September 29, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame6-1024x802.webp",
+          "alt": "Mariame Diawara and Fatoumata Tiemoko on the well built by Africa Relief"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Libya Floods",
+    "slug": "libya-floods",
+    "category": {
+      "name": "crisis",
+      "slug": "crisis"
+    },
+    "summary": "The Floods have devastated the city of Derna, killing thousands and leaving at least 10,000 missing. The local community needs your urgent support.",
+    "featuredImage": {
+      "src": "assets/db/projects/images/libya-floods.webp",
+      "alt": "Families affected by the floods in Libya receiving much-needed aid and assistance"
+    },
+    "content": [
+      {
+        "heading": "884,000 affected by the devastation of the Libya flood, every moment matters. Join us in reaching families affected. Your donation saves lives",
+        "description": "Storm Daniel’s impact in Libya has caused catastrophic flooding and landslides, leaving thousands missing and tens of thousands displaced. Rural areas like Derna witness entire buildings swept away due to collapsed dams, adding to the suffering of those already affected by past conflicts and political crises."
+      },
+      {
+        "heading": "How is ARCD's Relief responding?",
+        "description": "In the face of Libya’s flood crisis, Africa Relief and Community Development (ARCD) steps forward, providing urgent relief and sustainable strategies. Partnering with the government, we confront the flood’s complexities, placing the well-being of affected communities at the core of our mission. Let’s rebuild, restore, and uplift Libya together."
+      },
+      {
+        "heading": "Critical Aid Needed",
+        "description": "1- Clean Water: Essential to prevent waterborne diseases caused by contaminated floodwaters.\n2- Food Supplies: Including feeding projects and non-perishable food items.\n3- Clothing, Blankets, and Mattresses: Vital necessities for those who have lost everything in the floods.\n4- Your support ensures these essentials reach those in need, safeguarding lives and fostering recovery in the aftermath of the disaster."
+      },
+      {
+        "heading": "Empower Survivors",
+        "description": "We’re stronger together. Your donation fuels our swift crisis response, aiding us in reaching people impacted by the emergency."
+      }
+    ],
+    "donationForm": {
+      "id": "17603",
+      "title": "Libya Emergency Relief",
+      "levels": [
+        {
+          "amount": 50,
+          "name": null
+        },
+        {
+          "amount": 100,
+          "name": null
+        },
+        {
+          "amount": 150,
+          "name": null
+        },
+        {
+          "amount": 200,
+          "name": null
+        }
+      ],
+      "fullyFundLevel": null,
+      "recurringPeriods": [
+        "day",
+        "week",
+        "month",
+        "Quarter",
+        "year"
+      ]
+    },
+    "latestUpdates": [
+      {
+        "title": "Strategic Partnerships in Tanzania",
+        "slug": "strategic-partnerships-in-tanzania",
+        "categories": [
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "orphan support",
+            "slug": "orphan-support"
+          }
+        ],
+        "date": "September 1, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/strategic-partnerships-in-tanzania/Tanzania2.webp",
+          "alt": "Impact non profit: Team analyzing data for community improvement projects"
+        }
+      },
+      {
+        "title": "Emergency Morocco Earthquake Response",
+        "slug": "emergency-morocco-earthquake-response",
+        "categories": [
+          {
+            "name": "food aid",
+            "slug": "food-aid"
+          },
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "October 12, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
+          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
+        }
+      },
+      {
+        "title": "Mariame Diawara and Fatoumata Tiemoko Well",
+        "slug": "mariame-diawara-and-fatoumata-tiemoko-well",
+        "categories": [
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "September 29, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame6-1024x802.webp",
+          "alt": "Mariame Diawara and Fatoumata Tiemoko on the well built by Africa Relief"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Ghana Floods",
+    "slug": "ghana-floods",
+    "category": {
+      "name": "crisis",
+      "slug": "crisis"
+    },
+    "summary": "Southeastern Ghana faces escalating displacements post Akosombo Dam water release on Oct 13. Your support matters.",
+    "featuredImage": {
+      "src": "assets/db/projects/images/ghana-floods.webp",
+      "alt": "Donate to ghana: Streets submerged in floodwaters, illustrating the extent of flooding in Ghana."
+    },
+    "content": [
+      {
+        "heading": "Ghana's Volta Region faces a dire aftermath post-flooding, displacing 26,000+. Join ARCD USA's efforts aiding recovery. Your support restores hope.",
+        "description": "As of October 18, over 26,000 individuals in the Volta Region have been displaced, particularly affecting the South, Central, and North Tongu Districts. Additionally, 7 people remain injured, and multiple communities are isolated due to flooded roads, disrupting essential services."
+      },
+      {
+        "heading": "How is ARCD's Relief responding?",
+        "description": "Africa Relief and Community Development (ARCD) is at the forefront, providing immediate relief and sustainable solutions to aid Ghana’s recovery. Our work, in collaboration with government efforts, addresses the multidimensional challenges brought by the flooding, prioritizing the safety and well-being of affected communities."
+      },
+      {
+        "heading": "Critical Aid Needed",
+        "description": "1- Clean Water: Essential to prevent waterborne diseases caused by contaminated floodwaters.\n2- Food Supplies: Including feeding projects and non-perishable food items.\n3- Clothing, Blankets, and Mattresses: Vital necessities for those who have lost everything in the floods.\n4- Mosquito Nets: Crucial for preventing vector-borne diseases amplified by stagnant water.\n5- Your support ensures these essentials reach those in need, safeguarding lives and fostering recovery in the aftermath of the disaster."
+      },
+      {
+        "heading": "Empower Survivors",
+        "description": "Join ARCD’s efforts to provide vital support to survivors. Your contribution makes a difference in restoring hope and rebuilding lives."
+      }
+    ],
+    "donationForm": {
+      "id": "18119",
+      "title": "Ghana Flooding October 2023",
+      "levels": [
+        {
+          "amount": 50,
+          "name": null
+        },
+        {
+          "amount": 100,
+          "name": null
+        },
+        {
+          "amount": 250,
+          "name": null
+        }
+      ],
+      "fullyFundLevel": null,
+      "recurringPeriods": [
+        "day",
+        "week",
+        "month",
+        "Quarter",
+        "year"
+      ]
+    },
+    "latestUpdates": [
+      {
+        "title": "Strategic Partnerships in Tanzania",
+        "slug": "strategic-partnerships-in-tanzania",
+        "categories": [
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "orphan support",
+            "slug": "orphan-support"
+          }
+        ],
+        "date": "September 1, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/strategic-partnerships-in-tanzania/Tanzania2.webp",
+          "alt": "Impact non profit: Team analyzing data for community improvement projects"
+        }
+      },
+      {
+        "title": "Emergency Morocco Earthquake Response",
+        "slug": "emergency-morocco-earthquake-response",
+        "categories": [
+          {
+            "name": "food aid",
+            "slug": "food-aid"
+          },
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "October 12, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
+          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
+        }
+      },
+      {
+        "title": "Mariame Diawara and Fatoumata Tiemoko Well",
+        "slug": "mariame-diawara-and-fatoumata-tiemoko-well",
+        "categories": [
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "September 29, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame6-1024x802.webp",
+          "alt": "Mariame Diawara and Fatoumata Tiemoko on the well built by Africa Relief"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Educational Center",
+    "slug": "educational-center",
+    "category": {
+      "name": "education",
+      "slug": "education"
+    },
+    "summary": "In Africa, where knowledge is power, 20% lack formal schooling, while 28% completed primary, 37% secondary, and 15% higher education, these statistics highligh the importance of accessible learning opportunities",
+    "featuredImage": {
+      "src": "assets/db/projects/images/educational-center.webp",
+      "alt": "Image of a classroom project funded through DonorsChoose, illustrating direct support to public school teachers"
+    },
+    "content": [
+      {
+        "heading": "Educational Centers, where minds flourish and futures bloom",
+        "description": "In Africa, the pursuit of education remains pivotal, with staggering statistics showing that one in five adults lacks formal education. ARCD’s Relief champions start the change through Educational Centers, bridging this gap by providing accessible and quality education. These centers serve as catalysts for transformation, nurturing young minds, and illuminating paths to a brighter future."
+      },
+      {
+        "heading": "How is ARCD's Relief responding?",
+        "description": "ARCD’s Relief is committed to breaking barriers by establishing Educational Centers across communities in Africa. These centers are not just buildings; they’re havens of knowledge and hope, offering educational opportunities to those who’ve been marginalized"
+      },
+      {
+        "heading": "Education: Building Bridges, Transforming Lives",
+        "description": "In the heart of every Educational Center lies the seed of change, nurturing minds and fostering brighter tomorrows.Your support propels , enabling education for all and fostering a more empowered, educated Africa."
+      }
+    ],
+    "donationForm": {
+      "id": 14679,
+      "title": "Educational Center",
+      "levels": [
+        {
+          "amount": 690,
+          "name": null
+        },
+        {
+          "amount": 920,
+          "name": null
+        },
+        {
+          "amount": 1150,
+          "name": null
+        },
+        {
+          "amount": 27600,
+          "name": null
+        }
+      ],
+      "fullyFundLevel": 27600,
+      "recurringPeriods": [
+        "day",
+        "week",
+        "month",
+        "Quarter",
+        "year"
+      ]
+    },
+    "latestUpdates": [
+      {
+        "title": "Salah Alzoobi Mosque",
+        "slug": "salah-alzoobi-mosquesalah-alzoobi-mosque",
+        "categories": [
+          {
+            "name": "education",
+            "slug": "education"
+          }
+        ],
+        "date": "September 8, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/salah-alzoobi-mosque/Szuabi3-1024x450.webp",
+          "alt": "A sustainable and eco-friendly mosque in Africa, blending modern design with environmental consciousness."
+        }
+      },
+      {
+        "title": "Strengthening Partnerships in Ghana",
+        "slug": "strengthening-partnerships-in-ghana",
+        "categories": [
+          {
+            "name": "education",
+            "slug": "education"
+          },
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "orphan Support",
+            "slug": "orphan-support"
+          },
+          {
+            "name": "sustainable-community",
+            "slug": "sustainable-community"
+          }
+        ],
+        "date": "August 23, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/strengthening-partnerships-in-ghana/20230821_140424-1024x461.webp",
+          "alt": "Vibrant Ghanaian marketplace bustling with activity, showcasing Africa relief efforts and development cooperation in Ghana"
+        }
+      },
+      {
+        "title": "Bir Al-Walidayn School",
+        "slug": "bir-al-walidayn-school",
+        "categories": [
+          {
+            "name": "education",
+            "slug": "education"
+          }
+        ],
+        "date": "August 16, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/bir-al-walidayn-school/Bir-Al-Walidayn-School1-1024x450.webp",
+          "alt": "Completed school building in an African village, a result of Africa Relief's school-building initiative"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Students Sponsorship",
+    "slug": "students-sponsorship",
+    "category": {
+      "name": "education",
+      "slug": "education"
+    },
+    "summary": "In Africa, the journey to education is marred by staggering statistics. Over 20% of children aged 6 to 11 miss the chance to enter the classroom, a figure that balloons to one-third for youths aged 12 to 14. Shockingly, almost 60% of youths between 15 and 17 are deprived of the school experience.",
+    "featuredImage": {
+      "src": "assets/db/projects/images/students-sponsorship.webp",
+      "alt": "A sponsored child studying diligently, empowered by African education sponsorship."
+    },
+    "content": [
+      {
+        "heading": "Imagine your impact on a Student live",
+        "description": "Access to education is a fundamental right, yet for many in Africa, it remains a distant dream. ARCD’s Relief believes in transforming lives through education by offering student sponsorships. By supporting a student’s educational journey, you’re not just investing in their future; you’re paving the way for a more empowered generation, creating ripples of positive change across communities."
+      },
+      {
+        "heading": "How is ARCD's Relief responding?",
+        "description": "ARCD’s Relief sponsors students by providing financial aid, mentorship, and resources, ensuring that no promising mind is hindered by financial constraints. We believe in creating opportunities for students to thrive, fostering a brighter tomorrow."
+      },
+      {
+        "heading": "Education is not a privilege; it's a right.",
+        "description": "Your sponsorship extends beyond funding; it’s the key to unlocking potential, nurturing talents, and fostering a more educated and empowered society."
+      }
+    ],
+    "donationForm": {
+      "id": 14688,
+      "title": "Students Sponsorship​",
+      "levels": [
+        {
+          "amount": 100,
+          "name": null
+        },
+        {
+          "amount": 200,
+          "name": null
+        },
+        {
+          "amount": 500,
+          "name": null
+        },
+        {
+          "amount": 1200,
+          "name": null
+        }
+      ],
+      "fullyFundLevel": 27600,
+      "recurringPeriods": [
+        "day",
+        "week",
+        "month",
+        "Quarter",
+        "year"
+      ]
+    },
+    "latestUpdates": [
+      {
+        "title": "Salah Alzoobi Mosque",
+        "slug": "salah-alzoobi-mosquesalah-alzoobi-mosque",
+        "categories": [
+          {
+            "name": "education",
+            "slug": "education"
+          }
+        ],
+        "date": "September 8, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/salah-alzoobi-mosque/Szuabi3-1024x450.webp",
+          "alt": "A sustainable and eco-friendly mosque in Africa, blending modern design with environmental consciousness."
+        }
+      },
+      {
+        "title": "Strengthening Partnerships in Ghana",
+        "slug": "strengthening-partnerships-in-ghana",
+        "categories": [
+          {
+            "name": "education",
+            "slug": "education"
+          },
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "orphan Support",
+            "slug": "orphan-support"
+          },
+          {
+            "name": "sustainable-community",
+            "slug": "sustainable-community"
+          }
+        ],
+        "date": "August 23, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/strengthening-partnerships-in-ghana/20230821_140424-1024x461.webp",
+          "alt": "Vibrant Ghanaian marketplace bustling with activity, showcasing Africa relief efforts and development cooperation in Ghana"
+        }
+      },
+      {
+        "title": "Bir Al-Walidayn School",
+        "slug": "bir-al-walidayn-school",
+        "categories": [
+          {
+            "name": "education",
+            "slug": "education"
+          }
+        ],
+        "date": "August 16, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/bir-al-walidayn-school/Bir-Al-Walidayn-School1-1024x450.webp",
+          "alt": "Completed school building in an African village, a result of Africa Relief's school-building initiative"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Food Basket",
+    "slug": "food-basket",
+    "category": {
+      "name": "Food Aid",
+      "slug": "food-aid"
+    },
+    "summary": "Let’s Unite to Ensure No Neighbor Goes Hungry. In Africa, Two-Thirds Struggle with Food Insecurity. Your Donation Fights Hunger. Join Us to Create a Lasting Impact!",
+    "featuredImage": {
+      "src": "assets/db/projects/images/food-basket.webp",
+      "alt": "Individuals contributing to the initiative of providing food baskets to alleviate hunger in their community"
+    },
+    "content": [
+      {
+        "heading": "All faiths converge on a singular cause: alleviating hunger through compassionate contributions",
+        "description": "Africa faces a dire crisis, with two-thirds of its population battling food insecurity, making it a global epicenter of hunger. Millions suffer from malnutrition, highlighting the urgency for immediate action and escalated food aid. It’s crucial to protect numerous lives and pave the way for a nourished future in the region."
+      },
+      {
+        "heading": "How is ARCD's Relief responding?",
+        "description": "ARCD’s Relief acts swiftly, addressing hunger through our Food Basket Project, offering vital nourishment to those in need. Your donations fuel this initiative, transforming compassion into instant relief. Join hands with us to directly impact and contribute to our mission of eradicating hunger."
+      },
+      {
+        "heading": "Your Donation. Their Nourishment",
+        "description": "Your generosity powers ARCD’s Relief food aid Projects, where each donation transcends empathy to provide sustenance, erasing the shadows of hunger. Join us and witness the profound impact of your support—illuminating lives and forging a path toward a future free from hunger."
+      }
+    ],
+    "donationForm": {
+      "id": 14666,
+      "title": "Food Basket",
+      "levels": [
+        {
+          "amount": 100,
+          "name": null
+        },
+        {
+          "amount": 200,
+          "name": null
+        },
+        {
+          "amount": 400,
+          "name": null
+        },
+        {
+          "amount": 600,
+          "name": null
+        }
+      ],
+      "fullyFundLevel": null,
+      "recurringPeriods": [
+        "day",
+        "week",
+        "month",
+        "Quarter",
+        "year"
+      ]
+    },
+    "latestUpdates": [
+      {
+        "title": "Emergency Morocco Earthquake Response",
+        "slug": "emergency-morocco-earthquake-response",
+        "categories": [
+          {
+            "name": "food aid",
+            "slug": "food-aid"
+          },
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "October 12, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
+          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
+        }
+      },
+      {
+        "title": "Nurturing Families: Meat Distribution Initiative",
+        "slug": "nurturing-families-meat-distribution-initiative",
+        "categories": [
+          {
+            "name": "food aid",
+            "slug": "food-aid"
+          }
+        ],
+        "date": "October 12, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/nurturing-families-meat-distribution-initiative/Zabiha-1024x768.webp",
+          "alt": "Nurturing Families - A Key Africa Relief Projects"
+        }
+      },
+      {
+        "title": "Brushy Creek Islamic Center Food Project",
+        "slug": "brushy-creek-islamic-center-food-project",
+        "categories": [
+          {
+            "name": "food aid",
+            "slug": "food-aid"
+          }
+        ],
+        "date": "August 31, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/brushy-creek-islamic-center-food-project/brush2-1024x768.webp",
+          "alt": "Brushy Creek Islamic Center Food Project - Africa Relief"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Hearing Aid Device",
+    "slug": "hearing-aid-device",
+    "category": {
+      "name": "Medical help",
+      "slug": "medical-help"
+    },
+    "summary": "A world of sound, a world of possibilities—gifted by the power of hearing",
+    "featuredImage": {
+      "src": "assets/db/projects/images/hearing-aid-device.webp",
+      "alt": "A person receiving a hearing aid, a life-changing moment thanks to generous donations."
+    },
+    "content": [
+      {
+        "heading": "Hearing isn't just a sense; it's a connection to life's symphony, restoring joy and communication.",
+        "description": "The WHO estimates that 136 million Africans face some level of hearing loss. Particularly concerning is the prevalence of childhood hearing loss due to ear infections and inadequate treatment, urging immediate hearing aid device support."
+      },
+      {
+        "heading": "How is ARCD's Relief responding?",
+        "description": "ARCD’s Relief addresses hearing loss by providing advanced hearing aid devices, fostering inclusion and empowering individuals to engage fully in life’s conversations."
+      },
+      {
+        "heading": "Enabling Sound. Empowering Lives.",
+        "description": "Your donation enables us to provide hearing aid devices, transforming the lives of those facing hearing loss, fostering confidence, and facilitating their active participation in society’s conversations and experiences."
+      }
+    ],
+    "donationForm": {
+      "id": 16262,
+      "title": "Hearing Aid Device",
+      "levels": [
+        {
+          "amount": 250,
+          "name": "$250 / 1 Device"
+        },
+        {
+          "amount": 500,
+          "name": "$500 / 2 Device"
+        },
+        {
+          "amount": 750,
+          "name": "$750 / 3 Device"
+        }
+      ],
+      "fullyFundLevel": null,
+      "recurringPeriods": [
+        "day",
+        "week",
+        "month",
+        "Quarter",
+        "year"
+      ]
+    },
+    "latestUpdates": [
+      {
+        "title": "Emergency Morocco Earthquake Response",
+        "slug": "emergency-morocco-earthquake-response",
+        "categories": [
+          {
+            "name": "food aid",
+            "slug": "food-aid"
+          },
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "October 12, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
+          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
+        }
+      },
+      {
+        "title": "Strengthening Partnerships in Ghana",
+        "slug": "strengthening-partnerships-in-ghana",
+        "categories": [
+          {
+            "name": "education",
+            "slug": "education"
+          },
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "orphan Support",
+            "slug": "orphan-support"
+          },
+          {
+            "name": "sustainable-community",
+            "slug": "sustainable-community"
+          }
+        ],
+        "date": "August 23, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/strengthening-partnerships-in-ghana/20230821_140424-1024x461.webp",
+          "alt": "Vibrant Ghanaian marketplace bustling with activity, showcasing Africa relief efforts and development cooperation in Ghana"
+        }
+      },
+      {
+        "title": "Medical Equipment Delivery: Boosting Health Infrastructure",
+        "slug": "medical-equipment-delivery",
+      "categories": [
+        {
+          "name": "health",
+          "slug": "health"
+        }
+      ],
+        "date": "October 19, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/medical-equipment-delivery/DSC07827-1024x683.webp",
+          "alt": "Click here to donate for medical aid."
+        }
+      }
+    ]
+  },
+  {
+    "title": "Health Care",
+    "slug": "health-care",
+    "category": {
+      "name": "Medical help",
+      "slug": "medical-help"
+    },
+    "summary": "Your donation isn’t just a contribution; it’s a lifeline that fortifies communities and bolsters healthcare systems. Let’s transform hope into action, ensuring every individual in Africa receives the quality healthcare they rightfully deserve.",
+    "featuredImage": {
+      "src": "assets/db/projects/images/health-care.webp",
+      "alt": "\"Investment in healthcare infrastructure development to improve access to quality healthcare in Africa."
+    },
+    "content": [
+      {
+        "heading": "Let's turn hope into action, ensuring every individual in Africa has the fundamental right to clean water for a healthier, empowered future.",
+        "description": "Africa bears over 24% of the world’s disease burden but has access to a mere 3% of health workers and less than 1% of global financial resources, according to WHO. This staggering gap in healthcare resources across numerous African nations raises a red flag for the continent’s overall health status, highlighting the urgent need for equitable support and resources."
+      },
+      {
+        "heading": "How is ARCD's Relief responding?",
+        "description": "Africa Relief implements two critical emergency strategies to safeguard the public health system from collapse. Our efforts focus on hospital rehabilitation and the vital distribution of medicine, medical supplies, and equipment, ensuring sustained support for communities in need."
+      },
+      {
+        "heading": "Critical Aid Needed",
+        "description": "Supplying essential medical resources and equipment, ensuring continuous support for communities in need."
+      },
+      {
+        "heading": "Your Generosity. Their Lifeline to Healthcare",
+        "description": "Your compassion acts as a bridge, closing the gap in access and delivering vital healthcare to those in need. Each donation safeguards a healthier future for all."
+      }
+    ],
+    "donationForm": {
+      "id": 14728,
+      "title": "Health",
+      "levels": [
+        {
+          "amount": 100,
+          "name": null
+        },
+        {
+          "amount": 200,
+          "name": null
+        },
+        {
+          "amount": 500,
+          "name": null
+        },
+        {
+          "amount": 1000,
+          "name": null
+        }
+      ],
+      "fullyFundLevel": null,
+      "recurringPeriods": [
+        "day",
+        "week",
+        "month",
+        "Quarter",
+        "year"
+      ]
+    },
+    "latestUpdates": [
+      {
+        "title": "Emergency Morocco Earthquake Response",
+        "slug": "emergency-morocco-earthquake-response",
+        "categories": [
+          {
+            "name": "food aid",
+            "slug": "food-aid"
+          },
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "October 12, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
+          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
+        }
+      },
+      {
+        "title": "Strengthening Partnerships in Ghana",
+        "slug": "strengthening-partnerships-in-ghana",
+        "categories": [
+          {
+            "name": "education",
+            "slug": "education"
+          },
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "orphan Support",
+            "slug": "orphan-support"
+          },
+          {
+            "name": "sustainable-community",
+            "slug": "sustainable-community"
+          }
+        ],
+        "date": "August 23, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/strengthening-partnerships-in-ghana/20230821_140424-1024x461.webp",
+          "alt": "Vibrant Ghanaian marketplace bustling with activity, showcasing Africa relief efforts and development cooperation in Ghana"
+        }
+      },
+      {
+        "title": "Medical Equipment Delivery: Boosting Health Infrastructure",
+        "slug": "medical-equipment-delivery",
+      "categories": [
+        {
+          "name": "health",
+          "slug": "health"
+        }
+      ],
+        "date": "October 19, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/medical-equipment-delivery/DSC07827-1024x683.webp",
+          "alt": "Click here to donate for medical aid."
+        }
+      }
+    ]
+  },
+  {
+    "title": "Cataract Surgery",
+    "slug": "cataract-surgery",
+    "category": {
+      "name": "Medical help",
+      "slug": "medical-help"
+    },
+    "summary": "Every restored sight means a regained life. Join us in bringing the gift of vision to those in need, illuminating their world, and empowering them with the possibilities they need.",
+    "featuredImage": {
+      "src": "assets/db/projects/images/cataract-surgery.webp",
+      "alt": "Surgeon performing cataract surgery in a well-equipped operating room, showcasing advanced techniques in eye care"
+    },
+    "content": [
+      {
+        "heading": "It's not just about the physical act of seeing; it's about restoring their connection to the beauty",
+        "description": "Africa faces a significant challenge. Despite the prevalence of cataract-related vision loss, the continent has the lowest cataract surgical rate globally. This disparity underscores the pressing issue of limited access to cataract surgery in Africa."
+      },
+      {
+        "heading": "How is ARCD's Relief responding?",
+        "description": "ARCD’s Relief swiftly responds to the challenge of visual impairment by providing Cataract Surgery. Through skilled medical professionals and modern facilities, we aim to restore vision for those affected by cataracts. Your support enables us to bring clarity and light into their lives, allowing them to envision a brighter future."
+      },
+      {
+        "heading": "Your Gift. Their Vision",
+        "description": "With each donation, you bring the world into sharper focus for those facing the challenges of vision loss. Together, we’re rewriting new stories for their lives, providing the invaluable gift of sight."
+      }
+    ],
+    "donationForm": {
+      "id": 14726,
+      "title": "Cataract Surgery",
+      "levels": [
+        {
+          "amount": 100,
+          "name": null
+        }
+      ],
+      "fullyFundLevel": null,
+      "recurringPeriods": [
+        "day",
+        "week",
+        "month",
+        "Quarter",
+        "year"
+      ]
+    },
+    "latestUpdates": [
+      {
+        "title": "Emergency Morocco Earthquake Response",
+        "slug": "emergency-morocco-earthquake-response",
+        "categories": [
+          {
+            "name": "food aid",
+            "slug": "food-aid"
+          },
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "October 12, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
+          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
+        }
+      },
+      {
+        "title": "Strengthening Partnerships in Ghana",
+        "slug": "strengthening-partnerships-in-ghana",
+        "categories": [
+          {
+            "name": "education",
+            "slug": "education"
+          },
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "orphan Support",
+            "slug": "orphan-support"
+          },
+          {
+            "name": "sustainable-community",
+            "slug": "sustainable-community"
+          }
+        ],
+        "date": "August 23, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/strengthening-partnerships-in-ghana/20230821_140424-1024x461.webp",
+          "alt": "Vibrant Ghanaian marketplace bustling with activity, showcasing Africa relief efforts and development cooperation in Ghana"
+        }
+      },
+      {
+        "title": "Medical Equipment Delivery: Boosting Health Infrastructure",
+        "slug": "medical-equipment-delivery",
+      "categories": [
+        {
+          "name": "health",
+          "slug": "health"
+        }
+      ],
+        "date": "October 19, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/medical-equipment-delivery/DSC07827-1024x683.webp",
+          "alt": "Click here to donate for medical aid."
+        }
+      }
+    ]
+  },
+  {
+    "title": "Orphans Sponsorship",
+    "slug": "orphans-sponsorship",
+    "category": {
+      "name": "Orphans Sponsorship",
+      "slug": "orphans-sponsorship"
+    },
+    "summary": "In the past, hearts were filled with care for orphans, embracing them with love. Today, their numbers have grown, and many who could have aided them are gone. Orphanhood, once uncommon, now prevails. The few remaining struggle to provide, unable to meet the rising tide of need.",
+    "featuredImage": {
+      "src": "assets/db/projects/images/orphans-sponsorship.webp",
+      "alt": "Learn about orphan sponsorship project at Africa Relief"
+    },
+    "content": [
+      {
+        "heading": "Your support changes lives, turning vulnerabilities into opportunities",
+        "description": "By sponsoring an orphan, you become their beacon of hope, offering stability, education, and a chance for a promising future. Empowering orphans is not just a duty; it’s a pathway to a brighter, hopeful tomorrow."
+      },
+      {
+        "heading": "How is ARCD's Relief responding?",
+        "description": "ARCD’s Relief is dedicated to securing a better future for orphans. Through our Sponsorship Program, we provide access to education, healthcare, and a nurturing environment for these deserving children."
+      },
+      {
+        "heading": "Your donation nurturing Futures",
+        "description": "Your donation directly impacts an orphan’s life, providing essentials like education, healthcare, and emotional support. Your generosity fosters resilience and empowers them to thrive despite challenges."
+      }
+    ],
+    "donationForm": {
+      "id": 14699,
+      "title": "Orphan Sponsorship",
+      "levels": [
+        {
+          "amount": 50,
+          "name": null
+        },
+        {
+          "amount": 150,
+          "name": null
+        },
+        {
+          "amount": 300,
+          "name": null
+        },
+        {
+          "amount": 600,
+          "name": null
+        }
+      ],
+      "fullyFundLevel": null,
+      "recurringPeriods": [
+        "day",
+        "week",
+        "month",
+        "Quarter",
+        "year"
+      ]
+    },
+    "latestUpdates": [
+      {
+        "title": "Strengthening Partnerships in Ghana",
+        "slug": "strengthening-partnerships-in-ghana",
+        "categories": [
+          {
+            "name": "education",
+            "slug": "education"
+          },
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "orphan Support",
+            "slug": "orphan-support"
+          },
+          {
+            "name": "sustainable-community",
+            "slug": "sustainable-community"
+          }
+        ],
+        "date": "August 23, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/strengthening-partnerships-in-ghana/20230821_140424-1024x461.webp",
+          "alt": "Vibrant Ghanaian marketplace bustling with activity, showcasing Africa relief efforts and development cooperation in Ghana"
+        }
+      },
+      {
+        "title": "Strategic Partnerships in Tanzania",
+        "slug": "strategic-partnerships-in-tanzania",
+        "categories": [
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "orphan support",
+            "slug": "orphan-support"
+          }
+        ],
+        "date": "September 1, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/strategic-partnerships-in-tanzania/Tanzania2.webp",
+          "alt": "Impact non profit: Team analyzing data for community improvement projects"
+        }
+      },
+      {
+        "title": "Salah Alzoobi Mosque",
+        "slug": "salah-alzoobi-mosquesalah-alzoobi-mosque",
+        "categories": [
+          {
+            "name": "education",
+            "slug": "education"
+          }
+        ],
+        "date": "September 8, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/salah-alzoobi-mosque/Szuabi3-1024x450.webp",
+          "alt": "A sustainable and eco-friendly mosque in Africa, blending modern design with environmental consciousness."
+        }
+      }
+    ]
+  },
+  {
+    "title": "Zakat Al-Mal",
+    "slug": "zakat-al-mal",
+    "category": {
+      "name": "zakat",
+      "slug": "zakat"
+    },
+    "summary": "Zakat Al-Mal embodies the spirit of generosity, providing essential aid to uplift lives and communities",
+    "featuredImage": {
+      "src": "assets/db/projects/images/zakat-al-mal.webp",
+      "alt": "A generous individual giving money to a charity as part of their Zakat donation"
+    },
+    "content": [
+      {
+        "heading": "Your Zakat extends a hand of hope, laying the groundwork for prosperity among those seeking aid.",
+        "description": "Contribute Zakat Al-Mal to create a ripple of positive change. Your generosity creates opportunities and transforms lives for the better."
+      },
+      {
+        "heading": "How is ARCD's Relief responding?",
+        "description": "ARCD’s Relief diligently allocates Zakat Al-Mal funds to support various sustainable projects, enabling long-term growth within communities."
+      },
+      {
+        "heading": "Your Contribution. Their Progress.",
+        "description": "Your Zakat Al-Mal donation aids in education, healthcare, and economic empowerment, fostering stability and growth for underprivileged communities."
+      }
+    ],
+    "donationForm": {
+      "id": 14707,
+      "title": "Zakat Al-Mal",
+      "levels": [
+        {
+          "amount": 50,
+          "name": null
+        },
+        {
+          "amount": 150,
+          "name": null
+        },
+        {
+          "amount": 300,
+          "name": null
+        },
+        {
+          "amount": 600,
+          "name": null
+        }
+      ],
+      "fullyFundLevel": null,
+      "recurringPeriods": [
+        "day",
+        "week",
+        "month",
+        "Quarter",
+        "year"
+      ]
+    },
+    "latestUpdates": [
+      {
+        "title": "Bir Al-Walidayn School",
+        "slug": "bir-al-walidayn-school",
+        "categories": [
+          {
+            "name": "education",
+            "slug": "education"
+          }
+        ],
+        "date": "August 16, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/bir-al-walidayn-school/Bir-Al-Walidayn-School1-1024x450.webp",
+          "alt": "Completed school building in an African village, a result of Africa Relief's school-building initiative"
+        }
+      },
+      {
+        "title": "Emergency Morocco Earthquake Response",
+        "slug": "emergency-morocco-earthquake-response",
+        "categories": [
+          {
+            "name": "food aid",
+            "slug": "food-aid"
+          },
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "October 12, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
+          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
+        }
+      },
+      {
+        "title": "Mariame Diawara and Fatoumata Tiemoko Well",
+        "slug": "mariame-diawara-and-fatoumata-tiemoko-well",
+        "categories": [
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "September 29, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame6-1024x802.webp",
+          "alt": "Mariame Diawara and Fatoumata Tiemoko on the well built by Africa Relief"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Zakat Al-Fitr",
+    "slug": "zakat-al-fitr",
+    "category": {
+      "name": "zakat",
+      "slug": "zakat"
+    },
+    "summary": "Zakat Al-Fitr, embodies the spirit of generosity and solidarity within Islam. It’s a mandatory charitable donation given at the conclusion of Ramadan, symbolizing purification and support for the less fortunate.",
+    "featuredImage": {
+      "src": "assets/db/projects/images/zakat-al-fitr.webp",
+      "alt": "Individuals contributing to charitable causes as an essential part of their Eid al-Fitr celebrations"
+    },
+    "content": [
+      {
+        "heading": "Zakat Al-Fitr exemplifies the essence of charity and unity",
+        "description": "Extend the blessings of Eid by sharing Zakat Al-Fitr, ensuring joy and fulfillment for the less fortunate. Your contribution creates a memorable and meaningful Eid for everyone."
+      },
+      {
+        "heading": "How is ARCD's Relief responding?",
+        "description": "ARCD’s Relief ensures the proper collection and distribution of Zakat Al-Fitr to those in need, ensuring everyone partakes in the joyous Eid festivities."
+      },
+      {
+        "heading": "Your Generosity. Their Celebration",
+        "description": "Your Zakat Al-Fitr donation directly supports disadvantaged families, providing them the means to celebrate Eid with joy and dignity."
+      }
+    ],
+    "donationForm": {
+      "id": 14759,
+      "title": "Zakat Al-Fitr",
+      "levels": [
+        {
+          "amount": 15,
+          "name": null
+        },
+        {
+          "amount": 30,
+          "name": null
+        },
+        {
+          "amount": 60,
+          "name": null
+        },
+        {
+          "amount": 90,
+          "name": null
+        }
+      ],
+      "fullyFundLevel": null,
+      "recurringPeriods": [
+        "year"
+      ]
+    },
+    "latestUpdates": [
+      {
+        "title": "Bir Al-Walidayn School",
+        "slug": "bir-al-walidayn-school",
+        "categories": [
+          {
+            "name": "education",
+            "slug": "education"
+          }
+        ],
+        "date": "August 16, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/bir-al-walidayn-school/Bir-Al-Walidayn-School1-1024x450.webp",
+          "alt": "Completed school building in an African village, a result of Africa Relief's school-building initiative"
+        }
+      },
+      {
+        "title": "Emergency Morocco Earthquake Response",
+        "slug": "emergency-morocco-earthquake-response",
+        "categories": [
+          {
+            "name": "food aid",
+            "slug": "food-aid"
+          },
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "October 12, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
+          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
+        }
+      },
+      {
+        "title": "Mariame Diawara and Fatoumata Tiemoko Well",
+        "slug": "mariame-diawara-and-fatoumata-tiemoko-well",
+        "categories": [
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "September 29, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame6-1024x802.webp",
+          "alt": "Mariame Diawara and Fatoumata Tiemoko on the well built by Africa Relief"
+        }
+      }
+    ]
+  },
+  {
+    "title": "Iftar Meal",
+    "slug": "iftar-meal",
+    "category": {
+      "name": "ramadan",
+      "slug": "ramadan"
+    },
+    "summary": "It’s more than just a meal, Having the Iftar meal together fosters unity and kindness, creating bonds that transcend hunger.",
+    "featuredImage": {
+      "src": "assets/db/projects/images/iftar-meal.webp",
+      "alt": "A community gathering for a Ramadan Iftar, where donated meals are shared among attendees"
+    },
+    "content": [
+      {
+        "heading": "Your support during Iftar extends beyond a meal; it feeds hope and strengthens communities.",
+        "description": "In the moments of having Iftar, we find unity and compassion. Join us in providing nourishment to those fasting, sowing seeds of solidarity and care."
+      },
+      {
+        "heading": "How is ARCD's Relief responding?",
+        "description": "ARCD’s Relief ensures that no one breaks their fast alone. Through our Iftar Meal project, we’re distributing nutritious meals to families, fostering a sense of togetherness during this sacred time."
+      },
+      {
+        "heading": "Sharing an Iftar Meal, Enhancing Unity.",
+        "description": "Your donation directly supports families in need, ensuring they have access to wholesome meals during Ramadan. Your generosity fosters a sense of community and provides nourishment when it’s needed most."
+      }
+    ],
+    "donationForm": {
+      "id": 14764,
+      "title": "Iftar meal",
+      "levels": [
+        {
+          "amount": 30,
+          "name": null
+        },
+        {
+          "amount": 90,
+          "name": null
+        },
+        {
+          "amount": 300,
+          "name": null
+        },
+        {
+          "amount": 900,
+          "name": null
+        }
+      ],
+      "fullyFundLevel": null,
+      "recurringPeriods": [
+        "day",
+        "week",
+        "month",
+        "Quarter",
+        "year"
+      ]
+    },
+    "latestUpdates": [
+      {
+        "title": "Bir Al-Walidayn School",
+        "slug": "bir-al-walidayn-school",
+        "categories": [
+          {
+            "name": "education",
+            "slug": "education"
+          }
+        ],
+        "date": "August 16, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/bir-al-walidayn-school/Bir-Al-Walidayn-School1-1024x450.webp",
+          "alt": "Completed school building in an African village, a result of Africa Relief's school-building initiative"
+        }
+      },
+      {
+        "title": "Emergency Morocco Earthquake Response",
+        "slug": "emergency-morocco-earthquake-response",
+        "categories": [
+          {
+            "name": "food aid",
+            "slug": "food-aid"
+          },
+          {
+            "name": "health",
+            "slug": "health"
+          },
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "October 12, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
+          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
+        }
+      },
+      {
+        "title": "Mariame Diawara and Fatoumata Tiemoko Well",
+        "slug": "mariame-diawara-and-fatoumata-tiemoko-well",
+        "categories": [
+          {
+            "name": "water",
+            "slug": "water"
+          }
+        ],
+        "date": "September 29, 2023",
+        "featuredImage": {
+          "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame6-1024x802.webp",
+          "alt": "Mariame Diawara and Fatoumata Tiemoko on the well built by Africa Relief"
+        }
+      }
+    ]
+  }
+]
