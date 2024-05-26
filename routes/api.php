@@ -27,6 +27,9 @@ require __DIR__ . '/api/stripe.php';
 // Posts
 require __DIR__ . '/api/posts.php';
 
+// Firebase Notification
+require __DIR__ . '/api/firebase-notification.php';
+
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/user', [UserController::class, 'getAuthUser']);
     Route::get('/user/donations', [DonationController::class, 'getUserDonations']);
