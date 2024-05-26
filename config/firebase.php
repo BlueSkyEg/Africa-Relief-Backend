@@ -52,17 +52,17 @@ return [
 
 //            'credentials' => env('FIREBASE_CREDENTIALS', env('GOOGLE_APPLICATION_CREDENTIALS')),
               'credentials' => [
-                  "type" => "service_account",
-                  "project_id" => "africa-relief-413f9",
-                  "private_key_id" => "c654de37d7e94d039e601857651e7d9f513414fb",
-                  "private_key" => "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDcDZWv/qg2VEkW\no8xHB8RGncvFGVifmFq5qpMFi6B5m+ZCXZ1/Xa5tSUq051fLKNyEOWzP3Y36s8TR\nTbRqqpTndGeTg4YexMywNMfEsiAqd1V5YF3oWJYPco6kdcDsC3GCFLitR6KFnZuW\nEcCKN1HodzJ0ikbrN4um0ZJCZbRCqO5uQF1B3tGIodz0m9eMLS6YvZcaiWp1euqJ\nn9dFmM0cywT98f3dm72MDAt9QS2YsGijyOQ0dWtJcSkWy+1c7yak6F2lVPuSfnIm\nmqhClNL0EOFyr+6c+Nto00kwl6lWsTSB9U1oibdTMddc3Trq+P447h3dAzXn3xIt\no0EPoupnAgMBAAECggEAaAxUVt9GkknQNVBF6uAVQn6iNxQA/5V+cIPi+KBIxLee\nbIrvSaX2L96T4G3y6TDs8+hjNvY/h+cwjPb88+KsfbRgtTNfW3Uag8axHqRK6Ul7\ntOSIArDAY5V7NPAoxHO0vBkoKWbRxfP7+T1zmOcHZ6/Uv54SYm3lLn+xdIu6bDmr\nuGzeY64MHhnE2SOIqyMs99bISj7zm+geCOrOtY5QgsJpuKbcRqw/LaX1Icl+TSDP\nqS9RMwIIn//KFKTRAmY5G6nLEurCW6+yfbQRJu51yrZin6Za00FQ02DQFB6rFjMI\nP146QNXvNHs08Jhz1yJ4Jhu5E/beTHep2MG+CedtIQKBgQD39XB6KtC/fNToaDEq\nnUJRNoGeBrg/IqYCoW1RNj7Ij0qsBf10EeFLzBl2LD2GHUkpQB6uXVJbTPAiDH7y\nPSEuyxkk9TfhqMAQzhP5nYg5RtpVpNQylXgA05c8hMdDeeqPg3BqPM2Bp9n9wDi7\nUE7bRXaIuZ/5z196lVxnWvfoDQKBgQDjMHi5WYFEZ9DDniii9vLcXhKZeDbVYgBp\nAWddpJMaQSSkv6RDoOXIveOwpZaBdWV9XYbmBHK0PIq5voma3tgmbcLfflUrCxGz\nrrgxcf9xQLmGkPK/FtXHaTzyOjcsr/MJbmwXF6RquD5tOcsXaqGM/OLSCvfA6MPg\njglDryMrQwKBgQC4XaVxIM6v4oiH+Zi9H8rEieucbVCnmQKoqBCZNuU9yNVzzMxk\ndjr3Wd2AsWpZgwL4CfYGHdtziWRvXK0zPmKi4V5jzXTsc8XDeQb/LbOxKs6CqZkh\nt2NP8gPcermSoV7XsJpwU59WDVEXzMoh9Jd9kEuPY73gR+GtSss3CjuULQKBgQDT\n5RCkJzPm3kEbQnc6T8OB/4evdi0GZkplpbaH44iEE0AfHNMTdIz85wbnafnvMtR+\n0e2QuZNWQaVNysXDGZdWeEcqdkTvSXqwMQSAsYeDVM/1D1opGh43yBLdBakSV+UA\n5emQvC9QjhlDfITMiVq2CeNv7mTXmwGefjtr0nylywKBgQCBDCQYrs9aTcOTfGCK\njX9BDZz2Zr7AjuSHW1gdbusfyz3rkHSqbqTCQmX4xD/t5FhvEzRGGEWCpN64slwx\ne4WrdhM9Mt1HVEiq1IZQwdGCkFs9Z8I2QocnJE4PdsRdnMI4SbwcqL2M68OrMo4B\ne3kvSPbGwUeDh6yK3NEHC/81fw==\n-----END PRIVATE KEY-----\n",
-                  "client_email" => "firebase-adminsdk-nomo3@africa-relief-413f9.iam.gserviceaccount.com",
-                  "client_id" => "117165429517836734224",
-                  "auth_uri" => "https://accounts.google.com/o/oauth2/auth",
-                  "token_uri" => "https://oauth2.googleapis.com/token",
-                  "auth_provider_x509_cert_url" => "https://www.googleapis.com/oauth2/v1/certs",
-                  "client_x509_cert_url" => "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-nomo3%40africa-relief-413f9.iam.gserviceaccount.com",
-                  "universe_domain" => "googleapis.com"
+                  "type" => env('FIREBASE_TYPE'),
+                  "project_id" => env('FIREBASE_PROJECT_ID'),
+                  "private_key_id" => env('FIREBASE_PRIVATE_KEY_ID'),
+                  "private_key" => env('FIREBASE_PRIVATE_KEY'),
+                  "client_email" => env('FIREBASE_CLIENT_EMAIL'),
+                  "client_id" => env('FIREBASE_CLIENT_ID'),
+                  "auth_uri" => env('FIREBASE_AUTH_URI'),
+                  "token_uri" => env('FIREBASE_TOKEN_URI'),
+                  "auth_provider_x509_cert_url" => env('FIREBASE_AUTH_PROVIDER_CERT_URL'),
+                  "client_x509_cert_url" => env('FIREBASE_CLIENT_CERT_URL'),
+                  "universe_domain" => env('FIREBASE_UNIVERSE_DOMAIN')
               ],
 
             /*
