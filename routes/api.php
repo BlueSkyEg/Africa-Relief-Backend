@@ -30,6 +30,15 @@ require __DIR__ . '/api/posts.php';
 // Firebase Notification
 require __DIR__ . '/api/firebase-notification.php';
 
+// Job Application
+require __DIR__ . '/api/job-application.php';
+
+// Contact
+require __DIR__ . '/api/contact.php';
+
+// Volunteers
+require __DIR__ . '/api/volunteer.php';
+
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/user', [UserController::class, 'getAuthUser']);
     Route::get('/user/donations', [DonationController::class, 'getUserDonations']);
@@ -47,4 +56,3 @@ Route::prefix('webhook')->group(function () {
 //Route::get('/quickbooks/authorize', [QuickBooksController::class, 'getAuthorizationUrl']);
 //Route::get('/quickbooks/callback', [QuickBooksController::class, 'handleCallback']);
 //Route::get('/quickbooks/{entity}', [QuickBooksController::class, 'getTransactions']);
-
