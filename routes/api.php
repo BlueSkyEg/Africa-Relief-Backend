@@ -39,6 +39,9 @@ require __DIR__ . '/api/contact.php';
 // Volunteers
 require __DIR__ . '/api/volunteer.php';
 
+// Newsletter
+require __DIR__ . '/api/newsletter.php';
+
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/user', [UserController::class, 'getAuthUser']);
     Route::get('/user/donations', [DonationController::class, 'getUserDonations']);
