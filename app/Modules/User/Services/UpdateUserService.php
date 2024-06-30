@@ -2,66 +2,104 @@
 
 namespace App\Modules\User\Services;
 
+use App\Exceptions\ApiResponseException;
 use App\Models\User;
+use App\Modules\Authentication\Services\EmailVerificationService;
 use App\Modules\User\Repositories\UserRepository;
-use App\Modules\User\Requests\UpdateUserImageRequest;
-use App\Modules\User\Requests\UpdateUserInfoRequest;
+use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
-use Illuminate\Validation\ValidationException;
 
 class UpdateUserService
 {
-    public function __construct(private UserRepository $userRepository)
+    public function __construct(
+        private readonly UserRepository           $userRepository,
+        private readonly GetUserService           $getUserService,
+        private readonly EmailVerificationService $emailVerificationService
+    )
     {
     }
 
-    public function updateUserPassword(User $user, string $newPassword)
+    public function updateUserInfo(array $info): User
     {
-        return $this->userRepository->updateUserPassword($user, $newPassword);
+        $user = isset($info['id'])
+            ? $this->getUserService->getUserById($info['id'])
+            : $this->getUserService->getAuthUser();
+
+        if (isset($info['email']) && $user->email !== $info['email']) {
+            $info = array_merge($info, ['email_verified_at' => null]);
+            $this->emailVerificationService->resendEmailVerificationNotification();
+        }
+
+        try {
+            $updatedUser = $this->userRepository->updateInfo($user, $info);
+
+            if (!$updatedUser) {
+                throw new ApiResponseException('Failed to update user info.');
+            }
+
+            return $updatedUser;
+        } catch (\Exception $e) {
+            throw new ApiResponseException('An error occurred while updating the user information: ' . $e->getMessage());
+        }
     }
 
-    public function updateUserInfo(UpdateUserInfoRequest $request) {
-        $user = $request->user();
+    public function updateUserImage(UploadedFile $image): User
+    {
+        $user = $this->getUserService->getAuthUser();
 
-        if($request->filled('name') && $user->name != $request->name) {
-            $user->name = $request->name;
+        try {
+            $imagePath = $image->store('users/images');
+
+            // Check if the user already has an image before attempting to delete
+            if ($user->img) {
+                Storage::delete('users/images/' . $user->img);
+            }
+
+            $imageName = Str::afterLast($imagePath, '/');
+            $updatedUser = $this->userRepository->updateImage($user, $imageName);
+
+            if (!$updatedUser) {
+                throw new ApiResponseException('Failed to update user image.');
+            }
+
+            return $updatedUser;
+        } catch (\Exception $e) {
+            throw new ApiResponseException('An error occurred while updating the user image: ' . $e->getMessage());
         }
-
-        if($request->filled('email') && $user->email != $request->email) {
-            $user->email = $request->email;
-            $user->email_verified_at = null;
-        }
-
-        if($request->filled('phone') && $user->phone != $request->phone) {
-            $user->phone = $request->phone;
-        }
-
-        if($request->filled('address') && $user->address != $request->address) {
-            $user->address = $request->address;
-        }
-
-        if($request->filled('username') && $user->username != $request->username) {
-            $user->username = $request->username;
-        }
-
-        return $this->userRepository->updateUserInfo($user);
     }
 
-    public function updateUserImage(UpdateUserImageRequest $request)
+    public function updateUserPassword(User $user, string $newPassword): User
     {
         try {
-            $user = $request->user();
-            $imagePath = $request->file('img')->store('users/images');
-            Storage::delete('users/images/'.$user->img);
-            $user->img = Str::afterLast($imagePath, '/');
-            $user->save();
+            $updatedUser = $this->userRepository->updatePassword($user, $newPassword);
 
-            return response()->api(true, 'user image updated successfully', $user);
+            if (!$updatedUser) {
+                throw new ApiResponseException('Failed to update user password.');
+            }
+
+            return $updatedUser;
         } catch (\Exception $e) {
-            throw ValidationException::withMessages([
-                "img" => "An error occur, image not updated"
-            ]);
+            throw new ApiResponseException('An error occurred while updating the user password: ' . $e->getMessage());
+        }
+    }
+
+    public function deactivateUser($userId = null): User
+    {
+        $user = $userId
+            ? $this->getUserService->getUserById($userId)
+            : $this->getUserService->getAuthUser();
+
+        try {
+            $deactivatedUser = $this->userRepository->deactivate($user);
+
+            if (!$deactivatedUser) {
+                throw new ApiResponseException('Failed to deactivate the user.');
+            }
+
+            return $deactivatedUser;
+        } catch (\Exception $e) {
+            throw new ApiResponseException('An error occurred while deactivating the user: ' . $e->getMessage());
         }
     }
 }

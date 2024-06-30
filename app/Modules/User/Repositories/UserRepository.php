@@ -3,55 +3,60 @@
 namespace App\Modules\User\Repositories;
 
 use App\Models\User;
-use App\Modules\Authentication\Requests\RegisterRequest;
 use Illuminate\Support\Facades\Hash;
 
 class UserRepository
 {
-    // Get authed user
-    public function getAuthUser()
+    public function find($userId): ?User
     {
-        return auth('sanctum')->user();
+        $user = User::find($userId);
+
+        return $user ?: null;
     }
 
-    // Get user by email
-    public function getUserByEmail(string $email)
+    public function findByEmailOrUsername(string $emailOrUsername): ?User
     {
-        return User::where('email', $email)->first();
+        $user = User::where('email', $emailOrUsername)->orWhere('username', $emailOrUsername)->first();
+
+        return $user ?: null;
     }
 
-    // Get user by email or username
-    public function getUserByEmailOrUsername(string $emailOrUsername)
-    {
-        return User::where('email', $emailOrUsername)->orWhere('username', $emailOrUsername)->first();
-    }
-
-    // Update user password
-    public function updateUserPassword(User $user, string $newPassword)
+    public function updatePassword(User $user, string $newPassword): ?User
     {
         $user->password = Hash::make($newPassword);
-        $user->save();
-        return $user;
+
+        return $user->save() ? $user : null;
     }
 
-    // Create new user
-    public function createUser(RegisterRequest $request)
+    public function create(array $credentials): ?User
     {
-        return User::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => Hash::make($request->password),
-            'username' => null,
-            'phone' => null,
-            'address' => null,
-            'img' => null
+        $user = User::create([
+            'name' => $credentials['name'],
+            'email' => $credentials['email'],
+            'password' => Hash::make($credentials['password'])
         ]);
+
+        return $user ?: null;
     }
 
-    public function updateUserInfo(User $user)
+    public function updateInfo($user, array $info): ?User
     {
-        $user->save();
+        $user->fill($info);
 
-        return response()->api(true, 'User updated successfully', $user);
+        return $user->save() ? $user : null;
+    }
+
+    public function updateImage($user, string $imageName): ?User
+    {
+        $user->img = $imageName;
+
+        return $user->save() ? $user : null;
+    }
+
+    public function deactivate($user): ?User
+    {
+        $user->active = '0';
+
+        return $user->save() ? $user : null;
     }
 }

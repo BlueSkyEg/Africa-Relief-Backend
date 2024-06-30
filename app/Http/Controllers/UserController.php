@@ -4,42 +4,45 @@ namespace App\Http\Controllers;
 
 use App\Modules\User\Requests\UpdateUserImageRequest;
 use App\Modules\User\Requests\UpdateUserInfoRequest;
+use App\Modules\User\Resources\UserResource;
 use App\Modules\User\Services\GetUserService;
 use App\Modules\User\Services\UpdateUserService;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Str;
+use Illuminate\Http\JsonResponse;
 
 class UserController extends Controller
 {
-    public function __construct(private GetUserService $getUserService, private UpdateUserService $updateUserService)
+    public function __construct(
+        private readonly GetUserService $getUserService,
+        private readonly UpdateUserService $updateUserService
+    )
     {
     }
 
-    public function getAuthUser()
+    public function getAuthUser(): JsonResponse
     {
         $user = $this->getUserService->getAuthUser();
 
-        return response()->api(true, 'user retrieved successfully', $user);
+        return response()->api(true, 'User retrieved successfully.', new UserResource($user));
     }
 
-    public function updateUserInfo(UpdateUserInfoRequest $request)
+    public function updateUserInfo(UpdateUserInfoRequest $request): JsonResponse
     {
-        return $this->updateUserService->updateUserInfo($request);
+        $this->updateUserService->updateUserInfo($request->validated());
+
+        return response()->api(true, 'User updated successfully.');
     }
 
-    public function updateUserImage(UpdateUserImageRequest $request)
+    public function updateUserImage(UpdateUserImageRequest $request): JsonResponse
     {
-        return $this->updateUserService->updateUserImage($request);
+        $user = $this->updateUserService->updateUserImage($request->file('img'));
+
+        return response()->api(true, 'User image updated successfully.', new UserResource($user));
     }
 
-    public function deleteUser(Request $request)
+    public function deactivateUser(): JsonResponse
     {
-        $user = $request->user();
-        $user->active = '0';
-        $user->save();
-        $user->tokens()->delete();
+        $this->updateUserService->deactivateUser();
 
-        return response()->api(true, 'user deleted successfully');
+        return response()->api(true, 'User deleted successfully.');
     }
 }

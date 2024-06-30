@@ -23,11 +23,22 @@ class UpdateUserInfoRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => 'nullable|string',
-            'email' => ['nullable', 'email', Rule::unique('users')->ignore($this->user())],
-            'phone' => 'nullable|string',
-            'address' => 'nullable|string',
-            'username' => ['nullable', 'string', Rule::unique('users')->ignore($this->user())]
+            'id' => ['sometimes', 'required', 'exists:users'],
+            'name' => ['sometimes', 'required', 'string'],
+            'email' => [
+                'sometimes',
+                'required',
+                'email',
+                Rule::unique('users')->ignore($this->user())
+            ],
+            'phone' => ['sometimes', 'required', 'string'],
+            'address' => ['sometimes', 'required', 'string'],
+            'username' => [
+                'sometimes',
+                'required',
+                'string',
+                Rule::unique('users')->ignore($this->user())
+            ]
         ];
     }
 }
