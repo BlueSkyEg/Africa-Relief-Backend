@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Modules\CarouselSlide\Resources\CarouselSlideResource;
 use App\Modules\CarouselSlide\Services\GetCarouselSlideService;
 use Illuminate\Http\JsonResponse;
 
@@ -13,6 +14,8 @@ class CarouselSlideController extends Controller
 
     public function getCarousel(string $carouselType): JsonResponse
     {
-        return $this->getCarouselSlideService->getCarousel($carouselType);
+        $slides = $this->getCarouselSlideService->getCarousel($carouselType);
+
+        return response()->api(true, 'Carousel retrieved successfully.', CarouselSlideResource::collection($slides));
     }
 }

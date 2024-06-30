@@ -7,8 +7,14 @@ use Illuminate\Database\Eloquent\Collection;
 
 class CarouselSlideRepository
 {
-    public function getCarousel(string $carouselType): Collection
+    public function getCarousel(string $carouselType): ?Collection
     {
-        return CarouselSlide::where('carousel_type', $carouselType)->get();
+        $carousel = CarouselSlide::where('carousel_type', $carouselType)->get();
+
+        if ($carousel) {
+            return $carousel;
+        }
+
+        return null;
     }
 }

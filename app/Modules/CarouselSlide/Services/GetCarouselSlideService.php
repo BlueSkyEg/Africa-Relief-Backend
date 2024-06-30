@@ -2,9 +2,9 @@
 
 namespace App\Modules\CarouselSlide\Services;
 
+use App\Exceptions\ApiResponseException;
 use App\Modules\CarouselSlide\Repositories\CarouselSlideRepository;
-use App\Modules\CarouselSlide\Resources\CarouselSlideResource;
-use Illuminate\Http\JsonResponse;
+use Illuminate\Database\Eloquent\Collection;
 
 class GetCarouselSlideService
 {
@@ -12,18 +12,18 @@ class GetCarouselSlideService
     {
     }
 
-    public function getCarousel(string $carouselType): JsonResponse
+    public function getCarousel(string $carouselType): Collection
     {
         try {
             $slides = $this->carouselSlideRepository->getCarousel($carouselType);
 
-            if (empty($slides->toArray())) {
-                return response()->api(false, 'carousel not found');
+            if (!$slides) {
+                throw new ApiResponseException('Carousel not found.');
             }
 
-            return response()->api(true, 'carousel retrieved successfully', CarouselSlideResource::collection($slides));
+            return $slides;
         } catch (\Exception $e) {
-            return response()->api(false, $e->getMessage());
+            throw new ApiResponseException('An error occurred while retrieving the carousel: ' . $e->getMessage());
         }
     }
 }
