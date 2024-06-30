@@ -5,9 +5,8 @@ namespace App\Modules\Authentication\Requests;
 use App\Models\User;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
-use Illuminate\Validation\Rules;
 
-class NewPasswordRequest extends FormRequest
+class SendPasswordResetLinkRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,9 +24,12 @@ class NewPasswordRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'token' => ['required'],
-            'email' => ['required', 'email', Rule::exists(User::class)],
-            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+            'email' => [
+                'required',
+                'string',
+                'email',
+                Rule::exists(User::class)
+            ]
         ];
     }
 }

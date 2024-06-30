@@ -2,15 +2,14 @@
 
 namespace App\Modules\Authentication\Services;
 
-use App\Modules\Authentication\Requests\LoginRequest;
-use App\Modules\Authentication\Requests\RegisterRequest;
+use App\Exceptions\ApiResponseException;
 use App\Modules\Donor\Services\GetDonorService;
+use App\Modules\Donor\Services\UpdateDonorService;
 use App\Modules\User\Services\CreateUserService;
 use App\Modules\User\Services\GetUserService;
 use App\Modules\User\Services\UpdateUserService;
 use Carbon\Carbon;
 use Illuminate\Auth\Events\Registered;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 use MikeMcLin\WpPassword\Facades\WpPassword;
@@ -18,85 +17,76 @@ use MikeMcLin\WpPassword\Facades\WpPassword;
 class AuthenticateService
 {
     public function __construct(
-        private readonly GetUserService $getUserService,
-        private readonly CreateUserService $createUserService,
-        private readonly UpdateUserService $updateUserService,
-        private readonly GetDonorService $getDonorService
+        private readonly GetUserService     $getUserService,
+        private readonly CreateUserService  $createUserService,
+        private readonly UpdateUserService  $updateUserService,
+        private readonly GetDonorService    $getDonorService,
+        private readonly UpdateDonorService $updateDonorService
     )
     {
     }
 
-    public function login(LoginRequest $request)
+    public function login(array $credentials): array
     {
-        $user = $this->getUserService->getUserByEmailOrUsername($request->email);
+        $user = $this->getUserService->getUserByEmailOrUsername($credentials['email']);
 
-        try {
-            if ($user && $user?->active && WpPassword::check($request->password, $user?->password)) {
-                $this->updateUserService->updateUserPassword($user, $request->password);
-            } else if (!Auth::attempt(['email' => $request->email, 'password' => $request->password, 'active' => '1'])) {
-                throw ValidationException::withMessages([
-                    'email' => 'Invalid credentials',
-                ]);
-            }
-        } catch (\Exception $e) {
+        // Validate credentials and active status
+        if ($user->active && WpPassword::check($credentials['password'], $user->password)) {
+            $this->updateUserService->updateUserPassword($user, $credentials['password']);
+        } else if (!Auth::attempt(['email' => $credentials['email'], 'password' => $credentials['password'], 'active' => '1'])) {
             throw ValidationException::withMessages([
                 'email' => 'Invalid credentials',
             ]);
         }
 
-        $tokenExpiresAt = Carbon::now()->addMinutes(config('sanctum.expiration'));
-        $token = $user->createToken('apiToken')->plainTextToken;
-
-        return response()->api(
-            true,
-            'User logged in successfully',
-            [
-                'user' => $user,
-                'accessToken' => $token,
-                'tokenExpiresAt' => $tokenExpiresAt->getTimestampMs()
-            ]
-        );
+        try {
+            return $this->generateTokenResponse($user);
+        } catch (\Exception $e) {
+            throw new ApiResponseException('An error occurred during the login process: ' . $e->getMessage());
+        }
     }
 
-    public function register(RegisterRequest $request)
+    public function register(array $credentials): array
     {
-        $user = $this->createUserService->createUser($request);
+        $user = $this->createUserService->createUser($credentials);
 
         // Assign user to donor if existing
-        $donor = $this->getDonorService->getDonorByEmail($request->email);
+        $donor = $this->getDonorService->getDonorByEmail($credentials['email']);
+
         if ($donor) {
-            $donor->user_id = $user->id;
-            $donor->save();
+            $this->updateDonorService->assignDonorToUser($donor, $user->id);
         }
 
-        // Send email verification
-        event(new Registered($user));
+        try {
+            // Send email verification
+            event(new Registered($user));
 
-        $tokenExpiresAt = Carbon::now()->addMinutes(config('sanctum.expiration'));
+            return $this->generateTokenResponse($user);
+        } catch (\Exception $e) {
+            throw new ApiResponseException('An error occurred during the register process: ' . $e->getMessage());
+        }
+    }
+
+    public function logout(): bool
+    {
+        $user = $this->getUserService->getAuthUser();
+
+        try {
+            return $user->currentAccessToken()->delete();
+        } catch (\Exception $e) {
+            throw new ApiResponseException('An error occurred during the logout process: ' . $e->getMessage());
+        }
+    }
+
+    private function generateTokenResponse($user): array
+    {
         $token = $user->createToken('apiToken')->plainTextToken;
+        $tokenExpiresAt = Carbon::now()->addMinutes(config('sanctum.expiration'));
 
-        return response()->api(
-            true,
-            'User created successfully',
-            [
-                'user' => $user,
-                'accessToken' => $token,
-                'tokenExpiresAt' => $tokenExpiresAt->getTimestampMs()
-            ]
-        );
-    }
-
-    public function logout(Request $request)
-    {
-        $request->user()->currentAccessToken()->delete();
-
-        return response()->api(true, 'user logged out successfully');
-    }
-
-    public function logoutFromAllDevices(Request $request)
-    {
-        $request->user()->tokens()->delete();
-
-        return response()->api(true, 'user logged out successfully from all devices');
+        return [
+            'user' => $user,
+            'accessToken' => $token,
+            'tokenExpiresAt' => $tokenExpiresAt->getTimestampMs(),
+        ];
     }
 }

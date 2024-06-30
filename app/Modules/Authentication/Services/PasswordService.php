@@ -2,75 +2,86 @@
 
 namespace App\Modules\Authentication\Services;
 
-use App\Modules\Authentication\Requests\ChangePasswordRequest;
-use App\Modules\Authentication\Requests\NewPasswordRequest;
+use App\Exceptions\ApiResponseException;
+use App\Modules\User\Services\GetUserService;
 use App\Modules\User\Services\UpdateUserService;
 use Illuminate\Auth\Events\PasswordReset;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Validation\ValidationException;
 use MikeMcLin\WpPassword\Facades\WpPassword;
 
 class PasswordService
 {
-    public function __construct(private UpdateUserService $updateUserService)
+    public function __construct(
+        private readonly GetUserService    $getUserService,
+        private readonly UpdateUserService $updateUserService
+    )
     {
     }
 
     // Send password reset link request
-    public function sendPasswordResetLink(Request $request)
+    public function sendPasswordResetLink(array $email): void
     {
-        $request->validate([
-            'email' => ['required', 'email'],
-        ]);
+        try {
+            $status = Password::sendResetLink($email);
 
-        $status = Password::sendResetLink(
-            $request->only('email')
-        );
-
-        if ($status != Password::RESET_LINK_SENT) {
-            throw ValidationException::withMessages([
-                'email' => $status,
-            ]);
+            $this->throwPasswordException($status);
+        } catch (\Exception $e) {
+            throw new ApiResponseException('An error occurred while sending password reset link: ' . $e->getMessage());
         }
-
-        return response()->api(true, $status);
     }
 
     // Create new password
-    public function createNewPassword(NewPasswordRequest $request)
+    public function createNewPassword(array $credentials): void
     {
-        $status = Password::reset(
-            $request->only('email', 'password', 'password_confirmation', 'token'),
-            function ($user) use ($request) {
-                $user = $this->updateUserService->updateUserPassword($user, $request->password);
-                $user->tokens()->delete();
+        try {
+            $status = Password::reset(
+                $credentials,
+                function ($user) use ($credentials) {
+                    $user = $this->updateUserService->updateUserPassword($user, $credentials['password']);
+                    $user->tokens()->delete();
 
-                event(new PasswordReset($user));
-            }
-        );
+                    event(new PasswordReset($user));
+                }
+            );
 
-        if ($status != Password::PASSWORD_RESET) {
-            throw ValidationException::withMessages([
-                'email' => $status
-            ]);
+            $this->throwPasswordException($status);
+        } catch (\Exception $e) {
+            throw new ApiResponseException('An error occurred during create new password: ' . $e->getMessage());
         }
-
-        return response()->api(true, $status);
     }
 
-    public function changePassword(ChangePasswordRequest $request)
+    // Change password with the current password
+    public function changePassword(array $credentials): void
     {
-        $user = $request->user();
-        if (! WpPassword::check($request->currentPassword, $user->password)) {
-            throw ValidationException::withMessages([
-                'currentPassword' => 'The current password is incorrect.'
-            ]);
+        $user = $this->getUserService->getAuthUser();
+
+        try {
+            // Check request password with user password that saved in database
+            // WpPassword can check password if it from WordPress or Laravel password
+            if (!WpPassword::check($credentials['currentPassword'], $user->password)) {
+                throw ValidationException::withMessages([
+                    'currentPassword' => 'The current password is incorrect.'
+                ]);
+            }
+
+            $user = $this->updateUserService->updateUserPassword($user, $credentials['password']);
+            $user->tokens()->delete();
+        } catch (\Exception $e) {
+            throw new ApiResponseException('An error occurred while change the password: ' . $e->getMessage());
         }
+    }
 
-        $user = $this->updateUserService->updateUserPassword($user, $request->password);
-        $user->tokens()->delete();
+    private function throwPasswordException(string $status): void
+    {
+        if ($status !== Password::RESET_LINK_SENT) {
+            if ($status === Password::RESET_THROTTLED) {
+                $errorMsg = 'You have exceeded the trying limit. Please try again later.';
+            } else {
+                $errorMsg = 'An error occurred during the reset password process.';
+            }
 
-        return response()->api(true, 'password changed successfully');
+            throw new ApiResponseException($errorMsg);
+        }
     }
 }
