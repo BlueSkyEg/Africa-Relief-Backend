@@ -16,6 +16,6 @@ class CarouselSlideController extends Controller
     {
         $slides = $this->getCarouselSlideService->getCarousel($carouselType);
 
-        return response()->api(true, 'Carousel retrieved successfully.', CarouselSlideResource::collection($slides));
+        return response()->success('Carousel retrieved successfully.', CarouselSlideResource::collection($slides));
     }
 }

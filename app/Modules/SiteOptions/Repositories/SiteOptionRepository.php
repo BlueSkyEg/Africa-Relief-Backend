@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Modules\SiteOptions;
+namespace App\Modules\SiteOptions\Repositories;
 
-use App\Models\SiteOption;
+use App\Modules\SiteOptions\SiteOption;
 
 class SiteOptionRepository
 {

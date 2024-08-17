@@ -1,8 +1,7 @@
 <?php
 
-namespace App\Http\Controllers\Firebase;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use App\Modules\Firebase\DeviceToken\Requests\StoreFirebaseDeviceTokenRequest;
 use App\Modules\Firebase\DeviceToken\Services\StoreFirebaseDeviceTokenService;
 use Illuminate\Http\JsonResponse;

@@ -2,9 +2,9 @@
 
 namespace App\Modules\SiteOptions\Services;
 
-use App\Modules\SiteOptions\SiteOptionRepository;
+use App\Modules\SiteOptions\Repositories\SiteOptionRepository;
 
-class GetSiteOptionService
+class SiteOptionService
 {
     public function __construct(private readonly SiteOptionRepository $siteOptionRepository)
     {
@@ -14,6 +14,13 @@ class GetSiteOptionService
     {
         return $this->siteOptionRepository->getSiteOption($name);
     }
+
+
+    public function updateSiteOption(string $name, string $value)
+    {
+        return $this->siteOptionRepository->updateSiteOption($name, $value);
+    }
+
 
     public function getQuickbooksOptions()
     {
