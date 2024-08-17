@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Modules\Firebase\DeviceToken;
+namespace App\Modules\Firebase\DeviceToken\Repositories;
 
-use App\Models\FirebaseDeviceToken;
+use App\Modules\Firebase\DeviceToken\FirebaseDeviceToken;
 
 class FirebaseDeviceTokenRepository
 {

@@ -2,7 +2,7 @@
 
 namespace App\Modules\CarouselSlide\Repositories;
 
-use App\Models\CarouselSlide;
+use App\Modules\CarouselSlide\CarouselSlide;
 use Illuminate\Database\Eloquent\Collection;
 
 class CarouselSlideRepository

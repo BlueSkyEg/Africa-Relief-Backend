@@ -2,7 +2,7 @@
 
 namespace App\Modules\Firebase\DeviceToken\Services;
 
-use App\Modules\Firebase\DeviceToken\FirebaseDeviceTokenRepository;
+use App\Modules\Firebase\DeviceToken\Repositories\FirebaseDeviceTokenRepository;
 use Illuminate\Http\JsonResponse;
 
 class GetFirebaseDeviceTokenService

@@ -2,7 +2,7 @@
 
 namespace App\Modules\CarouselSlide\Services;
 
-use App\Exceptions\ApiResponseException;
+use App\Exceptions\ApiException;
 use App\Modules\CarouselSlide\Repositories\CarouselSlideRepository;
 use Illuminate\Database\Eloquent\Collection;
 
@@ -18,12 +18,12 @@ class GetCarouselSlideService
             $slides = $this->carouselSlideRepository->getCarousel($carouselType);
 
             if (!$slides) {
-                throw new ApiResponseException('Carousel not found.');
+                throw new ApiException('Carousel not found.');
             }
 
             return $slides;
         } catch (\Exception $e) {
-            throw new ApiResponseException('An error occurred while retrieving the carousel: ' . $e->getMessage());
+            throw new ApiException('An error occurred while retrieving the carousel: ' . $e->getMessage());
         }
     }
 }

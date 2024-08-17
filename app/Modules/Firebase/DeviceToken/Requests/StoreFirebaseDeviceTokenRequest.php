@@ -2,7 +2,7 @@
 
 namespace App\Modules\Firebase\DeviceToken\Requests;
 
-use App\Models\FirebaseDeviceToken;
+use App\Modules\Firebase\DeviceToken\FirebaseDeviceToken;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 
