@@ -7,6 +7,7 @@ use Illuminate\Auth\Notifications\ResetPassword;
 use Illuminate\Auth\Notifications\VerifyEmail;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Notifications\Messages\MailMessage;
+use Illuminate\Support\Str;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -25,7 +26,8 @@ class AuthServiceProvider extends ServiceProvider
     public function boot(): void
     {
 	    VerifyEmail::toMailUsing(function (object $notifiable, string $url) {
-			$frontUrl = config('app.frontend_url')."/verify-email?verifyEmailUrl=".$url;
+            $verifyParamsUri = Str::after($url, env('APP_URL') . '/api');
+			$frontUrl = config('app.frontend_url')."/verify-email?verifyParamsUri=".$verifyParamsUri;
 
 		    return (new MailMessage)
 			    ->subject('Verify Email Address')

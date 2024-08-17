@@ -21,20 +21,20 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Stripe::setApiKey(env('STRIPE_SECRET'));
+        Stripe::setApiKey(config('stripe.secret_key'));
 
-        Response::macro('api', function (bool $success, string $message, $data = null, $errors = null, $status = 200) {
+        Response::macro('success', function (string $message, $data = null) {
             return Response::json([
-                'success' => $success,
+                'success' => true,
                 'message' => $message,
                 'data' => $data,
-                'errors' => $errors
-            ], $status);
+                'errors' => null
+            ]);
         });
 
-        Response::macro('apiWithPagination', function (bool $success, string $message, $data, $pagination, $status = 200) {
+        Response::macro('pagination', function (string $message, $data, $pagination) {
             return Response::json([
-                'success' => $success,
+                'success' => true,
                 'message' => $message,
                 'data' => [
                     'data' => $data,
@@ -46,7 +46,25 @@ class AppServiceProvider extends ServiceProvider
                     ]
                 ],
                 'errors' => null
+            ]);
+        });
+
+        Response::macro('error', function (string $message, $errors = null, $status = 200) {
+            return Response::json([
+                'success' => false,
+                'message' => $message,
+                'data' => null,
+                'errors' => $errors
             ], $status);
+        });
+
+        Response::macro('validationError', function ($errors) {
+            return Response::json([
+                'success' => false,
+                'message' => 'validation error',
+                'data' => null,
+                'errors' => $errors
+            ]);
         });
     }
 }

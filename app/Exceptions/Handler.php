@@ -4,6 +4,7 @@ namespace App\Exceptions;
 
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Validation\ValidationException;
 use Throwable;
 
@@ -21,6 +22,10 @@ class Handler extends ExceptionHandler
         'password_confirmation',
     ];
 
+    protected $dontReport = [
+        CustomException::class
+    ];
+
     /**
      * Register the exception handling callbacks for the application.
      */
@@ -34,13 +39,20 @@ class Handler extends ExceptionHandler
     public function render($request, Throwable $e)
     {
         if ($e instanceof ValidationException && $request->expectsJson()) {
-            return response()->api(false, 'validation error', null, $e->errors());
+            return response()->validationError($e->errors());
         }
 
         if ($e instanceof AuthenticationException && $request->expectsJson() && $request->is('api/*')) {
-            return response()->api(false, 'Unauthorized', null, null, 401);
+            return response()->error('Unauthorized', null, 401);
         }
 
-        return parent::render($request, $e);
+        if ($e instanceof CustomException) {
+            return response()->error($e->getMessage(), null, $e->getCode());
+        }
+
+        Log::debug('An unexpected error occurred: ' . $e->getMessage() . ' With status code: ' . $e->getCode());
+        return response()->error('An unexpected error occurred.', null, 500);
+
+        //return parent::render($request, $e);
     }
 }
