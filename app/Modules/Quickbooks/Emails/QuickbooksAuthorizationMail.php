@@ -1,15 +1,14 @@
 <?php
 
-namespace App\Mail\Quickbooks;
+namespace App\Modules\Quickbooks\Emails;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class ReauthorizeReminder extends Mailable
+class QuickbooksAuthorizationMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -37,17 +36,7 @@ class ReauthorizeReminder extends Mailable
     public function content(): Content
     {
         return new Content(
-            markdown: 'mail.quickbooks.reauthorize-reminder',
+            markdown: 'mail.quickbooks.quickbooks-authorization',
         );
-    }
-
-    /**
-     * Get the attachments for the message.
-     *
-     * @return array<int, \Illuminate\Mail\Mailables\Attachment>
-     */
-    public function attachments(): array
-    {
-        return [];
     }
 }
