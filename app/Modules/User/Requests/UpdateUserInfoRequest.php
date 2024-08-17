@@ -23,7 +23,6 @@ class UpdateUserInfoRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'id' => ['sometimes', 'required', 'exists:users'],
             'name' => ['sometimes', 'required', 'string'],
             'email' => [
                 'sometimes',

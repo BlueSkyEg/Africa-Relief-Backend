@@ -2,61 +2,53 @@
 
 namespace App\Modules\User\Repositories;
 
-use App\Models\User;
+use App\Modules\User\User;
 use Illuminate\Support\Facades\Hash;
 
 class UserRepository
 {
+    /**
+     * @param $userId
+     * @return User|null
+     */
     public function find($userId): ?User
     {
-        $user = User::find($userId);
-
-        return $user ?: null;
+        return User::find($userId);
     }
 
+    /**
+     * @param string $emailOrUsername
+     * @return User|null
+     */
     public function findByEmailOrUsername(string $emailOrUsername): ?User
     {
-        $user = User::where('email', $emailOrUsername)->orWhere('username', $emailOrUsername)->first();
-
-        return $user ?: null;
+        return User::where('email', $emailOrUsername)->orWhere('username', $emailOrUsername)->first();
     }
 
-    public function updatePassword(User $user, string $newPassword): ?User
-    {
-        $user->password = Hash::make($newPassword);
 
-        return $user->save() ? $user : null;
-    }
-
-    public function create(array $credentials): ?User
+    /**
+     * @param array $credentials
+     * @return User
+     */
+    public function create(array $credentials): User
     {
-        $user = User::create([
+        return User::create([
             'name' => $credentials['name'],
             'email' => $credentials['email'],
             'password' => Hash::make($credentials['password'])
         ]);
-
-        return $user ?: null;
     }
 
-    public function updateInfo($user, array $info): ?User
+    /**
+     * @param $user
+     * @param array $info
+     * @return User
+     */
+    public function updateInfo($user, array $info): User
     {
         $user->fill($info);
+        $user->save();
 
-        return $user->save() ? $user : null;
-    }
-
-    public function updateImage($user, string $imageName): ?User
-    {
-        $user->img = $imageName;
-
-        return $user->save() ? $user : null;
-    }
-
-    public function deactivate($user): ?User
-    {
-        $user->active = '0';
-
-        return $user->save() ? $user : null;
+        return $user;
     }
 }

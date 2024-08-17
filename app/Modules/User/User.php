@@ -1,19 +1,21 @@
 <?php
 
-namespace App\Models;
+namespace App\Modules\User;
 
+use App\Modules\DonationCore\Donation\Donation;
+use App\Modules\DonationCore\Donor\Donor;
+use App\Modules\DonationCore\PaymentMethod\PaymentMethod;
+use App\Modules\DonationCore\Subscription\Subscription;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasManyThrough;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
-use Illuminate\Database\Eloquent\Casts\Attribute;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasApiTokens, Notifiable;
 
     protected $fillable = [
         'name',
@@ -23,7 +25,8 @@ class User extends Authenticatable implements MustVerifyEmail
         'username',
         'phone',
         'address',
-        'img'
+        'img',
+        'active'
     ];
 
     protected $hidden = [
@@ -37,11 +40,9 @@ class User extends Authenticatable implements MustVerifyEmail
         'updated_at' => 'datetime:Y-m-d\TH:i:s\Z'
     ];
 
-    protected function img(): Attribute
+    public function donor(): HasOne
     {
-        return Attribute::make(
-            get: fn (string|null $value) => $value ? asset('storage/users/images/'.$value) : null,
-        );
+        return $this->hasOne(Donor::class);
     }
 
 	public function donations(): HasManyThrough
@@ -54,8 +55,9 @@ class User extends Authenticatable implements MustVerifyEmail
 		return $this->hasManyThrough(Subscription::class, Donor::class);
 	}
 
-    public function donor(): HasOne
-    {
-        return $this->hasOne(Donor::class);
-    }
+	public function payment_methods(): HasManyThrough
+	{
+		return $this->hasManyThrough(PaymentMethod::class, Donor::class);
+	}
+
 }
