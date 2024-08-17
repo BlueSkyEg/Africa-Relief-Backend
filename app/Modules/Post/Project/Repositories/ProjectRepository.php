@@ -3,13 +3,21 @@
 namespace App\Modules\Post\Project\Repositories;
 
 use App\Enums\PostTypeEnum;
-use App\Models\Project;
+use App\Modules\Post\Project\Project;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
 
 class ProjectRepository
 {
-    public function getProjects(string|null $categorySlug, int $perPage, bool|null $published = null): LengthAwarePaginator
+
+    /**
+     * @param string|null $categorySlug
+     * @param int $perPage
+     * @param bool|null $published
+     * @return LengthAwarePaginator
+     */
+    public function getAll(string|null $categorySlug, int $perPage, bool|null $published = null): LengthAwarePaginator
     {
         return Project::when($published === true, function (Builder $query) {
             return $query->whereRelation('post', 'published', '=', 1);
@@ -29,7 +37,13 @@ class ProjectRepository
             ->paginate($perPage);
     }
 
-    public function getProject(string $projectSlug, bool|null $published = null): Project|null
+
+    /**
+     * @param string $projectSlug
+     * @param bool|null $published
+     * @return Project|null
+     */
+    public function getBySlug(string $projectSlug, bool|null $published = null): ?Project
     {
         return Project::where('slug', $projectSlug)
             ->when($published, function (Builder $query) {
@@ -43,11 +57,14 @@ class ProjectRepository
     }
 
 
-    /*
+    /**
      * Get related projects of categories and exclude current project
      * If number of projects less than 3 we will fetch latest projects
+     *
+     * @param Project $currentProject
+     * @return Collection
      */
-    public function getRelatedProjects(Project $currentProject)
+    public function getRelated(Project $currentProject): Collection
     {
         $relatedBlogsCount = $currentProject->post->categories->loadCount('posts')->pluck('posts_count')->first();
 
@@ -64,5 +81,19 @@ class ProjectRepository
             ->with('post.categories', 'featuredImage')
             ->limit(3)
             ->get();
+    }
+
+
+    /**
+     * @param string $searchTerm
+     * @param int $perPage
+     * @return LengthAwarePaginator
+     */
+    public function search(string $searchTerm, int $perPage): LengthAwarePaginator
+    {
+        return Project::whereHas('post', function ($query) use ($searchTerm) {
+            $query->where('title', 'like', '%' . $searchTerm . '%');
+            $query->where('published', '=', 1);
+        })->paginate($perPage);
     }
 }

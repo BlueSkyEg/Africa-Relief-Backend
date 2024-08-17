@@ -3,14 +3,21 @@
 namespace App\Modules\Post\Blog\Repositories;
 
 use App\Enums\PostTypeEnum;
-use App\Models\Blog;
+use App\Modules\Post\Blog\Blog;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 
 class BlogRepository
 {
-    public function getBlogs(string|null $categorySlug, int $perPage, bool|null $published = null): LengthAwarePaginator
+
+    /**
+     * @param string|null $categorySlug
+     * @param int $perPage
+     * @param bool|null $published
+     * @return LengthAwarePaginator
+     */
+    public function getAll(string|null $categorySlug, int $perPage, bool|null $published = null): LengthAwarePaginator
     {
         return Blog::when($published === true, function (Builder $query) {
             return $query->whereRelation('post', 'published', '=', 1);
@@ -30,7 +37,13 @@ class BlogRepository
             ->paginate($perPage);
     }
 
-    public function getBlog(string $blogSlug, bool|null $published = null): Blog|null
+
+    /**
+     * @param string $blogSlug
+     * @param bool|null $published
+     * @return Blog|null
+     */
+    public function getBySlug(string $blogSlug, bool|null $published = null): ?Blog
     {
         return Blog::where('slug', $blogSlug)
             ->when($published, function (Builder $query) {
@@ -43,11 +56,15 @@ class BlogRepository
             ])->first();
     }
 
-    /*
+
+    /**
      * Get related blogs of categories and exclude current blog
      * If number of blogs less than 3 we will fetch latest blogs
+     *
+     * @param Blog $currentBlog
+     * @return Collection
      */
-    public function getRelatedBlogs(Blog $currentBlog): Collection
+    public function getRelated(Blog $currentBlog): Collection
     {
         $relatedBlogsCount = $currentBlog->post->categories->loadCount('posts')->pluck('posts_count')->first();
 
@@ -66,7 +83,12 @@ class BlogRepository
             ->get();
     }
 
-    public function getBlogsGallery(int $perPage): LengthAwarePaginator
+
+    /**
+     * @param int $perPage
+     * @return LengthAwarePaginator
+     */
+    public function getGallery(int $perPage): LengthAwarePaginator
     {
         return Blog::whereHas('post', function (Builder $query) {
             $query->where('published', '=', 1);
@@ -74,5 +96,19 @@ class BlogRepository
         })
             ->with('featuredImage')
             ->paginate($perPage);
+    }
+
+
+    /**
+     * @param string $searchTerm
+     * @param int $perPage
+     * @return LengthAwarePaginator
+     */
+    public function search(string $searchTerm, int $perPage): LengthAwarePaginator
+    {
+        return Blog::whereHas('post', function ($query) use ($searchTerm) {
+            $query->where('title', 'like', '%' . $searchTerm . '%');
+            $query->where('published', '=', 1);
+        })->paginate($perPage);
     }
 }

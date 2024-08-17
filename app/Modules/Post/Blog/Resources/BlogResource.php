@@ -2,10 +2,10 @@
 
 namespace App\Modules\Post\Blog\Resources;
 
-use App\Modules\DonationForm\Resources\DonationFormResource;
+use App\Modules\DonationCore\DonationForm\Resources\DonationFormResource;
+use App\Modules\Image\Resources\ImageResource;
 use App\Modules\Post\PostCategory\Resources\PostCategoryResource;
 use App\Modules\Post\PostContent\Resources\PostContentResource;
-use App\Modules\Image\Resources\ImageResource;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
