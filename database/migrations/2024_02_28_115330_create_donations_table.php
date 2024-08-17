@@ -16,26 +16,18 @@ return new class extends Migration
             $table->foreignId('donor_id')->nullable()->constrained();
             $table->foreignId('subscription_id')->nullable()->constrained();
             $table->foreignId('donation_form_id')->nullable()->constrained();
-            $table->string('stripe_source_id')->nullable();
+            $table->foreignId('payment_method_id')->nullable()->constrained();
             $table->string('stripe_transaction_id')->nullable();
-            $table->decimal('payment_amount', 18, 10)->nullable();
-            $table->string('payment_currency')->nullable();
-            $table->string('donor_billing_name')->nullable();
-            $table->string('donor_billing_email')->nullable();
-            $table->string('donor_billing_phone')->nullable();
-            $table->string('donor_billing_country')->nullable();
-            $table->string('donor_billing_city')->nullable();
-            $table->string('donor_billing_state')->nullable();
-            $table->string('donor_billing_address_1')->nullable();
-            $table->string('donor_billing_address_2')->nullable();
-            $table->string('donor_billing_zip')->nullable();
-            $table->longText('donor_billing_comment')->nullable();
+            $table->decimal('amount', 10, 2)->nullable();
+            $table->string('currency')->nullable();
+            $table->longText('billing_comment')->nullable();
             $table->dateTime('completed_date')->nullable();
-            $table->string('status')->nullable();
-            $table->integer('anonymous_donation')->nullable();
-            $table->string('payment_mode')->nullable();
-            $table->string('payment_donor_ip')->nullable();
+            $table->string('status')->default('pending')->nullable();
+            $table->boolean('anonymous_donation')->default(false)->nullable();
+            $table->boolean('live_mode')->nullable();
+            $table->string('donor_ip')->nullable();
             $table->string('cs_exchange_rate')->nullable();
+            $table->timestamps();
         });
     }
 
