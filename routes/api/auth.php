@@ -12,7 +12,6 @@ Route::controller(AuthController::class)->group(function () {
 
 Route::controller(AuthController::class)->middleware('auth:sanctum')->group(function () {
     Route::post('/logout', 'logout');
-    Route::post('/logout-all-devices', 'logoutFromAllDevices');
     Route::get('/verify-email/{id}/{hash}', 'verifyEmail')->name('verification.verify');
     Route::post('/email/verification-notification', 'resendEmailVerificationNotification');
     Route::post('/change-password', 'changePassword');

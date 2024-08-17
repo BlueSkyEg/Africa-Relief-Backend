@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\CarouselSlideController;
-use App\Http\Controllers\DonationFormController;
+use App\Http\Controllers\DonationCore\DonationFormController;
 use App\Http\Controllers\MobileController;
 use App\Http\Controllers\Post\BlogController;
 use App\Http\Controllers\Post\CareerController;
@@ -14,7 +14,7 @@ Route::post('/create-blog-categories', function () {
     $categories = json_decode(file_get_contents('db/blog-categories.json'), true)['data'];
 
     foreach ($categories as $category) {
-        \App\Models\PostCategory::create([
+        \App\Modules\Post\PostCategory\PostCategory::create([
             'post_type' => \App\Enums\PostTypeEnum::BLOG->value,
             'name' => $category['name'],
             'slug' => $category['slug']
@@ -26,12 +26,12 @@ Route::post('/create-blog-categories', function () {
 Route::post('/create-blogs', function () {
     $blogs = json_decode(file_get_contents('db/blogs.json'), true);
     foreach (array_reverse($blogs) as $blogObj) {
-        $featuredImage = \App\Models\Image::create([
+        $featuredImage = \App\Modules\Image\Image::create([
             'src' => date('Y/') . date('m/') . Str::afterLast($blogObj['featuredImage']['src'], '/'),
             'alt_text' => $blogObj['featuredImage']['alt'],
         ]);
 
-        $post = \App\Models\Post::create([
+        $post = \App\Modules\Post\Post::create([
             'title' => $blogObj['title'],
             'excerpt' => null
         ]);
@@ -69,7 +69,7 @@ Route::post('/create-blogs', function () {
         foreach ($blogObj['categories'] as $category) {
             $categoriesSlug[] = $category['slug'];
         }
-        $categoriesIds = \App\Models\PostCategory::whereIn('slug', $categoriesSlug)->pluck('id');
+        $categoriesIds = \App\Modules\Post\PostCategory\PostCategory::whereIn('slug', $categoriesSlug)->pluck('id');
 
         $post->categories()->attach($categoriesIds);
     }
@@ -81,7 +81,7 @@ Route::post('/create-project-categories', function () {
     $categories = json_decode(file_get_contents('db/project-categories.json'), true)['data'];
 
     foreach ($categories as $category) {
-        \App\Models\PostCategory::create([
+        \App\Modules\Post\PostCategory\PostCategory::create([
             'post_type' => \App\Enums\PostTypeEnum::PROJECT->value,
             'name' => $category['name'],
             'slug' => $category['slug']
@@ -93,12 +93,12 @@ Route::post('/create-project-categories', function () {
 Route::post('/create-projects', function () {
     $projects = json_decode(file_get_contents('db/projects.json'), true);
     foreach (array_reverse($projects) as $projectObj) {
-        $featuredImage = \App\Models\Image::create([
+        $featuredImage = \App\Modules\Image\Image::create([
             'src' => date('Y/') . date('m/') . Str::afterLast($projectObj['featuredImage']['src'], '/'),
             'alt_text' => $projectObj['featuredImage']['alt']
         ]);
 
-        $post = \App\Models\Post::create([
+        $post = \App\Modules\Post\Post::create([
             'title' => $projectObj['title'],
             'excerpt' => $projectObj['summary']
         ]);
@@ -118,7 +118,7 @@ Route::post('/create-projects', function () {
         }
         $post->contents()->createMany($contents);
 
-        $categoryId = \App\Models\PostCategory::where('slug', $projectObj['category']['slug'])->where('post_type', \App\Enums\PostTypeEnum::PROJECT->value)->pluck('id');
+        $categoryId = \App\Modules\Post\PostCategory\PostCategory::where('slug', $projectObj['category']['slug'])->where('post_type', \App\Enums\PostTypeEnum::PROJECT->value)->pluck('id');
 
         $post->categories()->attach($categoryId);
     }
@@ -129,7 +129,7 @@ Route::post('/create-projects', function () {
 Route::post('/create-careers', function () {
     $careers = json_decode(file_get_contents('db/careers.json'), true)['data'];
     foreach (array_reverse($careers) as $careerObj) {
-        $post = \App\Models\Post::create([
+        $post = \App\Modules\Post\Post::create([
             'title' => $careerObj['title'],
             'excerpt' => $careerObj['content'][0]['description']
         ]);
@@ -156,11 +156,11 @@ Route::post('/create-careers', function () {
 Route::post('/create-home-slider', function () {
     $slides = json_decode(file_get_contents('db/home-slider.json'), true);
     foreach (array_reverse($slides) as $slide) {
-        $image = \App\Models\Image::create([
+        $image = \App\Modules\Image\Image::create([
             'src' => date('Y/') . date('m/') . Str::afterLast($slide['image']['src'], '/'),
             'alt_text' => $slide['summary']
         ]);
-        \App\Models\CarouselSlide::create([
+        \App\Modules\CarouselSlide\CarouselSlide::create([
             'title' => $slide['summary'],
             'description' => $slide['description'],
             'destination_label' => 'Donate Now',
@@ -179,6 +179,7 @@ Route::post('/create-home-slider', function () {
 Route::get('/blogs/categories', [PostCategoryController::class, 'getBlogCategories']);
 Route::get('/blogs/related/{blogSlug}', [BlogController::class, 'getRelatedBlogs']);
 Route::get('/blogs/gallery', [BlogController::class, 'getBlogsGallery']);
+Route::get('/blogs/search/{searchTerm}', [BlogController::class, 'searchBlogs']);
 Route::get('/blogs', [BlogController::class, 'getPublishedBlogs']);
 Route::get('/blogs/{blogSlug}', [BlogController::class, 'getPublishedBlog']);
 
@@ -186,6 +187,7 @@ Route::get('/blogs/{blogSlug}', [BlogController::class, 'getPublishedBlog']);
 /* --------------Projects------------ */
 Route::get('/projects/categories', [PostCategoryController::class, 'getProjectCategories']);
 Route::get('/projects/related/{projectSlug}', [ProjectController::class, 'getRelatedProjects']);
+Route::get('/projects/search/{searchTerm}', [ProjectController::class, 'searchProjects']);
 Route::get('/projects', [ProjectController::class, 'getPublishedProjects']);
 Route::get('/projects/{projectSlug}', [ProjectController::class, 'getPublishedProject']);
 

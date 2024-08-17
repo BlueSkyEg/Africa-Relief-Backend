@@ -1,7 +1,9 @@
 <?php
 
-use App\Http\Controllers\NewsletterSubscriberController;
+use App\Http\Controllers\EngageForms\NewsletterSubscriberController;
 use Illuminate\Support\Facades\Route;
 
-Route::post('/newsletter/subscribe', [NewsletterSubscriberController::class, 'storeNewsletterSubscriber']);
-Route::post('/newsletter/unsubscribe', [NewsletterSubscriberController::class, 'unsubscribeNewsletterSubscriber']);
+Route::controller(NewsletterSubscriberController::class)->prefix('newsletter')->group(function () {
+    Route::post('/subscribe', 'subscribeToNewsletter');
+    Route::post('/unsubscribe', 'unsubscribeFromNewsletter');
+});
