@@ -1,20 +1,16 @@
 <?php
 
-use App\Http\Controllers\Stripe\StripePaymentController;
-use App\Http\Controllers\Stripe\StripePaymentMethodController;
-use App\Http\Controllers\Stripe\StripeWebhookController;
+use App\Http\Controllers\DonationCore\StripePaymentController;
 use Illuminate\Support\Facades\Route;
 
 
+Route::controller(StripePaymentController::class)->group(function () {
 
-Route::controller(StripePaymentMethodController::class)->middleware('auth:sanctum')->prefix('user/payment-methods')->group(function () {
-    Route::get('', 'listPaymentMethods');
-    Route::get('/{paymentMethodId}', 'getPaymentMethod');
-    Route::post('/save', 'attachPaymentMethod');
-    Route::delete('/{paymentMethodId}', 'deletePaymentMethod');
-});
+    Route::prefix('payment')->group(function () {
+        Route::post('', 'createStripePayment');
+        Route::post('/express-checkout', 'createStripeExpressCheckout');
+        Route::get('/setup-intent', 'setupStripeIntent');
+    });
 
-Route::controller(StripePaymentController::class)->prefix('payment')->group(function () {
-    Route::post('', 'createStripePayment');
-    Route::get('/setup-intent', 'setupStripeIntent');
+    Route::post('/webhook/stripe', 'triggerStripeWebhook');
 });
