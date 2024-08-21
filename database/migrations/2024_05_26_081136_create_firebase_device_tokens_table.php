@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('firebase_device_tokens', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->nullable()->constrained();
-            $table->text('token')->unique();
+            $table->string('token',255)->unique();
             $table->timestamps();
         });
     }
