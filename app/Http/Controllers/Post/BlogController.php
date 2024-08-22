@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Post;
 
 use App\Http\Controllers\Controller;
-use App\Modules\Post\Blog\Resources\BlogBriefResource;
-use App\Modules\Post\Blog\Resources\BlogGalleryResource;
-use App\Modules\Post\Blog\Resources\BlogResource;
-use App\Modules\Post\Blog\Services\BlogService;
+use App\Modules\PostCore\Blog\Resources\BlogBriefResource;
+use App\Modules\PostCore\Blog\Resources\BlogGalleryResource;
+use App\Modules\PostCore\Blog\Resources\BlogResource;
+use App\Modules\PostCore\Blog\Services\BlogService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
@@ -25,7 +25,7 @@ class BlogController extends Controller
     {
         $blogs = $this->blogService->getAllBlogs(
             $request->query('categorySlug'),
-            $request->query('perPage') ?: env('DEFAULT_PAGINATION_PER_PAGE'),
+            $request->query('perPage') ?: 9,
             true
         );
 

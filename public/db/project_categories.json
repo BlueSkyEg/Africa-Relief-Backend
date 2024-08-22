@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Water",
+        "slug": "water",
+        "meta_title": "Transform Lives with Water Wells for Africa - Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Be part of the change with Africa Relief. Our water wells for Africa initiative brings clean water and hope to African villages, fostering health & development.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "name": "Education",
+        "slug": "education",
+        "meta_title": "Support charities for African education - Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Join us in our mission to charities for African education Our efforts support long-term education initiatives, ensuring a brighter future . Donate now",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "name": "Food Aid",
+        "slug": "food-aid",
+        "meta_title": "Donate Food for Africa with Africa Relief - Nourish Lives",
+        "meta_keywords": null,
+        "meta_description": "Join Africa Relief's mission to donate food to Africa. Contribute to our food basket project and gift sustenance to those in need. Donate today!",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "name": "Medical help",
+        "slug": "medical-help",
+        "meta_title": "Donate to healthcare charities in Africa - Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Support healthcare charities in Africa: Africa Relief is providing hearing aids, healthcare supplies, and eye surgeries for those most in need",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "name": "Orphan Sponsorship",
+        "slug": "orphan-sponsorship",
+        "meta_title": "Orphan Sponsorship: Sponsor an orphan with Africa relief",
+        "meta_keywords": null,
+        "meta_description": "Join Africa Relief Orphan Sponsorship Project & sponsor an orphan in Africa. Transform lives with your gift of hope and create a brighter future.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "name": "Zakat",
+        "slug": "zakat",
+        "meta_title": "Donate Zakat Online: Fulfill Your Obligations with Impact",
+        "meta_keywords": null,
+        "meta_description": "Donate Zakat online for Africa through Africa Relief. Your zakat donation aids vital projects to African families. Donate now & make an impact!",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "name": "Ramadan",
+        "slug": "ramadan",
+        "meta_title": "Ramadan charity projects by Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Donate in Ramadan to Africa Relief: Contribute to Ramadan charity projects such as Iftar meals, bringing joy & unit for a meaningful Ramadan.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    }
+]

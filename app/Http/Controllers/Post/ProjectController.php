@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Post;
 
 use App\Exceptions\ApiException;
 use App\Http\Controllers\Controller;
-use App\Modules\Post\Project\Resources\ProjectBriefResource;
-use App\Modules\Post\Project\Resources\ProjectResource;
-use App\Modules\Post\Project\Services\ProjectService;
+use App\Modules\PostCore\Project\Resources\ProjectBriefResource;
+use App\Modules\PostCore\Project\Resources\ProjectResource;
+use App\Modules\PostCore\Project\Services\ProjectService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
@@ -25,7 +25,7 @@ class ProjectController extends Controller
     {
         $projects = $this->projectService->getAllProjects(
             $request->query('categorySlug'),
-            $request->query('perPage') ?: env('DEFAULT_PAGINATION_PER_PAGE'),
+            $request->query('perPage') ?: 9,
             true
         );
 

@@ -1,1770 +1,1529 @@
 [
-  {
-    "title": "Emergency Morocco Earthquake Response",
-    "slug": "emergency-morocco-earthquake-response",
-    "categories": [
-      {
-        "name": "food aid",
-        "slug": "food-aid"
-      },
-      {
-        "name": "health",
-        "slug": "health"
-      },
-      {
-        "name": "water",
-        "slug": "water"
-      }
-    ],
-    "date": "October 12, 2023",
-    "featuredImage": {
-      "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
-      "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
-    },
-    "gallery": [
-      {
-        "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc1.webp",
-        "alt": "Emergency response team providing aid to earthquake-affected residents in Morocco"
-      },
-      {
-        "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc3.webp",
-        "alt": "Local Moroccan community receiving medical assistance in a temporary relief camp post-earthquake."
-      },
-      {
-        "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc4.webp",
-        "alt": "Local Moroccan community receiving medical assistance in a temporary relief camp post-earthquake."
-      },
-      {
-        "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc5.webp",
-        "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action"
-      }
-    ],
-    "location": "Morocco",
-    "implementationDate": "September 2023",
-    "content": [
-      {
-        "heading": "Amid the tragedy, hope and resilience shine through. Support us as we uplift communities, weaving threads of hope and rebuilding the fabric of affected areas.",
-        "description": "A devastating 6.8 magnitude earthquake struck Morocco, wreaking havoc across the High Atlas Mountains and the city of Marrakech. As communities grieved and grappled with shattered lives and homes turned to rubble, Africa Relief and Community Development (ARCD) swiftly intervened. Collaborating with the passionate volunteers of Idmaj Foundation for Development (IDMAJ), ARCD reached the most affected, often inaccessible areas. The team provided tents, food boxes, mattresses, pallets, and blankets to hundreds of affected families, focusing on areas often overlooked by other relief efforts."
-      },
-      {
-        "heading": "Beneficiaries",
-        "description": "634 families received emergency relief and sustainable support across the affected regions."
-      }
-    ],
-    "nextBlog": {
-      "title": "Nurturing Families: Meat Distribution Initiative",
-      "slug": "nurturing-families-meat-distribution-initiative"
-    },
-    "previousBlog": {
-      "title": "Mariame Diawara and Fatoumata Tiemoko Well",
-      "slug": "mariame-diawara-and-fatoumata-tiemoko-well"
-    },
-    "donationForm": {
-      "id": 17543,
-      "title": "Morocco Emergency Relief",
-      "levels": [
-        {
-          "amount": 50,
-          "name": null
+    {
+        "title": "Emergency Morocco Earthquake Response",
+        "slug": "emergency-morocco-earthquake-response",
+        "posted_date": "October 12, 2023",
+        "excerpt": null,
+        "location": "Morocco",
+        "implementation_date": "September 2023",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/10/Moroc2.jpg",
+            "alt_text": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
         },
-        {
-          "amount": 100,
-          "name": null
+        "categories": [
+            {
+                "name": "Food Aid",
+                "slug": "food-aid"
+            },
+            {
+                "name": "Health",
+                "slug": "health"
+            },
+            {
+                "name": "Water",
+                "slug": "water"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Amid the tragedy, hope and resilience shine through. Support us as we uplift communities, weaving threads of hope and rebuilding the fabric of affected areas.",
+                "order": 0
+            },
+            {
+                 "type": "paragraph",
+                "body": "A devastating 6.8 magnitude earthquake struck Morocco, wreaking havoc across the High Atlas Mountains and the city of Marrakech. As communities grieved and grappled with shattered lives and homes turned to rubble, Africa Relief and Community Development (ARCD) swiftly intervened. Collaborating with the passionate volunteers of Idmaj Foundation for Development (IDMAJ), ARCD reached the most affected, often inaccessible areas. The team provided tents, food boxes, mattresses, pallets, and blankets to hundreds of affected families, focusing on areas often overlooked by other relief efforts.",
+                "order": 1
+            },
+            {
+                 "type": "paragraph",
+                "body": "Project Details:",
+                "order": 2
+            },
+            {
+                "type": "list",
+                "body": [
+                    "Tidli Mesfioua Village: Over two days, the team distributed relief to several areas within the village in coordination with community leaders. Specific distributions included 50 tents, 300 blankets, 100 mattresses, 300 pallets, and 50 food boxes. Families and children in localities like Douar Ait Bouamr, Douar Ait Samou, Douar Ait Karnbouzid, and several others benefited directly.",
+                    "Tingualian Village: Residents here were supported with 107 blankets, 133 mattresses, and 20 tents, ensuring the displaced had shelter and basic necessities following the earthquake.",
+                    "Kma Village: Covering two small villages, Tizibigh and Tazawamin, the team witnessed heartwarming stories of resilience and unity. Despite total home destruction, villagers held onto hope and community spirit. Responding to their needs, ARCD established a camp on safe ground, providing 30 families with proper shelter."
+                ],
+                "order": 3
+            },
+            {
+                "type": "heading",
+                "body": "Beneficiaries:",
+                "order": 4
+            },
+            {
+                 "type": "paragraph",
+                "body": "634 families received emergency relief and sustainable support across the affected regions.",
+                "order": 5
+            }
+        ],
+        "gallery": [
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/10/Moroc1.jpg",
+                "alt_text": "Emergency response team providing aid to earthquake-affected residents in Morocco"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/10/Moroc2.jpg",
+                "alt_text": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/10/Moroc3.jpg",
+                "alt_text": "Local Moroccan community receiving medical assistance in a temporary relief camp post-earthquake."
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/10/Moroc4.jpg",
+                "alt_text": "Local Moroccan community receiving medical assistance in a temporary relief camp post-earthquake."
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/10/Moroc5.jpg",
+                "alt_text": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action"
+            }
+        ],
+        "donation_form_id": 17543,
+        "meta_title": "Morocco Earthquake Response by Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Join Africa Relief's Emergency Morocco Earthquake Response. Help us bring hope and aid to devastated communities in Morocco. Support our mission now!",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Mariame Diawara and Fatoumata Tiemoko Well",
+        "slug": "mariame-diawara-and-fatoumata-tiemoko-well",
+        "posted_date": "September 29, 2023",
+        "excerpt": null,
+        "location": "Gambia",
+        "implementation_date": "August 2023",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/09/Mariame6-1024x802.jpeg",
+            "alt_text": "Mariame Diawara and Fatoumata Tiemoko on the well built by Africa Relief"
         },
-        {
-          "amount": 150,
-          "name": null
+        "categories": [
+            {
+                "name": "Water",
+                "slug": "water"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Sun and water are the essence of life. Illuminate lives with your support.",
+                "order": 0
+            },
+            {
+                 "type": "paragraph",
+                "body": "In regions affected by water scarcity, every drop counts. These solar water wells, dedicated in honor of Mariame Diawara and Fatoumata Tiemoko, ensure that hundreds have access to clean, safe water. Beyond hydration, these wells represent hope, health, and a tribute to beloved individuals.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Beneficiaries:",
+                "order": 2
+            },
+            {
+                 "type": "paragraph",
+                "body": "600-800 individuals.",
+                "order": 3
+            }
+        ],
+        "gallery": [
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Mariame.jpeg",
+                "alt_text": "Mariame Diawara alongside Fatoumata Tiemoko at the inauguration of their namesake well in Africa Relief project"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Mariame3.jpeg",
+                "alt_text": "Local villagers drawing water from the Mariame Diawara and Fatoumata Tiemoko Well, provided by Africa Relief"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Mariame4.jpeg",
+                "alt_text": "The newly constructed Mariame Diawara and Fatoumata Tiemoko Well, a vital water source for an African community"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Mariame5.jpeg",
+                "alt_text": "Mariame Diawara and Fatoumata Tiemoko smiling beside the well that serves their community, thanks to Africa Relief"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Mariame2.jpeg",
+                "alt_text": "Children gathering around the newly accessible water source, the Diawara-Tiemoko Well, in an African village"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Mariame6.jpeg",
+                "alt_text": "Mariame Diawara and Fatoumata Tiemoko on the well built by Africa Relief"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Mariame7.jpeg",
+                "alt_text": "Aerial view of the well named after Mariame Diawara and Fatoumata Tiemoko, surrounded by grateful villagers"
+            }
+        ],
+        "donation_form_id": 14590,
+        "meta_title": "Mariame Diawara and Fatoumata Tiemoko Well - Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Support the Mariame Diawara and Fatoumata Tiemoko Well project by Africa Relief. Provide clean water and hope to communities in need. Join us",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Sadaqah Wells",
+        "slug": "sadaqah-wells",
+        "posted_date": "September 29, 2023",
+        "excerpt": null,
+        "location": "Gambia",
+        "implementation_date": "August 2023",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/09/Sadaqah1-1024x768.jpeg",
+            "alt_text": "Learn About our project Sadaqah Wells - Africa Relief"
         },
-        {
-          "amount": 200,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": null,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
+        "categories": [
+            {
+                "name": "Water",
+                "slug": "water"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Every drop counts. Contribute to life, health, and community vitality.",
+                "order": 0
+            },
+            {
+                 "type": "paragraph",
+                "body": "Access to clean water is fundamental. By establishing a surface water well, we're bringing life-sustaining hydration to communities, preventing waterborne diseases and promoting overall community health. Such initiatives are more than infrastructure\u2014they're a promise of better days to the community.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Beneficiaries:",
+                "order": 2
+            },
+            {
+                 "type": "paragraph",
+                "body": "200-400 individuals.",
+                "order": 3
+            }
+        ],
+        "gallery": [
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Sadaqah1-scaled.jpeg",
+                "alt_text": "Learn About our project Sadaqah Wells - Africa Relief"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Sadaqah-scaled.jpeg",
+                "alt_text": "Learn About our project Sadaqah Wells - Africa Relief"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Sadaqah2-scaled.jpeg",
+                "alt_text": "Learn About our project Sadaqah Wells - Africa Relief"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Sadaqah3-scaled.jpeg",
+                "alt_text": "Learn About our project Sadaqah Wells - Africa Relief"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Sadaqah0.jpeg",
+                "alt_text": "Learn About our project Sadaqah Wells - Africa Relief"
+            }
+        ],
+        "donation_form_id": 14586,
+        "meta_title": "Learn About our project Sadaqah Wells - Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Explore our inspiring project: Sadaqah Wells in Gambia by Africa Relief. Find out how you can contribute to providing clean water. Get involved!",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Bait Al Maqdes Artesian Well",
+        "slug": "bait-al-maqdes-artesian-well",
+        "posted_date": "September 13, 2023",
+        "excerpt": null,
+        "location": "Niger",
+        "implementation_date": "August 2023",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/09/bait-q.jpeg",
+            "alt_text": "Close-up of clear water being drawn from the Al-Bir and At-Taqwa Well, a vital resource for the village"
+        },
+        "categories": [
+            {
+                "name": "Water",
+                "slug": "water"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Water is life. With your support, we can quench the thirst of communities",
+                "order": 0
+            },
+            {
+                 "type": "paragraph",
+                "body": "Water scarcity is a pressing issue in many African regions. Our initiative in Niger aims to alleviate this by providing an artesian water well, ensuring the village's consistent access to clean and safe water. This not only aids in daily sustenance but also in preventing waterborne diseases, elevating the overall health of the community.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Beneficiaries:",
+                "order": 2
+            },
+            {
+                 "type": "paragraph",
+                "body": "600-800 individuals.",
+                "order": 3
+            }
+        ],
+        "gallery": [
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/bait-q4.jpeg",
+                "alt_text": "Villagers collecting fresh water from the Al-Bir and At-Taqwa Well in a rural community."
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/bait-q.jpeg",
+                "alt_text": "Close-up of clear water being drawn from the Al-Bir and At-Taqwa Well, a vital resource for the village"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/bait-q1.jpeg",
+                "alt_text": "Close-up of clear water being drawn from the Al-Bir and At-Taqwa Well, a vital resource for the village"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/bait-q2.jpeg",
+                "alt_text": "Children happily fetching water from the newly built Al-Bir and At-Taqwa Well"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/bait-q3.jpeg",
+                "alt_text": "Children happily fetching water from the newly built Al-Bir and At-Taqwa Well"
+            }
+        ],
+        "donation_form_id": 14588,
+        "meta_title": "Bait Al Maqdes Artesian Well Project - Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Support the Bait Al Maqdes Artesian Well with Africa Relief. Your help can bring clean, sustainable water to communities. Join us",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Repentance Well",
+        "slug": "repentance-well",
+        "posted_date": "August 31, 2023",
+        "excerpt": null,
+        "location": "Ghana",
+        "implementation_date": "August 2023",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/08/tawba6-1024x768.jpeg",
+            "alt_text": "Visitors gathered around Al Tawbah Well"
+        },
+        "categories": [
+            {
+                "name": "Water",
+                "slug": "water"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Every well is a step towards a brighter, healthier future",
+                "order": 0
+            },
+            {
+                 "type": "paragraph",
+                "body": "Our semi-artesian well, aptly named the Repentance Well, is a blend of modern engineering and nature. Projects like these ensure communities don't just survive, but thrive, with adequate water for both consumption and cultivation.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Beneficiaries:",
+                "order": 2
+            },
+            {
+                 "type": "paragraph",
+                "body": "This well serves between 400-600 individuals, a testament to the impact of sustainable solutions.",
+                "order": 3
+            }
+        ],
+        "gallery": [
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/tawba1.jpeg",
+                "alt_text": "Al Tawbah Well, a historic and revered well with deep cultural and religious significance. It serves as a vital water source and a symbol of tradition and heritage"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/tawba2.jpeg",
+                "alt_text": "Al Tawbah Well's distinctive architectural features, showcasing its historical significance"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/tawba3.jpeg",
+                "alt_text": "Al Tawbah Well's distinctive architectural features, showcasing its historical significance"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/tawba4.jpeg",
+                "alt_text": "Traditional rituals being performed at Al Tawbah Well, preserving its sacred traditions"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/tawba6.jpeg",
+                "alt_text": "Visitors gathered around Al Tawbah Well"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/tawba5.jpeg",
+                "alt_text": "Crystal-clear waters of Al Tawbah Well, a natural wonder and cultural treasure"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/tawba7.jpeg",
+                "alt_text": "Visitors gathered around Al Tawbah Well"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/tawba8.jpeg",
+                "alt_text": "Al Tawbah Well's distinctive architectural features, showcasing its historical significance"
+            }
+        ],
+        "donation_form_id": 14588,
+        "meta_title": "Al Tawbah Well, Ghana - A Key Africa Relief Project",
+        "meta_keywords": null,
+        "meta_description": "Explore the Al Tawbah Well in Ghana, a proud project of Africa Relief. Support our mission for clean water and community growth. Join us today!",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Water From Our Home Well",
+        "slug": "water-from-our-home-well",
+        "posted_date": "August 24, 2023",
+        "excerpt": null,
+        "location": "Ghana",
+        "implementation_date": "June 2023",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/08/home10-1024x576.jpeg",
+            "alt_text": "Aerial view of an artesian water well surrounded by lush green landscape"
+        },
+        "categories": [
+            {
+                "name": "Water",
+                "slug": "water"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Water is a gift. Let's make it universal.",
+                "order": 0
+            },
+            {
+                 "type": "paragraph",
+                "body": "The artesian water well we've constructed is more than a project; it's a lifeline. By tapping into natural sources, we're ensuring that villages get consistent and unpolluted water, crucial for health and agriculture.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Beneficiaries:",
+                "order": 2
+            },
+            {
+                 "type": "paragraph",
+                "body": "This initiative quenches the thirst of 600-800 villagers, enriching their daily lives.",
+                "order": 3
+            }
+        ],
+        "gallery": [
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/home1.jpeg",
+                "alt_text": "Sunset view of an artesian well in a peaceful rural area, providing essential water to the community"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/home2-scaled.jpeg",
+                "alt_text": "Sunset view of an artesian well in a peaceful rural area, providing essential water to the community"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/home3-scaled.jpeg",
+                "alt_text": "Aerial view of an artesian water well surrounded by lush green landscape"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/home4.jpeg",
+                "alt_text": "Children gathered around an artesian water well"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/home5.jpeg",
+                "alt_text": "Local residents drawing clean, fresh water from an artesian well in a rural setting"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/home6-scaled.jpeg",
+                "alt_text": "Close-up of water gushing from an artesian well"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/home7-scaled.jpeg",
+                "alt_text": "Community members participating in the construction of a new artesian water well"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/home8.jpeg",
+                "alt_text": "Close-up of water gushing from an artesian well, a natural source of pure water."
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/home9.jpeg",
+                "alt_text": "Aerial view of an artesian water well surrounded by lush green landscape"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/home10.jpeg",
+                "alt_text": "Aerial view of an artesian water well surrounded by lush green landscape"
+            }
+        ],
+        "donation_form_id": 14588,
+        "meta_title": "Water From Our Home Well - A Key Africa Relief Project",
+        "meta_keywords": null,
+        "meta_description": "Explore Africa Relief projects & building artesian water wells. Provide sustainable, clean water to communities. Your involvement makes difference!",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Qur'an Circle in the Islamic Center of Passaic County Well",
+        "slug": "new-jersey-well",
+        "posted_date": "June 22, 2023",
+        "excerpt": null,
+        "location": "Ghana",
+        "implementation_date": "June 2023",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/08/NJ6-1024x768.jpeg",
+            "alt_text": "new jersey well"
+        },
+        "categories": [
+            {
+                "name": "Water",
+                "slug": "water"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Hydration and hope, hand in hand. Join us.",
+                "order": 0
+            },
+            {
+                 "type": "paragraph",
+                "body": "Every well we construct is a milestone in our journey to hydrate communities. This surface water well, named in honor of the Qur'an Circle, serves as a testament to the blend of faith and service.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Beneficiaries:",
+                "order": 2
+            },
+            {
+                 "type": "paragraph",
+                "body": "Between 200-400 villagers now have a more convenient and cleaner source of water.",
+                "order": 3
+            }
+        ],
+        "gallery": [
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/NJ1.jpeg",
+                "alt_text": "Inside view of the Islamic Center of Passaic County's Qur'an Circle"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/IMG-20230528-WA0028.jpg",
+                "alt_text": "Qur'an Circle study session at the Islamic Center in Passaic County"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/NJ3.jpeg",
+                "alt_text": "Members of the Islamic Center of Passaic County, New Jersey, engaging in a Qur'an Circle discussion"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/NJ4.jpeg",
+                "alt_text": "new jersey well"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/NJ5.jpeg",
+                "alt_text": "new jersey well"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/NJ6.jpeg",
+                "alt_text": "new jersey well"
+            }
+        ],
+        "donation_form_id": 14586,
+        "meta_title": "Qur'an Circle in the Islamic Center of Passaic County",
+        "meta_keywords": null,
+        "meta_description": "Explore Qur'an Circle in the Islamic Center of Passaic County project and how Africa Relief working for community development",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Fā’il Khair Well",
+        "slug": "fail-khair-well",
+        "posted_date": "June 21, 2023",
+        "excerpt": null,
+        "location": "Uganda",
+        "implementation_date": "June 2023",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/08/f-khair2-1-1024x645.jpeg",
+            "alt_text": "Wells in Africa: Villagers gathering water from a new well in a rural village"
+        },
+        "categories": [
+            {
+                "name": "Water",
+                "slug": "water"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Water changes destinies. Let's keep the flow going.",
+                "order": 0
+            },
+            {
+                 "type": "paragraph",
+                "body": "Our dedication has birthed a new surface water well, a symbol of sustainability and health. Clean water projects like these are pivotal in combating waterborne diseases and ensuring a community thrives.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Beneficiaries:",
+                "order": 2
+            },
+            {
+                 "type": "paragraph",
+                "body": "This resource now supports between 200-400 individuals, offering them not just water, but a chance at healthier lives.",
+                "order": 3
+            }
+        ],
+        "gallery": [
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/f-khair2-1-scaled.jpeg",
+                "alt_text": "Wells in Africa: Villagers gathering water from a new well in a rural village"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/f-khair4-1-scaled.jpeg",
+                "alt_text": "Close-up of fresh water flowing from the Fail Khair Well, a vital resource for the community."
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/f-khair-scaled.jpeg",
+                "alt_text": "Close-up of fresh water flowing from the Fail Khair Well, a vital resource for the community."
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/f-khair2-scaled.jpeg",
+                "alt_text": "Close-up of fresh water flowing from the Fail Khair Well, a vital resource for the community."
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/f-khair3-scaled.jpeg",
+                "alt_text": "Fail Khair Well signage, displaying the name and the date of establishment"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/f-khair4-scaled.jpeg",
+                "alt_text": "Aerial view of the Fail Khair Well surrounded by the local community gathering water."
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/f-khair5-scaled.jpeg",
+                "alt_text": "Children joyfully playing near the newly constructed Fail Khair Well"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/f-khair6-scaled.jpeg",
+                "alt_text": "Inauguration ceremony of the Fail Khair Well with local community leaders present."
+            }
+        ],
+        "donation_form_id": 14586,
+        "meta_title": "Fail Khair Well - A Key Africa Relief Projects",
+        "meta_keywords": null,
+        "meta_description": "Fail Khair Well initiative is a project made by Africa Relief to provide clean water and hope to communities in need. Join our mission for positive change!",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Al-Bir and At-Taqwa Well",
+        "slug": "al-bir-and-at-taqwa-well",
+        "posted_date": "June 17, 2023",
+        "excerpt": null,
+        "location": "Uganda",
+        "implementation_date": "June 2023",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/08/Al-Bir-Well-4-1024x576.jpeg",
+            "alt_text": "Al-Bir and At-Taqwa Well - A serene desert landscape featuring the historic Al-Bir and At-Taqwa Well sites"
+        },
+        "categories": [
+            {
+                "name": "Water",
+                "slug": "water"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Water is life. Let's spread its blessings.",
+                "order": 0
+            },
+            {
+                 "type": "paragraph",
+                "body": "Clean water is life's most basic need, and our newly constructed surface water well is a testament to that. By quenching thirst, we're revitalizing communities and offering them better health.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Beneficiaries:",
+                "order": 2
+            },
+            {
+                 "type": "paragraph",
+                "body": "The project supports 200-400 individuals, gifting them with consistent clean water access.",
+                "order": 3
+            }
+        ],
+        "gallery": [
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/Al-Bir-Well-.jpeg",
+                "alt_text": "Al-Bir Well"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/Al-Bir-Well-2.jpeg",
+                "alt_text": "Al-Bir Well 2"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/Al-Bir-Well-3.jpeg",
+                "alt_text": "Al-Bir Well 3"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/Al-Bir-Well-4.jpeg",
+                "alt_text": "Al-Bir and At-Taqwa Well - A serene desert landscape featuring the historic Al-Bir and At-Taqwa Well sites"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/Al-Bir-Well-5.jpeg",
+                "alt_text": "Al-Bir Well 5"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/Al-Bir-Well-6.jpeg",
+                "alt_text": "Impact non profit: Al-Bir Well"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/Al-Bir-Well-7.jpeg",
+                "alt_text": "Al-Bir Well 7"
+            }
+        ],
+        "donation_form_id": 14586,
+        "meta_title": "Al-Bir and At-Taqwa Well - Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Join Africa Relief in the Al-Bir and At-Taqwa Well initiative. Contribute to providing vital water sources for those in need. Act now",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Hajja Muyassar Hassan Shuaib Mosque & Water Well",
+        "slug": "hajja-muyassar-hassan-shuaib-mosque-water-well",
+        "posted_date": "March 15, 2023",
+        "excerpt": null,
+        "location": "Tanzania",
+        "implementation_date": "March 2023",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/08/35-1024x683.jpg",
+            "alt_text": "Aerial view of the Hajja Muyassar Hassan Shuaib Mosque and Water Well, highlighting its community impact"
+        },
+        "categories": [
+            {
+                "name": "Education",
+                "slug": "education"
+            },
+            {
+                "name": "Water",
+                "slug": "water"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Building more than just structures; we're building futures.",
+                "order": 0
+            },
+            {
+                 "type": "paragraph",
+                "body": "We've proudly established a mosque combined with a water well. This project doesn't just provide spiritual nourishment but also addresses the tangible need for clean water. It's a symbol of community, faith, and sustainability.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Beneficiaries:",
+                "order": 2
+            },
+            {
+                 "type": "paragraph",
+                "body": "The entire village, over 1,000 strong, benefits. They now have access to clean water, a space for worship, education, and improved hygiene.",
+                "order": 3
+            }
+        ],
+        "gallery": [
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/Shoaib4-scaled.jpeg",
+                "alt_text": "Hajja Muyassar Hassan Shuaib Mosque and Water Well"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/Shoaib1-scaled.jpeg",
+                "alt_text": "Exterior view of Hajja Muyassar Hassan Shuaib Mosque, a cornerstone project of the community."
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/Shoaib2-scaled.jpeg",
+                "alt_text": "Local residents using the water well adjacent to Hajja Muyassar Hassan Shuaib Mosque"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/Shoaib3-scaled.jpeg",
+                "alt_text": "Dedication plaque at the entrance of Hajja Muyassar Hassan Shuaib Mosque, commemorating its inauguration"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/35-scaled.jpg",
+                "alt_text": "Aerial view of the Hajja Muyassar Hassan Shuaib Mosque and Water Well, highlighting its community impact"
+            }
+        ],
+        "donation_form_id": 14679,
+        "meta_title": "Mosque & Water Well by Hajja Muyassar Hassan Shuaib",
+        "meta_keywords": null,
+        "meta_description": "Discover the Hajja Muyassar Mosque & Water Well project by Africa Relief. Support clean water access and community development. Get involved",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Salah Alzoobi Mosque",
+        "slug": "salah-alzoobi-mosque",
+        "posted_date": "September 8, 2023",
+        "excerpt": null,
+        "location": "Gambia",
+        "implementation_date": "December 2022",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/09/Szuabi3-1024x450.jpg",
+            "alt_text": "A sustainable and eco-friendly mosque in Africa, blending modern design with environmental consciousness.\""
+        },
+        "categories": [
+            {
+                "name": "Education",
+                "slug": "education"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Empower a child's future through education and health. Your support can light up their world.",
+                "order": 0
+            },
+            {
+                 "type": "paragraph",
+                "body": "In regions where access to quality education is a challenge, the establishment of an 8-room school equipped with a water well becomes a beacon of hope. This project not only provides a comprehensive educational setting for the community but also ensures students have access to clean water, a basic necessity often taken for granted. During the opening, the joy was palpable as donors interacted with the eager children and gifted school bags.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Beneficiaries:",
+                "order": 2
+            },
+            {
+                 "type": "paragraph",
+                "body": "Over 300 students.",
+                "order": 3
+            }
+        ],
+        "gallery": [
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Szuabi.jpeg",
+                "alt_text": "Mosque construction in Africa using sustainable materials, contributing to eco-friendly initiatives."
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Szuabi1.jpeg",
+                "alt_text": "Mosque construction in Africa using sustainable materials, contributing to eco-friendly initiatives."
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Szuabi3-scaled.jpg",
+                "alt_text": "A sustainable and eco-friendly mosque in Africa, blending modern design with environmental consciousness.\""
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Szuabi6-scaled.jpg",
+                "alt_text": "A mosque garden featuring native plants, showcasing sustainable landscaping practices in African mosques"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Szuabi4-scaled.jpeg",
+                "alt_text": "A sustainable and eco-friendly mosque in Africa, blending modern design with environmental consciousness.\""
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Szuabi5-scaled.jpeg",
+                "alt_text": "A sustainable and eco-friendly mosque in Africa, blending modern design with environmental consciousness"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Szuabi2-scaled.jpg",
+                "alt_text": "A mosque garden featuring native plants, showcasing sustainable landscaping practices in African mosques"
+            }
+        ],
+        "donation_form_id": 14679,
+        "meta_title": "Sustainable Mosque Projects - A Key Africa Relief Projects",
+        "meta_keywords": null,
+        "meta_description": "Discover Africa Relief's dedicated Sustainable Mosque Projects across Africa. Support our mission to build and enhance communities. Get involved!",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Strengthening Partnerships in Ghana: A Milestone for Africa Relief Ghana Development Cooperation",
+        "slug": "strengthening-partnerships-in-ghana",
+        "posted_date": "February 21, 2024",
+        "excerpt": null,
+        "location": "Ghana",
+        "implementation_date": "August 2023",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/08/20230821_140424-1024x461.jpg",
+            "alt_text": "Africa Relief Ghana Development Cooperation"
+        },
+        "categories": [
+            {
+                "name": "Education",
+                "slug": "education"
+            },
+            {
+                "name": "Health",
+                "slug": "health"
+            },
+            {
+                "name": "Orphan Support",
+                "slug": "orphan-support"
+            },
+            {
+                "name": "Sustainable Community",
+                "slug": "sustainable-community"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Our recent partnership in Ghana epitomizes the essence of the \"Africa Relief Ghana Development Cooperation,\" underscoring our unwavering commitment to catalyzing meaningful change. ",
+                "order": 0
+            },
+            {
+                 "type": "paragraph",
+                "body": "In a landmark meeting with the Minister of Social Affairs and pivotal officials at the ministry's headquarters, Africa Relief proudly showcased our dedication to fostering the welfare of Ghana's under-resourced communities. This encounter opened avenues for in-depth discussions on mutual interests, laying the groundwork for substantial, collaborative initiatives.",
+                "order": 1
+            },
+            {
+                "type":"description",
+                "body":"Key Discussions Highlighting Our Role in Ghana:",
+                "order": 2
+            },
+            {
+                "type": "list",
+                "body": [
+                    "Africa Relief's Vision: We presented our ambitious goals for Ghana, reflecting our broader mission across Africa.",
+                    "Logistics and Support: Our achievements in shipping containers to Ghana, including successful deliveries and discussions on streamlining future shipments through customs exemption certificates.",
+                    "Focusing on Orphans: A significant dialogue on enhancing support for orphans, bolstered by the ministry's invaluable insights and data."
+                ],
+                "order": 3
+            },
+            {
+                 "type": "paragraph",
+                "body": "Outcomes of the Meeting:",
+                "order": 4
+            },
+            {
+                "type": "list",
+                "body": [
+                    "Educational Support: We received approval for educational container distributions, complete with documentation for each targeted area, promising a brighter future for Ghanaian children.",
+                    "Healthcare Initiatives: Our gesture of donating a medical clinic to the government exemplifies the spirit of the Africa Relief Ghana Development Cooperation, alongside plans for medical convoy missions in collaboration with the Ministry of Health.",
+                    "Customs and Coordination: A breakthrough in receiving a comprehensive customs exemption certificate for our containers, facilitating our multi-sectoral efforts in Ghana."
+                ],
+                "order": 5
+            },
+            {
+                "type": "heading",
+                "body": "Beneficiaries:",
+                "order": 6
+            },
+            {
+                 "type": "paragraph",
+                "body": "This partnership directly benefits educational and medical institutions, alongside the 6,000 orphans across Ghana, who are at the heart of our mission. The immediate impact of our containers, educational programs, and healthcare initiatives marks a significant milestone in our ongoing commitment to the development and wellbeing of Ghana's communities.",
+                "order": 7
+            }
+        ],
+        "gallery": [],
+        "donation_form_id": 21193,
+        "meta_title": "Africa Relief Ghana Development Cooperation",
+        "meta_keywords": null,
+        "meta_description": "Exploring Africa Relief Ghana Development Cooperation: An impactful partnership enhancing community development and support in Ghana.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Bir Al-Walidayn School",
+        "slug": "bir-al-walidayn-school",
+        "posted_date": "August 16, 2023",
+        "excerpt": null,
+        "location": "Gambia",
+        "implementation_date": "June 2023",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/08/Bir-Al-Walidayn-School1-1024x450.jpeg",
+            "alt_text": "Completed school building in an African village, a result of Africa Relief's school-building initiative"
+        },
+        "categories": [
+            {
+                "name": "Education",
+                "slug": "education"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Together, let's champion the cause of education and well-being",
+                "order": 0
+            },
+            {
+                 "type": "paragraph",
+                "body": "This school, featuring 6 classrooms, offices, and dorm rooms, stands as a beacon of hope. Beyond just brick and mortar, it's a sanctuary for orphans and less fortunate children, a place where dreams are nurtured.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Beneficiaries:",
+                "order": 2
+            },
+            {
+                 "type": "paragraph",
+                "body": "300 students are being served, with 120 using the school as a weekly residence. Meals are also provided for those in dire need.",
+                "order": 3
+            }
+        ],
+        "gallery": [
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/Bir-Al-Walidayn-School.jpeg",
+                "alt_text": "Construction workers laying bricks for a new school building as part of Africa Relief's education project"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/Bir-Al-Walidayn-School2.jpeg",
+                "alt_text": "Africa Relief volunteers and local community members celebrating the opening of a new school."
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/Bir-Al-Walidayn-School1.jpeg",
+                "alt_text": "Completed school building in an African village, a result of Africa Relief's school-building initiative"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/Bir-Al-Walidayn-School3.jpeg",
+                "alt_text": "Aerial view of a school construction site in Africa, showing progress made by Africa Relief"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/Bir-Al-Walidayn-School4.jpeg",
+                "alt_text": "Aerial view of a school construction site in Africa, showing progress made by Africa Relief"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/Bir-Al-Walidayn-School5.jpeg",
+                "alt_text": "Local African artisans crafting furniture for classrooms in the new school building."
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/08/Bir-Al-Walidayn-School6.jpeg",
+                "alt_text": "Completed school building in an African village, a result of Africa Relief's school-building initiative"
+            }
+        ],
+        "donation_form_id": 14679,
+        "meta_title": "Building Schools in Africa - A Key Africa Relief Projects",
+        "meta_keywords": null,
+        "meta_description": "Explore building schools in Africa projects by Africa Relief . Your support can educate and empower the next generation. shape a brighter future",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Ehsanollah School",
+        "slug": "ehsanollah-school",
+        "posted_date": "December 16, 2022",
+        "excerpt": null,
+        "location": "Gambia",
+        "implementation_date": "December 2022",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2022/12/Ihsanullah-1024x450.jpeg",
+            "alt_text": "Ehsanoallah School students engaged in an outdoor educational activity"
+        },
+        "categories": [
+            {
+                "name": "Education",
+                "slug": "education"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Education transforms. Let's keep the flame of knowledge burning in Gambia.",
+                "order": 0
+            },
+            {
+                 "type": "paragraph",
+                "body": "We've diligently set up a school featuring 4 classrooms and an office. By fostering education in this manner, we're granting children the privilege of knowledge and a brighter future. Every classroom we build holds the dreams and aspirations of countless children.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Beneficiaries:",
+                "order": 2
+            },
+            {
+                 "type": "paragraph",
+                "body": "Thanks to your support, 250 students, many of whom are unfortunate children, now have the chance at a proper education.",
+                "order": 3
+            }
+        ],
+        "gallery": [
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2022/12/Ihsanullah6-scaled.jpeg",
+                "alt_text": "Exterior view of Ehsanoallah School, showcasing its traditional African architecture."
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2022/12/Ihsanullah-scaled.jpeg",
+                "alt_text": "Ehsanoallah School students engaged in an outdoor educational activity"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2022/12/Ihsanullah2-scaled.jpeg",
+                "alt_text": "Exterior view of Ehsanoallah School"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2022/12/Ihsanullah3-scaled.jpeg",
+                "alt_text": "Exterior view of Ehsanoallah School"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2022/12/Ihsanullah5.jpeg",
+                "alt_text": "Local volunteers helping with school maintenance at Ehsanoallah School in Africa."
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2022/12/Ihsanullah4.jpeg",
+                "alt_text": "Local volunteers helping with school maintenance at Ehsanoallah School in Africa"
+            }
+        ],
+        "donation_form_id": 14679,
+        "meta_title": "Ehsanoallah school in africa - Africa Relief Projects",
+        "meta_keywords": null,
+        "meta_description": "Explore Ehsanoallah School in Africa by Africa Relief. Empower education and brighter futures. Join us in this important mission. Donate now",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Nurturing Families: Meat Distribution Initiative",
+        "slug": "nurturing-families-meat-distribution-initiative",
+        "posted_date": "October 12, 2023",
+        "excerpt": null,
+        "location": "Tanzania",
+        "implementation_date": "May 2023",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/10/Zabiha-1024x768.jpg",
+            "alt_text": "Nurturing Families - A Key Africa Relief Projects"
+        },
+        "categories": [
+            {
+                "name": "Food Aid",
+                "slug": "food-aid"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Gift the joy of a hearty meal. Your generosity fills plates and hearts.",
+                "order": 0
+            },
+            {
+                 "type": "paragraph",
+                "body": "Protein-rich diets can be hard to come by in certain Tanzanian regions. Our meat distribution initiative is more than just a meal\u2014it's nourishment, care, and a reminder to families that they aren't alone. Especially in areas where meals are often limited and basic, such distributions make a world of difference.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Beneficiaries:",
+                "order": 2
+            },
+            {
+                 "type": "paragraph",
+                "body": "15 families, with an average family size of 7.",
+                "order": 3
+            }
+        ],
+        "gallery": [],
+        "donation_form_id": 14666,
+        "meta_title": "Nurturing Families - A Key Africa Relief Projects",
+        "meta_keywords": null,
+        "meta_description": "Explore Africa Relief's nurturing families projects. Support initiatives that provide essential aid and hope to those in need. Make a difference!",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Brushy Creek Islamic Center Food Project",
+        "slug": "brushy-creek-islamic-center-food-project",
+        "posted_date": "August 31, 2023",
+        "excerpt": null,
+        "location": "Tanzania",
+        "implementation_date": "July 2023",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/08/brush2-1024x768.jpeg",
+            "alt_text": "Brushy Creek Islamic Center Food Project - Africa Relief"
+        },
+        "categories": [
+            {
+                "name": "Food Aid",
+                "slug": "food-aid"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Food is more than sustenance; it's love, care, and community.",
+                "order": 0
+            },
+            {
+                 "type": "paragraph",
+                "body": "Nutrition and community welfare go hand in hand. Our meat distribution project is ensuring that families have balanced diets, leading to better health, concentration, and overall well-being.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Beneficiaries:",
+                "order": 2
+            },
+            {
+                 "type": "paragraph",
+                "body": "36 families, or around 252 individuals, are now better nourished and empowered.",
+                "order": 3
+            }
+        ],
+        "gallery": [],
+        "donation_form_id": 14666,
+        "meta_title": "Brushy Creek Islamic Center Food Project - Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Explore how Africa Relief provide essential food aid in Africa. Your contribution can alleviate hunger and bring hope to communities in need. Donate today!",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Medical Equipment Delivery: Boosting Health Infrastructure",
+        "slug": "medical-equipment-delivery",
+        "posted_date": "October 19, 2023",
+        "excerpt": null,
+        "location": "Tanzania",
+        "implementation_date": "February 2023",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/10/DSC07858-1-scaled-1-1024x683.webp",
+            "alt_text": ""
+        },
+        "categories": [
+            {
+                "name": "Health",
+                "slug": "health"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Mend bodies, uplift spirits. Partner with us in this healing journey.",
+                "order": 0
+            },
+            {
+                 "type": "paragraph",
+                "body": "Quality healthcare often hinges on the availability of the right tools. By delivering essential medical equipment, we're bolstering Tanzania's health infrastructure, ensuring that more patients receive the care they deserve. This initiative, in partnership with other organizations, is a leap toward a healthier future for the community.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Beneficiaries:",
+                "order": 2
+            },
+            {
+                 "type": "paragraph",
+                "body": "More than 1000 individuals.",
+                "order": 3
+            }
+        ],
+        "gallery": [
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/10/DSC07858-1-scaled.jpg",
+                "alt_text": "Medical Equipment Delivery - A Key Africa Relief Projects"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/10/DSC07865-1-scaled.jpg",
+                "alt_text": "Medical supplies being distributed to a rural clinic as part of Africa Relief's healthcare initiative"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/10/DSC07864-1-scaled.jpg",
+                "alt_text": "Healthcare workers in Africa receiving medical equipment from the Africa Relief Project delivery truck"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/10/DSC07859-1-scaled.jpg",
+                "alt_text": "Boxes of essential medical equipment ready for distribution in an African village, sponsored by the Africa Relief Project"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/10/DSC07862-1-scaled.jpg",
+                "alt_text": "Healthcare workers in Africa receiving medical equipment from the Africa Relief Project delivery truck"
+            }
+        ],
+        "donation_form_id": 14728,
+        "meta_title": "Medical Equipment Delivery - A Key Africa Relief Projects",
+        "meta_keywords": null,
+        "meta_description": "Explore Africa Relief's medical equipment delivery mission. Help provide essential healthcare tools and make a difference. Join us",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Strategic Partnerships in Tanzania",
+        "slug": "strategic-partnerships-in-tanzania",
+        "posted_date": "September 1, 2023",
+        "excerpt": null,
+        "location": "Tanzania",
+        "implementation_date": "August 2023",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/09/Tanzania2.jpeg",
+            "alt_text": "Impact non profit: Team analyzing data for community improvement projects"
+        },
+        "categories": [
+            {
+                "name": "Health",
+                "slug": "health"
+            },
+            {
+                "name": "Orphan Support",
+                "slug": "orphan-support"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "As we venture into these strategic partnerships, your unwavering support aids us in reaching broader horizons and ensuring better health and education for all.",
+                "order": 0
+            },
+            {
+                 "type": "paragraph",
+                "body": "The Africa Relief team has made significant strides in our ongoing efforts to enhance healthcare services in Tanzania. Our visit to the office of the Deputy Minister of Health promises our inclusion in their 2024 plan focusing on eye and hearing operations. This collaboration further extends to equipping hospitals in alignment with the ministry's vision. We also had a productive discussion with an education official, which may lead to a partnership with the Ministry of Education in the future.",
+                "order": 1
+            },
+            {
+                 "type": "paragraph",
+                "body": "Outcomes of the meeting:",
+                "order": 2
+            },
+            {
+                "type": "list",
+                "body": [
+                    "Inclusion in the Health Ministry's 2024 plan for eye and hearing operations.",
+                    "Equipping hospitals in collaboration with the ministry.",
+                    "Signed a partnership agreement with Charity Vision and LEP.",
+                    "Launch of the \u201cHear and See\u201d program.",
+                    "Possible cooperation avenues with the Ministry of Education."
+                ],
+                "order": 3
+            },
+            {
+                "type": "heading",
+                "body": "Beneficiaries:",
+                "order": 4
+            },
+            {
+                 "type": "paragraph",
+                "body": "Patients needing eye and hearing treatments, hospitals that will benefit from enhanced equipment/resources, and educational beneficiaries from potential collaboration with the Ministry of Education.",
+                "order": 5
+            }
+        ],
+        "gallery": [
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Tanzania5.jpeg",
+                "alt_text": "\"Modern healthcare center in Tanzania, a symbol of development cooperation and improving public health services."
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Tanzania4.jpeg",
+                "alt_text": "Wildlife conservation efforts in Tanzania, showcasing development cooperation in preserving natural habitats."
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Tanzania3.jpeg",
+                "alt_text": "Wildlife conservation efforts in Tanzania, showcasing development cooperation in preserving natural habitats."
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Tanzania1.jpeg",
+                "alt_text": "Wildlife conservation efforts in Tanzania, showcasing development cooperation in preserving natural habitats."
+            }
+        ],
+        "donation_form_id": 14728,
+        "meta_title": "Advancing Tanzania Development Cooperation - Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Join Africa Relief in our Tanzania Development Cooperation project. Support our efforts to foster growth and community empowerment in Tanzania!",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Starting Small Businesses for Families",
+        "slug": "starting-small-businesses-for-families",
+        "posted_date": "October 19, 2023",
+        "excerpt": null,
+        "location": "Tanzania",
+        "implementation_date": "May 2023",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/10/cow6-1024x581.jpeg",
+            "alt_text": "Local farmers' market promoting small business initiatives and local products"
+        },
+        "categories": [
+            {
+                "name": "Sustainable Community",
+                "slug": "sustainable-community"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "From cattle to capital. Invest in a family's dream of self-sustainability",
+                "order": 0
+            },
+            {
+                 "type": "paragraph",
+                "body": "Empowerment often starts with small steps. By providing milking cows and calves to struggling families, we're not just giving them assets but the means to self-sufficiency. These families now have a steady source of income and nutrition, setting them on a path to a brighter, more secure future.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Beneficiaries:",
+                "order": 2
+            },
+            {
+                 "type": "paragraph",
+                "body": "Multiple families benefit from the cows and calves.",
+                "order": 3
+            }
+        ],
+        "gallery": [
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/10/Cow1.jpeg",
+                "alt_text": "An individual receiving a small business grant to kickstart their entrepreneurial journey"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/10/cow2.jpeg",
+                "alt_text": "An individual receiving a small business grant to kickstart their entrepreneurial journey"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/10/cow3.jpeg",
+                "alt_text": "An individual receiving a small business grant to kickstart their entrepreneurial journey"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/10/cow4.jpeg",
+                "alt_text": "cow4"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/10/cow5.jpeg",
+                "alt_text": "Local farmers' market promoting small business initiatives and local products"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/10/cow6.jpeg",
+                "alt_text": "Local farmers' market promoting small business initiatives and local products"
+            }
+        ],
+        "donation_form_id": 21193,
+        "meta_title": "Small Business Initiatives - A Key Africa Relief Projects",
+        "meta_keywords": null,
+        "meta_description": "Be part of Africa Relief's Small Business Initiatives, a project uplifting local enterprises. Join us in driving economic growth and community development",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Empowering Mobility and Livelihoods",
+        "slug": "empowering-mobility-and-livelihoods",
+        "posted_date": "September 19, 2023",
+        "excerpt": null,
+        "location": "Tanzania",
+        "implementation_date": "April 2023",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/09/Bicycles3-1024x683.jpeg",
+            "alt_text": "Enhancing Livelihoods project by Africa Relief"
+        },
+        "categories": [
+            {
+                "name": "Sustainable Community",
+                "slug": "sustainable-community"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Fuel dreams, one ride at a time. Your donation drives brighter futures.",
+                "order": 0
+            },
+            {
+                 "type": "paragraph",
+                "body": "In regions where daily income can be a challenge, providing bicycles and motorcycles represents more than just transportation\u2014it's an opportunity for families to secure a livelihood. By fulfilling this critical need, we're not just providing tools; we're fostering independence and economic growth one family at a time.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Beneficiaries:",
+                "order": 2
+            },
+            {
+                 "type": "paragraph",
+                "body": "Families benefit from 3 bicycles and 1 motorcycle.",
+                "order": 3
+            }
+        ],
+        "gallery": [
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Bicycles1-scaled.jpeg",
+                "alt_text": "Enhancing Livelihoods project by Africa Relief"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Bicycles2-scaled.jpeg",
+                "alt_text": "Enhancing Livelihoods project by Africa Relief"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Bicycles3-scaled.jpeg",
+                "alt_text": "Enhancing Livelihoods project by Africa Relief"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/Bicycles4-scaled.jpeg",
+                "alt_text": "Enhancing Livelihoods project by Africa Relief"
+            }
+        ],
+        "donation_form_id": 21193,
+        "meta_title": "Enhancing Livelihoods project by Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Africa Relief empowered lives in Tanzania by enhancing livelihoods through transportation. Your donation fuels brighter futures.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Sustainable Income Initiative",
+        "slug": "sustainable-income-initiative",
+        "posted_date": "September 19, 2023",
+        "excerpt": null,
+        "location": "Tanzania",
+        "implementation_date": "May 2023",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/09/sewing-2-1024x683.jpeg",
+            "alt_text": "showcasing economic empowerment through collaboration and entrepreneurship"
+        },
+        "categories": [
+            {
+                "name": "Sustainable Community",
+                "slug": "sustainable-community"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Empower a family's journey towards self-reliance. Every contribution stitches hope",
+                "order": 0
+            },
+            {
+                 "type": "paragraph",
+                "body": "Economic empowerment is key to breaking the cycle of poverty. By distributing sewing machines, we're equipping mothers, especially those of orphans and the impoverished, with a sustainable means to support their families. Each machine represents a chance at financial independence and a brighter future.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Beneficiaries:",
+                "order": 2
+            },
+            {
+                 "type": "paragraph",
+                "body": "10 families, benefiting over 70 individuals.",
+                "order": 3
+            }
+        ],
+        "gallery": [
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/sewing-1-scaled.jpeg",
+                "alt_text": "Economic empowerment in Africa"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/sewing--scaled.jpeg",
+                "alt_text": "Economic empowerment in Africa"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/sewing-3-scaled.jpeg",
+                "alt_text": "Economic empowerment in Africa"
+            },
+            {
+                "src": "https://africa-relief.org/wp-content/uploads/2023/09/sewing-2-scaled.jpeg",
+                "alt_text": "showcasing economic empowerment through collaboration and entrepreneurship"
+            }
+        ],
+        "donation_form_id": 21193,
+        "meta_title": "Economic Empowerment through Family Business- Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Join Africa Relief in boosting Economic Empowerment through Family Businesses. Support our initiative to strengthen families and communities",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
     }
-  },
-  {
-    "title": "Mariame Diawara and Fatoumata Tiemoko Well",
-    "slug": "mariame-diawara-and-fatoumata-tiemoko-well",
-    "categories": [
-      {
-        "name": "water",
-        "slug": "water"
-      }
-    ],
-    "date": "September 29, 2023",
-    "featuredImage": {
-      "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame6-1024x802.webp",
-      "alt": "Mariame Diawara and Fatoumata Tiemoko on the well built by Africa Relief"
-    },
-    "gallery": [
-      {
-        "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame.webp",
-        "alt": "Mariame Diawara alongside Fatoumata Tiemoko at the inauguration of their namesake well in Africa Relief project"
-      },
-      {
-        "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame2.webp",
-        "alt": "Children gathering around the newly accessible water source, the Diawara-Tiemoko Well, in an African village"
-      },
-      {
-        "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame3.webp",
-        "alt": "Local villagers drawing water from the Mariame Diawara and Fatoumata Tiemoko Well, provided by Africa Relief"
-      },
-      {
-        "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame4.webp",
-        "alt": "The newly constructed Mariame Diawara and Fatoumata Tiemoko Well, a vital water source for an African community"
-      },
-      {
-        "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame5.webp",
-        "alt": "Mariame Diawara and Fatoumata Tiemoko smiling beside the well that serves their community, thanks to Africa Relief"
-      }
-    ],
-    "location": "Gambia",
-    "implementationDate": "August 2023",
-    "content": [
-      {
-        "heading": "Sun and water are the essence of life. Illuminate lives with your support.",
-        "description": "In regions affected by water scarcity, every drop counts. These solar water wells, dedicated in honor of Mariame Diawara and Fatoumata Tiemoko, ensure that hundreds have access to clean, safe water. Beyond hydration, these wells represent hope, health, and a tribute to beloved individuals."
-      },
-      {
-        "heading": "Beneficiaries",
-        "description": "600-800 individuals."
-      }
-    ],
-    "nextBlog": {
-      "title": "Emergency Morocco Earthquake Response",
-      "slug": "emergency-morocco-earthquake-response"
-    },
-    "previousBlog": {
-      "title": "Sadaqah Wells",
-      "slug": "sadaqah-wells"
-    },
-    "donationForm": {
-      "id": 14590,
-      "title": "Solar Water Well",
-      "levels": [
-        {
-          "amount": 100,
-          "name": null
-        },
-        {
-          "amount": 300,
-          "name": null
-        },
-        {
-          "amount": 500,
-          "name": null
-        },
-        {
-          "amount": 5500,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": 5500,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    }
-  },
-  {
-    "title": "Sadaqah Wells",
-    "slug": "sadaqah-wells",
-    "categories": [
-      {
-        "name": "water",
-        "slug": "water"
-      }
-    ],
-    "date": "September 29, 2023",
-    "featuredImage": {
-      "src": "assets/db/blogs/images/sadaqah-wells/Sadaqah1-scaled.webp",
-      "alt": "Learn About our project Sadaqah Wells - Africa Relief"
-    },
-    "gallery": [
-      {
-        "src": "assets/db/blogs/images/sadaqah-wells/Sadaqah0.webp",
-        "alt": "Learn About our project Sadaqah Wells - Africa Relief"
-      },
-      {
-        "src": "assets/db/blogs/images/sadaqah-wells/Sadaqah1-1024x768.webp",
-        "alt": "Learn About our project Sadaqah Wells - Africa Relief"
-      },
-      {
-        "src": "assets/db/blogs/images/sadaqah-wells/Sadaqah2-scaled.webp",
-        "alt": "Learn About our project Sadaqah Wells - Africa Relief"
-      },
-      {
-        "src": "assets/db/blogs/images/sadaqah-wells/Sadaqah3-scaled.webp",
-        "alt": "Learn About our project Sadaqah Wells - Africa Relief"
-      },
-      {
-        "src": "assets/db/blogs/images/sadaqah-wells/Sadaqah-scaled.webp",
-        "alt": "Learn About our project Sadaqah Wells - Africa Relief"
-      }
-    ],
-    "location": "Gambia",
-    "implementationDate": "August 2023",
-    "content": [
-      {
-        "heading": "Every drop counts. Contribute to life, health, and community vitality.",
-        "description": "Access to clean water is fundamental. By establishing a surface water well, we’re bringing life-sustaining hydration to communities, preventing waterborne diseases and promoting overall community health. Such initiatives are more than infrastructure—they’re a promise of better days to the community."
-      },
-      {
-        "heading": "Beneficiaries",
-        "description": "200-400 individuals."
-      }
-    ],
-    "nextBlog": {
-      "title": "Empowering Mobility and Livelihoods",
-      "slug": "empowering-mobility-and-livelihoods"
-    },
-    "previousBlog": {
-      "title": "Mariame Diawara and Fatoumata Tiemoko Well",
-      "slug": "mariame-diawara-and-fatoumata-tiemoko-well"
-    },
-    "donationForm": {
-      "id": 14586,
-      "title": "Surface Water Well",
-      "levels": [
-        {
-          "amount": 100,
-          "name": null
-        },
-        {
-          "amount": 300,
-          "name": null
-        },
-        {
-          "amount": 500,
-          "name": null
-        },
-        {
-          "amount": 2500,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": 2500,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    }
-  },
-  {
-    "title": "Bait Al Maqdes Artesian Well",
-    "slug": "bait-al-maqdes-artesian-well",
-    "categories": [
-      {
-        "name": "water",
-        "slug": "water"
-      }
-    ],
-    "date": "September 13, 2023",
-    "featuredImage": {
-      "src": "assets/db/blogs/images/bait-al-maqdes-artesian-well/bait-q.webp",
-      "alt": "Close-up of clear water being drawn from the Al-Bir and At-Taqwa Well, a vital resource for the village"
-    },
-    "gallery": [
-      {
-        "src": "assets/db/blogs/images/bait-al-maqdes-artesian-well/bait-q1.webp",
-        "alt": "Close-up of clear water being drawn from the Al-Bir and At-Taqwa Well, a vital resource for the village"
-      },
-      {
-        "src": "assets/db/blogs/images/bait-al-maqdes-artesian-well/bait-q2.webp",
-        "alt": "Children happily fetching water from the newly built Al-Bir and At-Taqwa Well"
-      },
-      {
-        "src": "assets/db/blogs/images/bait-al-maqdes-artesian-well/bait-q3.webp",
-        "alt": "Children happily fetching water from the newly built Al-Bir and At-Taqwa Well"
-      },
-      {
-        "src": "assets/db/blogs/images/bait-al-maqdes-artesian-well/bait-q4.webp",
-        "alt": "Villagers collecting fresh water from the Al-Bir and At-Taqwa Well in a rural community."
-      }
-    ],
-    "location": "Niger",
-    "implementationDate": "August 2023",
-    "content": [
-      {
-        "heading": "Water is life. With your support, we can quench the thirst of communities",
-        "description": "Water scarcity is a pressing issue in many African regions. Our initiative in Niger aims to alleviate this by providing an artesian water well, ensuring the village’s consistent access to clean and safe water. This not only aids in daily sustenance but also in preventing waterborne diseases, elevating the overall health of the community."
-      },
-      {
-        "heading": "Beneficiaries",
-        "description": "600-800 individuals."
-      }
-    ],
-    "nextBlog": {
-      "title": "Sustainable Income Initiative",
-      "slug": "sustainable-income-initiative"
-    },
-    "previousBlog": {
-      "title": "Salah Alzoobi Mosque",
-      "slug": "salah-alzoobi-mosque"
-    },
-    "donationForm": {
-      "id": 14588,
-      "title": "Artisanal Water Well",
-      "levels": [
-        {
-          "amount": 100,
-          "name": null
-        },
-        {
-          "amount": 300,
-          "name": null
-        },
-        {
-          "amount": 500,
-          "name": null
-        },
-        {
-          "amount": 4600,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": 4600,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    }
-  },
-  {
-    "title": "Repentance Well",
-    "slug": "repentance-well",
-    "categories": [
-      {
-        "name": "water",
-        "slug": "water"
-      }
-    ],
-    "date": "August 31, 2023",
-    "featuredImage": {
-      "src": "assets/db/blogs/images/repentance-well/tawba6-1024x768.webp",
-      "alt": "Visitors gathered around Al Tawbah Well"
-    },
-    "gallery": [
-      {
-        "src": "assets/db/blogs/images/repentance-well/tawba1.webp",
-        "alt": "Al Tawbah Well, a historic and revered well with deep cultural and religious significance. It serves as a vital water source and a symbol of tradition and heritage"
-      },
-      {
-        "src": "assets/db/blogs/images/repentance-well/tawba2.webp",
-        "alt": "Al Tawbah Well's distinctive architectural features, showcasing its historical significance"
-      },
-      {
-        "src": "assets/db/blogs/images/repentance-well/tawba3.webp",
-        "alt": "Al Tawbah Well's distinctive architectural features, showcasing its historical significance"
-      },
-      {
-        "src": "assets/db/blogs/images/repentance-well/tawba4.webp",
-        "alt": "Traditional rituals being performed at Al Tawbah Well, preserving its sacred traditions"
-      },
-      {
-        "src": "assets/db/blogs/images/repentance-well/tawba5.webp",
-        "alt": "Crystal-clear waters of Al Tawbah Well, a natural wonder and cultural treasure"
-      },
-      {
-        "src": "assets/db/blogs/images/repentance-well/tawba6.webp",
-        "alt": "Crystal-clear waters of Al Tawbah Well, a natural wonder and cultural treasure"
-      },
-      {
-        "src": "assets/db/blogs/images/repentance-well/tawba7.webp",
-        "alt": "Visitors gathered around Al Tawbah Well"
-      },
-      {
-        "src": "assets/db/blogs/images/repentance-well/tawba8.webp",
-        "alt": "Al Tawbah Well's distinctive architectural features, showcasing its historical significance"
-      }
-    ],
-    "location": "Ghana",
-    "implementationDate": "August 2023",
-    "content": [
-      {
-        "heading": "Every well is a step towards a brighter, healthier future",
-        "description": "Our semi-artesian well, aptly named the Repentance Well, is a blend of modern engineering and nature. Projects like these ensure communities don’t just survive, but thrive, with adequate water for both consumption and cultivation."
-      },
-      {
-        "heading": "Beneficiaries",
-        "description": "This well serves between 400-600 individuals, a testament to the impact of sustainable solutions."
-      }
-    ],
-    "nextBlog": {
-      "title": "Brushy Creek Islamic Center Food Project",
-      "slug": "brushy-creek-islamic-center-food-project"
-    },
-    "previousBlog": {
-      "title": "Water From Our Home Well",
-      "slug": "water-from-our-home-well"
-    },
-    "donationForm": {
-      "id": 14588,
-      "title": "Artisanal Water Well",
-      "levels": [
-        {
-          "amount": 100,
-          "name": null
-        },
-        {
-          "amount": 300,
-          "name": null
-        },
-        {
-          "amount": 500,
-          "name": null
-        },
-        {
-          "amount": 4600,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": 4600,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    }
-  },
-  {
-    "title": "Water From Our Home Well",
-    "slug": "water-from-our-home-well",
-    "categories": [
-      {
-        "name": "water",
-        "slug": "water"
-      }
-    ],
-    "date": "August 24, 2023",
-    "featuredImage": {
-      "src": "assets/db/blogs/images/water-from-our-home-well/home5.webp",
-      "alt": "Aerial view of an artesian water well surrounded by lush green landscape"
-    },
-    "gallery": [
-      {
-        "src": "assets/db/blogs/images/water-from-our-home-well/home1.webp",
-        "alt": "Sunset view of an artesian well in a peaceful rural area, providing essential water to the community"
-      },
-      {
-        "src": "assets/db/blogs/images/water-from-our-home-well/home3-scaled.webp",
-        "alt": "Sunset view of an artesian well in a peaceful rural area, providing essential water to the community"
-      },
-      {
-        "src": "assets/db/blogs/images/water-from-our-home-well/home4.webp",
-        "alt": "Children gathered around an artesian water well"
-      },
-      {
-        "src": "assets/db/blogs/images/water-from-our-home-well/home6-scaled.webp",
-        "alt": "Close-up of water gushing from an artesian well"
-      },
-      {
-        "src": "assets/db/blogs/images/water-from-our-home-well/home7-scaled.webp",
-        "alt": "Community members participating in the construction of a new artesian water well"
-      },
-      {
-        "src": "assets/db/blogs/images/water-from-our-home-well/home8.webp",
-        "alt": "Close-up of water gushing from an artesian well, a natural source of pure water."
-      },
-      {
-        "src": "assets/db/blogs/images/water-from-our-home-well/home9.webp",
-        "alt": "Aerial view of an artesian water well surrounded by lush green landscape"
-      }
-    ],
-    "location": "Ghana",
-    "implementationDate": "June 2023",
-    "content": [
-      {
-        "heading": "Water is a gift. Let’s make it universal.",
-        "description": "The artesian water well we’ve constructed is more than a project; it’s a lifeline. By tapping into natural sources, we’re ensuring that villages get consistent and unpolluted water, crucial for health and agriculture."
-      },
-      {
-        "heading": "Beneficiaries",
-        "description": "This initiative quenches the thirst of 600-800 villagers, enriching their daily lives."
-      }
-    ],
-    "nextBlog": {
-      "title": "Repentance Well",
-      "slug": "repentance-well"
-    },
-    "previousBlog": {
-      "title": "Strengthening Partnerships in Ghana",
-      "slug": "strengthening-partnerships-in-ghana"
-    },
-    "donationForm": {
-      "id": 14588,
-      "title": "Artisanal Water Well",
-      "levels": [
-        {
-          "amount": 100,
-          "name": null
-        },
-        {
-          "amount": 300,
-          "name": null
-        },
-        {
-          "amount": 500,
-          "name": null
-        },
-        {
-          "amount": 4600,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": 4600,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    }
-  },
-  {
-    "title": "Qur’an Circle in the Islamic Center of Passaic County Well",
-    "slug": "new-jersey-well",
-    "categories": [
-      {
-        "name": "water",
-        "slug": "water"
-      }
-    ],
-    "date": "June 22, 2023",
-    "featuredImage": {
-      "src": "assets/db/blogs/images/new-jersey-well/NJ6-1024x768.webp",
-      "alt": "new jersey well"
-    },
-    "gallery": [
-      {
-        "src": "assets/db/blogs/images/new-jersey-well/IMG-20230528-WA0028.webp",
-        "alt": "Qur'an Circle study session at the Islamic Center in Passaic County"
-      },
-      {
-        "src": "assets/db/blogs/images/new-jersey-well/NJ1.webp",
-        "alt": "Inside view of the Islamic Center of Passaic County's Qur'an Circle"
-      },
-      {
-        "src": "assets/db/blogs/images/new-jersey-well/NJ4.webp",
-        "alt": "new jersey well"
-      },
-      {
-        "src": "assets/db/blogs/images/new-jersey-well/NJ5.webp",
-        "alt": "new jersey well"
-      }
-    ],
-    "location": "Ghana",
-    "implementationDate": "June 2023",
-    "content": [
-      {
-        "heading": "Hydration and hope, hand in hand. Join us.",
-        "description": "Every well we construct is a milestone in our journey to hydrate communities. This surface water well, named in honor of the Qur’an Circle, serves as a testament to the blend of faith and service."
-      },
-      {
-        "heading": "Beneficiaries",
-        "description": "Between 200-400 villagers now have a more convenient and cleaner source of water."
-      }
-    ],
-    "nextBlog": {
-      "title": "Bir Al-Walidayn School",
-      "slug": "bir-al-walidayn-school"
-    },
-    "previousBlog": {
-      "title": "Fā’il Khair Well",
-      "slug": "fail-khair-well"
-    },
-    "donationForm": {
-      "id": 14586,
-      "title": "Surface Water Well",
-      "levels": [
-        {
-          "amount": 100,
-          "name": null
-        },
-        {
-          "amount": 300,
-          "name": null
-        },
-        {
-          "amount": 500,
-          "name": null
-        },
-        {
-          "amount": 2500,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": 2500,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    }
-  },
-  {
-    "title": "Fā’il Khair Well",
-    "slug": "fail-khair-well",
-    "categories": [
-      {
-        "name": "water",
-        "slug": "water"
-      }
-    ],
-    "date": "June 21, 2023",
-    "featuredImage": {
-      "src": "assets/db/blogs/images/fail-khair-well/f-khair2-1-1024x645.webp",
-      "alt": "Wells in Africa: Villagers gathering water from a new well in a rural village"
-    },
-    "gallery": [
-      {
-        "src": "assets/db/blogs/images/fail-khair-well/f-khair4-1-scaled.webp",
-        "alt": "Fail Khair Well signage, displaying the name and the date of establishment"
-      },
-      {
-        "src": "assets/db/blogs/images/fail-khair-well/f-khair-scaled.webp",
-        "alt": "Close-up of fresh water flowing from the Fail Khair Well, a vital resource for the community."
-      },
-      {
-        "src": "assets/db/blogs/images/fail-khair-well/f-khair5-scaled.webp",
-        "alt": "Children joyfully playing near the newly constructed Fail Khair Well"
-      },
-      {
-        "src": "assets/db/blogs/images/fail-khair-well/f-khair6-scaled.webp",
-        "alt": "Inauguration ceremony of the Fail Khair Well with local community leaders present."
-      }
-    ],
-    "location": "Uganda",
-    "implementationDate": "June 2023",
-    "content": [
-      {
-        "heading": "Water changes destinies. Let’s keep the flow going.",
-        "description": "Our dedication has birthed a new surface water well, a symbol of sustainability and health. Clean water projects like these are pivotal in combating waterborne diseases and ensuring a community thrives."
-      },
-      {
-        "heading": "Beneficiaries",
-        "description": "This resource now supports between 200-400 individuals, offering them not just water, but a chance at healthier lives."
-      }
-    ],
-    "nextBlog": {
-      "title": "Qur’an Circle in the Islamic Center of Passaic County Well",
-      "slug": "new-jersey-well"
-    },
-    "previousBlog": {
-      "title": "Al-Bir and At-Taqwa Well",
-      "slug": "al-bir-and-at-taqwa-well"
-    },
-    "donationForm": {
-      "id": 14586,
-      "title": "Surface Water Well",
-      "levels": [
-        {
-          "amount": 100,
-          "name": null
-        },
-        {
-          "amount": 300,
-          "name": null
-        },
-        {
-          "amount": 500,
-          "name": null
-        },
-        {
-          "amount": 2500,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": 2500,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    }
-  },
-  {
-    "title": "Al-Bir and At-Taqwa Well",
-    "slug": "al-bir-and-at-taqwa-wellal-bir-and-at-taqwa-well",
-    "categories": [
-      {
-        "name": "water",
-        "slug": "water"
-      }
-    ],
-    "date": "June 17, 2023",
-    "featuredImage": {
-      "src": "assets/db/blogs/images/al-bir-and-at-taqwa-well/Al-Bir-Well-4-1024x576.webp",
-      "alt": "Al-Bir and At-Taqwa Well - A serene desert landscape featuring the historic Al-Bir and At-Taqwa Well sites"
-    },
-    "gallery": [
-      {
-        "src": "assets/db/blogs/images/al-bir-and-at-taqwa-well/Al-Bir-Well-.webp",
-        "alt": "Al-Bir Well"
-      },
-      {
-        "src": "assets/db/blogs/images/al-bir-and-at-taqwa-well/Al-Bir-Well-2.webp",
-        "alt": "Al-Bir Well"
-      },
-      {
-        "src": "assets/db/blogs/images/al-bir-and-at-taqwa-well/Al-Bir-Well-3.webp",
-        "alt": "Al-Bir Well 3"
-      },
-      {
-        "src": "assets/db/blogs/images/al-bir-and-at-taqwa-well/Al-Bir-Well-5.webp",
-        "alt": "Al-Bir Well 5"
-      },
-      {
-        "src": "assets/db/blogs/images/al-bir-and-at-taqwa-well/Al-Bir-Well-6.webp",
-        "alt": "Al-Bir Well 6"
-      },
-      {
-        "src": "assets/db/blogs/images/al-bir-and-at-taqwa-well/Al-Bir-Well-7.webp",
-        "alt": "Al-Bir Well 7"
-      }
-    ],
-    "location": "Uganda",
-    "implementationDate": "June 2023",
-    "content": [
-      {
-        "heading": "Water is life. Let’s spread its blessings.",
-        "description": "Clean water is life’s most basic need, and our newly constructed surface water well is a testament to that. By quenching thirst, we’re revitalizing communities and offering them better health."
-      },
-      {
-        "heading": "Beneficiaries",
-        "description": "The project supports 200-400 individuals, gifting them with consistent clean water access."
-      }
-    ],
-    "nextBlog": {
-      "title": "Fā’il Khair Well",
-      "slug": "fail-khair-well"
-    },
-    "previousBlog": {
-      "title": "Hajja Muyassar Hassan Shuaib Mosque & Water Well",
-      "slug": "hajja-muyassar-hassan-shuaib-mosque-water-well"
-    },
-    "donationForm": {
-      "id": 14586,
-      "title": "Surface Water Well",
-      "levels": [
-        {
-          "amount": 100,
-          "name": null
-        },
-        {
-          "amount": 300,
-          "name": null
-        },
-        {
-          "amount": 500,
-          "name": null
-        },
-        {
-          "amount": 2500,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": 2500,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    }
-  },
-  {
-    "title": "Hajja Muyassar Hassan Shuaib Mosque & Water Well",
-    "slug": "hajja-muyassar-hassan-shuaib-mosque-water-well",
-    "categories": [
-      {
-        "name": "water",
-        "slug": "water"
-      }
-    ],
-    "date": "March 15, 2023",
-    "featuredImage": {
-      "src": "assets/db/blogs/images/hajja-muyassar-hassan-shuaib-mosque-water-well/35-1024x683.webp",
-      "alt": "Aerial view of the Hajja Muyassar Hassan Shuaib Mosque and Water Well, highlighting its community impact"
-    },
-    "gallery": [
-      {
-        "src": "assets/db/blogs/images/hajja-muyassar-hassan-shuaib-mosque-water-well/Shoaib2-scaled.webp",
-        "alt": "Local residents using the water well adjacent to Hajja Muyassar Hassan Shuaib Mosque"
-      },
-      {
-        "src": "assets/db/blogs/images/hajja-muyassar-hassan-shuaib-mosque-water-well/Shoaib3-scaled.webp",
-        "alt": "Dedication plaque at the entrance of Hajja Muyassar Hassan Shuaib Mosque, commemorating its inauguration"
-      },
-      {
-        "src": "assets/db/blogs/images/hajja-muyassar-hassan-shuaib-mosque-water-well/Shoaib4-scaled.webp",
-        "alt": "Hajja Muyassar Hassan Shuaib Mosque and Water Well"
-      }
-    ],
-    "location": "Tanzania",
-    "implementationDate": "March 2023",
-    "content": [
-      {
-        "heading": "Building more than just structures; we’re building futures.",
-        "description": "We’ve proudly established a mosque combined with a water well. This project doesn’t just provide spiritual nourishment but also addresses the tangible need for clean water. It’s a symbol of community, faith, and sustainability."
-      },
-      {
-        "heading": "Beneficiaries",
-        "description": "The entire village, over 1,000 strong, benefits. They now have access to clean water, a space for worship, education, and improved hygiene."
-      }
-    ],
-    "nextBlog": {
-      "title": "Al-Bir and At-Taqwa Well",
-      "slug": "al-bir-and-at-taqwa-well"
-    },
-    "previousBlog": {
-      "title": "Ehsanollah School",
-      "slug": "ehsanollah-school"
-    },
-    "donationForm": {
-      "id": 14679,
-      "title": "Educational Center",
-      "levels": [
-        {
-          "amount": 690,
-          "name": null
-        },
-        {
-          "amount": 920,
-          "name": null
-        },
-        {
-          "amount": 1150,
-          "name": null
-        },
-        {
-          "amount": 27600,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": 27600,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    }
-  },
-  {
-    "title": "Salah Alzoobi Mosque",
-    "slug": "salah-alzoobi-mosquesalah-alzoobi-mosque",
-    "categories": [
-      {
-        "name": "education",
-        "slug": "education"
-      }
-    ],
-    "date": "September 8, 2023",
-    "featuredImage": {
-      "src": "assets/db/blogs/images/salah-alzoobi-mosque/Szuabi3-1024x450.webp",
-      "alt": "A sustainable and eco-friendly mosque in Africa, blending modern design with environmental consciousness."
-    },
-    "gallery": [
-      {
-        "src": "assets/db/blogs/images/salah-alzoobi-mosque/Szuabi.webp",
-        "alt": "Mosque construction in Africa using sustainable materials, contributing to eco-friendly initiatives."
-      },
-      {
-        "src": "assets/db/blogs/images/salah-alzoobi-mosque/Szuabi1.webp",
-        "alt": "Mosque construction in Africa using sustainable materials, contributing to eco-friendly initiatives."
-      },
-      {
-        "src": "assets/db/blogs/images/salah-alzoobi-mosque/Szuabi2-scaled.webp",
-        "alt": "A mosque garden featuring native plants, showcasing sustainable landscaping practices in African mosques"
-      },
-      {
-        "src": "assets/db/blogs/images/salah-alzoobi-mosque/Szuabi4-scaled.webp",
-        "alt": "A sustainable and eco-friendly mosque in Africa, blending modern design with environmental consciousness."
-      },
-      {
-        "src": "assets/db/blogs/images/salah-alzoobi-mosque/Szuabi5-scaled.webp",
-        "alt": "A sustainable and eco-friendly mosque in Africa, blending modern design with environmental consciousness"
-      }
-    ],
-    "location": "Gambia",
-    "implementationDate": "December 2022",
-    "content": [
-      {
-        "heading": "Empower a child’s future through education and health. Your support can light up their world.",
-        "description": "In regions where access to quality education is a challenge, the establishment of an 8-room school equipped with a water well becomes a beacon of hope. This project not only provides a comprehensive educational setting for the community but also ensures students have access to clean water, a basic necessity often taken for granted. During the opening, the joy was palpable as donors interacted with the eager children and gifted school bags."
-      },
-      {
-        "heading": "Beneficiaries",
-        "description": "Over 300 students."
-      }
-    ],
-    "nextBlog": {
-      "title": "Bait Al Maqdes Artesian Well",
-      "slug": "bait-al-maqdes-artesian-well"
-    },
-    "previousBlog": {
-      "title": "Strategic Partnerships in Tanzania",
-      "slug": "strategic-partnerships-in-tanzania"
-    },
-    "donationForm": {
-      "id": 14679,
-      "title": "Educational Center",
-      "levels": [
-        {
-          "amount": 690,
-          "name": null
-        },
-        {
-          "amount": 920,
-          "name": null
-        },
-        {
-          "amount": 1150,
-          "name": null
-        },
-        {
-          "amount": 27600,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": 27600,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    }
-  },
-  {
-    "title": "Strengthening Partnerships in Ghana",
-    "slug": "strengthening-partnerships-in-ghana",
-    "categories": [
-      {
-        "name": "education",
-        "slug": "education"
-      },
-      {
-        "name": "health",
-        "slug": "health"
-      },
-      {
-        "name": "orphan Support",
-        "slug": "orphan-support"
-      },
-      {
-        "name": "sustainable-community",
-        "slug": "sustainable-community"
-      }
-    ],
-    "date": "August 23, 2023",
-    "featuredImage": {
-      "src": "assets/db/blogs/images/strengthening-partnerships-in-ghana/20230821_140424-1024x461.webp",
-      "alt": "Vibrant Ghanaian marketplace bustling with activity, showcasing Africa relief efforts and development cooperation in Ghana"
-    },
-    "gallery": [],
-    "location": "Ghana",
-    "implementationDate": "August 2023",
-    "content": [
-      {
-        "heading": "This partnership reflects our commitment to driving impactful change. Your continued support ensures that such collaborations flourish, enabling us to reach more communities and touch more lives.",
-        "description": "Africa Relief had the honor of meeting with the Minister of Social Affairs and key officials at the ministry’s headquarters in Ghana. This vital meeting explored mutual areas of interest, from introducing our mission to discussing specific collaborative efforts aimed at bettering the lives of the under-resourced Ghanaian community."
-      },
-      {
-        "heading": "Beneficiaries",
-        "description": "Immediate beneficiaries encompass the institutions awaiting our containers, educational facilities, medical facilities, and notably, the 6,000 registered orphans in Ghana."
-      }
-    ],
-    "nextBlog": {
-      "title": "Water From Our Home Well",
-      "slug": "water-from-our-home-well"
-    },
-    "previousBlog": {
-      "title": "Bir Al-Walidayn School",
-      "slug": "bir-al-walidayn-school"
-    },
-    "donationForm": {
-      "id": 21193,
-      "title": "Sustainable Community",
-      "levels": [
-        {
-          "amount": 200,
-          "name": null
-        },
-        {
-          "amount": 400,
-          "name": null
-        },
-        {
-          "amount": 600,
-          "name": null
-        },
-        {
-          "amount": 800,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": null,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    }
-  },
-  {
-    "title": "Bir Al-Walidayn School",
-    "slug": "bir-al-walidayn-school",
-    "categories": [
-      {
-        "name": "education",
-        "slug": "education"
-      }
-    ],
-    "date": "August 16, 2023",
-    "featuredImage": {
-      "src": "assets/db/blogs/images/bir-al-walidayn-school/Bir-Al-Walidayn-School1-1024x450.webp",
-      "alt": "Completed school building in an African village, a result of Africa Relief's school-building initiative"
-    },
-    "gallery": [
-      {
-        "src": "assets/db/blogs/images/bir-al-walidayn-school/Bir-Al-Walidayn-School.webp",
-        "alt": "Construction workers laying bricks for a new school building as part of Africa Relief's education project"
-      },
-      {
-        "src": "assets/db/blogs/images/bir-al-walidayn-school/Bir-Al-Walidayn-School2.webp",
-        "alt": "Africa Relief volunteers and local community members celebrating the opening of a new school."
-      },
-      {
-        "src": "assets/db/blogs/images/bir-al-walidayn-school/Bir-Al-Walidayn-School3.webp",
-        "alt": "Aerial view of a school construction site in Africa, showing progress made by Africa Relief"
-      },
-      {
-        "src": "assets/db/blogs/images/bir-al-walidayn-school/Bir-Al-Walidayn-School4.webp",
-        "alt": "Aerial view of a school construction site in Africa, showing progress made by Africa Relief"
-      },
-      {
-        "src": "assets/db/blogs/images/bir-al-walidayn-school/Bir-Al-Walidayn-School5.webp",
-        "alt": "Local African artisans crafting furniture for classrooms in the new school building."
-      },
-      {
-        "src": "assets/db/blogs/images/bir-al-walidayn-school/Bir-Al-Walidayn-School6.webp",
-        "alt": "Completed school building in an African village, a result of Africa Relief's school-building initiative"
-      }
-    ],
-    "location": "Gambia",
-    "implementationDate": "June 2023",
-    "content": [
-      {
-        "heading": "Together, let’s champion the cause of education and well-being",
-        "description": "This school, featuring 6 classrooms, offices, and dorm rooms, stands as a beacon of hope. Beyond just brick and mortar, it’s a sanctuary for orphans and less fortunate children, a place where dreams are nurtured."
-      },
-      {
-        "heading": "Beneficiaries",
-        "description": "300 students are being served, with 120 using the school as a weekly residence. Meals are also provided for those in dire need."
-      }
-    ],
-    "nextBlog": {
-      "title": "Strengthening Partnerships in Ghana",
-      "slug": "strengthening-partnerships-in-ghana"
-    },
-    "previousBlog": {
-      "title": "Qur’an Circle in the Islamic Center of Passaic County Well",
-      "slug": "new-jersey-well"
-    },
-    "donationForm": {
-      "id": 14679,
-      "title": "Educational Center",
-      "levels": [
-        {
-          "amount": 690,
-          "name": null
-        },
-        {
-          "amount": 920,
-          "name": null
-        },
-        {
-          "amount": 1150,
-          "name": null
-        },
-        {
-          "amount": 27600,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": 27600,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    }
-  },
-  {
-    "title": "Ehsanollah School",
-    "slug": "ehsanollah-schoolehsanollah-school",
-    "categories": [
-      {
-        "name": "education",
-        "slug": "education"
-      }
-    ],
-    "date": "December 16, 2022",
-    "featuredImage": {
-      "src": "assets/db/blogs/images/ehsanollah-school/Ihsanullah-1024x450.webp",
-      "alt": "Ehsanoallah School students engaged in an outdoor educational activity"
-    },
-    "gallery": [
-      {
-        "src": "assets/db/blogs/images/ehsanollah-school/Ihsanullah2-scaled.webp",
-        "alt": "Exterior view of Ehsanoallah School"
-      },
-      {
-        "src": "assets/db/blogs/images/ehsanollah-school/Ihsanullah3-scaled.webp",
-        "alt": "Exterior view of Ehsanoallah School"
-      },
-      {
-        "src": "assets/db/blogs/images/ehsanollah-school/Ihsanullah4.webp",
-        "alt": "Local volunteers helping with school maintenance at Ehsanoallah School in Africa"
-      },
-      {
-        "src": "assets/db/blogs/images/ehsanollah-school/Ihsanullah5.webp",
-        "alt": "Local volunteers helping with school maintenance at Ehsanoallah School in Africa."
-      },
-      {
-        "src": "assets/db/blogs/images/ehsanollah-school/Ihsanullah6-scaled.webp",
-        "alt": "Exterior view of Ehsanoallah School, showcasing its traditional African architecture."
-      }
-    ],
-    "location": "Gambia",
-    "implementationDate": "December 2022",
-    "content": [
-      {
-        "heading": "Education transforms. Let’s keep the flame of knowledge burning in Gambia.",
-        "description": "We’ve diligently set up a school featuring 4 classrooms and an office. By fostering education in this manner, we’re granting children the privilege of knowledge and a brighter future. Every classroom we build holds the dreams and aspirations of countless children."
-      },
-      {
-        "heading": "Beneficiaries",
-        "description": "Thanks to your support, 250 students, many of whom are unfortunate children, now have the chance at a proper education."
-      }
-    ],
-    "nextBlog": {
-      "title": "Hajja Muyassar Hassan Shuaib Mosque & Water Well",
-      "slug": "hajja-muyassar-hassan-shuaib-mosque-water-well"
-    },
-    "previousBlog": {
-      "title": "Hajja Muyassar Hassan Shuaib Mosque & Water Well",
-      "slug": "hajja-muyassar-hassan-shuaib-mosque-water-well"
-    },
-    "donationForm": {
-      "id": 14679,
-      "title": "Educational Center",
-      "levels": [
-        {
-          "amount": 690,
-          "name": null
-        },
-        {
-          "amount": 920,
-          "name": null
-        },
-        {
-          "amount": 1150,
-          "name": null
-        },
-        {
-          "amount": 27600,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": 27600,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    }
-  },
-  {
-    "title": "Nurturing Families: Meat Distribution Initiative",
-    "slug": "nurturing-families-meat-distribution-initiative",
-    "categories": [
-      {
-        "name": "food aid",
-        "slug": "food-aid"
-      }
-    ],
-    "date": "October 12, 2023",
-    "featuredImage": {
-      "src": "assets/db/blogs/images/nurturing-families-meat-distribution-initiative/Zabiha-1024x768.webp",
-      "alt": "Nurturing Families - A Key Africa Relief Projects"
-    },
-    "gallery": [],
-    "location": "Tanzania",
-    "implementationDate": "May 2023",
-    "content": [
-      {
-        "heading": "Gift the joy of a hearty meal. Your generosity fills plates and hearts.",
-        "description": "Protein-rich diets can be hard to come by in certain Tanzanian regions. Our meat distribution initiative is more than just a meal—it’s nourishment, care, and a reminder to families that they aren’t alone. Especially in areas where meals are often limited and basic, such distributions make a world of difference."
-      },
-      {
-        "heading": "Beneficiaries",
-        "description": "15 families, with an average family size of 7."
-      }
-    ],
-    "nextBlog": {
-      "title": "Medical Equipment Delivery: Boosting Health Infrastructure",
-      "slug": "medical-equipment-delivery"
-    },
-    "previousBlog": {
-      "title": "Emergency Morocco Earthquake Response",
-      "slug": "emergency-morocco-earthquake-response"
-    },
-    "donationForm": {
-      "id": 14666,
-      "title": "Food Basket",
-      "levels": [
-        {
-          "amount": 100,
-          "name": null
-        },
-        {
-          "amount": 200,
-          "name": null
-        },
-        {
-          "amount": 400,
-          "name": null
-        },
-        {
-          "amount": 600,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": null,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    }
-  },
-  {
-    "title": "Brushy Creek Islamic Center Food Project",
-    "slug": "brushy-creek-islamic-center-food-project",
-    "categories": [
-      {
-        "name": "food aid",
-        "slug": "food-aid"
-      }
-    ],
-    "date": "August 31, 2023",
-    "featuredImage": {
-      "src": "assets/db/blogs/images/brushy-creek-islamic-center-food-project/brush2-1024x768.webp",
-      "alt": "Brushy Creek Islamic Center Food Project - Africa Relief"
-    },
-    "gallery": [],
-    "location": "Tanzania",
-    "implementationDate": "July 2023",
-    "content": [
-      {
-        "heading": "Food is more than sustenance; it’s love, care, and community.",
-        "description": "Nutrition and community welfare go hand in hand. Our meat distribution project is ensuring that families have balanced diets, leading to better health, concentration, and overall well-being."
-      },
-      {
-        "heading": "Beneficiaries",
-        "description": "36 families, or around 252 individuals, are now better nourished and empowered."
-      }
-    ],
-    "nextBlog": {
-      "title": "Strategic Partnerships in Tanzania",
-      "slug": "strategic-partnerships-in-tanzania"
-    },
-    "previousBlog": {
-      "title": "Repentance Well",
-      "slug": "repentance-well"
-    },
-    "donationForm": {
-      "id": 14666,
-      "title": "Food Basket",
-      "levels": [
-        {
-          "amount": 100,
-          "name": null
-        },
-        {
-          "amount": 200,
-          "name": null
-        },
-        {
-          "amount": 400,
-          "name": null
-        },
-        {
-          "amount": 600,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": null,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    }
-  },
-  {
-    "title": "Medical Equipment Delivery: Boosting Health Infrastructure",
-    "slug": "medical-equipment-delivery",
-    "categories": [
-      {
-        "name": "health",
-        "slug": "health"
-      }
-    ],
-    "date": "October 19, 2023",
-    "featuredImage": {
-      "src": "assets/db/blogs/images/medical-equipment-delivery/DSC07827-1024x683.webp",
-      "alt": "Click here to donate for medical aid."
-    },
-    "gallery": [
-      {
-        "src": "assets/db/blogs/images/medical-equipment-delivery/DSC07858-1-scaled.webp",
-        "alt": "Medical Equipment Delivery - A Key Africa Relief Projects"
-      },
-      {
-        "src": "assets/db/blogs/images/medical-equipment-delivery/DSC07859-1-scaled.webp",
-        "alt": "Boxes of essential medical equipment ready for distribution in an African village, sponsored by the Africa Relief Project"
-      },
-      {
-        "src": "assets/db/blogs/images/medical-equipment-delivery/DSC07862-1-scaled.webp",
-        "alt": "Healthcare workers in Africa receiving medical equipment from the Africa Relief Project delivery truck"
-      },
-      {
-        "src": "assets/db/blogs/images/medical-equipment-delivery/DSC07864-1-scaled.webp",
-        "alt": "Healthcare workers in Africa receiving medical equipment from the Africa Relief Project delivery truck"
-      },
-      {
-        "src": "assets/db/blogs/images/medical-equipment-delivery/DSC07865-1-scaled.webp",
-        "alt": "Medical supplies being distributed to a rural clinic as part of Africa Relief's healthcare initiative"
-      }
-    ],
-    "location": "Tanzania",
-    "implementationDate": "February 2023",
-    "content": [
-      {
-        "heading": "Mend bodies, uplift spirits. Partner with us in this healing journey.",
-        "description": "Quality healthcare often hinges on the availability of the right tools. By delivering essential medical equipment, we’re bolstering Tanzania’s health infrastructure, ensuring that more patients receive the care they deserve. This initiative, in partnership with other organizations, is a leap toward a healthier future for the community."
-      },
-      {
-        "heading": "Beneficiaries",
-        "description": "More than 1000 individuals."
-      }
-    ],
-    "nextBlog": {
-      "title": "Starting Small Businesses for Families",
-      "slug": "starting-small-businesses-for-families"
-    },
-    "previousBlog": {
-      "title": "Nurturing Families: Meat Distribution Initiative",
-      "slug": "nurturing-families-meat-distribution-initiative"
-    },
-    "donationForm": {
-      "id": 14728,
-      "title": "Health",
-      "levels": [
-        {
-          "amount": 100,
-          "name": null
-        },
-        {
-          "amount": 200,
-          "name": null
-        },
-        {
-          "amount": 500,
-          "name": null
-        },
-        {
-          "amount": 1000,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": null,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    }
-  },
-  {
-    "title": "Strategic Partnerships in Tanzania",
-    "slug": "strategic-partnerships-in-tanzania",
-    "categories": [
-      {
-        "name": "health",
-        "slug": "health"
-      },
-      {
-        "name": "orphan support",
-        "slug": "orphan-support"
-      }
-    ],
-    "date": "September 1, 2023",
-    "featuredImage": {
-      "src": "assets/db/blogs/images/strategic-partnerships-in-tanzania/Tanzania2.webp",
-      "alt": "Impact non profit: Team analyzing data for community improvement projects"
-    },
-    "gallery": [
-      {
-        "src": "assets/db/blogs/images/strategic-partnerships-in-tanzania/Tanzania3.webp",
-        "alt": "Modern healthcare center in Tanzania, a symbol of development cooperation and improving public health services."
-      },
-      {
-        "src": "assets/db/blogs/images/strategic-partnerships-in-tanzania/Tanzania4.webp",
-        "alt": "Wildlife conservation efforts in Tanzania, showcasing development cooperation in preserving natural habitats."
-      },
-      {
-        "src": "assets/db/blogs/images/strategic-partnerships-in-tanzania/Tanzania5.webp",
-        "alt": "Modern healthcare center in Tanzania, a symbol of development cooperation and improving public health services."
-      }
-    ],
-    "location": "Tanzania",
-    "implementationDate": "August 2023",
-    "content": [
-      {
-        "heading": "As we venture into these strategic partnerships, your unwavering support aids us in reaching broader horizons and ensuring better health and education for all.",
-        "description": "The Africa Relief team has made significant strides in our ongoing efforts to enhance healthcare services in Tanzania. Our visit to the office of the Deputy Minister of Health promises our inclusion in their 2024 plan focusing on eye and hearing operations. This collaboration further extends to equipping hospitals in alignment with the ministry’s vision. We also had a productive discussion with an education official, which may lead to a partnership with the Ministry of Education in the future."
-      },
-      {
-        "heading": "Beneficiaries",
-        "description": "Patients needing eye and hearing treatments, hospitals that will benefit from enhanced equipment/resources, and educational beneficiaries from potential collaboration with the Ministry of Education."
-      }
-    ],
-    "nextBlog": {
-      "title": "Salah Alzoobi Mosque",
-      "slug": "salah-alzoobi-mosque"
-    },
-    "previousBlog": {
-      "title": "Brushy Creek Islamic Center Food Project",
-      "slug": "brushy-creek-islamic-center-food-project"
-    },
-    "donationForm": {
-      "id": 14728,
-      "title": "Health",
-      "levels": [
-        {
-          "amount": 100,
-          "name": null
-        },
-        {
-          "amount": 200,
-          "name": null
-        },
-        {
-          "amount": 500,
-          "name": null
-        },
-        {
-          "amount": 1000,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": null,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    }
-  },
-  {
-    "title": "Starting Small Businesses for Families",
-    "slug": "starting-small-businesses-for-families",
-    "categories": [
-      {
-        "name": "Sustainable Community",
-        "slug": "sustainable-community"
-      }
-    ],
-    "date": "October 19, 2023",
-    "featuredImage": {
-      "src": "assets/db/blogs/images/starting-small-businesses-for-families/cow6-1024x581.webp",
-      "alt": "Local farmers' market promoting small business initiatives and local products"
-    },
-    "gallery": [
-      {
-        "src": "assets/db/blogs/images/starting-small-businesses-for-families/Cow1.webp",
-        "alt": "An individual receiving a small business grant to kickstart their entrepreneurial journey"
-      },
-      {
-        "src": "assets/db/blogs/images/starting-small-businesses-for-families/cow2.webp",
-        "alt": "An individual receiving a small business grant to kickstart their entrepreneurial journey"
-      },
-      {
-        "src": "assets/db/blogs/images/starting-small-businesses-for-families/cow3.webp",
-        "alt": "An individual receiving a small business grant to kickstart their entrepreneurial journey"
-      },
-      {
-        "src": "assets/db/blogs/images/starting-small-businesses-for-families/cow4.webp",
-        "alt": "cow4"
-      },
-      {
-        "src": "assets/db/blogs/images/starting-small-businesses-for-families/cow5.webp",
-        "alt": "Local farmers' market promoting small business initiatives and local products"
-      }
-    ],
-    "location": "Tanzania",
-    "implementationDate": "May 2023",
-    "content": [
-      {
-        "heading": "From cattle to capital. Invest in a family’s dream of self-sustainability",
-        "description": "Empowerment often starts with small steps. By providing milking cows and calves to struggling families, we’re not just giving them assets but the means to self-sufficiency. These families now have a steady source of income and nutrition, setting them on a path to a brighter, more secure future."
-      },
-      {
-        "heading": "Beneficiaries",
-        "description": "Multiple families benefit from the cows and calves."
-      }
-    ],
-    "nextBlog": {
-      "title": "Empowering Mobility and Livelihoods",
-      "slug": "empowering-mobility-and-livelihoods"
-    },
-    "previousBlog": {
-      "title": "Medical Equipment Delivery: Boosting Health Infrastructure",
-      "slug": "medical-equipment-delivery"
-    },
-    "donationForm": {
-      "id": 21193,
-      "title": "Sustainable Community",
-      "levels": [
-        {
-          "amount": 200,
-          "name": null
-        },
-        {
-          "amount": 400,
-          "name": null
-        },
-        {
-          "amount": 600,
-          "name": null
-        },
-        {
-          "amount": 800,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": null,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    }
-  },
-  {
-    "title": "Empowering Mobility and Livelihoods",
-    "slug": "empowering-mobility-and-livelihoods",
-    "categories": [
-      {
-        "name": "Sustainable Community",
-        "slug": "sustainable-community"
-      }
-    ],
-    "date": "September 19, 2023",
-    "featuredImage": {
-      "src": "assets/db/blogs/images/empowering-mobility-and-livelihoods/Bicycles3-1024x683.webp",
-      "alt": "Enhancing Livelihoods project by Africa Relief"
-    },
-    "gallery": [
-      {
-        "src": "assets/db/blogs/images/empowering-mobility-and-livelihoods/Bicycles1-scaled.webp",
-        "alt": "Enhancing Livelihoods project by Africa Relief"
-      },
-      {
-        "src": "assets/db/blogs/images/empowering-mobility-and-livelihoods/Bicycles2-scaled.webp",
-        "alt": "Enhancing Livelihoods project by Africa Relief"
-      },
-      {
-        "src": "assets/db/blogs/images/empowering-mobility-and-livelihoods/Bicycles4-scaled.webp",
-        "alt": "Enhancing Livelihoods project by Africa Relief"
-      }
-    ],
-    "location": "Tanzania",
-    "implementationDate": "April 2023",
-    "content": [
-      {
-        "heading": "Fuel dreams, one ride at a time. Your donation drives brighter futures",
-        "description": "In regions where daily income can be a challenge, providing bicycles and motorcycles represents more than just transportation—it’s an opportunity for families to secure a livelihood. By fulfilling this critical need, we’re not just providing tools; we’re fostering independence and economic growth one family at a time."
-      },
-      {
-        "heading": "Beneficiaries",
-        "description": "Families benefit from 3 bicycles and 1 motorcycle."
-      }
-    ],
-    "nextBlog": {
-      "title": "sadaqah-wells",
-      "slug": "Sadaqah Wells"
-    },
-    "previousBlog": {
-      "title": "Sustainable Income Initiative",
-      "slug": "sustainable-income-initiative"
-    },
-    "donationForm": {
-      "id": 21193,
-      "title": "Sustainable Community",
-      "levels": [
-        {
-          "amount": 200,
-          "name": null
-        },
-        {
-          "amount": 400,
-          "name": null
-        },
-        {
-          "amount": 600,
-          "name": null
-        },
-        {
-          "amount": 800,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": null,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    }
-  },
-  {
-    "title": "Sustainable Income Initiative",
-    "slug": "sustainable-income-initiative",
-    "categories": [
-      {
-        "name": "Sustainable Community",
-        "slug": "sustainable-community"
-      }
-    ],
-    "date": "September 19, 2023",
-    "featuredImage": {
-      "src": "assets/db/blogs/images/sustainable-income-initiative/sewing-2-1024x683.webp",
-      "alt": "showcasing economic empowerment through collaboration and entrepreneurship"
-    },
-    "gallery": [
-      {
-        "src": "assets/db/blogs/images/sustainable-income-initiative/sewing-1-scaled.webp",
-        "alt": "sewing 1"
-      },
-      {
-        "src": "assets/db/blogs/images/sustainable-income-initiative/sewing-3-scaled.webp",
-        "alt": "sewing 3"
-      },
-      {
-        "src": "assets/db/blogs/images/sustainable-income-initiative/sewing--scaled.webp",
-        "alt": "sewing"
-      }
-    ],
-    "location": "Tanzania",
-    "implementationDate": "May 2023",
-    "content": [
-      {
-        "heading": "Empower a family’s journey towards self-reliance. Every contribution stitches hope",
-        "description": "Economic empowerment is key to breaking the cycle of poverty. By distributing sewing machines, we’re equipping mothers, especially those of orphans and the impoverished, with a sustainable means to support their families. Each machine represents a chance at financial independence and a brighter future."
-      },
-      {
-        "heading": "Beneficiaries",
-        "description": "10 families, benefiting over 70 individuals."
-      }
-    ],
-    "nextBlog": {
-      "title": "Empowering Mobility and Livelihoods",
-      "slug": "empowering-mobility-and-livelihoods"
-    },
-    "previousBlog": {
-      "title": "Bait Al Maqdes Artesian Well",
-      "slug": "bait-al-maqdes-artesian-well"
-    },
-    "donationForm": {
-      "id": 21193,
-      "title": "Sustainable Community",
-      "levels": [
-        {
-          "amount": 200,
-          "name": null
-        },
-        {
-          "amount": 400,
-          "name": null
-        },
-        {
-          "amount": 600,
-          "name": null
-        },
-        {
-          "amount": 800,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": null,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    }
-  }
 ]

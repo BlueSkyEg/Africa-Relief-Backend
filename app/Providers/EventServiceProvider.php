@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Events\FetchWordPressContentEvent;
 use App\Events\Project\ProjectProgress;
+use App\Listeners\FetchWordPressContentListener;
 use App\Listeners\SendProjectNotification;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
@@ -30,6 +32,11 @@ class EventServiceProvider extends ServiceProvider
         Event::listen(
             ProjectProgress::class,
             SendProjectNotification::class,
+        );
+
+        Event::listen(
+            FetchWordPressContentEvent::class,
+            FetchWordPressContentListener::class
         );
     }
 

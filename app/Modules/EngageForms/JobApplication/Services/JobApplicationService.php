@@ -5,7 +5,7 @@ namespace App\Modules\EngageForms\JobApplication\Services;
 use App\Exceptions\ApiException;
 use App\Modules\EngageForms\JobApplication\Emails\JobApplicantMail;
 use App\Modules\EngageForms\JobApplication\Emails\JobApplicationReceiverMail;
-use App\Modules\Post\Career\Services\CareerService;
+use App\Modules\PostCore\Career\Services\CareerService;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;

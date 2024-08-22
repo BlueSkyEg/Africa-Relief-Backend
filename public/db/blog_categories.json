@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Water",
+        "slug": "water",
+        "meta_title": "Africa Relief: Leading Clean Water and Sanitation Initiatives",
+        "meta_keywords": null,
+        "meta_description": "Africa Relief leads the way in providing clean water and sanitation solutions, ensuring safe drinking water and improved hygiene across Africa",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "name": "Education",
+        "slug": "education",
+        "meta_title": "Africa Relief: Leading Quality Education Projects",
+        "meta_keywords": null,
+        "meta_description": "Africa Relief leads the way in providing quality education projects, improving lives and promoting health across Africa. Learn more",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "name": "Food Aid",
+        "slug": "food-aid",
+        "meta_title": "Africa Relief: Advancing Zero Hunger (SDG 2) Initiatives",
+        "meta_keywords": null,
+        "meta_description": "Africa Relief leads the fight against hunger with our Zero Hunger (SDG 2) initiatives. Learn how we are working to ensure food security in Africa.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "name": "Health",
+        "slug": "health",
+        "meta_title": "Good Health and Well-being (SDG 3) - Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Join Africa Relief in promoting Good Health and Well-being (SDG 3). Discover our impactful projects aimed at improving health across Africa.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "name": "Orphan Support",
+        "slug": "orphan-support",
+        "meta_title": "Completed Orphan Support Projects - Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Support Africa Relief's commitment to orphan support . Our programs focus on health care, nutrition to provide a better future for orphans.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "name": "Sustainable Community",
+        "slug": "sustainable-community",
+        "meta_title": "Africa Relief: Strengthening Partnerships for the Goals",
+        "meta_keywords": null,
+        "meta_description": "Join Africa Relief in strengthening Partnerships for the Goals (SDG 3). Discover our collaborative projects across Africa.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "name": "Learn & Support",
+        "slug": "learn-and-support",
+        "meta_title": "Islamic charity: Beyond zakat and qurbani - Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Explore the expansive world of Islamic charity with Africa Relief. Learn, engage, and make a difference in the lives of African communities.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    }
+]

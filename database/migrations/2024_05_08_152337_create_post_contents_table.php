@@ -14,8 +14,10 @@ return new class extends Migration
         Schema::create('post_contents', function (Blueprint $table) {
             $table->id();
             $table->foreignId('post_id')->constrained();
-            $table->string('heading', 500);
-            $table->text('description');
+            $table->string('type');
+            $table->text('body');
+            $table->bigInteger('order');
+            $table->timestamps();
         });
     }
 

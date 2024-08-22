@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Post;
 
 use App\Exceptions\ApiException;
 use App\Http\Controllers\Controller;
-use App\Modules\Post\Career\Resources\CareerBriefResource;
-use App\Modules\Post\Career\Resources\CareerResource;
-use App\Modules\Post\Career\Services\CareerService;
+use App\Modules\PostCore\Career\Resources\CareerBriefResource;
+use App\Modules\PostCore\Career\Resources\CareerResource;
+use App\Modules\PostCore\Career\Services\CareerService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 

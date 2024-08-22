@@ -14,7 +14,7 @@ Route::post('/create-blog-categories', function () {
     $categories = json_decode(file_get_contents('db/blog-categories.json'), true)['data'];
 
     foreach ($categories as $category) {
-        \App\Modules\Post\PostCategory\PostCategory::create([
+        \App\Modules\PostCore\PostCategory\PostCategory::create([
             'post_type' => \App\Enums\PostTypeEnum::BLOG->value,
             'name' => $category['name'],
             'slug' => $category['slug']
@@ -31,7 +31,7 @@ Route::post('/create-blogs', function () {
             'alt_text' => $blogObj['featuredImage']['alt'],
         ]);
 
-        $post = \App\Modules\Post\Post::create([
+        $post = \App\Modules\PostCore\Post\Post::create([
             'title' => $blogObj['title'],
             'excerpt' => null
         ]);
@@ -69,7 +69,7 @@ Route::post('/create-blogs', function () {
         foreach ($blogObj['categories'] as $category) {
             $categoriesSlug[] = $category['slug'];
         }
-        $categoriesIds = \App\Modules\Post\PostCategory\PostCategory::whereIn('slug', $categoriesSlug)->pluck('id');
+        $categoriesIds = \App\Modules\PostCore\PostCategory\PostCategory::whereIn('slug', $categoriesSlug)->pluck('id');
 
         $post->categories()->attach($categoriesIds);
     }
@@ -81,7 +81,7 @@ Route::post('/create-project-categories', function () {
     $categories = json_decode(file_get_contents('db/project-categories.json'), true)['data'];
 
     foreach ($categories as $category) {
-        \App\Modules\Post\PostCategory\PostCategory::create([
+        \App\Modules\PostCore\PostCategory\PostCategory::create([
             'post_type' => \App\Enums\PostTypeEnum::PROJECT->value,
             'name' => $category['name'],
             'slug' => $category['slug']
@@ -91,34 +91,58 @@ Route::post('/create-project-categories', function () {
 });
 
 Route::post('/create-projects', function () {
-    $projects = json_decode(file_get_contents('db/projects.json'), true);
+    $projects = json_decode(file_get_contents('db/projects_copy.json'), true);
     foreach (array_reverse($projects) as $projectObj) {
+
+        $imageName = date('Y/') . date('m/') . Str::afterLast($projectObj['featured_image']['src'], '/');
+        $imageContents = file_get_contents($projectObj['featured_image']['src']);
+        \Illuminate\Support\Facades\Storage::put("images/$imageName", $imageContents);
+
         $featuredImage = \App\Modules\Image\Image::create([
-            'src' => date('Y/') . date('m/') . Str::afterLast($projectObj['featuredImage']['src'], '/'),
-            'alt_text' => $projectObj['featuredImage']['alt']
+            'src' => $imageName,
+            'alt_text' => $projectObj['featured_image']['alt_text']
         ]);
 
-        $post = \App\Modules\Post\Post::create([
+        $post = \App\Modules\PostCore\Post\Post::create([
             'title' => $projectObj['title'],
-            'excerpt' => $projectObj['summary']
+            'excerpt' => $projectObj['excerpt']
         ]);
 
         $post->project()->create([
             'slug' => $projectObj['slug'],
-            'donation_form_id' => $projectObj['donationForm']['id'],
+            'donation_form_id' => $projectObj['donation_form_id'],
             'featured_image_id' => $featuredImage->id,
         ]);
 
         $contents = [];
-        foreach ($projectObj['content'] as $content) {
+        foreach ($projectObj['contents'] as $index => $content) {
+
+            $contentBody = $content['body'];
+
+            if ($content['type'] === 'list') {
+                $contentBody = implode('$$$', $contentBody);
+            } elseif ($content['type'] === 'image') {
+                $imageName = date('Y/') . date('m/') . Str::afterLast($content['body']['src'], '/');
+                $imageContents = file_get_contents($content['body']['src']);
+                \Illuminate\Support\Facades\Storage::put("images/$imageName", $imageContents);
+
+                $image = \App\Modules\Image\Image::create([
+                    'src' => $imageName,
+                    'alt_text' => $content['body']['alt_text']
+                ]);
+
+                $contentBody = $image->id;
+            }
+
             $contents[] = [
-                'heading' => $content['heading'],
-                'description' => $content['description']
+                'type' => $content['type'],
+                'body' => $contentBody,
+                'order' => $index
             ];
         }
         $post->contents()->createMany($contents);
 
-        $categoryId = \App\Modules\Post\PostCategory\PostCategory::where('slug', $projectObj['category']['slug'])->where('post_type', \App\Enums\PostTypeEnum::PROJECT->value)->pluck('id');
+        $categoryId = \App\Modules\PostCore\PostCategory\PostCategory::where('slug', $projectObj['categories'][0]['slug'])->where('post_type', \App\Enums\PostTypeEnum::PROJECT->value)->pluck('id');
 
         $post->categories()->attach($categoryId);
     }
@@ -129,7 +153,7 @@ Route::post('/create-projects', function () {
 Route::post('/create-careers', function () {
     $careers = json_decode(file_get_contents('db/careers.json'), true)['data'];
     foreach (array_reverse($careers) as $careerObj) {
-        $post = \App\Modules\Post\Post::create([
+        $post = \App\Modules\PostCore\Post\Post::create([
             'title' => $careerObj['title'],
             'excerpt' => $careerObj['content'][0]['description']
         ]);

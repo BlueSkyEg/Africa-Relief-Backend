@@ -1,1850 +1,1006 @@
 [
-  {
-    "title": "Surface Water Well",
-    "slug": "surface-water-well",
-    "category": {
-      "name": "water",
-      "slug": "water"
-    },
-    "summary": "Provide easy access to clean water for the vilage, supports 200-400 individuals. These wells sustain livelihoods, ensuring a continuous flow of clean water for those in need.",
-    "featuredImage": {
-      "src": "assets/db/projects/images/surface-water-well.webp",
-      "alt": "Villagers celebrating the completion of the well, a life-changing moment for the community"
-    },
-    "content": [
-      {
-        "heading": "Each well stands as a paving the way for healthier, thriving livelihoods",
-        "description": "Sub-Saharan Africa grapples with a staggering 40% of its population—approximately 783 million people—deprived of clean drinking water. In this context, each surface well acts as a beacon of hope, serving not only as a source of life but also as a vital lifeline for those lacking access, offering a means to quench the thirst and preserve the lives of many."
-      },
-      {
-        "heading": "How is ARCD's Relief responding?",
-        "description": "ARCD’s Relief establishes surface water wells, utilizing natural resources to create accessible water sources for communities in need."
-      },
-      {
-        "heading": "A Surface water well can be the community's Lifeline",
-        "description": "A Surface water well can be the community’s Lifeline"
-      }
-    ],
-    "donationForm": {
-      "id": 14586,
-      "title": "Surface Water Well",
-      "levels": [
-        {
-          "amount": 100,
-          "name": null
+    {
+        "title": "Surface Water Well",
+        "slug": "surface-water-well",
+        "excerpt": " \u2022\tSize: (25-35 meters) 80-100 ft. \n\u2022\tIndividuals: 200-400.\n\u2022\tElectrical insert pump of 1 hp.\n\u2022\t1000 liter PVC tank.\n\u2022\t6 tap with background cladded in ceramic.\n\u2022\tConcrete base of 3 meters height.\n\u2022\tSolar energy unit will be added if there is no power.",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/11/unnamed_2-1-1024x784.webp",
+            "alt_text": "Villagers celebrating the completion of building water well in africa"
         },
-        {
-          "amount": 300,
-          "name": null
+        "categories": [
+            {
+                "name": "water",
+                "slug": "water"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Help Build Surface Water Wells in Africa: Give the Gift of Water",
+                "order": 0
+            },
+            {
+                "type": "paragraph",
+                "body": "Sub-Saharan Africa grapples with a staggering 40% of its population\u2014approximately 783 million people\u2014deprived of clean drinking water. In this context, each surface well acts as a beacon of hope, serving not only as a source of life but also as a vital lifeline for those lacking access, offering a means to quench the thirst and preserve the lives of many.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "How Your Donations Help Build Sustainable Water Solutions",
+                "order": 2
+            },
+            {
+                "type": "paragraph",
+                "body": "At Africa Relief, each donation you make is more than just a contribution; it's a vital part of our mission to bring sustainable water solutions to communities that need them most.",
+                "order": 3
+            },
+            {
+                "type": "list",
+                "body": [
+                    "Site Selection: Your donations initiate the well-building process by supporting the crucial step of identifying and selecting the most sustainable locations for new wells. This ensures that every well serves a community effectively and for the long term.",
+                    "Drilling: Funding is then directed towards drilling, where specialized equipment pierces through the earth to access clean water deep underground. This stage is vital for setting up a reliable water supply.",
+                    "Construction: Contributions help in the construction phase, where wells are securely built and equipped with necessary hardware to ensure that they are safe and durable for community use.",
+                    "Grand Opening: Finally, your support brings us to the grand opening\u2014the celebratory moment when a new well is ready to provide a steady supply of clean water to a community, transforming lives and fostering health and development."
+                ],
+                "order": 4
+            },
+            {
+                "type": "paragraph",
+                "body": "Each of these stages is crucial, and your support helps us move seamlessly from one phase to the next.",
+                "order": 5
+            },
+            {
+                "type": "heading",
+                "body": "Explore the Impact of Surface Water Wells on African Villages",
+                "order": 6
+            },
+            {
+                "type": "paragraph",
+                "body": "A Surface water well can be the community's Lifeline",
+                "order": 7
+            },
+            {
+                "type": "list",
+                "body": [
+                    "Improved Health: Reduces waterborne diseases by providing access to clean and safe drinking water.",
+                    "Agricultural Advancements: Enables consistent irrigation, enhancing food security and agricultural productivity.",
+                    "Empowering Women and Children: Cuts travel time for water collection, freeing time for education and economic activities.",
+                    "Cultural Sustainability: Supports cultural practices and community gatherings that depend on water access.",
+                    "Environmental Benefits: Helps in maintaining the local ecosystem by providing a controlled and sustainable water source."
+                ],
+                "order": 8
+            },
+            {
+                "type": "heading",
+                "body": "Join Us in Bringing Clean Water to Remote Areas through Surface Water Wells",
+                "order": 9
+            },
+            {
+                "type": "paragraph",
+                "body": "Together, we can achieve remarkable transformations in the lives of thousands by providing access to safe, clean water.",
+                "order": 10
+            },
+            {
+                "type": "paragraph",
+                "body": "Donate: Every contribution counts. Your donations help us purchase necessary materials, employ local labor, and ensure the sustainability of water projects.",
+                "order": 11
+            },
+            {
+                "type": "paragraph",
+                "body": "Educate: Spread the word about the importance of clean water initiatives. By raising awareness, you increase the support that drives our projects forward.",
+                "order": 12
+            },
+            {
+                "type": "paragraph",
+                "body": "Corporate Partnership: Encourage your company to partner with us. Corporate sponsorships can dramatically increase the reach and impact of our projects, bringing essential resources to those in desperate need.",
+                "order": 13
+            }
+        ],
+        "donation_form_id": 14586,
+        "meta_title": "Help Building Surface Water Well in Africa - Donate now",
+        "meta_keywords": null,
+        "meta_description": "Join Africa Relief in providing clean water through building Surface Water Wells in Africa. Ensure sustainable clean water access.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Artisanal Water Well",
+        "slug": "artisanal-water-well",
+        "excerpt": " \u2022\tIndividuals 400-600.\n\u2022\tSize: (60-70 meters) 196-230 ft.\n\u2022\tElectrical insert pump of 2 hp.\n\u2022\t2000 liter PVC tank.\n\u2022\t10 tap with background cladded in ceramic.\n\u2022\tConcrete base of 3 meters High.\n\u2022\tSolar energy unit will be added if there is no power.",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/08/f-khair2-1-1024x645.jpeg",
+            "alt_text": "Wells in Africa: Villagers gathering water from a new well in a rural village"
         },
-        {
-          "amount": 500,
-          "name": null
+        "categories": [
+            {
+                "name": "water",
+                "slug": "water"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Each well paves the way for healthier, thriving communities.",
+                "order": 0
+            },
+            {
+                "type": "paragraph",
+                "body": "Artisanal Water Wells are more than sources; they're symbols of community strength. Join us in providing vital access to clean water",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "How is ARCD responding?",
+                "order": 2
+            },
+            {
+                "type": "paragraph",
+                "body": "ARCD partners with incredible communities in Africa to find water beneath the ground and construct artisanal water wells. ARCD and our local partners work together to provide access to clean water for communities in the hardest-to-reach places.",
+                "order": 3
+            },
+            {
+                "type": "heading",
+                "body": "Building Wells, Crafting Hope",
+                "order": 4
+            },
+            {
+                "type": "paragraph",
+                "body": "Your donation facilitates the construction of artisanal water wells, offering communities reliable access to clean water, fostering resilience, and nurturing sustainable livelihoods.",
+                "order": 5
+            }
+        ],
+        "donation_form_id": 14588,
+        "meta_title": "Donate to build artisanal Wells for a clean water in Africa",
+        "meta_keywords": null,
+        "meta_description": "Support Africa Relief in building artisanal water wells, providing clean water to African communities .Your help paves the way for healthier lives.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Building Solar Water Wells in Africa",
+        "slug": "solar-water-well",
+        "excerpt": " \u2022\tIndividuals 600-800.\n\u2022\tSize: (70-80meters) 230-262 ft.\n\u2022\tElectrical insert pump of 2 hp.\n\u2022\t3000 liter PVC tank.\n\u2022\t10 tap with background cladded in ceramic.\n\u2022\tConcrete base of 2.5 \u2013 3 meters height.",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/09/Sadaqah1-1024x768.jpeg",
+            "alt_text": "Learn About our project Sadaqah Wells - Africa Relief"
         },
-        {
-          "amount": 2500,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": 2500,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    },
-    "latestUpdates": [
-      {
-        "title": "Emergency Morocco Earthquake Response",
-        "slug": "emergency-morocco-earthquake-response",
         "categories": [
-          {
-            "name": "food aid",
-            "slug": "food-aid"
-          },
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "water",
-            "slug": "water"
-          }
+            {
+                "name": "water",
+                "slug": "water"
+            }
         ],
-        "date": "October 12, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
-          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
-        }
-      },
-      {
-        "title": "Mariame Diawara and Fatoumata Tiemoko Well",
-        "slug": "mariame-diawara-and-fatoumata-tiemoko-well",
-        "categories": [
-          {
-            "name": "water",
-            "slug": "water"
-          }
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Every drop, powered by the sun, a life-changing oasis in arid lands",
+                "order": 0
+            },
+            {
+                "type": "paragraph",
+                "body": "In many African regions, access to clean water remains a significant challenge, affecting health, education, and overall quality of life. At Africa Relief, we are committed to changing that by building solar-powered wells, providing sustainable, safe water sources to communities in need. Our work empowers women and children, reduces waterborne illnesses, and fosters educational opportunities.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Empowering Women and Children through Building Wells in Africa",
+                "order": 2
+            },
+            {
+                "type": "paragraph",
+                "body": "Access to clean water is a crucial element in empowering women and children in African communities. In many regions, the task of fetching water falls on women and young girls, often requiring hours of daily travel. This not only exposes them to safety risks but also deprives them of valuable time that could be spent on education or economic activities.",
+                "order": 3
+            },
+            {
+                "type": "paragraph",
+                "body": "By building solar-powered wells, Africa Relief reduces the burden on women and children, providing them with safer and more reliable water sources. This initiative leads to improved health outcomes, increased school attendance for girls, and greater opportunities for women to engage in income-generating activities. These wells also create safer communities by reducing the risks associated with long treks to remote water sources.",
+                "order": 4
+            },
+            {
+                "type": "heading",
+                "body": "How Africa Relief Builds Solar-Powered Wells",
+                "order": 5
+            },
+            {
+                "type": "paragraph",
+                "body": "Africa Relief uses a sustainable approach to building solar-powered wells, emphasizing long-term reliability and reduced environmental impact.",
+                "order": 6
+            },
+            {
+                "type": "list",
+                "body": [
+                    "Site assessment to determine the optimal location for the well. This includes evaluating accessibility, groundwater levels, and the specific needs of the community.",
+                    "Solar panels are installed to power the water pump, reducing operational costs and providing a consistent water supply, even in areas with limited infrastructure.",
+                    "Collaboration with local communities to establish maintenance teams. These teams receive training on basic repairs and upkeep, ensuring the solar-powered wells continue to function efficiently over time."
+                ],
+                "order": 7
+            },
+            {
+                "type": "heading",
+                "body": "The Impact of Solar Wells: Success Stories",
+                "order": 8
+            },
+            {
+                "type": "paragraph",
+                "body": "The impact of solar wells is evident in the success stories from communities where Africa Relief has installed them. In one such example, a rural village in Africa experienced a dramatic reduction in waterborne diseases after a solar-powered well was installed. This led to improved health outcomes for the entire community, with fewer cases of cholera and diarrhea.",
+                "order": 9
+            },
+            {
+                "type": "paragraph",
+                "body": "In another success story, a school in a remote area saw an increase in attendance, especially among young girls, after a solar-powered well was installed nearby. This not only provided a reliable source of clean water for the school but also reduced the time girls spent collecting water, allowing them to focus on their education.",
+                "order": 10
+            },
+            {
+                "type": "paragraph",
+                "body": "These success stories illustrate the transformative power of solar wells in African communities. They not only provide clean water but also contribute to improved health, education, and economic development, ultimately creating a brighter future for those who benefit from these sustainable projects.",
+                "order": 11
+            }
         ],
-        "date": "September 29, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame6-1024x802.webp",
-          "alt": "Mariame Diawara and Fatoumata Tiemoko on the well built by Africa Relief"
-        }
-      },
-      {
-        "title": "Sadaqah Wells",
-        "slug": "sadaqah-wells",
-        "categories": [
-          {
-            "name": "water",
-            "slug": "water"
-          }
-        ],
-        "date": "September 29, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/sadaqah-wells/Sadaqah1-scaled.webp",
-          "alt": "Learn About our project Sadaqah Wells - Africa Relief"
-        }
-      }
-    ]
-  },
-  {
-    "title": "Artisanal Water Well",
-    "slug": "artisanal-water-well",
-    "category": {
-      "name": "water",
-      "slug": "water"
+        "donation_form_id": 17543,
+        "meta_title": "Building Solar Water Wells in Africa - Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Building Solar wells in Africa transforms lives by reducing the burden on women and children, improving health, and creating opportunities for growth",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
     },
-    "summary": "Provide easy access to clean water for the vilage, supports 400-600 individuals. Crafting lifelines from the earth, artisanal wells bring sustenance to parched lands.",
-    "featuredImage": {
-      "src": "assets/db/projects/images/artisanal-water-well.webp",
-      "alt": "Wells in Africa: Villagers gathering water from a new well in a rural village"
-    },
-    "content": [
-      {
-        "heading": "Each well stands as a paving the way for healthier, thriving livelihoods.",
-        "description": "Artisanal Water Wells are more than sources; they’re symbols of community strength. Join us in providing vital access to clean water"
-      },
-      {
-        "heading": "How is ARCD's Relief responding?",
-        "description": "ARCD’s Relief constructs artisanal water wells, utilizing cost-effective methods to create sustainable water sources for communities lacking access."
-      },
-      {
-        "heading": "Building a well, Crafting Hope",
-        "description": "Your donation facilitates the construction of artisanal water wells, offering communities reliable access to clean water, fostering resilience, and nurturing sustainable livelihoods."
-      }
-    ],
-    "donationForm": {
-      "id": 14588,
-      "title": "Artisanal Water Well",
-      "levels": [
-        {
-          "amount": 100,
-          "name": null
+    {
+        "title": "Educational Center",
+        "slug": "educational-center",
+        "excerpt": " In Africa, where knowledge is power, 20% lack formal schooling, while 28% completed primary, 37% secondary, and 15% higher education, these statistics highligh the importance of accessible learning opportunities",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/11/image-3-2.webp",
+            "alt_text": "Image of a classroom project funded through DonorsChoose, illustrating direct support to public school teachers"
         },
-        {
-          "amount": 300,
-          "name": null
+        "categories": [
+            {
+                "name": "education",
+                "slug": "education"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Educational Centers, where minds flourish and futures bloom",
+                "order": 0
+            },
+            {
+                "type": "paragraph",
+                "body": "In Africa, the pursuit of education remains pivotal, with staggering statistics showing that one in five adults lacks formal education. ARCD's Relief champions start the change through Educational Centers, bridging this gap by providing accessible and quality education. These centers serve as catalysts for transformation, nurturing young minds, and illuminating paths to a brighter future.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "African Education Charities - Empowering Through Knowledge",
+                "order": 2
+            },
+            {
+                "type": "paragraph",
+                "body": "African education charities play a pivotal role in transforming this landscape by empowering communities through knowledge and learning. Organizations like Africa Relief are at the forefront of this change, championing the cause of education across various African nations. Through the establishment of Educational Centers, these charities provide a beacon of hope and a reliable pathway to personal and community upliftment.",
+                "order": 3
+            },
+            {
+                "type": "heading",
+                "body": "The Challenge: Educational Accessibility in Africa",
+                "order": 4
+            },
+            {
+                "type": "paragraph",
+                "body": "In Africa, access to quality education remains a significant challenge that affects millions. Despite advancements in educational policies and infrastructures, a substantial portion of the population lacks basic literacy and educational opportunities. The statistics are sobering:",
+                "order": 5
+            },
+            {
+                "type": "list",
+                "body": [
+                    "Approximately 20% of African adults have had no formal schooling.",
+                    "Only 28% have completed primary education, leaving many without the skills needed for personal and professional development.",
+                    "Secondary education completion stands at 37%, indicating a significant dropout rate after primary school.",
+                    "Higher education reaches a mere 15%, highlighting limited access to university-level studies."
+                ],
+                "order": 6
+            },
+            {
+                "type": "paragraph",
+                "body": "These figures underscore a critical need: to bridge the vast educational divide and provide equitable learning opportunities for all. Factors contributing to this challenge include insufficient funding, remote geographical locations, lack of qualified teachers, and socioeconomic disparities that prioritize short-term labor over education for many families.",
+                "order": 7
+            },
+            {
+                "type": "heading",
+                "body": "How You Can Help Support Education in Africa",
+                "order": 8
+            },
+            {
+                "type": "paragraph",
+                "body": "Donate Now to Support Education in Africa",
+                "order": 9
+            }
+        ],
+        "donation_form_id": 14679,
+        "meta_title": "African Education Charities: Support Educational Centers",
+        "meta_keywords": null,
+        "meta_description": "Support African Education Charities through Africa Relief's Educational Centers, and help provide quality education to marginalized communities.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Sponsorship for African students",
+        "slug": "students-sponsorship",
+        "excerpt": "At Africa Relief, our sponsorship program is dedicated to addressing these educational challenges head-on. By providing Africa education aid through student sponsorships, we aim to empower young minds, nurture talents, and foster a generation capable of leading their communities out of poverty and into prosperity.",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/11/Sponsorship-for-African-students.jpg",
+            "alt_text": "africa education aid"
         },
-        {
-          "amount": 500,
-          "name": null
+        "categories": [
+            {
+                "name": "education",
+                "slug": "education"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Imagine your impact on a Student's life",
+                "order": 0
+            },
+            {
+                "type": "paragraph",
+                "body": "Access to education is a fundamental right, yet for many in Africa, it remains a distant dream. Africa Relief believes in transforming lives through education by offering student sponsorships. By supporting a student's educational journey, you're not just investing in their future; you're paving the way for a more empowered generation, creating ripples of positive change across African communities.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Africa Education Aid: Sponsorship for African Students",
+                "order": 2
+            },
+            {
+                "type": "paragraph",
+                "body": "Join Africa Relief in transforming lives through education. Our scholarship program for African students is designed to bridge the gap between talent and opportunity. By donating to our cause, you help us provide crucial funding for bright minds across Africa to access education. Discover how each scholarship changes lives and how you can be a part of this noble cause. Donate through this page or contact us to discover more about our sponsorship opportunities for African students.",
+                "order": 3
+            },
+            {
+                "type": "heading",
+                "body": "The Educational Challenge in Africa",
+                "order": 4
+            },
+            {
+                "type": "paragraph",
+                "body": "Sponsorship for African students project confronts the stark educational challenges in Africa, where over 20% of children aged 6 to 11 are unable to attend school. This issue intensifies with age, as nearly 60% of youths between 15 and 17 are similarly deprived. Our initiative is dedicated to reversing these troubling trends by providing critical educational support.",
+                "order": 5
+            },
+            {
+                "type": "heading",
+                "body": "Transform Lives Through Student Sponsorships",
+                "order": 6
+            },
+            {
+                "type": "paragraph",
+                "body": "Addressing the educational challenges in Africa, our student sponsorship program aims to be a catalyst for change, providing vital support that transforms lives and communities. By sponsoring a student, donors contribute to covering essential costs such as school fees, books, uniforms, and sometimes even meals, which can be the deciding factor between education and poverty for many children.",
+                "order": 7
+            }
+        ],
+        "donation_form_id": 14688,
+        "meta_title": "Africa Education Aid: Sponsor Students with Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Join Africa Relief’s mission to provide Africa education aid through student sponsorships. Help empower the next generation",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Food Basket",
+        "slug": "food-basket",
+        "excerpt": "In Africa, where the specter of hunger looms large over millions, the need for immediate and impactful assistance is more urgent than ever. Food insecurity grips two-thirds of the continent's population, casting a shadow on the lives of countless individuals and communities. In this critical landscape, African food charities like Africa Relief are vital beacons of hope and action.",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/11/image-12.webp",
+            "alt_text": "african food charity"
         },
-        {
-          "amount": 4600,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": 4600,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    },
-    "latestUpdates": [
-      {
-        "title": "Emergency Morocco Earthquake Response",
-        "slug": "emergency-morocco-earthquake-response",
         "categories": [
-          {
-            "name": "food aid",
-            "slug": "food-aid"
-          },
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "water",
-            "slug": "water"
-          }
+            {
+                "name": "food",
+                "slug": "food-aid"
+            }
         ],
-        "date": "October 12, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
-          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
-        }
-      },
-      {
-        "title": "Mariame Diawara and Fatoumata Tiemoko Well",
-        "slug": "mariame-diawara-and-fatoumata-tiemoko-well",
-        "categories": [
-          {
-            "name": "water",
-            "slug": "water"
-          }
+        "contents": [
+            {
+                "type": "heading",
+                "body": "All faiths converge on a singular cause: alleviating hunger through compassionate contributions",
+                "order": 0
+            },
+            {
+                "type": "paragraph",
+                "body": "Africa faces a dire crisis, with two-thirds of its population battling food insecurity, making it a global epicenter of hunger. Millions suffer from malnutrition, highlighting the urgency for immediate action and escalated food aid through initiatives like food basket donations. By contributing to an African food basket, you're taking a crucial step to protect numerous lives and pave the way for a nourished future in the region. Your support is essential in turning the tide against hunger and ensuring a healthier tomorrow for countless individuals.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Join Our African Food Charity \u2013 Donate a Food Basket",
+                "order": 2
+            },
+            {
+                "type": "paragraph",
+                "body": "Africa Relief plays a crucial role in combating global food insecurity through its Emergency Food Basket initiative. This program is essential in providing immediate, nutritious aid to vulnerable populations facing crisis situations. By delivering essential food items to those in dire need, Africa Relief not only offers sustenance but also conveys a message of solidarity and hope. The organization relies on the support of individuals and partners to extend its reach and effectiveness. Joining Africa Relief in its mission can significantly impact the lives of many, transforming despair into hope during times of crisis.",
+                "order": 3
+            },
+            {
+                "type": "heading",
+                "body": "The Crisis of Hunger in Africa",
+                "order": 4
+            },
+            {
+                "type": "paragraph",
+                "body": "In a world where hunger remains a relentless challenge, your food basket donation can light up the darkest corners of need. Through your generosity, essential nourishing meals can reach families struggling with food insecurity, especially in the most vulnerable African communities. Each donation contributes to a carefully curated African food basket, packed with staples like grains, beans, and more, providing not just sustenance but also hope.",
+                "order": 5
+            },
+            {
+                "type": "heading",
+                "body": "How Your Food Basket Donation Helps",
+                "order": 6
+            },
+            {
+                "type": "paragraph",
+                "body": "Now is the moment to stand together against hunger. With just a few clicks, you can make a profound difference in someone's life. Donate today and see the impact of your generosity unfold. Your contribution to Africa Relief's food basket donation drive will help ensure that no child, woman, or man goes to bed hungry. Together, we can create a future where food is a right, not a privilege. Donate and be a part of this noble cause.",
+                "order": 7
+            }
         ],
-        "date": "September 29, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame6-1024x802.webp",
-          "alt": "Mariame Diawara and Fatoumata Tiemoko on the well built by Africa Relief"
-        }
-      },
-      {
-        "title": "Sadaqah Wells",
-        "slug": "sadaqah-wells",
-        "categories": [
-          {
-            "name": "water",
-            "slug": "water"
-          }
-        ],
-        "date": "September 29, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/sadaqah-wells/Sadaqah1-scaled.webp",
-          "alt": "Learn About our project Sadaqah Wells - Africa Relief"
-        }
-      }
-    ]
-  },
-  {
-    "title": "Solar Water Well",
-    "slug": "solar-water-well",
-    "category": {
-      "name": "water",
-      "slug": "water"
+        "donation_form_id": 14666,
+        "meta_title": "African Food Charity: Donate to Africa Relief’s Food Basket",
+        "meta_keywords": null,
+        "meta_description": "in Africa Relief’s African food charity efforts. Donate a food basket today and help combat hunger in Africa.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
     },
-    "summary": "Provide easy access to clean water for the vilage, supports 800+ individuals. Harnessing sunlight to quench thirst, illuminating lives with sustainable water solutions.",
-    "featuredImage": {
-      "src": "assets/db/projects/images/solar-water-well.webp",
-      "alt": "Learn About our project Sadaqah Wells - Africa Relief"
-    },
-    "content": [
-      {
-        "heading": "Every drop, powered by the sun, a life-changing oasis in arid lands",
-        "description": "Solar Water Wells signify more than water; they represent hope and sustainability. Join us in providing enduring access to clean water"
-      },
-      {
-        "heading": "How is ARCD's Relief responding?",
-        "description": "RCD’s Relief installs solar-powered water wells, ensuring reliable access to clean water in regions facing water scarcity due to limited resources."
-      },
-      {
-        "heading": "Building a well, Crafting Hope",
-        "description": "Your donation fuels the installation of solar water wells, enabling communities to thrive sustainably by providing access to clean, reliable water sources, transforming lives for generations."
-      }
-    ],
-    "donationForm": {
-      "id": "17543",
-      "title": "Morocco Emergency Relief",
-      "levels": [
-        {
-          "amount": 100,
-          "name": null
+    {
+        "title": "Donate Hearing Aid Device",
+        "slug": "hearing-aid-device",
+        "excerpt": "A world of sound, a world of possibilities\u2014gifted by the power of hearing",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/11/kenya_5_2.webp",
+            "alt_text": "A person receiving a hearing aid, a life-changing moment thanks to generous donations."
         },
-        {
-          "amount": 300,
-          "name": null
+        "categories": [
+            {
+                "name": "medical-help",
+                "slug": "medical-help"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Hearing isn't just a sense; it's a connection to life's symphony, restoring joy and communication.",
+                "order": 0
+            },
+            {
+                "type": "paragraph",
+                "body": "The WHO estimates that 136 million Africans face some level of hearing loss. Particularly concerning is the prevalence of childhood hearing loss due to ear infections and inadequate treatment, urging immediate hearing aid device support.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "How to Donate Hearing Aids - Give the Gift of Hearing",
+                "order": 2
+            },
+            {
+                "type": "paragraph",
+                "body": "Africa Relief invites you to directly contribute to the purchase and distribution of hearing aids through our cash donation program. Here's how you can make a profound difference:",
+                "order": 3
+            },
+            {
+                "type": "list",
+                "body": [
+                    "Choose Your Impact: Decide on the number of hearing devices you'd like to fund.",
+                    "Custom Amounts for Greater Flexibility: If you wish to contribute a different sum, our custom amount option allows you to specify exactly how much you would like to donate.",
+                    "Recurring Support for Ongoing Impact (Optional): Consider making your donation a monthly commitment. Regular contributions enable us to plan more effectively and reach more individuals over time.",
+                    "Donate Now: Once you've selected your donation amount and frequency, simply click \u201cDonate Now\u201d to complete your contribution."
+                ],
+                "order": 4
+            },
+            {
+                "type": "paragraph",
+                "body": "Every contribution, big or small, plays a crucial role in our mission to turn silence into sound.",
+                "order": 5
+            },
+            {
+                "type": "heading",
+                "body": "From Your Hands to Their Ears: Donating Hearing Aids to Those in Need",
+                "order": 6
+            },
+            {
+                "type": "paragraph",
+                "body": "Once your donation is received, it embarks on a journey of transformation. Our team works diligently with local partners and experts in Africa to identify the most effective ways to utilize your funds, ensuring that they meet the pressing needs of hearing-impaired individuals.",
+                "order": 7
+            },
+            {
+                "type": "heading",
+                "body": "Hearing Aids to Hope: How Your Donation Helps Bridge the Gap",
+                "order": 8
+            },
+            {
+                "type": "paragraph",
+                "body": "The gap between those needing hearing assistance and the available resources in Africa is vast. But every donation we receive helps to bridge this divide. Your contribution directly supports our comprehensive hearing aid project.",
+                "order": 9
+            },
+            {
+                "type": "paragraph",
+                "body": "With just $250, you can sponsor one device that will open up a world of sounds to someone. Your ongoing support, especially through monthly donations, enables us to plan ahead and reach even more individuals.",
+                "order": 10
+            },
+            {
+                "type": "paragraph",
+                "body": "Together, we're not just donating devices; we're investing in brighter futures and creating a chorus of voices that can now be heard. Your generosity turns the dream of hearing into a reality for countless individuals, lighting up lives with the sound of hope.",
+                "order": 11
+            }
+        ],
+        "donation_form_id": 16262,
+        "meta_title": "Donate Hearing Aids & Give new life with Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Join Africa Relief in aiding 136 million Africans with hearing loss. Donate hearing aids and connect them to life's symphony. Act now",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Health Care Initiatives",
+        "slug": "health-care",
+        "excerpt": "Your donation isn't just a contribution; it's a lifeline that fortifies communities and bolsters healthcare systems. Let's transform hope into action, ensuring every individual in Africa receives the quality healthcare they rightfully deserve.",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/11/image-2-2.webp",
+            "alt_text": "\"Investment in healthcare infrastructure development to improve access to quality healthcare in Africa."
         },
-        {
-          "amount": 500,
-          "name": null
+        "categories": [
+            {
+                "name": "medical-help",
+                "slug": "medical-help"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Let's turn hope into action, ensuring every individual in Africa has the fundamental right to clean water for a healthier, empowered future.",
+                "order": 0
+            },
+            {
+                "type": "paragraph",
+                "body": "Africa is at a crossroads, facing over 24% of the global disease burden yet having access to only 3% of the world's health workers and less than 1% of financial resources for healthcare (WHO). The disparity in health care resources and access highlights an urgent need for robust health care initiatives.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Health Care Initiatives: A Call to Action for a Healthier Africa",
+                "order": 2
+            },
+            {
+                "type": "paragraph",
+                "body": "Africa Relief's Response to Health Care Challenges:",
+                "order": 3
+            },
+            {
+                "type": "list",
+                "body": [
+                    "Initiating health care projects focused on the rehabilitation of hospitals.",
+                    "Enhancing the distribution network for medicines, medical supplies, and equipment to support community health care needs continuously."
+                ],
+                "order": 4
+            },
+            {
+                "type": "heading",
+                "body": "Critical Aid Needed",
+                "order": 5
+            },
+            {
+                "type": "paragraph",
+                "body": "Supplying essential medical resources and equipment, ensuring continuous support for communities in need.",
+                "order": 6
+            },
+            {
+                "type": "heading",
+                "body": "Supporting Health Care Initiatives Together",
+                "order": 7
+            },
+            {
+                "type": "paragraph",
+                "body": "Your generosity and support fuel our mission to bridge the health care gap in Africa. Each donation strengthens our health care initiatives, making a tangible difference in the lives of many. Join us in our commitment to ensuring that everyone in Africa has access to the health care they deserve.",
+                "order": 8
+            }
+        ],
+        "donation_form_id": 14728,
+        "meta_title": "Donate to Africa healthcare initiatives - Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Support Africa Relief's healthcare initiatives to to ensure a healthier future for Africa. Your support makes a difference.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Cataract Surgery",
+        "slug": "cataract-surgery",
+        "excerpt": "Every restored sight means a regained life. Join us in bringing the gift of vision to those in need, illuminating their world, and empowering them with the possibilities they need.",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/11/cataract-web.webp",
+            "alt_text": "Surgeon performing cataract surgery in a well-equipped operating room, showcasing advanced techniques in eye care"
         },
-        {
-          "amount": 5500,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": 5500,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    },
-    "latestUpdates": [
-      {
-        "title": "Emergency Morocco Earthquake Response",
-        "slug": "emergency-morocco-earthquake-response",
         "categories": [
-          {
-            "name": "food aid",
-            "slug": "food-aid"
-          },
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "water",
-            "slug": "water"
-          }
+            {
+                "name": "medical-help",
+                "slug": "medical-help"
+            }
         ],
-        "date": "October 12, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
-          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
-        }
-      },
-      {
-        "title": "Mariame Diawara and Fatoumata Tiemoko Well",
-        "slug": "mariame-diawara-and-fatoumata-tiemoko-well",
-        "categories": [
-          {
-            "name": "water",
-            "slug": "water"
-          }
+        "contents": [
+            {
+                "type": "heading",
+                "body": "It's not just about the physical act of seeing; it's about restoring their connection to the beauty",
+                "order": 0
+            },
+            {
+                "type": "paragraph",
+                "body": "Africa faces a significant challenge. Despite the prevalence of cataract-related vision loss, the continent has the lowest cataract surgical rate globally. This disparity underscores the pressing issue of limited access to cataract surgery in Africa.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "How is Africa Relief responding?",
+                "order": 2
+            },
+            {
+                "type": "paragraph",
+                "body": "Africa Relief swiftly responds to the challenge of visual impairment by providing Cataract Surgery. Through skilled medical professionals and modern facilities, we aim to restore vision for those affected by cataracts. Your support enables us to bring clarity and light into their lives, allowing them to envision a brighter future.",
+                "order": 3
+            },
+            {
+                "type": "heading",
+                "body": "Your Gift. Their Vision",
+                "order": 4
+            },
+            {
+                "type": "paragraph",
+                "body": "With each donation, you bring the world into sharper focus for those facing the challenges of vision loss. Together, we're rewriting new stories for their lives, providing the invaluable gift of sight.",
+                "order": 5
+            }
         ],
-        "date": "September 29, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame6-1024x802.webp",
-          "alt": "Mariame Diawara and Fatoumata Tiemoko on the well built by Africa Relief"
-        }
-      },
-      {
-        "title": "Sadaqah Wells",
-        "slug": "sadaqah-wells",
-        "categories": [
-          {
-            "name": "water",
-            "slug": "water"
-          }
-        ],
-        "date": "September 29, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/sadaqah-wells/Sadaqah1-scaled.webp",
-          "alt": "Learn About our project Sadaqah Wells - Africa Relief"
-        }
-      }
-    ]
-  },
-  {
-    "title": "Emergency Earthquake Relief Needed",
-    "slug": "earthquake-in-morocco",
-    "category": {
-      "name": "crisis",
-      "slug": "crisis"
+        "donation_form_id": 14726,
+        "meta_title": "Cataract Surgery Initiatives in Africa - Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Join Africa Relief's cataract surgery initiatives in Africa to restore sight. Your support can illuminate lives and reconnect them to beauty",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
     },
-    "summary": "The vulnerable communities in Morocco faced severe impacts from the 6.8-magnitude earthquake. Tragically, over 2,000 lives were lost, with thousands more injured. Many awaiting rescue.",
-    "featuredImage": {
-      "src": "assets/db/projects/images/earthquake-in-morocco.webp",
-      "alt": "Africa Relief: Morocco Earthquake Relief Fund Aid"
-    },
-    "content": [
-      {
-        "heading": "More than 300,000 people have been affected in Marrakech and surrounding areas. Join ARCD USA in rebuilding shattered lives and sparking new hope.",
-        "description": "Amidst the aftermath of a catastrophic earthquake, Morocco mourns over 2,800 lives lost and the deep impact on 100,000 children. Urgent needs include shelter, clean water, medical aid, and nourishment. Let’s unite and extend a lifeline, rebuilding shattered lives."
-      },
-      {
-        "heading": "How is ARCD's Relief responding?",
-        "description": "ARCD’s Relief team swiftly mobilized in response to the catastrophic earthquake in Morocco. As families grapple with the loss of over 2,800 lives, our focus was on urgent necessities: providing shelter, clean water, medical aid, and essential nourishment. Our unified efforts now aim to extend a lifeline, aiding in the reconstruction of shattered lives and offering hope amidst the devastation."
-      },
-      {
-        "heading": "Critical Aid Needed",
-        "description": "1- Clean Water: Essential to prevent waterborne diseases caused by contaminated floodwaters.\n2- Food Supplies: Including feeding projects and non-perishable food items.\n3- Clothing, Blankets, and Mattresses: Vital necessities for those who have lost everything in the floods.\n4- Shelters: Build safe havens to restore security amidst turmoil\n5- Your support ensures these essentials reach those in need, safeguarding lives and fostering recovery in the aftermath of the disaster."
-      },
-      {
-        "heading": "Empower Survivors",
-        "description": "United for igniting change. Your contribution powers our rapid response, reaching those affected by the crisis with the necessary aid"
-      }
-    ],
-    "donationForm": {
-      "id": "17543",
-      "title": "Morocco Emergency Relief",
-      "levels": [
-        {
-          "amount": 50,
-          "name": null
+    {
+        "title": "Give Hope: Sponsor a Child in Africa and Change Lives",
+        "slug": "orphans-sponsorship",
+        "excerpt": "As one of the best organizations to sponsor a child in Africa, we work tirelessly to empower poor kids in Africa who are sponsored, helping them break the cycle of poverty and reach their full potential. Join our mission to support families and communities across the African continent, transforming lives and creating a more equitable world",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/11/unnamed_1-1-1024x508.webp",
+            "alt_text": "Learn about orphan sponsorship project at Africa Relief"
         },
-        {
-          "amount": 100,
-          "name": null
+        "categories": [
+            {
+                "name": "orphan-sponsorship",
+                "slug": "orphan-sponsorship"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Transform a Life: Sponsor a Child in Africa ",
+                "order": 0
+            },
+            {
+                "type": "paragraph",
+                "body": "By sponsoring an orphan, you become their beacon of hope, offering stability, education, and a chance for a promising future. empowering orphans is not just a duty; it's a pathway to a brighter, hopeful tomorrow",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "How to sponsor a child in Africa?",
+                "order": 2
+            },
+            {
+                "type": "paragraph",
+                "body": "Discover how to sponsor a child in Africa with Africa Relief. Our child sponsorship program addresses the critical needs of children across the continent, providing essential healthcare, quality education, and emotional support. By partnering with local communities, we ensure that each child receives tailored assistance to thrive. Join us in breaking the cycle of poverty and empowering the next generation. Your support can transform lives and bring hope to those who need it most. Sponsor a child today and be a part of a brighter future for Africa's children.",
+                "order": 3
+            },
+            {
+                "type": "heading",
+                "body": "Sponsorship Plans",
+                "order": 4
+            },
+            {
+                "type": "paragraph",
+                "body": "Join us in our commitment to nurturing the futures of orphans by choosing a sponsorship plan that suits your ability to give. Each contribution has a direct impact, providing essentials like education, healthcare, and daily sustenance.",
+                "order": 5
+            },
+            {
+                "type": "paragraph",
+                "body": "One-Time Sponsorship",
+                "order": 6
+            },
+            {
+                "type": "list",
+                "body": [
+                    "Fully Fund a Child: With a one-time donation of $600, you can fully fund an orphan for an entire year. This comprehensive support covers educational fees, medical care, nourishment, and clothing\u2014ensuring they have everything needed to thrive.",
+                    "Custom Contribution: Not ready to fully fund? You can still make a significant impact with a custom donation starting at $50. Every amount contributes towards improving the lives of these vulnerable children."
+                ],
+                "order": 7
+            },
+            {
+                "type": "paragraph",
+                "body": "Monthly Sponsorship",
+                "order": 8
+            },
+            {
+                "type": "list",
+                "body": [
+                    "Continuous Support: Make this donation a monthly sponsorship to provide ongoing assistance to an orphan. This sustained support helps ensure stability and consistent care, allowing children to grow in a nurturing environment.",
+                    "Flexible Plans: Starting from as little as $50 per month, you can choose how much you wish to contribute regularly. This plan allows you to budget your giving and ensures that the children receive uninterrupted support throughout the year."
+                ],
+                "order": 9
+            },
+            {
+                "type": "paragraph",
+                "body": "Join Our Community of Sponsors",
+                "order": 10
+            },
+            {
+                "type": "paragraph",
+                "body": "By becoming a sponsor, you're not just donating; you're joining a community dedicated to making a real difference. You'll receive updates on how your contributions are helping and see the tangible changes in the lives of the children you support.",
+                "order": 11
+            },
+            {
+                "type": "paragraph",
+                "body": "Sponsor an Orphan Today",
+                "order": 12
+            },
+            {
+                "type": "heading",
+                "body": "Sponsor a Child in Africa with Africa Relief",
+                "order": 13
+            },
+            {
+                "type": "paragraph",
+                "body": "Make a Lifelong Impact Today",
+                "order": 14
+            }
+        ],
+        "donation_form_id": 14699,
+        "meta_title": "Sponsor a Child in Africa with Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Sponsor a child in Africa through Africa Relief and give them hope for a brighter future. Your monthly gift ensures access to education, water, healthcare",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Zakat Al-Fitr",
+        "slug": "zakat-al-fitr",
+        "excerpt": "As we approach Eid Al Fitr 2024, one of the most frequently asked questions is how to calculate zakat al fitr. The amount of Zakat Al-Fitr is equivalent to the cost of about 2.5 to 3 kilograms of the chosen staple food. This typically translates to $15 per individual.",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/11/image_9.webp",
+            "alt_text": "Individuals contributing to charitable causes as an essential part of their Eid al-Fitr celebrations"
         },
-        {
-          "amount": 150,
-          "name": null
+        "categories": [
+            {
+                "name": "zakat",
+                "slug": "zakat"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Zakat Al-Fitr exemplifies the essence of charity and unity",
+                "order": 0
+            },
+            {
+                "type": "paragraph",
+                "body": "Embrace the spirit of giving with Zakat al-Fitr, a crucial pillar of Islam that embodies compassion and community at the heart of Eid al-Fitr celebrations",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "What is Zakat Al-Fitr?",
+                "order": 2
+            },
+            {
+                "type": "paragraph",
+                "body": "Zakat Al-Fitr is not only a financial aid but a symbolic gesture that cleanses the giver and offers much-needed support to the receiver. It's an integral part of Eid al-Fitr Zakat, emphasizing that no one should be left behind during the Eid celebrations. By contributing to a Zakat charity donation, you are partaking in a centuries-old tradition of generosity and care.",
+                "order": 3
+            },
+            {
+                "type": "heading",
+                "body": "How much is zakat al fitr 2024?",
+                "order": 4
+            },
+            {
+                "type": "paragraph",
+                "body": "For 2024, as a guideline for those in the U.S. is to consider the amount equivalent to the cost of about 2.5 to 3 kilograms of the chosen staple food. This typically translates to $15 per individual.",
+                "order": 5
+            },
+            {
+                "type": "paragraph",
+                "body": "Zakat Al-Fitr must be paid before the Eid al-Fitr prayer, allowing those in need to partake in the celebration of Eid.",
+                "order": 6
+            },
+            {
+                "type": "paragraph",
+                "body": "Zakat Al-Fitr is determined by the cost of approximately one Sa'\u2014an Islamic measure equating to roughly 2.5 to 3 kilograms\u2014of a staple food item in your locality. In the context of the U.S., this staple food could be wheat, barley, dates, or raisins, among others. The specific amount to be given as Zakat Al-Fitr can differ significantly based on where you live, the current cost of living, and the staple food you choose to calculate it by.",
+                "order": 7
+            },
+            {
+                "type": "heading",
+                "body": "Pay Zakat Al-Fitr: Making Your Zakat Al-Fitr Donation Simplified",
+                "order": 8
+            },
+            {
+                "type": "paragraph",
+                "body": "This Eid, let your Zakat Al-Fitr donation be a beacon of hope for those in need. Whether you're contributing to Eid Fitr donation, or seeking to donate Eid in Africa, your generosity paves the way for a brighter, more inclusive celebration. Join Africa Relief in extending your hand to those awaiting your support. Donate today and turn the spirit of Eid into a global celebration of generosity and unity.",
+                "order": 9
+            }
+        ],
+        "donation_form_id": 14759,
+        "meta_title": "Calculate & Donate Zakat Al-Fitr with Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "As we approach Eid Al Fitr 2024, one of the most frequently asked questions is how to calculate zakat al fitr. The amount of Zakat Al-Fitr is",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "Zakat Al-Mal",
+        "slug": "zakat-al-mal",
+        "excerpt": "Zakat Al-Mal embodies the spirit of generosity, providing essential aid to uplift lives and communities",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/11/image_15-1024x576.webp",
+            "alt_text": "A generous individual giving money to a charity as part of their Zakat donation"
         },
-        {
-          "amount": 200,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": null,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    },
-    "latestUpdates": [
-      {
-        "title": "Strategic Partnerships in Tanzania",
-        "slug": "strategic-partnerships-in-tanzania",
         "categories": [
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "orphan support",
-            "slug": "orphan-support"
-          }
+            {
+                "name": "zakat",
+                "slug": "zakat"
+            }
         ],
-        "date": "September 1, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/strategic-partnerships-in-tanzania/Tanzania2.webp",
-          "alt": "Impact non profit: Team analyzing data for community improvement projects"
-        }
-      },
-      {
-        "title": "Emergency Morocco Earthquake Response",
-        "slug": "emergency-morocco-earthquake-response",
-        "categories": [
-          {
-            "name": "food aid",
-            "slug": "food-aid"
-          },
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "water",
-            "slug": "water"
-          }
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Your Zakat extends a hand of hope, laying the groundwork for prosperity among those seeking aid.",
+                "order": 0
+            },
+            {
+                "type": "paragraph",
+                "body": "Contribute Zakat Al-Mal to create a ripple of positive change. Your generosity creates opportunities and transforms lives for the better.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "What is zakat al mal?",
+                "order": 2
+            },
+            {
+                "type": "paragraph",
+                "body": "Zakat al-Mal, often simply referred to as Zakat, is one of the Five Pillars of Islam and a fundamental act of worship. It is a mandatory form of almsgiving, required of all eligible Muslims, serving not only as a means of purifying one's wealth but also as a tool to alleviate poverty and inequality within the Muslim community.",
+                "order": 3
+            },
+            {
+                "type": "paragraph",
+                "body": "To be liable for Zakat, one must be a Muslim, an adult, in possession of wealth above the Nisab threshold, and have owned this wealth for a lunar year (Hawl). Zakat is not just on cash savings but also includes assets such as gold, silver, investments, and income-generating properties, minus liabilities.",
+                "order": 4
+            },
+            {
+                "type": "heading",
+                "body": "How to calculate zakat al mal?",
+                "order": 5
+            },
+            {
+                "type": "paragraph",
+                "body": "Calculating Zakat al-Mal can be greatly simplified by utilizing Zakat calculators, especially beneficial for those looking to contribute towards relief efforts in Africa. Following the basic steps to determine your Zakat, there's an even easier method to ensure your contributions are accurate and impactful:",
+                "order": 6
+            },
+            {
+                "type": "list",
+                "body": [
+                    "Check Nisab: Verify if your wealth is above the Nisab threshold, indicating Zakat is obligatory for you.",
+                    "List Assets: Compile all Zakatable assets, including cash, investments, and precious metals, that have been in your possession for over a lunar year.",
+                    "Subtract Debts: Remove any immediate debts or liabilities from your asset total to find your net zakatable wealth.",
+                    "Use a Zakat Calculator: Access a Zakat calculator provided by Africa Relief. This tool is designed to automatically factor in current Nisab values and calculate the exact amount of Zakat due based on the information you input.",
+                    "Distribute Zakat: Upon calculation, you can directly contribute your Zakat through the same organization's platform, ensuring your donation supports essential relief efforts in African communities."
+                ],
+                "order": 7
+            },
+            {
+                "type": "paragraph",
+                "body": "Africa relief is a humanitarian aid organization dedicated to African relief work, offer Zakat calculator on the website, to make it easier for donors to fulfill their Islamic charitable obligations while contributing towards meaningful causes. By entering your asset details into the calculator, you can quickly determine your Zakat, which can then be seamlessly directed towards supporting poverty alleviation, education, healthcare, and emergency relief efforts in Africa. This method not only simplifies the calculation process but also connects your spiritual practice with impactful humanitarian aid.",
+                "order": 8
+            },
+            {
+                "type": "heading",
+                "body": "How to pay zakat al mal?",
+                "order": 9
+            },
+            {
+                "type": "paragraph",
+                "body": "Transform your spiritual duty into a lifeline for communities across Africa. Your Zakat can help provide clean water, healthcare, education, and emergency relief, breaking cycles of poverty and building stronger, more resilient communities.",
+                "order": 10
+            },
+            {
+                "type": "paragraph",
+                "body": "Donate securely within this page & Stay engaged with the organization to see the real-world impact of your Zakat.",
+                "order": 11
+            }
         ],
-        "date": "October 12, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
-          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
-        }
-      },
-      {
-        "title": "Mariame Diawara and Fatoumata Tiemoko Well",
-        "slug": "mariame-diawara-and-fatoumata-tiemoko-well",
-        "categories": [
-          {
-            "name": "water",
-            "slug": "water"
-          }
-        ],
-        "date": "September 29, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame6-1024x802.webp",
-          "alt": "Mariame Diawara and Fatoumata Tiemoko on the well built by Africa Relief"
-        }
-      }
-    ]
-  },
-  {
-    "title": "Libya Floods",
-    "slug": "libya-floods",
-    "category": {
-      "name": "crisis",
-      "slug": "crisis"
+        "donation_form_id": 14707,
+        "meta_title": "Donate Zakat al mal with Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Your Zakat al mal donation through Africa Relief transforms lives. Act now to uphold the spirit of giving. Donate today and be the change!",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
     },
-    "summary": "The Floods have devastated the city of Derna, killing thousands and leaving at least 10,000 missing. The local community needs your urgent support.",
-    "featuredImage": {
-      "src": "assets/db/projects/images/libya-floods.webp",
-      "alt": "Families affected by the floods in Libya receiving much-needed aid and assistance"
-    },
-    "content": [
-      {
-        "heading": "884,000 affected by the devastation of the Libya flood, every moment matters. Join us in reaching families affected. Your donation saves lives",
-        "description": "Storm Daniel’s impact in Libya has caused catastrophic flooding and landslides, leaving thousands missing and tens of thousands displaced. Rural areas like Derna witness entire buildings swept away due to collapsed dams, adding to the suffering of those already affected by past conflicts and political crises."
-      },
-      {
-        "heading": "How is ARCD's Relief responding?",
-        "description": "In the face of Libya’s flood crisis, Africa Relief and Community Development (ARCD) steps forward, providing urgent relief and sustainable strategies. Partnering with the government, we confront the flood’s complexities, placing the well-being of affected communities at the core of our mission. Let’s rebuild, restore, and uplift Libya together."
-      },
-      {
-        "heading": "Critical Aid Needed",
-        "description": "1- Clean Water: Essential to prevent waterborne diseases caused by contaminated floodwaters.\n2- Food Supplies: Including feeding projects and non-perishable food items.\n3- Clothing, Blankets, and Mattresses: Vital necessities for those who have lost everything in the floods.\n4- Your support ensures these essentials reach those in need, safeguarding lives and fostering recovery in the aftermath of the disaster."
-      },
-      {
-        "heading": "Empower Survivors",
-        "description": "We’re stronger together. Your donation fuels our swift crisis response, aiding us in reaching people impacted by the emergency."
-      }
-    ],
-    "donationForm": {
-      "id": "17603",
-      "title": "Libya Emergency Relief",
-      "levels": [
-        {
-          "amount": 50,
-          "name": null
+    {
+        "title": "Iftar Meal",
+        "slug": "iftar-meal",
+        "excerpt": "It's more than just a meal, Having the Iftar meal together fosters unity and kindness, creating bonds that transcend hunger.",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/11/image-6.webp",
+            "alt_text": "A community gathering for a Ramadan Iftar, where donated meals are shared among attendees"
         },
-        {
-          "amount": 100,
-          "name": null
-        },
-        {
-          "amount": 150,
-          "name": null
-        },
-        {
-          "amount": 200,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": null,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    },
-    "latestUpdates": [
-      {
-        "title": "Strategic Partnerships in Tanzania",
-        "slug": "strategic-partnerships-in-tanzania",
         "categories": [
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "orphan support",
-            "slug": "orphan-support"
-          }
+            {
+                "name": "ramadan",
+                "slug": "ramadan"
+            }
         ],
-        "date": "September 1, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/strategic-partnerships-in-tanzania/Tanzania2.webp",
-          "alt": "Impact non profit: Team analyzing data for community improvement projects"
-        }
-      },
-      {
-        "title": "Emergency Morocco Earthquake Response",
-        "slug": "emergency-morocco-earthquake-response",
-        "categories": [
-          {
-            "name": "food aid",
-            "slug": "food-aid"
-          },
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "water",
-            "slug": "water"
-          }
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Your support during Iftar extends beyond a meal; it feeds hope and strengthens communities.",
+                "order": 0
+            },
+            {
+                "type": "paragraph",
+                "body": "In the moments of having Iftar, we find unity and compassion. Join us in providing nourishment to those fasting, sowing seeds of solidarity and care.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Online Iftar Donations: A New Wave of Generosity",
+                "order": 2
+            },
+            {
+                "type": "paragraph",
+                "body": "In today's connected world, extending a hand of support to communities in Africa during Ramadan has never been easier. Online iftar donations are revolutionizing the way we can contribute, enabling donors from all corners of the globe to provide much-needed iftar meals to those fasting in Africa.",
+                "order": 3
+            },
+            {
+                "type": "paragraph",
+                "body": "This approach, facilitated by Africa relief organizations, not only simplifies the act of giving but also strengthens the bonds of global solidarity. By participating in online iftar donations, you're ensuring that the warmth and compassion of Ramadan reach families across Africa, offering nourishment and hope through the click of a button.",
+                "order": 4
+            },
+            {
+                "type": "heading",
+                "body": "Ramadan Charity Meals: Nourishing Hope in Africa",
+                "order": 5
+            },
+            {
+                "type": "paragraph",
+                "body": "Ramadan embodies the spirit of kindness and giving back, a time when the act of charity becomes a beacon of hope and love. Ramadan charity meals, especially organized for African communities in need, are a vital tradition that brings light to those facing hardship.",
+                "order": 6
+            },
+            {
+                "type": "paragraph",
+                "body": "Facilitated by dedicated Africa relief organization, these charity meals do more than just satiate hunger; they convey a message of unity and care from across the globe. Your contribution to Ramadan charity meals can make a significant difference, bringing smiles and relief to countless faces during the holy month in Africa.",
+                "order": 7
+            },
+            {
+                "type": "heading",
+                "body": "Iftar Meals for the Needy: A Mission of Mercy Across Africa",
+                "order": 8
+            },
+            {
+                "type": "paragraph",
+                "body": "The holy month of Ramadan is a reminder of our shared responsibilities towards one another, particularly in supporting those in need. The initiative to provide iftar meals for the needy in Africa is a profound demonstration of global empathy and collective action.",
+                "order": 9
+            },
+            {
+                "type": "paragraph",
+                "body": "Africa relief organizations play a crucial role in orchestrating this mission, ensuring that the blessings of iftar reach the most vulnerable communities across the continent. By donating to iftar meals for the needy, you become part of a compassionate crusade to ensure that no individual in Africa is left behind in our collective celebration of Ramadan. Your generosity becomes a symbol of hope, uniting us all in the spirit of giving.",
+                "order": 10
+            }
         ],
-        "date": "October 12, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
-          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
-        }
-      },
-      {
-        "title": "Mariame Diawara and Fatoumata Tiemoko Well",
-        "slug": "mariame-diawara-and-fatoumata-tiemoko-well",
-        "categories": [
-          {
-            "name": "water",
-            "slug": "water"
-          }
-        ],
-        "date": "September 29, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame6-1024x802.webp",
-          "alt": "Mariame Diawara and Fatoumata Tiemoko on the well built by Africa Relief"
-        }
-      }
-    ]
-  },
-  {
-    "title": "Ghana Floods",
-    "slug": "ghana-floods",
-    "category": {
-      "name": "crisis",
-      "slug": "crisis"
-    },
-    "summary": "Southeastern Ghana faces escalating displacements post Akosombo Dam water release on Oct 13. Your support matters.",
-    "featuredImage": {
-      "src": "assets/db/projects/images/ghana-floods.webp",
-      "alt": "Donate to ghana: Streets submerged in floodwaters, illustrating the extent of flooding in Ghana."
-    },
-    "content": [
-      {
-        "heading": "Ghana's Volta Region faces a dire aftermath post-flooding, displacing 26,000+. Join ARCD USA's efforts aiding recovery. Your support restores hope.",
-        "description": "As of October 18, over 26,000 individuals in the Volta Region have been displaced, particularly affecting the South, Central, and North Tongu Districts. Additionally, 7 people remain injured, and multiple communities are isolated due to flooded roads, disrupting essential services."
-      },
-      {
-        "heading": "How is ARCD's Relief responding?",
-        "description": "Africa Relief and Community Development (ARCD) is at the forefront, providing immediate relief and sustainable solutions to aid Ghana’s recovery. Our work, in collaboration with government efforts, addresses the multidimensional challenges brought by the flooding, prioritizing the safety and well-being of affected communities."
-      },
-      {
-        "heading": "Critical Aid Needed",
-        "description": "1- Clean Water: Essential to prevent waterborne diseases caused by contaminated floodwaters.\n2- Food Supplies: Including feeding projects and non-perishable food items.\n3- Clothing, Blankets, and Mattresses: Vital necessities for those who have lost everything in the floods.\n4- Mosquito Nets: Crucial for preventing vector-borne diseases amplified by stagnant water.\n5- Your support ensures these essentials reach those in need, safeguarding lives and fostering recovery in the aftermath of the disaster."
-      },
-      {
-        "heading": "Empower Survivors",
-        "description": "Join ARCD’s efforts to provide vital support to survivors. Your contribution makes a difference in restoring hope and rebuilding lives."
-      }
-    ],
-    "donationForm": {
-      "id": "18119",
-      "title": "Ghana Flooding October 2023",
-      "levels": [
-        {
-          "amount": 50,
-          "name": null
-        },
-        {
-          "amount": 100,
-          "name": null
-        },
-        {
-          "amount": 250,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": null,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    },
-    "latestUpdates": [
-      {
-        "title": "Strategic Partnerships in Tanzania",
-        "slug": "strategic-partnerships-in-tanzania",
-        "categories": [
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "orphan support",
-            "slug": "orphan-support"
-          }
-        ],
-        "date": "September 1, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/strategic-partnerships-in-tanzania/Tanzania2.webp",
-          "alt": "Impact non profit: Team analyzing data for community improvement projects"
-        }
-      },
-      {
-        "title": "Emergency Morocco Earthquake Response",
-        "slug": "emergency-morocco-earthquake-response",
-        "categories": [
-          {
-            "name": "food aid",
-            "slug": "food-aid"
-          },
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "water",
-            "slug": "water"
-          }
-        ],
-        "date": "October 12, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
-          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
-        }
-      },
-      {
-        "title": "Mariame Diawara and Fatoumata Tiemoko Well",
-        "slug": "mariame-diawara-and-fatoumata-tiemoko-well",
-        "categories": [
-          {
-            "name": "water",
-            "slug": "water"
-          }
-        ],
-        "date": "September 29, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame6-1024x802.webp",
-          "alt": "Mariame Diawara and Fatoumata Tiemoko on the well built by Africa Relief"
-        }
-      }
-    ]
-  },
-  {
-    "title": "Educational Center",
-    "slug": "educational-center",
-    "category": {
-      "name": "education",
-      "slug": "education"
-    },
-    "summary": "In Africa, where knowledge is power, 20% lack formal schooling, while 28% completed primary, 37% secondary, and 15% higher education, these statistics highligh the importance of accessible learning opportunities",
-    "featuredImage": {
-      "src": "assets/db/projects/images/educational-center.webp",
-      "alt": "Image of a classroom project funded through DonorsChoose, illustrating direct support to public school teachers"
-    },
-    "content": [
-      {
-        "heading": "Educational Centers, where minds flourish and futures bloom",
-        "description": "In Africa, the pursuit of education remains pivotal, with staggering statistics showing that one in five adults lacks formal education. ARCD’s Relief champions start the change through Educational Centers, bridging this gap by providing accessible and quality education. These centers serve as catalysts for transformation, nurturing young minds, and illuminating paths to a brighter future."
-      },
-      {
-        "heading": "How is ARCD's Relief responding?",
-        "description": "ARCD’s Relief is committed to breaking barriers by establishing Educational Centers across communities in Africa. These centers are not just buildings; they’re havens of knowledge and hope, offering educational opportunities to those who’ve been marginalized"
-      },
-      {
-        "heading": "Education: Building Bridges, Transforming Lives",
-        "description": "In the heart of every Educational Center lies the seed of change, nurturing minds and fostering brighter tomorrows.Your support propels , enabling education for all and fostering a more empowered, educated Africa."
-      }
-    ],
-    "donationForm": {
-      "id": 14679,
-      "title": "Educational Center",
-      "levels": [
-        {
-          "amount": 690,
-          "name": null
-        },
-        {
-          "amount": 920,
-          "name": null
-        },
-        {
-          "amount": 1150,
-          "name": null
-        },
-        {
-          "amount": 27600,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": 27600,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    },
-    "latestUpdates": [
-      {
-        "title": "Salah Alzoobi Mosque",
-        "slug": "salah-alzoobi-mosquesalah-alzoobi-mosque",
-        "categories": [
-          {
-            "name": "education",
-            "slug": "education"
-          }
-        ],
-        "date": "September 8, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/salah-alzoobi-mosque/Szuabi3-1024x450.webp",
-          "alt": "A sustainable and eco-friendly mosque in Africa, blending modern design with environmental consciousness."
-        }
-      },
-      {
-        "title": "Strengthening Partnerships in Ghana",
-        "slug": "strengthening-partnerships-in-ghana",
-        "categories": [
-          {
-            "name": "education",
-            "slug": "education"
-          },
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "orphan Support",
-            "slug": "orphan-support"
-          },
-          {
-            "name": "sustainable-community",
-            "slug": "sustainable-community"
-          }
-        ],
-        "date": "August 23, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/strengthening-partnerships-in-ghana/20230821_140424-1024x461.webp",
-          "alt": "Vibrant Ghanaian marketplace bustling with activity, showcasing Africa relief efforts and development cooperation in Ghana"
-        }
-      },
-      {
-        "title": "Bir Al-Walidayn School",
-        "slug": "bir-al-walidayn-school",
-        "categories": [
-          {
-            "name": "education",
-            "slug": "education"
-          }
-        ],
-        "date": "August 16, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/bir-al-walidayn-school/Bir-Al-Walidayn-School1-1024x450.webp",
-          "alt": "Completed school building in an African village, a result of Africa Relief's school-building initiative"
-        }
-      }
-    ]
-  },
-  {
-    "title": "Students Sponsorship",
-    "slug": "students-sponsorship",
-    "category": {
-      "name": "education",
-      "slug": "education"
-    },
-    "summary": "In Africa, the journey to education is marred by staggering statistics. Over 20% of children aged 6 to 11 miss the chance to enter the classroom, a figure that balloons to one-third for youths aged 12 to 14. Shockingly, almost 60% of youths between 15 and 17 are deprived of the school experience.",
-    "featuredImage": {
-      "src": "assets/db/projects/images/students-sponsorship.webp",
-      "alt": "A sponsored child studying diligently, empowered by African education sponsorship."
-    },
-    "content": [
-      {
-        "heading": "Imagine your impact on a Student live",
-        "description": "Access to education is a fundamental right, yet for many in Africa, it remains a distant dream. ARCD’s Relief believes in transforming lives through education by offering student sponsorships. By supporting a student’s educational journey, you’re not just investing in their future; you’re paving the way for a more empowered generation, creating ripples of positive change across communities."
-      },
-      {
-        "heading": "How is ARCD's Relief responding?",
-        "description": "ARCD’s Relief sponsors students by providing financial aid, mentorship, and resources, ensuring that no promising mind is hindered by financial constraints. We believe in creating opportunities for students to thrive, fostering a brighter tomorrow."
-      },
-      {
-        "heading": "Education is not a privilege; it's a right.",
-        "description": "Your sponsorship extends beyond funding; it’s the key to unlocking potential, nurturing talents, and fostering a more educated and empowered society."
-      }
-    ],
-    "donationForm": {
-      "id": 14688,
-      "title": "Students Sponsorship​",
-      "levels": [
-        {
-          "amount": 100,
-          "name": null
-        },
-        {
-          "amount": 200,
-          "name": null
-        },
-        {
-          "amount": 500,
-          "name": null
-        },
-        {
-          "amount": 1200,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": 27600,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    },
-    "latestUpdates": [
-      {
-        "title": "Salah Alzoobi Mosque",
-        "slug": "salah-alzoobi-mosquesalah-alzoobi-mosque",
-        "categories": [
-          {
-            "name": "education",
-            "slug": "education"
-          }
-        ],
-        "date": "September 8, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/salah-alzoobi-mosque/Szuabi3-1024x450.webp",
-          "alt": "A sustainable and eco-friendly mosque in Africa, blending modern design with environmental consciousness."
-        }
-      },
-      {
-        "title": "Strengthening Partnerships in Ghana",
-        "slug": "strengthening-partnerships-in-ghana",
-        "categories": [
-          {
-            "name": "education",
-            "slug": "education"
-          },
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "orphan Support",
-            "slug": "orphan-support"
-          },
-          {
-            "name": "sustainable-community",
-            "slug": "sustainable-community"
-          }
-        ],
-        "date": "August 23, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/strengthening-partnerships-in-ghana/20230821_140424-1024x461.webp",
-          "alt": "Vibrant Ghanaian marketplace bustling with activity, showcasing Africa relief efforts and development cooperation in Ghana"
-        }
-      },
-      {
-        "title": "Bir Al-Walidayn School",
-        "slug": "bir-al-walidayn-school",
-        "categories": [
-          {
-            "name": "education",
-            "slug": "education"
-          }
-        ],
-        "date": "August 16, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/bir-al-walidayn-school/Bir-Al-Walidayn-School1-1024x450.webp",
-          "alt": "Completed school building in an African village, a result of Africa Relief's school-building initiative"
-        }
-      }
-    ]
-  },
-  {
-    "title": "Food Basket",
-    "slug": "food-basket",
-    "category": {
-      "name": "Food Aid",
-      "slug": "food-aid"
-    },
-    "summary": "Let’s Unite to Ensure No Neighbor Goes Hungry. In Africa, Two-Thirds Struggle with Food Insecurity. Your Donation Fights Hunger. Join Us to Create a Lasting Impact!",
-    "featuredImage": {
-      "src": "assets/db/projects/images/food-basket.webp",
-      "alt": "Individuals contributing to the initiative of providing food baskets to alleviate hunger in their community"
-    },
-    "content": [
-      {
-        "heading": "All faiths converge on a singular cause: alleviating hunger through compassionate contributions",
-        "description": "Africa faces a dire crisis, with two-thirds of its population battling food insecurity, making it a global epicenter of hunger. Millions suffer from malnutrition, highlighting the urgency for immediate action and escalated food aid. It’s crucial to protect numerous lives and pave the way for a nourished future in the region."
-      },
-      {
-        "heading": "How is ARCD's Relief responding?",
-        "description": "ARCD’s Relief acts swiftly, addressing hunger through our Food Basket Project, offering vital nourishment to those in need. Your donations fuel this initiative, transforming compassion into instant relief. Join hands with us to directly impact and contribute to our mission of eradicating hunger."
-      },
-      {
-        "heading": "Your Donation. Their Nourishment",
-        "description": "Your generosity powers ARCD’s Relief food aid Projects, where each donation transcends empathy to provide sustenance, erasing the shadows of hunger. Join us and witness the profound impact of your support—illuminating lives and forging a path toward a future free from hunger."
-      }
-    ],
-    "donationForm": {
-      "id": 14666,
-      "title": "Food Basket",
-      "levels": [
-        {
-          "amount": 100,
-          "name": null
-        },
-        {
-          "amount": 200,
-          "name": null
-        },
-        {
-          "amount": 400,
-          "name": null
-        },
-        {
-          "amount": 600,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": null,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    },
-    "latestUpdates": [
-      {
-        "title": "Emergency Morocco Earthquake Response",
-        "slug": "emergency-morocco-earthquake-response",
-        "categories": [
-          {
-            "name": "food aid",
-            "slug": "food-aid"
-          },
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "water",
-            "slug": "water"
-          }
-        ],
-        "date": "October 12, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
-          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
-        }
-      },
-      {
-        "title": "Nurturing Families: Meat Distribution Initiative",
-        "slug": "nurturing-families-meat-distribution-initiative",
-        "categories": [
-          {
-            "name": "food aid",
-            "slug": "food-aid"
-          }
-        ],
-        "date": "October 12, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/nurturing-families-meat-distribution-initiative/Zabiha-1024x768.webp",
-          "alt": "Nurturing Families - A Key Africa Relief Projects"
-        }
-      },
-      {
-        "title": "Brushy Creek Islamic Center Food Project",
-        "slug": "brushy-creek-islamic-center-food-project",
-        "categories": [
-          {
-            "name": "food aid",
-            "slug": "food-aid"
-          }
-        ],
-        "date": "August 31, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/brushy-creek-islamic-center-food-project/brush2-1024x768.webp",
-          "alt": "Brushy Creek Islamic Center Food Project - Africa Relief"
-        }
-      }
-    ]
-  },
-  {
-    "title": "Hearing Aid Device",
-    "slug": "hearing-aid-device",
-    "category": {
-      "name": "Medical help",
-      "slug": "medical-help"
-    },
-    "summary": "A world of sound, a world of possibilities—gifted by the power of hearing",
-    "featuredImage": {
-      "src": "assets/db/projects/images/hearing-aid-device.webp",
-      "alt": "A person receiving a hearing aid, a life-changing moment thanks to generous donations."
-    },
-    "content": [
-      {
-        "heading": "Hearing isn't just a sense; it's a connection to life's symphony, restoring joy and communication.",
-        "description": "The WHO estimates that 136 million Africans face some level of hearing loss. Particularly concerning is the prevalence of childhood hearing loss due to ear infections and inadequate treatment, urging immediate hearing aid device support."
-      },
-      {
-        "heading": "How is ARCD's Relief responding?",
-        "description": "ARCD’s Relief addresses hearing loss by providing advanced hearing aid devices, fostering inclusion and empowering individuals to engage fully in life’s conversations."
-      },
-      {
-        "heading": "Enabling Sound. Empowering Lives.",
-        "description": "Your donation enables us to provide hearing aid devices, transforming the lives of those facing hearing loss, fostering confidence, and facilitating their active participation in society’s conversations and experiences."
-      }
-    ],
-    "donationForm": {
-      "id": 16262,
-      "title": "Hearing Aid Device",
-      "levels": [
-        {
-          "amount": 250,
-          "name": "$250 / 1 Device"
-        },
-        {
-          "amount": 500,
-          "name": "$500 / 2 Device"
-        },
-        {
-          "amount": 750,
-          "name": "$750 / 3 Device"
-        }
-      ],
-      "fullyFundLevel": null,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    },
-    "latestUpdates": [
-      {
-        "title": "Emergency Morocco Earthquake Response",
-        "slug": "emergency-morocco-earthquake-response",
-        "categories": [
-          {
-            "name": "food aid",
-            "slug": "food-aid"
-          },
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "water",
-            "slug": "water"
-          }
-        ],
-        "date": "October 12, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
-          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
-        }
-      },
-      {
-        "title": "Strengthening Partnerships in Ghana",
-        "slug": "strengthening-partnerships-in-ghana",
-        "categories": [
-          {
-            "name": "education",
-            "slug": "education"
-          },
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "orphan Support",
-            "slug": "orphan-support"
-          },
-          {
-            "name": "sustainable-community",
-            "slug": "sustainable-community"
-          }
-        ],
-        "date": "August 23, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/strengthening-partnerships-in-ghana/20230821_140424-1024x461.webp",
-          "alt": "Vibrant Ghanaian marketplace bustling with activity, showcasing Africa relief efforts and development cooperation in Ghana"
-        }
-      },
-      {
-        "title": "Medical Equipment Delivery: Boosting Health Infrastructure",
-        "slug": "medical-equipment-delivery",
-      "categories": [
-        {
-          "name": "health",
-          "slug": "health"
-        }
-      ],
-        "date": "October 19, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/medical-equipment-delivery/DSC07827-1024x683.webp",
-          "alt": "Click here to donate for medical aid."
-        }
-      }
-    ]
-  },
-  {
-    "title": "Health Care",
-    "slug": "health-care",
-    "category": {
-      "name": "Medical help",
-      "slug": "medical-help"
-    },
-    "summary": "Your donation isn’t just a contribution; it’s a lifeline that fortifies communities and bolsters healthcare systems. Let’s transform hope into action, ensuring every individual in Africa receives the quality healthcare they rightfully deserve.",
-    "featuredImage": {
-      "src": "assets/db/projects/images/health-care.webp",
-      "alt": "\"Investment in healthcare infrastructure development to improve access to quality healthcare in Africa."
-    },
-    "content": [
-      {
-        "heading": "Let's turn hope into action, ensuring every individual in Africa has the fundamental right to clean water for a healthier, empowered future.",
-        "description": "Africa bears over 24% of the world’s disease burden but has access to a mere 3% of health workers and less than 1% of global financial resources, according to WHO. This staggering gap in healthcare resources across numerous African nations raises a red flag for the continent’s overall health status, highlighting the urgent need for equitable support and resources."
-      },
-      {
-        "heading": "How is ARCD's Relief responding?",
-        "description": "Africa Relief implements two critical emergency strategies to safeguard the public health system from collapse. Our efforts focus on hospital rehabilitation and the vital distribution of medicine, medical supplies, and equipment, ensuring sustained support for communities in need."
-      },
-      {
-        "heading": "Critical Aid Needed",
-        "description": "Supplying essential medical resources and equipment, ensuring continuous support for communities in need."
-      },
-      {
-        "heading": "Your Generosity. Their Lifeline to Healthcare",
-        "description": "Your compassion acts as a bridge, closing the gap in access and delivering vital healthcare to those in need. Each donation safeguards a healthier future for all."
-      }
-    ],
-    "donationForm": {
-      "id": 14728,
-      "title": "Health",
-      "levels": [
-        {
-          "amount": 100,
-          "name": null
-        },
-        {
-          "amount": 200,
-          "name": null
-        },
-        {
-          "amount": 500,
-          "name": null
-        },
-        {
-          "amount": 1000,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": null,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    },
-    "latestUpdates": [
-      {
-        "title": "Emergency Morocco Earthquake Response",
-        "slug": "emergency-morocco-earthquake-response",
-        "categories": [
-          {
-            "name": "food aid",
-            "slug": "food-aid"
-          },
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "water",
-            "slug": "water"
-          }
-        ],
-        "date": "October 12, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
-          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
-        }
-      },
-      {
-        "title": "Strengthening Partnerships in Ghana",
-        "slug": "strengthening-partnerships-in-ghana",
-        "categories": [
-          {
-            "name": "education",
-            "slug": "education"
-          },
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "orphan Support",
-            "slug": "orphan-support"
-          },
-          {
-            "name": "sustainable-community",
-            "slug": "sustainable-community"
-          }
-        ],
-        "date": "August 23, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/strengthening-partnerships-in-ghana/20230821_140424-1024x461.webp",
-          "alt": "Vibrant Ghanaian marketplace bustling with activity, showcasing Africa relief efforts and development cooperation in Ghana"
-        }
-      },
-      {
-        "title": "Medical Equipment Delivery: Boosting Health Infrastructure",
-        "slug": "medical-equipment-delivery",
-      "categories": [
-        {
-          "name": "health",
-          "slug": "health"
-        }
-      ],
-        "date": "October 19, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/medical-equipment-delivery/DSC07827-1024x683.webp",
-          "alt": "Click here to donate for medical aid."
-        }
-      }
-    ]
-  },
-  {
-    "title": "Cataract Surgery",
-    "slug": "cataract-surgery",
-    "category": {
-      "name": "Medical help",
-      "slug": "medical-help"
-    },
-    "summary": "Every restored sight means a regained life. Join us in bringing the gift of vision to those in need, illuminating their world, and empowering them with the possibilities they need.",
-    "featuredImage": {
-      "src": "assets/db/projects/images/cataract-surgery.webp",
-      "alt": "Surgeon performing cataract surgery in a well-equipped operating room, showcasing advanced techniques in eye care"
-    },
-    "content": [
-      {
-        "heading": "It's not just about the physical act of seeing; it's about restoring their connection to the beauty",
-        "description": "Africa faces a significant challenge. Despite the prevalence of cataract-related vision loss, the continent has the lowest cataract surgical rate globally. This disparity underscores the pressing issue of limited access to cataract surgery in Africa."
-      },
-      {
-        "heading": "How is ARCD's Relief responding?",
-        "description": "ARCD’s Relief swiftly responds to the challenge of visual impairment by providing Cataract Surgery. Through skilled medical professionals and modern facilities, we aim to restore vision for those affected by cataracts. Your support enables us to bring clarity and light into their lives, allowing them to envision a brighter future."
-      },
-      {
-        "heading": "Your Gift. Their Vision",
-        "description": "With each donation, you bring the world into sharper focus for those facing the challenges of vision loss. Together, we’re rewriting new stories for their lives, providing the invaluable gift of sight."
-      }
-    ],
-    "donationForm": {
-      "id": 14726,
-      "title": "Cataract Surgery",
-      "levels": [
-        {
-          "amount": 100,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": null,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    },
-    "latestUpdates": [
-      {
-        "title": "Emergency Morocco Earthquake Response",
-        "slug": "emergency-morocco-earthquake-response",
-        "categories": [
-          {
-            "name": "food aid",
-            "slug": "food-aid"
-          },
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "water",
-            "slug": "water"
-          }
-        ],
-        "date": "October 12, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
-          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
-        }
-      },
-      {
-        "title": "Strengthening Partnerships in Ghana",
-        "slug": "strengthening-partnerships-in-ghana",
-        "categories": [
-          {
-            "name": "education",
-            "slug": "education"
-          },
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "orphan Support",
-            "slug": "orphan-support"
-          },
-          {
-            "name": "sustainable-community",
-            "slug": "sustainable-community"
-          }
-        ],
-        "date": "August 23, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/strengthening-partnerships-in-ghana/20230821_140424-1024x461.webp",
-          "alt": "Vibrant Ghanaian marketplace bustling with activity, showcasing Africa relief efforts and development cooperation in Ghana"
-        }
-      },
-      {
-        "title": "Medical Equipment Delivery: Boosting Health Infrastructure",
-        "slug": "medical-equipment-delivery",
-      "categories": [
-        {
-          "name": "health",
-          "slug": "health"
-        }
-      ],
-        "date": "October 19, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/medical-equipment-delivery/DSC07827-1024x683.webp",
-          "alt": "Click here to donate for medical aid."
-        }
-      }
-    ]
-  },
-  {
-    "title": "Orphans Sponsorship",
-    "slug": "orphans-sponsorship",
-    "category": {
-      "name": "Orphans Sponsorship",
-      "slug": "orphans-sponsorship"
-    },
-    "summary": "In the past, hearts were filled with care for orphans, embracing them with love. Today, their numbers have grown, and many who could have aided them are gone. Orphanhood, once uncommon, now prevails. The few remaining struggle to provide, unable to meet the rising tide of need.",
-    "featuredImage": {
-      "src": "assets/db/projects/images/orphans-sponsorship.webp",
-      "alt": "Learn about orphan sponsorship project at Africa Relief"
-    },
-    "content": [
-      {
-        "heading": "Your support changes lives, turning vulnerabilities into opportunities",
-        "description": "By sponsoring an orphan, you become their beacon of hope, offering stability, education, and a chance for a promising future. Empowering orphans is not just a duty; it’s a pathway to a brighter, hopeful tomorrow."
-      },
-      {
-        "heading": "How is ARCD's Relief responding?",
-        "description": "ARCD’s Relief is dedicated to securing a better future for orphans. Through our Sponsorship Program, we provide access to education, healthcare, and a nurturing environment for these deserving children."
-      },
-      {
-        "heading": "Your donation nurturing Futures",
-        "description": "Your donation directly impacts an orphan’s life, providing essentials like education, healthcare, and emotional support. Your generosity fosters resilience and empowers them to thrive despite challenges."
-      }
-    ],
-    "donationForm": {
-      "id": 14699,
-      "title": "Orphan Sponsorship",
-      "levels": [
-        {
-          "amount": 50,
-          "name": null
-        },
-        {
-          "amount": 150,
-          "name": null
-        },
-        {
-          "amount": 300,
-          "name": null
-        },
-        {
-          "amount": 600,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": null,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    },
-    "latestUpdates": [
-      {
-        "title": "Strengthening Partnerships in Ghana",
-        "slug": "strengthening-partnerships-in-ghana",
-        "categories": [
-          {
-            "name": "education",
-            "slug": "education"
-          },
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "orphan Support",
-            "slug": "orphan-support"
-          },
-          {
-            "name": "sustainable-community",
-            "slug": "sustainable-community"
-          }
-        ],
-        "date": "August 23, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/strengthening-partnerships-in-ghana/20230821_140424-1024x461.webp",
-          "alt": "Vibrant Ghanaian marketplace bustling with activity, showcasing Africa relief efforts and development cooperation in Ghana"
-        }
-      },
-      {
-        "title": "Strategic Partnerships in Tanzania",
-        "slug": "strategic-partnerships-in-tanzania",
-        "categories": [
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "orphan support",
-            "slug": "orphan-support"
-          }
-        ],
-        "date": "September 1, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/strategic-partnerships-in-tanzania/Tanzania2.webp",
-          "alt": "Impact non profit: Team analyzing data for community improvement projects"
-        }
-      },
-      {
-        "title": "Salah Alzoobi Mosque",
-        "slug": "salah-alzoobi-mosquesalah-alzoobi-mosque",
-        "categories": [
-          {
-            "name": "education",
-            "slug": "education"
-          }
-        ],
-        "date": "September 8, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/salah-alzoobi-mosque/Szuabi3-1024x450.webp",
-          "alt": "A sustainable and eco-friendly mosque in Africa, blending modern design with environmental consciousness."
-        }
-      }
-    ]
-  },
-  {
-    "title": "Zakat Al-Mal",
-    "slug": "zakat-al-mal",
-    "category": {
-      "name": "zakat",
-      "slug": "zakat"
-    },
-    "summary": "Zakat Al-Mal embodies the spirit of generosity, providing essential aid to uplift lives and communities",
-    "featuredImage": {
-      "src": "assets/db/projects/images/zakat-al-mal.webp",
-      "alt": "A generous individual giving money to a charity as part of their Zakat donation"
-    },
-    "content": [
-      {
-        "heading": "Your Zakat extends a hand of hope, laying the groundwork for prosperity among those seeking aid.",
-        "description": "Contribute Zakat Al-Mal to create a ripple of positive change. Your generosity creates opportunities and transforms lives for the better."
-      },
-      {
-        "heading": "How is ARCD's Relief responding?",
-        "description": "ARCD’s Relief diligently allocates Zakat Al-Mal funds to support various sustainable projects, enabling long-term growth within communities."
-      },
-      {
-        "heading": "Your Contribution. Their Progress.",
-        "description": "Your Zakat Al-Mal donation aids in education, healthcare, and economic empowerment, fostering stability and growth for underprivileged communities."
-      }
-    ],
-    "donationForm": {
-      "id": 14707,
-      "title": "Zakat Al-Mal",
-      "levels": [
-        {
-          "amount": 50,
-          "name": null
-        },
-        {
-          "amount": 150,
-          "name": null
-        },
-        {
-          "amount": 300,
-          "name": null
-        },
-        {
-          "amount": 600,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": null,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    },
-    "latestUpdates": [
-      {
-        "title": "Bir Al-Walidayn School",
-        "slug": "bir-al-walidayn-school",
-        "categories": [
-          {
-            "name": "education",
-            "slug": "education"
-          }
-        ],
-        "date": "August 16, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/bir-al-walidayn-school/Bir-Al-Walidayn-School1-1024x450.webp",
-          "alt": "Completed school building in an African village, a result of Africa Relief's school-building initiative"
-        }
-      },
-      {
-        "title": "Emergency Morocco Earthquake Response",
-        "slug": "emergency-morocco-earthquake-response",
-        "categories": [
-          {
-            "name": "food aid",
-            "slug": "food-aid"
-          },
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "water",
-            "slug": "water"
-          }
-        ],
-        "date": "October 12, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
-          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
-        }
-      },
-      {
-        "title": "Mariame Diawara and Fatoumata Tiemoko Well",
-        "slug": "mariame-diawara-and-fatoumata-tiemoko-well",
-        "categories": [
-          {
-            "name": "water",
-            "slug": "water"
-          }
-        ],
-        "date": "September 29, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame6-1024x802.webp",
-          "alt": "Mariame Diawara and Fatoumata Tiemoko on the well built by Africa Relief"
-        }
-      }
-    ]
-  },
-  {
-    "title": "Zakat Al-Fitr",
-    "slug": "zakat-al-fitr",
-    "category": {
-      "name": "zakat",
-      "slug": "zakat"
-    },
-    "summary": "Zakat Al-Fitr, embodies the spirit of generosity and solidarity within Islam. It’s a mandatory charitable donation given at the conclusion of Ramadan, symbolizing purification and support for the less fortunate.",
-    "featuredImage": {
-      "src": "assets/db/projects/images/zakat-al-fitr.webp",
-      "alt": "Individuals contributing to charitable causes as an essential part of their Eid al-Fitr celebrations"
-    },
-    "content": [
-      {
-        "heading": "Zakat Al-Fitr exemplifies the essence of charity and unity",
-        "description": "Extend the blessings of Eid by sharing Zakat Al-Fitr, ensuring joy and fulfillment for the less fortunate. Your contribution creates a memorable and meaningful Eid for everyone."
-      },
-      {
-        "heading": "How is ARCD's Relief responding?",
-        "description": "ARCD’s Relief ensures the proper collection and distribution of Zakat Al-Fitr to those in need, ensuring everyone partakes in the joyous Eid festivities."
-      },
-      {
-        "heading": "Your Generosity. Their Celebration",
-        "description": "Your Zakat Al-Fitr donation directly supports disadvantaged families, providing them the means to celebrate Eid with joy and dignity."
-      }
-    ],
-    "donationForm": {
-      "id": 14759,
-      "title": "Zakat Al-Fitr",
-      "levels": [
-        {
-          "amount": 15,
-          "name": null
-        },
-        {
-          "amount": 30,
-          "name": null
-        },
-        {
-          "amount": 60,
-          "name": null
-        },
-        {
-          "amount": 90,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": null,
-      "recurringPeriods": [
-        "year"
-      ]
-    },
-    "latestUpdates": [
-      {
-        "title": "Bir Al-Walidayn School",
-        "slug": "bir-al-walidayn-school",
-        "categories": [
-          {
-            "name": "education",
-            "slug": "education"
-          }
-        ],
-        "date": "August 16, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/bir-al-walidayn-school/Bir-Al-Walidayn-School1-1024x450.webp",
-          "alt": "Completed school building in an African village, a result of Africa Relief's school-building initiative"
-        }
-      },
-      {
-        "title": "Emergency Morocco Earthquake Response",
-        "slug": "emergency-morocco-earthquake-response",
-        "categories": [
-          {
-            "name": "food aid",
-            "slug": "food-aid"
-          },
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "water",
-            "slug": "water"
-          }
-        ],
-        "date": "October 12, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
-          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
-        }
-      },
-      {
-        "title": "Mariame Diawara and Fatoumata Tiemoko Well",
-        "slug": "mariame-diawara-and-fatoumata-tiemoko-well",
-        "categories": [
-          {
-            "name": "water",
-            "slug": "water"
-          }
-        ],
-        "date": "September 29, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame6-1024x802.webp",
-          "alt": "Mariame Diawara and Fatoumata Tiemoko on the well built by Africa Relief"
-        }
-      }
-    ]
-  },
-  {
-    "title": "Iftar Meal",
-    "slug": "iftar-meal",
-    "category": {
-      "name": "ramadan",
-      "slug": "ramadan"
-    },
-    "summary": "It’s more than just a meal, Having the Iftar meal together fosters unity and kindness, creating bonds that transcend hunger.",
-    "featuredImage": {
-      "src": "assets/db/projects/images/iftar-meal.webp",
-      "alt": "A community gathering for a Ramadan Iftar, where donated meals are shared among attendees"
-    },
-    "content": [
-      {
-        "heading": "Your support during Iftar extends beyond a meal; it feeds hope and strengthens communities.",
-        "description": "In the moments of having Iftar, we find unity and compassion. Join us in providing nourishment to those fasting, sowing seeds of solidarity and care."
-      },
-      {
-        "heading": "How is ARCD's Relief responding?",
-        "description": "ARCD’s Relief ensures that no one breaks their fast alone. Through our Iftar Meal project, we’re distributing nutritious meals to families, fostering a sense of togetherness during this sacred time."
-      },
-      {
-        "heading": "Sharing an Iftar Meal, Enhancing Unity.",
-        "description": "Your donation directly supports families in need, ensuring they have access to wholesome meals during Ramadan. Your generosity fosters a sense of community and provides nourishment when it’s needed most."
-      }
-    ],
-    "donationForm": {
-      "id": 14764,
-      "title": "Iftar meal",
-      "levels": [
-        {
-          "amount": 30,
-          "name": null
-        },
-        {
-          "amount": 90,
-          "name": null
-        },
-        {
-          "amount": 300,
-          "name": null
-        },
-        {
-          "amount": 900,
-          "name": null
-        }
-      ],
-      "fullyFundLevel": null,
-      "recurringPeriods": [
-        "day",
-        "week",
-        "month",
-        "Quarter",
-        "year"
-      ]
-    },
-    "latestUpdates": [
-      {
-        "title": "Bir Al-Walidayn School",
-        "slug": "bir-al-walidayn-school",
-        "categories": [
-          {
-            "name": "education",
-            "slug": "education"
-          }
-        ],
-        "date": "August 16, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/bir-al-walidayn-school/Bir-Al-Walidayn-School1-1024x450.webp",
-          "alt": "Completed school building in an African village, a result of Africa Relief's school-building initiative"
-        }
-      },
-      {
-        "title": "Emergency Morocco Earthquake Response",
-        "slug": "emergency-morocco-earthquake-response",
-        "categories": [
-          {
-            "name": "food aid",
-            "slug": "food-aid"
-          },
-          {
-            "name": "health",
-            "slug": "health"
-          },
-          {
-            "name": "water",
-            "slug": "water"
-          }
-        ],
-        "date": "October 12, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/emergency-morocco-earthquake-response/Moroc2.webp",
-          "alt": "Ruins of buildings in Morocco following a devastating earthquake, with rescue workers in action."
-        }
-      },
-      {
-        "title": "Mariame Diawara and Fatoumata Tiemoko Well",
-        "slug": "mariame-diawara-and-fatoumata-tiemoko-well",
-        "categories": [
-          {
-            "name": "water",
-            "slug": "water"
-          }
-        ],
-        "date": "September 29, 2023",
-        "featuredImage": {
-          "src": "assets/db/blogs/images/mariame-diawara-and-fatoumata-tiemoko-well/Mariame6-1024x802.webp",
-          "alt": "Mariame Diawara and Fatoumata Tiemoko on the well built by Africa Relief"
-        }
-      }
-    ]
-  }
+        "donation_form_id": 14764,
+        "meta_title": "Donate Iftar Meals this Ramadan with Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Help Africa Relief provide Iftar meals this Ramadan. Your support fosters unity and feeds hope in communities. Donate now",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    }
 ]

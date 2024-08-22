@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers\Post;
 
+use App\Enums\PostTypeEnum;
 use App\Http\Controllers\Controller;
-use App\Modules\Post\PostCategory\Resources\PostCategoryResource;
-use App\Modules\Post\PostCategory\Services\PostCategoryService;
+use App\Modules\PostCore\PostCategory\Resources\PostCategoryResource;
+use App\Modules\PostCore\PostCategory\Services\PostCategoryService;
 use Illuminate\Http\JsonResponse;
 
 class PostCategoryController extends Controller
@@ -19,7 +20,7 @@ class PostCategoryController extends Controller
      */
     public function getBlogCategories(): JsonResponse
     {
-        $categories = $this->getPostCategoryService->getBlogCategories();
+        $categories = $this->getPostCategoryService->getPostCategories(PostTypeEnum::BLOG);
 
         return response()->success('Blog categories retrieved successfully.', PostCategoryResource::collection($categories));
     }
@@ -30,7 +31,7 @@ class PostCategoryController extends Controller
      */
     public function getProjectCategories(): JsonResponse
     {
-        $categories = $this->getPostCategoryService->getProjectCategories();
+        $categories = $this->getPostCategoryService->getPostCategories(PostTypeEnum::PROJECT);
 
         return response()->success('Project categories retrieved successfully', PostCategoryResource::collection($categories));
     }

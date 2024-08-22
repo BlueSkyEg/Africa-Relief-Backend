@@ -3,15 +3,16 @@
 namespace App\Modules\Mobile\Services;
 
 use App\Enums\CarouselTypeEnum;
+use App\Enums\PostTypeEnum;
 use App\Exceptions\ApiException;
 use App\Modules\CarouselSlide\Resources\CarouselSlideResource;
 use App\Modules\CarouselSlide\Services\GetCarouselSlideService;
-use App\Modules\Post\Blog\Resources\BlogBriefResource;
-use App\Modules\Post\Blog\Services\BlogService;
-use App\Modules\Post\PostCategory\Resources\PostCategoryResource;
-use App\Modules\Post\PostCategory\Services\PostCategoryService;
-use App\Modules\Post\Project\Resources\ProjectBriefResource;
-use App\Modules\Post\Project\Services\ProjectService;
+use App\Modules\PostCore\Blog\Resources\BlogBriefResource;
+use App\Modules\PostCore\Blog\Services\BlogService;
+use App\Modules\PostCore\PostCategory\Resources\PostCategoryResource;
+use App\Modules\PostCore\PostCategory\Services\PostCategoryService;
+use App\Modules\PostCore\Project\Resources\ProjectBriefResource;
+use App\Modules\PostCore\Project\Services\ProjectService;
 
 class MobileService
 {
@@ -33,7 +34,7 @@ class MobileService
     {
         $homeCarousel = $this->getCarouselSlideService->getCarousel(CarouselTypeEnum::Home_Carousel->value);
 
-        $projectCategories = $this->getPostCategoryService->getProjectCategories();
+        $projectCategories = $this->getPostCategoryService->getPostCategories(PostTypeEnum::PROJECT);
 
         $latestBlogs = $this->getBlogService->getAllBlogs(null, 4, true);
 

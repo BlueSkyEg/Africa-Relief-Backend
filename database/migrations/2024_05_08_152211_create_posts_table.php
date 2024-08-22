@@ -20,7 +20,6 @@ return new class extends Migration
             $table->text('meta_keywords')->nullable();
             $table->text('meta_description')->nullable();
             $table->string('meta_robots')->nullable();
-            $table->string('meta_og_title')->nullable();
             $table->string('meta_og_type')->nullable();
             $table->timestamps();
         });
