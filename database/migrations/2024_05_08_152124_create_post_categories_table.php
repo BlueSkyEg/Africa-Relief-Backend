@@ -22,6 +22,7 @@ return new class extends Migration
             $table->text('meta_description')->nullable();
             $table->string('meta_robots')->nullable();
             $table->string('meta_og_type')->nullable();
+            $table->integer('order')->nullable();
             $table->timestamps();
             $table->unique(['post_type', 'slug']);
         });

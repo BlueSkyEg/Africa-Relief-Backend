@@ -15,7 +15,9 @@ class PostCategoryRepository
      */
     public function getAll(PostTypeEnum $postType): Collection
     {
-        return PostCategory::where('post_type', $postType)->get();
+        return PostCategory::where('post_type', $postType)
+        ->orderBy('order', 'asc')
+        ->get();
     }
 
 
