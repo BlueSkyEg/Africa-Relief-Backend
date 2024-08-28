@@ -37,6 +37,57 @@ class ProjectRepository
             ->orderBy('order', 'asc')  // Order by the 'order' column in ascending order
             ->paginate($perPage);
     }
+    /**
+     * neglect categories of crisis and back-to-school
+     * @param int $perPage
+     * @param bool|null $published
+     * @return LengthAwarePaginator
+     */
+    public function getAllLatest(int $perPage, bool|null $published = null): LengthAwarePaginator
+    {
+        return Project::when($published === true, function (Builder $query) {
+                return $query->whereRelation('post', 'published', '=', 1);
+            })
+            ->when($published === false, function (Builder $query) {
+                return $query->whereRelation('post', 'published', '=', 0);
+            })
+            ->whereDoesntHave('post.categories', function (Builder $query) {
+                $query->whereIn('slug', ['crisis', 'back-to-school']);
+            })
+            ->whereHas('post', function (Builder $query) {
+                $query->orderBy('created_at', 'desc');
+            })
+            ->with('post.categories', 'featuredImage')
+            ->paginate($perPage);
+    }
+
+    /**
+     * @param array $categorySlugs
+     * @param int $perPage
+     * @param bool|null $published
+     * @return LengthAwarePaginator
+     */
+    public function getAllByCategories(array $categorySlugs, int $perPage, bool|null $published = null): LengthAwarePaginator
+    {
+        return Project::when($published === true, function (Builder $query) {
+                return $query->whereRelation('post', 'published', '=', 1);
+            })
+            ->when($published === false, function (Builder $query) {
+                return $query->whereRelation('post', 'published', '=', 0);
+            })
+            ->when(!empty($categorySlugs), function (Builder $query) use ($categorySlugs) {
+                return $query->whereHas('post.categories', function (Builder $query) use ($categorySlugs) {
+                    $query->where('post_type', '=', PostTypeEnum::PROJECT->value);
+                    $query->whereIn('slug', $categorySlugs); // Use 'whereIn' to filter by multiple slugs
+                });
+            })
+            ->whereHas('post', function (Builder $query) {
+                $query->orderBy('created_at', 'desc');
+            })
+            ->with('post.categories', 'featuredImage')
+            ->orderBy('order', 'asc') // Order by the 'order' column in ascending order
+            ->paginate($perPage);
+    }
 
 
     /**

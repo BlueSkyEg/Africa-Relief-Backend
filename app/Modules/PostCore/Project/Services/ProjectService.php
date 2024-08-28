@@ -35,6 +35,29 @@ class ProjectService
         return $this->projectRepository->getAll($categorySlug, $perPage, $published);
     }
 
+    /**
+     * @param string|null $categorySlug
+     * @param int $perPage
+     * @param bool|null $published
+     * @return LengthAwarePaginator
+     */
+    public function getAllLatestProjects(int $perPage, bool|null $published = null): LengthAwarePaginator
+    {
+        return $this->projectRepository->getAllLatest($perPage, $published);
+    }
+
+        /**
+     * @param array $categorySlugs
+     * @param int $perPage
+     * @param bool|null $published
+     * @return LengthAwarePaginator
+     */
+    public function getAllProjectsByCategories(array $categorySlugs, int $perPage, bool|null $published = null): LengthAwarePaginator
+    {
+        return $this->projectRepository->getAllByCategories($categorySlugs, $perPage, $published);
+    }
+
+
 
     /**
      * @param string $projectSlug
