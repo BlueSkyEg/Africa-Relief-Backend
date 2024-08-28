@@ -32,16 +32,18 @@ class MobileService
      */
     public function getMobileHomeScreenData(): array
     {
-        $homeCarousel = $this->getCarouselSlideService->getCarousel(CarouselTypeEnum::Home_Carousel->value);
+        // $homeCarousel = $this->getCarouselSlideService->getCarousel(CarouselTypeEnum::Home_Carousel->value);
+        $filtered_cat_arr = ['crisis', 'back-to-school'];
+        $homeCarousel = $this->getProjectService->getAllProjectsByCategories($filtered_cat_arr, 10, true);
 
         $projectCategories = $this->getPostCategoryService->getPostCategories(PostTypeEnum::PROJECT);
 
-        $latestBlogs = $this->getBlogService->getAllBlogs(null, 4, true);
+        $latestBlogs = $this->getBlogService->getAllBlogs(null, 7, true);
 
-        $latestProjects = $this->getProjectService->getAllProjects(null, 4, true);
+        $latestProjects = $this->getProjectService->getAllLatestProjects(7, true);
 
         return [
-            'home_carousel' => CarouselSlideResource::collection($homeCarousel),
+            'home_carousel' => ProjectBriefResource::collection($homeCarousel),
             'project_categories' => PostCategoryResource::collection($projectCategories),
             'latest_blogs' => BlogBriefResource::collection($latestBlogs),
             'latest_projects' => ProjectBriefResource::collection($latestProjects)
