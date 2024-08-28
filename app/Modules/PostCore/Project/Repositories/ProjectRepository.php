@@ -34,6 +34,7 @@ class ProjectRepository
                 $query->orderBy('created_at', 'desc');
             })
             ->with('post.categories', 'featuredImage')
+            ->orderBy('order', 'asc')  // Order by the 'order' column in ascending order
             ->paginate($perPage);
     }
 

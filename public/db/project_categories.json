@@ -61,5 +61,23 @@
         "meta_description": "Donate in Ramadan to Africa Relief: Contribute to Ramadan charity projects such as Iftar meals, bringing joy & unit for a meaningful Ramadan.",
         "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
         "meta_og_type": "article"
+    },
+    {
+        "name": "Crisis",
+        "slug": "crisis",
+        "meta_title": "Crisis projects by Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Donate in crisis to Africa Relief: Contribute to Crisis charity projects such as Gaza donation.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "name": "Back to School",
+        "slug": "back-to-school",
+        "meta_title": "Back to School projects by Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Donate in Back to School to Africa Relief: Contribute to Back to School charity projects such as School Bag Donation, bringing joy & and happiness to children.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
     }
 ]

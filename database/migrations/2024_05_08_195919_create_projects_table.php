@@ -17,6 +17,7 @@ return new class extends Migration
             $table->foreignId('post_id')->constrained();
             $table->foreignId('featured_image_id')->constrained('images');
             $table->foreignId('donation_form_id')->constrained();
+            $table->integer('order')->nullable();
         });
     }
 

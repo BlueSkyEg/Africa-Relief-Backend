@@ -1002,5 +1002,154 @@
         "meta_description": "Help Africa Relief provide Iftar meals this Ramadan. Your support fosters unity and feeds hope in communities. Donate now",
         "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
         "meta_og_type": "article"
+    },
+    {
+        "title": "Gaza Donation",
+        "slug": "gaza-donation",
+        "excerpt": "Gaza Donation excerpt",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/11/image-6.webp",
+            "alt_text": "Gaza Donation image alt text"
+        },
+        "categories": [
+            {
+                "name": "Crisis",
+                "slug": "crisis"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Gaza Donation",
+                "order": 0
+            },
+            {
+                "type": "heading",
+                "body": "Support ARCD’s Critical Humanitarian Efforts in Gaza",
+                "order": 1
+            },
+            {
+                "type": "paragraph",
+                "body": " After over 10 months of conflict, the people of Gaza face a dire humanitarian crisis. Over 1.5 million people are displaced and lacking food, water, and basic necessities. Hundreds of thousands of Gazans live under continuous bombardment. The humanitarian crisis is growing more severe by the day, with 18 hospitals forced to shut down, leaving countless individuals without access to critical medical care. The toll of this conflict is staggering. More than 40,000 people have lost their lives, the majority of them children and women. In the face of this unfolding tragedy, Africa Relief & Community Development (ARCD) is on the ground, providing food, water, hygiene kits, and medical care to those in desperate need. But we cannot do this alone. We urgently need your support to continue delivering essential aid to the most vulnerable.",
+                "order": 2
+            },
+            {
+                "type": "heading",
+                "body": "Your Donation Can Make a Difference",
+                "order": 3
+            },
+            {
+                "type": "list",
+                "body": [
+                    "$50 can provide emergency medical supplies to a clinic treating the wounded.",
+                    "$100 can deliver fresh water and food to families who have lost everything.",
+                    "$250 can help sustain ARCD’s ongoing efforts to bring relief and hope to those suffering in Gaza."
+                ],
+                "order": 4
+            },
+            {
+                "type": "heading",
+                "body": "Donate Now to Save Lives",
+                "order": 5
+            },
+            {
+                "type": "paragraph",
+                "body": "Your contribution will directly support ARCD’s humanitarian efforts. Every donation, no matter the amount, helps us bring food, water, medical care, and hope to the people of Gaza. ",
+                "order": 6
+            },
+            {
+                "type": "heading",
+                "body": "Make Your Donation Today",
+                "order": 7
+            },
+            {
+                "type": "paragraph",
+                "body": "The people of Gaza are facing unimaginable hardship, and they need our help more than ever. Please join us in this urgent mission to provide relief and save lives. Thank you for standing with us and the people of Gaza in this time of crisis. ",
+                "order": 8
+            },
+            {
+                "type": "list",
+                "body": [
+                    "Make your 100% zakat-eligible, tax-deductible emergency contribution now.",
+                    "IRS Tax ID: 46-2568671 "
+                ],
+                "order": 9
+            }
+        ],
+        "donation_form_id": 18119,
+        "meta_title": "Donate to Gaza with Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Your Gaza donation through Africa Relief transforms lives. Act now to uphold the spirit of giving. Donate today and be the change!",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
+    },
+    {
+        "title": "School Bag Donation",
+        "slug": "school-bag-donation",
+        "excerpt": "School Bag Donation excerpt",
+        "featured_image": {
+            "src": "https://africa-relief.org/wp-content/uploads/2023/11/image-6.webp",
+            "alt_text": "school-bag-donation image alt text"
+        },
+        "categories": [
+            {
+                "name": "Back to School",
+                "slug": "back-to-school"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "School Bag Donation",
+                "order": 0
+            },
+            {
+                "type": "paragraph",
+                "body": "Over 20% of elementary school children in Africa lack access to basic educational resources and opportunities. That number increases to more than 60% in teens between 15-17 years old, with young women and students with disabilities more than twice as likely to lack access to quality education. The COVID-19 pandemic caused further learning losses.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "These children need your support to access inclusive and equitable early childhood development, quality education, and critical skills for employment and entrepreneurship.",
+                "order": 2
+            },
+            {
+                "type": "list",
+                "body": [
+                    "For $25, you can provide a student in need with:",
+                    "A backpack",
+                    "Notebooks",
+                    "Pens and pencils",
+                    "Eraser and a ruler"
+                ],
+                "order": 3
+            },
+            {
+                "type": "paragraph",
+                "body": "Your donation will help students achieve reading proficiency, graduate from primary and secondary school, and pursue lifelong learning.",
+                "order": 4
+            },
+            {
+                "type": "heading",
+                "body": "Help young learners fulfill their potential. Sponsor a school bag today.",
+                "order": 5
+            },
+            {
+                "type": "paragraph",
+                "body": "You can sponsor a school bag for $25, sponsor a student, or help build an educational center. Every contribution makes a difference. Donations to Africa Relief & Community Development are zakat-eligible and tax-deductible.",
+                "order": 6
+            },
+            {
+                "type": "paragraph",
+                "body": "IRS Tax ID: 46-2568671",
+                "order": 7
+            }
+        ],
+        "donation_form_id": 14411,
+        "meta_title": "Donate to Back to School with Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Your Back to School donation through Africa Relief transforms lives. Act now to uphold the spirit of giving. Donate today and be the change!",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
     }
 ]
