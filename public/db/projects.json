@@ -1006,10 +1006,10 @@
     {
         "title": "Gaza Donation",
         "slug": "gaza-donation",
-        "excerpt": "Gaza Donation excerpt",
+        "excerpt": "Support ARCD’s critical humanitarian efforts in Gaza, where over 1.5 million people are displaced and in desperate need of food, water, and medical care. Your donation can provide essential aid to the most vulnerable during this growing crisis.",
         "featured_image": {
-            "src": "https://africa-relief.org/wp-content/uploads/2023/11/image-6.webp",
-            "alt_text": "Gaza Donation image alt text"
+            "src": "https://africa-relief.org/wp-content/uploads/2024/08/gaza-5998112_1280.jpg",
+            "alt_text": "4 Gaza children holding cooking instruments"
         },
         "categories": [
             {
@@ -1076,7 +1076,7 @@
                 "order": 9
             }
         ],
-        "donation_form_id": 18119,
+        "donation_form_id": 27406,
         "meta_title": "Donate to Gaza with Africa Relief",
         "meta_keywords": null,
         "meta_description": "Your Gaza donation through Africa Relief transforms lives. Act now to uphold the spirit of giving. Donate today and be the change!",
@@ -1086,9 +1086,9 @@
     {
         "title": "School Bag Donation",
         "slug": "school-bag-donation",
-        "excerpt": "School Bag Donation excerpt",
+        "excerpt": "Over 20% of elementary school children in Africa lack access to basic educational resources, with young women and students with disabilities disproportionately affected. Your minimum $25 donation can provide a student with essential school supplies, helping them achieve academic success and lifelong learning.",
         "featured_image": {
-            "src": "https://africa-relief.org/wp-content/uploads/2023/11/image-6.webp",
+            "src": "https://africa-relief.org/wp-content/uploads/2024/08/image.webp",
             "alt_text": "school-bag-donation image alt text"
         },
         "categories": [
@@ -1145,7 +1145,7 @@
                 "order": 7
             }
         ],
-        "donation_form_id": 14411,
+        "donation_form_id": 27303,
         "meta_title": "Donate to Back to School with Africa Relief",
         "meta_keywords": null,
         "meta_description": "Your Back to School donation through Africa Relief transforms lives. Act now to uphold the spirit of giving. Donate today and be the change!",
