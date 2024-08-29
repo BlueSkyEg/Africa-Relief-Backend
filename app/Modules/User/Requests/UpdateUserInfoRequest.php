@@ -30,11 +30,10 @@ class UpdateUserInfoRequest extends FormRequest
                 'email',
                 Rule::unique('users')->ignore($this->user())
             ],
-            'phone' => ['sometimes', 'required', 'string'],
+            'phone' => ['nullable', 'string'],
             'address' => ['sometimes', 'required', 'string'],
             'username' => [
-                'sometimes',
-                'required',
+                'nullable',
                 'string',
                 Rule::unique('users')->ignore($this->user())
             ]

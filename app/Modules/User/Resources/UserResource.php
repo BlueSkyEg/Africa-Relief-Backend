@@ -24,7 +24,7 @@ class UserResource extends JsonResource
             "address" => $this->address,
             "img" => $this->img ? asset('storage/users/images/'.$this->img) : null,
             "active" => $this->active,
-            'total_donation_spent' => $this->donations()->sum('amount'),
+            'total_donation_spent' => (string)$this->donations()->sum('amount'),
             'donation_count' => $this->donations()->count(),
             "created_at" => $this->created_at,
             "updated_at" => $this->updated_at,
