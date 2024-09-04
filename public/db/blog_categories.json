@@ -61,5 +61,14 @@
         "meta_description": "Explore the expansive world of Islamic charity with Africa Relief. Learn, engage, and make a difference in the lives of African communities.",
         "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
         "meta_og_type": "article"
+    },
+    {
+        "name": "Crisis",
+        "slug": "crisis",
+        "meta_title": "ARCD Expands Global Reach: First Emergency Response in Gaza Amidst Humanitarian Crisis - Africa Relief",
+        "meta_keywords": null,
+        "meta_description": "Africa Relief & Community Development (ARCD) extends its humanitarian efforts beyond Africa, responding to the Gaza crisis with crucial aid. Discover how ARCD is making a global impact during emergencies.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article"
     }
 ]

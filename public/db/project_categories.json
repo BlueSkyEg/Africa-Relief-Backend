@@ -6,7 +6,8 @@
         "meta_keywords": null,
         "meta_description": "Be part of the change with Africa Relief. Our water wells for Africa initiative brings clean water and hope to African villages, fostering health & development.",
         "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
-        "meta_og_type": "article"
+        "meta_og_type": "article",
+        "order" : 1
     },
     {
         "name": "Education",
@@ -15,7 +16,8 @@
         "meta_keywords": null,
         "meta_description": "Join us in our mission to charities for African education Our efforts support long-term education initiatives, ensuring a brighter future . Donate now",
         "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
-        "meta_og_type": "article"
+        "meta_og_type": "article",
+        "order" : 4
     },
     {
         "name": "Food Aid",
@@ -24,7 +26,8 @@
         "meta_keywords": null,
         "meta_description": "Join Africa Relief's mission to donate food to Africa. Contribute to our food basket project and gift sustenance to those in need. Donate today!",
         "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
-        "meta_og_type": "article"
+        "meta_og_type": "article",
+        "order" : 2
     },
     {
         "name": "Medical help",
@@ -33,7 +36,8 @@
         "meta_keywords": null,
         "meta_description": "Support healthcare charities in Africa: Africa Relief is providing hearing aids, healthcare supplies, and eye surgeries for those most in need",
         "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
-        "meta_og_type": "article"
+        "meta_og_type": "article",
+        "order" : 5
     },
     {
         "name": "Orphan Sponsorship",
@@ -42,7 +46,8 @@
         "meta_keywords": null,
         "meta_description": "Join Africa Relief Orphan Sponsorship Project & sponsor an orphan in Africa. Transform lives with your gift of hope and create a brighter future.",
         "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
-        "meta_og_type": "article"
+        "meta_og_type": "article",
+        "order" : 3
     },
     {
         "name": "Zakat",
@@ -51,7 +56,8 @@
         "meta_keywords": null,
         "meta_description": "Donate Zakat online for Africa through Africa Relief. Your zakat donation aids vital projects to African families. Donate now & make an impact!",
         "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
-        "meta_og_type": "article"
+        "meta_og_type": "article",
+        "order" : 6
     },
     {
         "name": "Ramadan",
@@ -60,7 +66,8 @@
         "meta_keywords": null,
         "meta_description": "Donate in Ramadan to Africa Relief: Contribute to Ramadan charity projects such as Iftar meals, bringing joy & unit for a meaningful Ramadan.",
         "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
-        "meta_og_type": "article"
+        "meta_og_type": "article",
+        "order" : 7
     },
     {
         "name": "Crisis",
@@ -69,7 +76,8 @@
         "meta_keywords": null,
         "meta_description": "Donate in crisis to Africa Relief: Contribute to Crisis charity projects such as Gaza donation.",
         "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
-        "meta_og_type": "article"
+        "meta_og_type": "article",
+        "order" : 8
     },
     {
         "name": "Back to School",
@@ -78,6 +86,7 @@
         "meta_keywords": null,
         "meta_description": "Donate in Back to School to Africa Relief: Contribute to Back to School charity projects such as School Bag Donation, bringing joy & and happiness to children.",
         "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
-        "meta_og_type": "article"
+        "meta_og_type": "article",
+        "order" : 9
     }
 ]

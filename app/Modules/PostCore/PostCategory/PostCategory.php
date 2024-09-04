@@ -20,7 +20,8 @@ class PostCategory extends Model
         'meta_keywords',
         'meta_description',
         'meta_robots',
-        'meta_og_type'
+        'meta_og_type',
+        'order'
     ];
 
     protected $casts = [

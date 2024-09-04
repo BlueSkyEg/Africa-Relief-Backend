@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('destination_slug')->nullable();
             $table->foreignId('image_id')->constrained();
             $table->string('carousel_type');
+            $table->boolean('is_active')->nullable();
         });
     }
 
