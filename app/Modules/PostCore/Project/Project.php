@@ -19,7 +19,8 @@ class Project extends Model
         'slug',
         'post_id',
         'featured_image_id',
-        'donation_form_id'
+        'donation_form_id',
+        'order'
     ];
 
     // Project belongs to one post

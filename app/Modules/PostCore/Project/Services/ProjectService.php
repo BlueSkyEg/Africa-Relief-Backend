@@ -144,6 +144,7 @@ class ProjectService
                 'slug' => $project['slug'],
                 'donation_form_id' => $project['donation_form_id'],
                 'featured_image_id' => $featuredImage->id,
+                'order' => $project['order']
             ];
             $post->project()->create($projectData);
 

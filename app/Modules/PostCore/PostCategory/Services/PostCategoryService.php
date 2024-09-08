@@ -65,7 +65,8 @@ class PostCategoryService
                 'meta_keywords' => $category['meta_keywords'],
                 'meta_description' => $category['meta_description'],
                 'meta_robots' => $category['meta_robots'],
-                'meta_og_type' => $category['meta_og_type']
+                'meta_og_type' => $category['meta_og_type'],
+                'order' => $category['order'] ?? null
             ];
             $this->createPostCategory($categoryData);
         }
