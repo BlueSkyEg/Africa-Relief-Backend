@@ -4,6 +4,7 @@ namespace App\Modules\PostCore\Blog\Repositories;
 
 use App\Enums\PostTypeEnum;
 use App\Modules\PostCore\Blog\Blog;
+use App\Modules\PostCore\Post\Post;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
@@ -34,6 +35,8 @@ class BlogRepository
                 $query->orderBy('created_at', 'desc');
             })
             ->with('post.categories', 'featuredImage')
+            ->orderBy(Post::select('created_at')
+            ->whereColumn('posts.id', 'blogs.post_id'), 'desc') // Ordering by post.created_at
             ->paginate($perPage);
     }
 
