@@ -1,0 +1,70 @@
+[
+    {
+        "title": "Sudan Emergency",
+        "slug": "sudan-emergency",
+        "excerpt": "Millions of Sudanese are fleeing war and floods. Help ARCD build a refugee camp and provide essential resources. Donate now.",
+        "featured_image": {
+            "src": "https://wp.africareliefa1.sg-host.com/wp-content/uploads/2024/09/shutterstock_2220285003-1024x683.jpg",
+            "alt_text": "Villagers in tents in sudan"
+        },
+        "categories": [
+            {
+                "name": "Crisis",
+                "slug": "crisis"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Shelter & Hope: Help ARCD Build a Refugee Camp in North Sudan",
+                "order": 0
+            },
+            {
+                "type": "paragraph",
+                "body": "Millions of Sudanese refugees are fleeing a relentless war, widespread famine, and the recent, devastating floods. The infrastructure of country is overwhelmed, leaving countless families and children in desperate need of shelter, safety, and essential resources.",
+                "order": 1
+            },
+            {
+                "type": "paragraph",
+                "body": "ARCD is responding by establishing a refugee camp in North Sudan, providing a haven where refugees can find protection, stability, and hope. But to make this possible, we need your support.",
+                "order": 2
+            },
+            {
+                "type": "heading",
+                "body": "Refuge in North Sudan",
+                "order": 3
+            },
+            {
+                "type": "paragraph",
+                "body": "Support our refugee camp in North Sudan. $550 can provide a displaced family with a durable, secure tent — offering safety, clean water, sanitation facilities, and access to electricity.",
+                "order": 4
+            },
+            {
+                "type": "paragraph",
+                "body": "Your generous donation can be life-changing for a family in need, and every contribution makes a difference.",
+                "order": 5
+            },
+            {
+                "type": "heading",
+                "body": "Our Impact In Sudan",
+                "order": 6
+            },
+            {
+                "type": "list",
+                "body": [
+                    "** Ramadan food baskets 300+ ** We provided over 300 Ramadan food baskets last Ramadan to 2,400 beneficiaries. Each basket gives ease and comfort to a family in need.",
+                    "** Nourishing meals 14,500+ ** With your support, we provided over 14,500 meals to internally displaced persons and refugees.",
+                    "** Supporting Sudanese refugees 3,300+ ** Thanks to supporters like you, we reached over 3,300 refugees through our Udhiya program."
+                ],
+                "order": 7
+            }
+        ],
+        "donation_form_id": 26746,
+        "meta_title": "Help Build a Refugee Camp in North Sudan - Donate now",
+        "meta_keywords": null,
+        "meta_description": "Millions of Sudanese are fleeing war, famine, and floods. Help ARCD build a refugee camp and provide essential resources. Donate now.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article",
+        "order": 16
+    }
+]

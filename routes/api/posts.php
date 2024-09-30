@@ -9,6 +9,7 @@ use App\Http\Controllers\Post\PostCategoryController;
 use App\Http\Controllers\Post\ProjectController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
+use App\Modules\PostCore\Project\Services\ProjectService;
 
 Route::post('/create-blog-categories', function () {
     $categories = json_decode(file_get_contents('db/blog-categories.json'), true)['data'];
@@ -89,6 +90,8 @@ Route::post('/create-project-categories', function () {
     }
     return 'Categories Created Successfully';
 });
+
+// Route::post('/create-projects', [ProjectService::class, 'createProjectsFromJsonFile']);
 
 Route::post('/create-projects', function () {
     $projects = json_decode(file_get_contents('db/projects_copy.json'), true);
