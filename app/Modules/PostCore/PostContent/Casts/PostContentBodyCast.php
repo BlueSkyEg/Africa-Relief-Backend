@@ -19,6 +19,10 @@ class PostContentBodyCast implements CastsAttributes
                 return explode('|$*$|', $value);
         }
 
+        if ($model->type === PostContentEnum::SUB_LIST->value) {
+            return explode('|$*$|', $value);
+        }
+
         return $value;
     }
 
@@ -30,6 +34,10 @@ class PostContentBodyCast implements CastsAttributes
     public function set(Model $model, string $key, mixed $value, array $attributes): mixed
     {
         if ($model->type === PostContentEnum::LIST->value) {
+            return implode('|$*$|', $value);
+        }
+
+        if ($model->type === PostContentEnum::SUB_LIST->value) {
             return implode('|$*$|', $value);
         }
 
