@@ -1,0 +1,96 @@
+[
+    {
+        "title" : "Accounts Receivable & Accounts Payable Coordinator",
+        "slug" : "accounts-receivable-&-accounts-payable-coordinator",
+        "excerpt": "The Accounts Receivable & Payable Coordinator manages payments, donations, and financial records, ensuring accuracy and compliance. Experience with non-profit accounting, QuickBooks, and Salesforce is required.",
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Position Overview",
+                "order": 0
+            },
+            {
+                "type": "paragraph",
+                "body": "Position: Accounts Receivable & Accounts Payable Coordinator. /n Reports To: Finance Manager. /n Type: Full-Time. /n The Accounts Receivable & Accounts Payable Coordinator at ARCD will oversee the financial processes related to receivables and payables, ensuring timely payments, proper record-keeping, and adherence to organizational policies. The coordinator will also track fundraising efforts and manage fund allocation, ensuring alignment with project goals and the completion of project stages before processing payments. Additionally, they will prepare and send tax letters to donors as required. This role is crucial in supporting ARCD's mission by managing the finances of organization with transparency, accuracy, and professionalism.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "Key Responsibilities",
+                "order": 2
+            },
+            {
+                "type": "sub-heading",
+                "body": "Accounts Receivable (AR):",
+                "order": 3
+            },
+            {
+                "type": "sub-list",
+                "body": [
+                    "Process and monitor incoming payments through all available vendors to the organization, including donations, grants, and other receivables.",
+                    "Ensure accurate and timely posting of accounts receivable transactions into the accounting system",
+                    "Generate invoices and follow up on outstanding payments, working closely with donors, the Care Department and partners to resolve discrepancies",
+                    "Maintain detailed records of all AR transactions, preparing reports as required.",
+                    "Track funds for each fundraising team, ensuring that donations are appropriately allocated to their respective projects.",
+                    "Prepare and send tax letters to donors, ensuring compliance with tax regulations and timely.",
+                    "Collaborate with other departments to track funds related to projects and programs."
+                ],
+                "order": 4
+            },
+            {
+                "type": "sub-heading",
+                "body": "Accounts Payable (AP):",
+                "order": 5
+            },
+            {
+                "type": "sub-list",
+                "body": [
+                    "Review, verify, and process invoices and payment requests for all vendors, contractors, and service providers",
+                    "Ensure that all payments are authorized, properly documented, and made on time.",
+                    "Reconcile vendor statements and handle any discrepancies or issues with payments",
+                    "Maintain organized records of all AP transactions, ensuring adherence to internal controls and external audit requirements."
+                ],
+                "order": 6
+            },
+            {
+                "type": "sub-heading",
+                "body": "General Finance Coordination:",
+                "order": 7
+            },
+            {
+                "type": "sub-list",
+                "body": [
+                    "Assist in month-end and year-end financial closings, reconciling AR and AP ledgers with the general ledger.",
+                    "Prepare and submit periodic financial reports for internal review, audit, and donor compliance.",
+                    "Support the finance department with budget preparation, forecasting, and other financial planning initiatives.",
+                    "Work closely with the Finance Manager on cash flow management and expense reporting."
+                ],
+                "order": 8
+            },
+            {
+                "type": "heading",
+                "body": "Qualifications",
+                "order": 9
+            },
+            {
+                "type": "list",
+                "body": [
+                    "Minimum of 3-5 years of experience in accounts receivable and payable roles, preferably within a non-profit organization.",
+                    "Proficiency with accounting and project software (QuickBooks and Salesforce).",
+                    "Strong attention to detail and organizational skills.",
+                    "Excellent communication skills, both written and verbal, with the ability to interact effectively with team members, vendors, and donors.",
+                    "Ability to prioritize tasks and manage time effectively to meet deadlines.",
+                    "Knowledge of non-profit accounting principles and donor compliance is a plus.",
+                    "Integrity, honesty, and a strong commitment to the mission and values of ARCD."
+                ],
+                "order": 10
+            }
+        ],
+        "meta_title": "Nonprofit Jobs at Africa Relief - Join Our Team",
+        "meta_keywords": null,
+        "meta_description": "Explore rewarding nonprofit careers with Africa Relief. Make a difference with our team dedicated to change and development in Africa.",
+        "meta_robots": "follow, index",
+        "meta_og_type": "article"
+    }
+
+]
