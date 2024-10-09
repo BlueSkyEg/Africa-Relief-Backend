@@ -9,6 +9,9 @@ use App\Http\Controllers\Post\PostCategoryController;
 use App\Http\Controllers\Post\ProjectController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
+use App\Modules\PostCore\Project\Services\ProjectService;
+use App\Modules\PostCore\Career\Services\CareerService;
+
 
 Route::post('/create-blog-categories', function () {
     $categories = json_decode(file_get_contents('db/blog-categories.json'), true)['data'];
@@ -90,6 +93,8 @@ Route::post('/create-project-categories', function () {
     return 'Categories Created Successfully';
 });
 
+// Route::post('/create-projects', [ProjectService::class, 'createProjectsFromJsonFile']);
+
 Route::post('/create-projects', function () {
     $projects = json_decode(file_get_contents('db/projects_copy.json'), true);
     foreach (array_reverse($projects) as $projectObj) {
@@ -149,6 +154,8 @@ Route::post('/create-projects', function () {
 
     return 'Projects Created Successfully';
 });
+
+//Route::post('/create-careers', [CareerService::class, 'createCareersFromJsonFile']);
 
 Route::post('/create-careers', function () {
     $careers = json_decode(file_get_contents('db/careers.json'), true)['data'];

@@ -115,7 +115,7 @@ class ProjectService
      */
     public function createProjectsFromJsonFile(): void
     {
-        $projects = json_decode(file_get_contents(public_path('db/projects.json')), true, 512, JSON_THROW_ON_ERROR);
+        $projects = json_decode(file_get_contents(public_path('db/newProjects.json')), true, 512, JSON_THROW_ON_ERROR);
 
         foreach (array_reverse($projects) as $project) {
             // Save project featured image in file storage and database
