@@ -93,67 +93,67 @@ Route::post('/create-project-categories', function () {
     return 'Categories Created Successfully';
 });
 
-// Route::post('/create-projects', [ProjectService::class, 'createProjectsFromJsonFile']);
+Route::post('/create-projects', [ProjectService::class, 'createProjectsFromJsonFile']);
 
-Route::post('/create-projects', function () {
-    $projects = json_decode(file_get_contents('db/projects_copy.json'), true);
-    foreach (array_reverse($projects) as $projectObj) {
+// Route::post('/create-projects', function () {
+//     $projects = json_decode(file_get_contents('db/projects_copy.json'), true);
+//     foreach (array_reverse($projects) as $projectObj) {
 
-        $imageName = date('Y/') . date('m/') . Str::afterLast($projectObj['featured_image']['src'], '/');
-        $imageContents = file_get_contents($projectObj['featured_image']['src']);
-        \Illuminate\Support\Facades\Storage::put("images/$imageName", $imageContents);
+//         $imageName = date('Y/') . date('m/') . Str::afterLast($projectObj['featured_image']['src'], '/');
+//         $imageContents = file_get_contents($projectObj['featured_image']['src']);
+//         \Illuminate\Support\Facades\Storage::put("images/$imageName", $imageContents);
 
-        $featuredImage = \App\Modules\Image\Image::create([
-            'src' => $imageName,
-            'alt_text' => $projectObj['featured_image']['alt_text']
-        ]);
+//         $featuredImage = \App\Modules\Image\Image::create([
+//             'src' => $imageName,
+//             'alt_text' => $projectObj['featured_image']['alt_text']
+//         ]);
 
-        $post = \App\Modules\PostCore\Post\Post::create([
-            'title' => $projectObj['title'],
-            'excerpt' => $projectObj['excerpt']
-        ]);
+//         $post = \App\Modules\PostCore\Post\Post::create([
+//             'title' => $projectObj['title'],
+//             'excerpt' => $projectObj['excerpt']
+//         ]);
 
-        $post->project()->create([
-            'slug' => $projectObj['slug'],
-            'donation_form_id' => $projectObj['donation_form_id'],
-            'featured_image_id' => $featuredImage->id,
-        ]);
+//         $post->project()->create([
+//             'slug' => $projectObj['slug'],
+//             'donation_form_id' => $projectObj['donation_form_id'],
+//             'featured_image_id' => $featuredImage->id,
+//         ]);
 
-        $contents = [];
-        foreach ($projectObj['contents'] as $index => $content) {
+//         $contents = [];
+//         foreach ($projectObj['contents'] as $index => $content) {
 
-            $contentBody = $content['body'];
+//             $contentBody = $content['body'];
 
-            if ($content['type'] === 'list') {
-                $contentBody = implode('$$$', $contentBody);
-            } elseif ($content['type'] === 'image') {
-                $imageName = date('Y/') . date('m/') . Str::afterLast($content['body']['src'], '/');
-                $imageContents = file_get_contents($content['body']['src']);
-                \Illuminate\Support\Facades\Storage::put("images/$imageName", $imageContents);
+//             if ($content['type'] === 'list') {
+//                 $contentBody = implode('$$$', $contentBody);
+//             } elseif ($content['type'] === 'image') {
+//                 $imageName = date('Y/') . date('m/') . Str::afterLast($content['body']['src'], '/');
+//                 $imageContents = file_get_contents($content['body']['src']);
+//                 \Illuminate\Support\Facades\Storage::put("images/$imageName", $imageContents);
 
-                $image = \App\Modules\Image\Image::create([
-                    'src' => $imageName,
-                    'alt_text' => $content['body']['alt_text']
-                ]);
+//                 $image = \App\Modules\Image\Image::create([
+//                     'src' => $imageName,
+//                     'alt_text' => $content['body']['alt_text']
+//                 ]);
 
-                $contentBody = $image->id;
-            }
+//                 $contentBody = $image->id;
+//             }
 
-            $contents[] = [
-                'type' => $content['type'],
-                'body' => $contentBody,
-                'order' => $index
-            ];
-        }
-        $post->contents()->createMany($contents);
+//             $contents[] = [
+//                 'type' => $content['type'],
+//                 'body' => $contentBody,
+//                 'order' => $index
+//             ];
+//         }
+//         $post->contents()->createMany($contents);
 
-        $categoryId = \App\Modules\PostCore\PostCategory\PostCategory::where('slug', $projectObj['categories'][0]['slug'])->where('post_type', \App\Enums\PostTypeEnum::PROJECT->value)->pluck('id');
+//         $categoryId = \App\Modules\PostCore\PostCategory\PostCategory::where('slug', $projectObj['categories'][0]['slug'])->where('post_type', \App\Enums\PostTypeEnum::PROJECT->value)->pluck('id');
 
-        $post->categories()->attach($categoryId);
-    }
+//         $post->categories()->attach($categoryId);
+//     }
 
-    return 'Projects Created Successfully';
-});
+//     return 'Projects Created Successfully';
+// });
 
 //Route::post('/create-careers', [CareerService::class, 'createCareersFromJsonFile']);
 
