@@ -1,0 +1,34 @@
+name: Deploy Laravel Project to DigitalOcean
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Deploy to Server via SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.DIGITALOCEAN_SSH_KEY }}
+          SERVER_USER: ${{ secrets.DIGITALOCEAN_SERVER_USER }}
+          SERVER_IP: ${{ secrets.DIGITALOCEAN_SERVER_IP }}
+        run: |
+          # Set up SSH using the existing key
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_africa_relief
+          chmod 600 ~/.ssh/id_africa_relief
+          ssh-keyscan -H "$SERVER_IP" >> ~/.ssh/known_hosts
+          # SSH into the server and run deployment commands
+          ssh -i ~/.ssh/id_africa_relief $SERVER_USER@$SERVER_IP << 'EOF'
+            cd /var/www/html/server.africa-relief.com
+            git pull origin main
+            composer install
+            php artisan config:clear
+            php artisan route:clear
+          EOF
