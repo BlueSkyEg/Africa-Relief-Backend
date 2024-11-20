@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
 use App\Modules\PostCore\Project\Services\ProjectService;
 use App\Modules\PostCore\Career\Services\CareerService;
+use App\Modules\PostCore\Blog\Services\BlogService;
 
 
 Route::post('/create-blog-categories', function () {
@@ -26,59 +27,61 @@ Route::post('/create-blog-categories', function () {
     return 'Categories Created Successfully';
 });
 
-Route::post('/create-blogs', function () {
-    $blogs = json_decode(file_get_contents('db/blogs.json'), true);
-    foreach (array_reverse($blogs) as $blogObj) {
-        $featuredImage = \App\Modules\Image\Image::create([
-            'src' => date('Y/') . date('m/') . Str::afterLast($blogObj['featuredImage']['src'], '/'),
-            'alt_text' => $blogObj['featuredImage']['alt'],
-        ]);
+Route::post('/create-blogs', [BlogService::class, 'createBlogsFromJsonFile']);
 
-        $post = \App\Modules\PostCore\Post\Post::create([
-            'title' => $blogObj['title'],
-            'excerpt' => null
-        ]);
+// Route::post('/create-blogs', function () {
+//     $blogs = json_decode(file_get_contents('db/blogs.json'), true);
+//     foreach (array_reverse($blogs) as $blogObj) {
+//         $featuredImage = \App\Modules\Image\Image::create([
+//             'src' => date('Y/') . date('m/') . Str::afterLast($blogObj['featuredImage']['src'], '/'),
+//             'alt_text' => $blogObj['featuredImage']['alt'],
+//         ]);
 
-        $post->created_at = \Carbon\Carbon::parse($blogObj['date'])->toDateTimeString();
-        $post->save();
+//         $post = \App\Modules\PostCore\Post\Post::create([
+//             'title' => $blogObj['title'],
+//             'excerpt' => null
+//         ]);
 
-        $post->blog()->create([
-            'slug' => $blogObj['slug'],
-            'location' => $blogObj['location'],
-            'implementation_date' => \Carbon\Carbon::parse($blogObj['implementationDate'])->toDateTimeString(),
-            'donation_form_id' => $blogObj['donationForm']['id'],
-            'featured_image_id' => $featuredImage->id,
-        ]);
+//         $post->created_at = \Carbon\Carbon::parse($blogObj['date'])->toDateTimeString();
+//         $post->save();
 
-        $contents = [];
-        foreach ($blogObj['content'] as $content) {
-            $contents[] = [
-                'heading' => $content['heading'],
-                'description' => $content['description'],
-            ];
-        }
-        $post->contents()->createMany($contents);
+//         $post->blog()->create([
+//             'slug' => $blogObj['slug'],
+//             'location' => $blogObj['location'],
+//             'implementation_date' => \Carbon\Carbon::parse($blogObj['implementationDate'])->toDateTimeString(),
+//             'donation_form_id' => $blogObj['donationForm']['id'],
+//             'featured_image_id' => $featuredImage->id,
+//         ]);
 
-        $gallery = [];
-        foreach ($blogObj['gallery'] as $image) {
-            $gallery[] = [
-                'src' => date('Y/') . date('m/') . Str::afterLast($image['src'], '/'),
-                'alt_text' => $image['alt']
-            ];
-        }
-        $post->images()->createMany($gallery);
+//         $contents = [];
+//         foreach ($blogObj['content'] as $content) {
+//             $contents[] = [
+//                 'heading' => $content['heading'],
+//                 'description' => $content['description'],
+//             ];
+//         }
+//         $post->contents()->createMany($contents);
 
-        $categoriesSlug = [];
-        foreach ($blogObj['categories'] as $category) {
-            $categoriesSlug[] = $category['slug'];
-        }
-        $categoriesIds = \App\Modules\PostCore\PostCategory\PostCategory::whereIn('slug', $categoriesSlug)->pluck('id');
+//         $gallery = [];
+//         foreach ($blogObj['gallery'] as $image) {
+//             $gallery[] = [
+//                 'src' => date('Y/') . date('m/') . Str::afterLast($image['src'], '/'),
+//                 'alt_text' => $image['alt']
+//             ];
+//         }
+//         $post->images()->createMany($gallery);
 
-        $post->categories()->attach($categoriesIds);
-    }
+//         $categoriesSlug = [];
+//         foreach ($blogObj['categories'] as $category) {
+//             $categoriesSlug[] = $category['slug'];
+//         }
+//         $categoriesIds = \App\Modules\PostCore\PostCategory\PostCategory::whereIn('slug', $categoriesSlug)->pluck('id');
 
-    return 'Blogs Created Successfully';
-});
+//         $post->categories()->attach($categoriesIds);
+//     }
+
+//     return 'Blogs Created Successfully';
+// });
 
 Route::post('/create-project-categories', function () {
     $categories = json_decode(file_get_contents('db/project-categories.json'), true)['data'];
