@@ -157,7 +157,7 @@ class StripePaymentService extends BaseStripeService
         }
         $attributes['amount'] += $feeAmount;
 
-        $donation = $this->handleStripePayment($donor, $attributes);
+        [$donation, $subscription] = $this->handleStripePayment($donor, $attributes);
 
         try {
             $price = $this->createProductPrice($subscription);
