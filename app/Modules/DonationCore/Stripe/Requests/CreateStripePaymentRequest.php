@@ -34,6 +34,7 @@ class CreateStripePaymentRequest extends FormRequest
             'savePaymentMethod' => 'required_with:stripePaymentMethodId|boolean',
             'recurringPeriod' => ['nullable', Rule::in(StripeRecurringPeriods::cases())],
             'billingComment' => 'nullable|string',
+            'coverFees' => 'nullable|boolean',
         ];
     }
 }
