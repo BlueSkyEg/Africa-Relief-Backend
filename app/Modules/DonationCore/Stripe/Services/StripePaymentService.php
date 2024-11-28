@@ -83,10 +83,19 @@ class StripePaymentService extends BaseStripeService
      */
     private function createStripeOneTimePayment(array $attributes): \Stripe\PaymentIntent
     {
+        print_r($attributes);
         $donor = $this->donorService->getOrCreateDonor($attributes);
         if (!$donor) throw new DonorNotFoundException();
 
         DB::beginTransaction();
+
+        // Calculate the amount including Stripe fees if 'coverFees' is checked
+        $feeAmount = 0.0;  // Initialize the variable to avoid undefined variable error
+
+        if (isset($attributes['coverFees']) && ($attributes['coverFees'] == true || $attributes['coverFees'] == 1)) {
+            $feeAmount = round(($attributes['amount'] * 0.029 + 0.30), 2);
+        }
+        $attributes['amount'] += $feeAmount;
 
         $donation = $this->handleStripePayment($donor, $attributes);
 
@@ -96,6 +105,7 @@ class StripePaymentService extends BaseStripeService
                 'payment_method_types' => ['card'],
                 'statement_descriptor' => 'AFRICA-RELIEF.ORG',
                 'amount' => $attributes['amount'] * 100, // The amount in cents
+                // 'amount' => $amount * 100, // The amount in cents
                 'confirm' => true, // Confirm the payment automatically
                 'customer' => $donor->stripe_customer_id,
                 'payment_method' => $attributes['stripePaymentMethodId'] ?? $donation->paymentMethod->stripe_payment_method_id,
@@ -138,6 +148,14 @@ class StripePaymentService extends BaseStripeService
         if (!$donor) throw new DonorNotFoundException();
 
         DB::beginTransaction();
+
+        // Calculate the amount including Stripe fees if 'coverFees' is checked
+        $feeAmount = 0.0;  // Initialize the variable to avoid undefined variable error
+
+        if (isset($attributes['coverFees']) && ($attributes['coverFees'] == true || $attributes['coverFees'] == 1)) {
+            $feeAmount = round(($attributes['amount'] * 0.029 + 0.30), 2);
+        }
+        $attributes['amount'] += $feeAmount;
 
         [$donation, $subscription] = $this->handleStripePayment($donor, $attributes);
 
