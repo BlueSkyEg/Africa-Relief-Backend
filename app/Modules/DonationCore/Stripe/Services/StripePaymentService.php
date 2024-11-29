@@ -83,7 +83,6 @@ class StripePaymentService extends BaseStripeService
      */
     private function createStripeOneTimePayment(array $attributes): \Stripe\PaymentIntent
     {
-        print_r($attributes);
         $donor = $this->donorService->getOrCreateDonor($attributes);
         if (!$donor) throw new DonorNotFoundException();
 
