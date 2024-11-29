@@ -26,7 +26,7 @@ jobs:
           ssh-keyscan -H "$SERVER_IP" >> ~/.ssh/known_hosts
           # SSH into the server and run deployment commands
           ssh -i ~/.ssh/id_africa_relief $SERVER_USER@$SERVER_IP << 'EOF'
-            cd /var/www/html/staging-backend.africa-relief.com
+            cd /var/www/html/staging-backend.africarelief.org
             git pull origin development
             composer install
             php artisan config:clear
