@@ -35,6 +35,7 @@ class CreateStripePaymentRequest extends FormRequest
             'recurringPeriod' => ['nullable', Rule::in(StripeRecurringPeriods::cases())],
             'billingComment' => 'nullable|string',
             'coverFees' => 'nullable|boolean',
+            'contribution' => 'nullable',
         ];
     }
 }
