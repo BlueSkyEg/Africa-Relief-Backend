@@ -29,6 +29,7 @@ jobs:
             cd /var/www/html/server.africarelief.org
             git pull origin main
             composer install
+            php artisan migrate
             php artisan config:clear
             php artisan route:clear
           EOF
