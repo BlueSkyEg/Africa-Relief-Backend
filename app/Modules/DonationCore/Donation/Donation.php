@@ -30,7 +30,8 @@ class Donation extends Model
         'anonymous_donation',
         'live_mode',
         'donor_ip',
-        'cs_exchange_rate'
+        'cs_exchange_rate',
+        'contribution',
     ];
 
     protected $casts = [

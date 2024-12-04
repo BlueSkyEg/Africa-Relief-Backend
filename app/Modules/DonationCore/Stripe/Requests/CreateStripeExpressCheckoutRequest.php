@@ -30,6 +30,7 @@ class CreateStripeExpressCheckoutRequest extends FormRequest
             'donationFormId' => 'required|string|exists:donation_forms,id',
             'recurringPeriod' => ['nullable', Rule::in(StripeRecurringPeriods::cases())],
             'coverFees' => 'nullable|boolean',
+            'contribution' => 'nullable',
         ];
     }
 }
