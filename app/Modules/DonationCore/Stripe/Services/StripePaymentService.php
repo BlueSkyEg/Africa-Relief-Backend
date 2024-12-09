@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\DB;
 use Stripe\Exception\ApiErrorException;
 use Stripe\Price;
 use Stripe\StripeClient;
+use Illuminate\Support\Facades\Log;
 
 class StripePaymentService extends BaseStripeService
 {
@@ -218,9 +219,16 @@ class StripePaymentService extends BaseStripeService
             'payment_method_id' => $attributes['paymentMethodId'] ?? null,
             'anonymous_donation' => $attributes['anonymousDonation'],
             'donor_ip' => $attributes['ip'],
-            'billing_comment' => $attributes['billingComment'] ?? null
+            'billing_comment' => $attributes['billingComment'] ?? null,
+            'contribution' => isset($attributes['contribution']) ? json_encode($attributes['contribution']) : null,
+
         ];
-        $donation = $this->donationService->createDonation($donationData);
+        try {
+            $donation = $this->donationService->createDonation($donationData);
+        } catch (\Exception $e) {
+            Log::error("Error creating donation: " . $e->getMessage());
+            throw new StripeApiException("Donation could not be created.");
+        }
 
         if (isset($attributes['recurringPeriod'])) {
             $subscriptionData = [
@@ -238,7 +246,6 @@ class StripePaymentService extends BaseStripeService
 
         return $donation;
     }
-
 
     /**
      * Create Product Price
@@ -441,7 +448,10 @@ class StripePaymentService extends BaseStripeService
             'amount' => $attributes['amount'],
             'currency' => 'usd',
             'donation_form_id' => $attributes['donationFormId'],
-            'donor_ip' => $attributes['ip']
+            'donor_ip' => $attributes['ip'],
+            'contribution' => isset($attributes['contribution']) ? json_encode($attributes['contribution']) : null,
+
+
         ];
         $donation = $this->donationService->createDonation($donationData);
 

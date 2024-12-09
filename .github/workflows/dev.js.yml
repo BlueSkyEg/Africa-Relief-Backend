@@ -29,6 +29,7 @@ jobs:
             cd /var/www/html/staging-backend.africarelief.org
             git pull origin development
             composer install
+            php artisan migrate
             php artisan config:clear
             php artisan route:clear
           EOF
