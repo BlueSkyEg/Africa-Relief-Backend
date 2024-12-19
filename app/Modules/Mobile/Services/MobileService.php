@@ -33,7 +33,8 @@ class MobileService
     public function getMobileHomeScreenData(): array
     {
         // $homeCarousel = $this->getCarouselSlideService->getCarousel(CarouselTypeEnum::Home_Carousel->value);
-        $filtered_cat_arr = ['crisis', 'back-to-school'];
+        // $filtered_cat_arr = ['crisis', 'back-to-school'];
+        $filtered_cat_arr = ['back-to-school'];
         $homeCarousel = $this->getProjectService->getAllProjectsByCategories($filtered_cat_arr, 10, true);
 
         $projectCategories = $this->getPostCategoryService->getPostCategories(PostTypeEnum::PROJECT);
