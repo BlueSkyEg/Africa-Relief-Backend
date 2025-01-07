@@ -11,6 +11,11 @@
 |
 */
 
+use App\Http\Controllers\Dashboard\CarouselDashboardController;
+use Illuminate\Support\Facades\Route;
+
+Route::resource('carousels', CarouselDashboardController::class)->only('store');
+
 // Authentication
 require __DIR__ . '/api/auth.php';
 
