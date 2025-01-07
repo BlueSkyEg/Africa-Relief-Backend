@@ -43,3 +43,6 @@ require __DIR__ . '/api/salesforce.php';
 
 // User
 require __DIR__ . '/api/user.php';
+
+// Dashboard
+require __DIR__ . '/api/dashboard.php';
