@@ -11,11 +11,6 @@
 |
 */
 
-use App\Http\Controllers\Dashboard\CarouselDashboardController;
-use Illuminate\Support\Facades\Route;
-
-Route::resource('carousels', CarouselDashboardController::class)->only('store');
-
 // Authentication
 require __DIR__ . '/api/auth.php';
 
@@ -48,3 +43,6 @@ require __DIR__ . '/api/salesforce.php';
 
 // User
 require __DIR__ . '/api/user.php';
+
+// Dashboard
+require __DIR__ . '/api/dashboard.php';

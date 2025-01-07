@@ -14,10 +14,11 @@ class CarouselDashboardController extends Controller
     public function store(Request $request)
     {
         $image_file = $request->file('image');
-        $image_path = $image_file->storeAs('images/' .date('Y/') . date('m/') . $image_file->getClientOriginalName());
+        $image_name = Str::beforeLast($image_file->getClientOriginalName(), '.');
+        $image_path = $image_file->storeAs('images/' .date('Y/') . date('m/') . Str::slug($image_name) . '.' . $image_file->getClientOriginalExtension());
         $image = Image::create([
             'src' => Str::after($image_path, '/'),
-            'alt_text' => Str::beforeLast($image_file->getClientOriginalName(), '.')
+            'alt_text' => $image_name
         ]);
         $slide = CarouselSlide::create([
             'title' => $request->title,
