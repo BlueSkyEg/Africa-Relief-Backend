@@ -20,7 +20,8 @@ class CarouselSlide extends Model
         'destination_type',
         'destination_slug',
         'image_id',
-        'carousel_type'
+        'carousel_type',
+        'is_active'
     ];
 
     // Slide has one image
