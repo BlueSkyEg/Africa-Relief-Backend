@@ -38,7 +38,7 @@ class MobileService
             [
                 'title' => $carousel->title,
                 'slug' => $carousel->destination_slug,
-                'excerpt' => "",
+                'excerpt' => $carousel->description,
                 'published' => 1,
                 'categories' => [
                     (object) [
