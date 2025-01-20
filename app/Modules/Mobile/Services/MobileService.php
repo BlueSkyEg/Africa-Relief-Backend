@@ -32,25 +32,25 @@ class MobileService
      */
     public function getMobileHomeScreenData(): array
     {
-         $homeCarousel = $this->getCarouselSlideService->getCarousel(CarouselTypeEnum::Home_Carousel->value);
+//         $homeCarousel = $this->getCarouselSlideService->getCarousel(CarouselTypeEnum::Home_Carousel->value);
 
-         $carousels = $homeCarousel->map(fn($carousel) =>
-            [
-                'title' => $carousel->title,
-                'slug' => $carousel->destination_slug,
-                'excerpt' => "",
-                'published' => 1,
-                'categories' => [],
-                'featured_image' => (object) [
-                    'src' => $carousel->image->src,
-                    'alt_text' => $carousel->image->alt_text
-                ],
-            ]
-         );
+//         $carousels = $homeCarousel->map(fn($carousel) =>
+//            [
+//                'title' => $carousel->title,
+//                'slug' => $carousel->destination_slug,
+//                'excerpt' => "",
+//                'published' => 1,
+//                'categories' => [],
+//                'featured_image' => (object) [
+//                    'src' => $carousel->image->src,
+//                    'alt_text' => $carousel->image->alt_text
+//                ],
+//            ]
+//         );
 
         // $filtered_cat_arr = ['crisis', 'back-to-school'];
-//        $filtered_cat_arr = ['back-to-school'];
-//        $homeCarousel = $this->getProjectService->getAllProjectsByCategories($filtered_cat_arr, 10, true);
+        $filtered_cat_arr = ['back-to-school'];
+        $homeCarousel = $this->getProjectService->getAllProjectsByCategories($filtered_cat_arr, 10, true);
 
         $projectCategories = $this->getPostCategoryService->getPostCategories(PostTypeEnum::PROJECT);
 
@@ -59,8 +59,8 @@ class MobileService
         $latestProjects = $this->getProjectService->getAllLatestProjects(7, true);
 
         return [
-//            'home_carousel' => ProjectBriefResource::collection($homeCarousel),
-            'home_carousel' => $carousels,
+            'home_carousel' => ProjectBriefResource::collection($homeCarousel),
+//            'home_carousel' => $carousels,
             'project_categories' => PostCategoryResource::collection($projectCategories),
             'latest_blogs' => BlogBriefResource::collection($latestBlogs),
             'latest_projects' => ProjectBriefResource::collection($latestProjects)
