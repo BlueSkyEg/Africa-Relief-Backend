@@ -2,9 +2,9 @@
 
 namespace App\Modules\Authentication\Services;
 
+use App\Http\Resources\V1\UserResource;
 use App\Modules\DonationCore\Donor\Services\DonorService;
 use App\Modules\User\Exceptions\UserNotFoundException;
-use App\Modules\User\Resources\UserResource;
 use App\Modules\User\Services\UserService;
 use Carbon\Carbon;
 use Illuminate\Auth\Events\Registered;

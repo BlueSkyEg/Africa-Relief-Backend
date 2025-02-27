@@ -3,7 +3,7 @@
 namespace App\Modules\DonationCore\DonationForm\Services;
 
 use App\Exceptions\ApiException;
-use App\Modules\DonationCore\DonationForm\DonationForm;
+use App\Models\DonationForm;
 use App\Modules\DonationCore\DonationForm\Repositories\DonationFormRepository;
 
 class DonationFormService

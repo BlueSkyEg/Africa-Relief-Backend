@@ -2,7 +2,7 @@
 
 namespace App\Modules\SiteOptions\Repositories;
 
-use App\Modules\SiteOptions\SiteOption;
+use App\Models\SiteOption;
 
 class SiteOptionRepository
 {

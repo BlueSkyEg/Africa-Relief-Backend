@@ -2,7 +2,7 @@
 
 namespace App\Modules\Quickbooks\Services;
 
-use App\Modules\Quickbooks\QuickbooksSalesReceipt;
+use App\Models\QuickbooksSalesReceipt;
 use App\Modules\Quickbooks\Repositories\QuickbooksReceiptRepository;
 use Illuminate\Database\Eloquent\Collection;
 use QuickBooksOnline\API\Exception\SdkException;

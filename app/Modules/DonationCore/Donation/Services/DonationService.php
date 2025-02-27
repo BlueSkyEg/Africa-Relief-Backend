@@ -2,7 +2,7 @@
 
 namespace App\Modules\DonationCore\Donation\Services;
 
-use App\Modules\DonationCore\Donation\Donation;
+use App\Models\Donation;
 use App\Modules\DonationCore\Donation\Repositories\DonationRepository;
 
 class DonationService

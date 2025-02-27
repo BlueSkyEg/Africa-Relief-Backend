@@ -2,7 +2,7 @@
 
 namespace App\Modules\PostCore\Career\Repositories;
 
-use App\Modules\PostCore\Career\Career;
+use App\Models\Career;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Builder;
 

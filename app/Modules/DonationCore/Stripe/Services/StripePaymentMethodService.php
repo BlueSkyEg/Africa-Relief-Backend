@@ -2,7 +2,7 @@
 
 namespace App\Modules\DonationCore\Stripe\Services;
 
-use App\Modules\DonationCore\Donor\Donor;
+use App\Models\Donor;
 use App\Modules\DonationCore\Stripe\Exceptions\StripeApiException;
 use Stripe\Exception\ApiErrorException;
 

@@ -3,7 +3,7 @@
 namespace App\Modules\PostCore\Career\Services;
 
 use App\Exceptions\ApiException;
-use App\Modules\PostCore\Career\Career;
+use App\Models\Career;
 use App\Modules\PostCore\Career\Repositories\CareerRepository;
 use App\Modules\PostCore\Post\Services\PostService;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;

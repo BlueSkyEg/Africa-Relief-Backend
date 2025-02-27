@@ -2,7 +2,7 @@
 
 namespace App\Modules\Quickbooks\Repositories;
 
-use App\Modules\Quickbooks\QuickbooksSalesReceipt;
+use App\Models\QuickbooksSalesReceipt;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
 

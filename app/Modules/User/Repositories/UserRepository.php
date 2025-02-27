@@ -2,7 +2,7 @@
 
 namespace App\Modules\User\Repositories;
 
-use App\Modules\User\User;
+use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 
 class UserRepository

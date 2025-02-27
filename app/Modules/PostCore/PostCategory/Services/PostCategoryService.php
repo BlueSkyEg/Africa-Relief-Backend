@@ -4,7 +4,7 @@ namespace App\Modules\PostCore\PostCategory\Services;
 
 
 use App\Enums\PostTypeEnum;
-use App\Modules\PostCore\PostCategory\PostCategory;
+use App\Models\PostCategory;
 use App\Modules\PostCore\PostCategory\Repositories\PostCategoryRepository;
 use Illuminate\Database\Eloquent\Collection;
 

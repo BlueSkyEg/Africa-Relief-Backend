@@ -2,8 +2,8 @@
 
 namespace App\Modules\DonationCore\Subscription\Services;
 
+use App\Models\Subscription;
 use App\Modules\DonationCore\Subscription\Repositories\SubscriptionRepository;
-use App\Modules\DonationCore\Subscription\Subscription;
 
 class SubscriptionService
 {

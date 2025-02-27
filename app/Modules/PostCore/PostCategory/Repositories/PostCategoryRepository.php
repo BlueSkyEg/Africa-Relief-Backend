@@ -3,7 +3,7 @@
 namespace App\Modules\PostCore\PostCategory\Repositories;
 
 use App\Enums\PostTypeEnum;
-use App\Modules\PostCore\PostCategory\PostCategory;
+use App\Models\PostCategory;
 use Illuminate\Database\Eloquent\Collection;
 
 class PostCategoryRepository

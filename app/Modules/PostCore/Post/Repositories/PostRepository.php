@@ -2,7 +2,7 @@
 
 namespace App\Modules\PostCore\Post\Repositories;
 
-use App\Modules\PostCore\Post\Post;
+use App\Models\Post;
 
 class PostRepository
 {

@@ -2,7 +2,7 @@
 
 namespace App\Modules\DonationCore\Subscription\Repositories;
 
-use App\Modules\DonationCore\Subscription\Subscription;
+use App\Models\Subscription;
 
 class SubscriptionRepository
 {

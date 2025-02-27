@@ -4,10 +4,10 @@ namespace App\Modules\PostCore\Project\Services;
 
 use App\Enums\PostTypeEnum;
 use App\Exceptions\ApiException;
+use App\Models\Project;
 use App\Modules\Image\Services\ImageService;
 use App\Modules\PostCore\Post\Services\PostService;
 use App\Modules\PostCore\PostCategory\Services\PostCategoryService;
-use App\Modules\PostCore\Project\Project;
 use App\Modules\PostCore\Project\Repositories\ProjectRepository;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Collection;

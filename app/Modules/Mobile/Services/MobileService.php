@@ -5,13 +5,12 @@ namespace App\Modules\Mobile\Services;
 use App\Enums\CarouselTypeEnum;
 use App\Enums\PostTypeEnum;
 use App\Exceptions\ApiException;
-use App\Modules\CarouselSlide\Resources\CarouselSlideResource;
+use App\Http\Resources\V1\BlogBriefResource;
+use App\Http\Resources\V1\PostCategoryResource;
+use App\Http\Resources\V1\ProjectBriefResource;
 use App\Modules\CarouselSlide\Services\GetCarouselSlideService;
-use App\Modules\PostCore\Blog\Resources\BlogBriefResource;
 use App\Modules\PostCore\Blog\Services\BlogService;
-use App\Modules\PostCore\PostCategory\Resources\PostCategoryResource;
 use App\Modules\PostCore\PostCategory\Services\PostCategoryService;
-use App\Modules\PostCore\Project\Resources\ProjectBriefResource;
 use App\Modules\PostCore\Project\Services\ProjectService;
 
 class MobileService

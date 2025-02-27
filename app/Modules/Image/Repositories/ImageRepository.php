@@ -2,7 +2,7 @@
 
 namespace App\Modules\Image\Repositories;
 
-use App\Modules\Image\Image;
+use App\Models\Image;
 
 class ImageRepository
 {

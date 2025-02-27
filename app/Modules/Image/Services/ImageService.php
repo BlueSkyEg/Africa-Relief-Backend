@@ -2,7 +2,7 @@
 
 namespace App\Modules\Image\Services;
 
-use App\Modules\Image\Image;
+use App\Models\Image;
 use App\Modules\Image\Repositories\ImageRepository;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;

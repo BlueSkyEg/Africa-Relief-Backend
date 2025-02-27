@@ -3,9 +3,9 @@
 namespace App\Modules\User\Services;
 
 use App\Exceptions\ApiException;
+use App\Models\User;
 use App\Modules\User\Exceptions\UserNotFoundException;
 use App\Modules\User\Repositories\UserRepository;
-use App\Modules\User\User;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\UploadedFile;

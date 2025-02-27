@@ -11,38 +11,12 @@
 |
 */
 
-// Authentication
-require __DIR__ . '/api/auth.php';
+use Illuminate\Support\Facades\Route;
 
-// Stripe
-require __DIR__ . '/api/stripe.php';
+// V1
+require __DIR__ . '/api/V1/api-v1.php';
 
-// Posts
-require __DIR__ . '/api/posts.php';
-
-// Firebase Notification
-require __DIR__ . '/api/firebase-notification.php';
-
-// Job Application
-require __DIR__ . '/api/job-application.php';
-
-// Contact
-require __DIR__ . '/api/contact.php';
-
-// Volunteers
-require __DIR__ . '/api/volunteer.php';
-
-// Newsletter
-require __DIR__ . '/api/newsletter.php';
-
-// QuickBooks
-require __DIR__ . '/api/quickbooks.php';
-
-// Salesforce
-require __DIR__ . '/api/salesforce.php';
-
-// User
-require __DIR__ . '/api/user.php';
-
-// Dashboard
-require __DIR__ . '/api/dashboard.php';
+// V2
+Route::prefix('v2')->group(function () {
+    require __DIR__ . '/api/V2/api-v2.php';
+});

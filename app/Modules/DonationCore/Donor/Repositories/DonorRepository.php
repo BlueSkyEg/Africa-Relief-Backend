@@ -2,7 +2,7 @@
 
 namespace App\Modules\DonationCore\Donor\Repositories;
 
-use App\Modules\DonationCore\Donor\Donor;
+use App\Models\Donor;
 
 class DonorRepository
 {

@@ -2,7 +2,7 @@
 
 namespace App\Modules\EngageForms\NewsletterSubscriber\Repositories;
 
-use App\Modules\EngageForms\NewsletterSubscriber\NewsletterSubscriber;
+use App\Models\NewsletterSubscriber;
 
 class NewsletterSubscriberRepository
 {

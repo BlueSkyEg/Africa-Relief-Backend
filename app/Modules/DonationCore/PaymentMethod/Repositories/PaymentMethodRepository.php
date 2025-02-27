@@ -2,7 +2,7 @@
 
 namespace App\Modules\DonationCore\PaymentMethod\Repositories;
 
-use App\Modules\DonationCore\PaymentMethod\PaymentMethod;
+use App\Models\PaymentMethod;
 
 class PaymentMethodRepository
 {

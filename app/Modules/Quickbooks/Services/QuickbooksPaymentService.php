@@ -2,7 +2,7 @@
 
 namespace App\Modules\Quickbooks\Services;
 
-use App\Modules\Quickbooks\QuickbooksPayment;
+use App\Models\QuickbooksPayment;
 use App\Modules\Quickbooks\Repositories\QuickbooksPaymentRepository;
 use Illuminate\Database\Eloquent\Collection;
 use QuickBooksOnline\API\Exception\SdkException;

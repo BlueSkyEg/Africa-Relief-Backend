@@ -4,8 +4,8 @@ namespace App\Modules\PostCore\Blog\Services;
 
 use App\Enums\PostTypeEnum;
 use App\Exceptions\ApiException;
+use App\Models\Blog;
 use App\Modules\Image\Services\ImageService;
-use App\Modules\PostCore\Blog\Blog;
 use App\Modules\PostCore\Blog\Repositories\BlogRepository;
 use App\Modules\PostCore\Post\Services\PostService;
 use App\Modules\PostCore\PostCategory\Services\PostCategoryService;

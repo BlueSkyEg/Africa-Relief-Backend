@@ -3,8 +3,8 @@
 namespace App\Modules\PostCore\Blog\Repositories;
 
 use App\Enums\PostTypeEnum;
-use App\Modules\PostCore\Blog\Blog;
-use App\Modules\PostCore\Post\Post;
+use App\Models\Blog;
+use App\Models\Post;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;

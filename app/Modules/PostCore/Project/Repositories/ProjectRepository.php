@@ -3,7 +3,7 @@
 namespace App\Modules\PostCore\Project\Repositories;
 
 use App\Enums\PostTypeEnum;
-use App\Modules\PostCore\Project\Project;
+use App\Models\Project;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
