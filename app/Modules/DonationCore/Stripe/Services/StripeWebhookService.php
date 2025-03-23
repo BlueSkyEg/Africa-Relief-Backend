@@ -2,11 +2,13 @@
 
 namespace App\Modules\DonationCore\Stripe\Services;
 
+use App\Mail\MailSender;
 use App\Modules\DonationCore\Donation\Services\DonationService;
 use App\Modules\DonationCore\Donor\Services\DonorService;
 use App\Modules\DonationCore\PaymentMethod\Services\PaymentMethodService;
 use App\Modules\DonationCore\Subscription\Services\SubscriptionService;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 class StripeWebhookService
 {
@@ -133,6 +135,12 @@ class StripeWebhookService
                 ]
             ];
             $this->donationService->updateOrCreateDonation($donationData);
+
+            Mail::to($payment->billing_details->email)
+                ->send(new MailSender(
+                    'mail.donation.received',
+                    'Thank You for Your Generous Donation',
+                    ['name' => $payment->billing_details->name, 'amount' => $payment->amount / 100]));
         }
     }
 
@@ -178,6 +186,12 @@ class StripeWebhookService
                 ]);
                 $newRecurringDonation->save();
             }
+
+            Mail::to($eventObject->customer_email)
+                ->send(new MailSender(
+                    'mail.donation.received',
+                    'Thank You for Your Generous Donation',
+                    ['name' => $eventObject->customer_name, 'amount' => $eventObject->amount_paid / 100]));
         }
     }
 
