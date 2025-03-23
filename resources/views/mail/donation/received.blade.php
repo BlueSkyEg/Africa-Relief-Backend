@@ -6,6 +6,6 @@ We hope this email finds you well. On behalf of {{ config('app.name') }}, We wan
 
 Thank you again for being a part of our community. Your kindness and generosity make a real difference, and we are deeply grateful for your support.<br>
 
-with gratitude,<br>
+With gratitude,<br>
 {{ config('app.name') }}
 </x-mail::message>
