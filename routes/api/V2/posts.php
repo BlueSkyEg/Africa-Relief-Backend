@@ -43,7 +43,7 @@ use Illuminate\Support\Str;
 
 Route::post('/create-projects', [ProjectService::class, 'createProjectsFromJsonFile']);
 
-//Route::post('/create-careers', [CareerService::class, 'createCareersFromJsonFile']);
+Route::post('/create-careers', [CareerService::class, 'createCareersFromJsonFile']);
 
 //Route::post('/create-home-slider', function () {
 //    $slides = json_decode(file_get_contents('db/home-slider.json'), true);

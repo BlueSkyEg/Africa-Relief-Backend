@@ -53,7 +53,7 @@ class CareerService
      */
     public function createCareersFromJsonFile(): void
     {
-        $careers = json_decode(file_get_contents(public_path('db/careers.json')), true, 512, JSON_THROW_ON_ERROR);
+        $careers = json_decode(file_get_contents(public_path('db/newCareers.json')), true, 512, JSON_THROW_ON_ERROR);
 
         foreach ($careers as $career) {
             $postData = [
