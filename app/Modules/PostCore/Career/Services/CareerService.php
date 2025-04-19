@@ -7,6 +7,7 @@ use App\Models\Career;
 use App\Modules\PostCore\Career\Repositories\CareerRepository;
 use App\Modules\PostCore\Post\Services\PostService;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Facades\DB;
 
 class CareerService
 {
@@ -53,24 +54,29 @@ class CareerService
      */
     public function createCareersFromJsonFile(): void
     {
-        $careers = json_decode(file_get_contents(public_path('db/careers.json')), true, 512, JSON_THROW_ON_ERROR);
+        try {
+            $careers = json_decode(file_get_contents(public_path('db/newCareers.json')), true, 512, JSON_THROW_ON_ERROR);
+            DB::beginTransaction();
+            foreach ($careers as $career) {
+                $postData = [
+                    'title' => $career['title'],
+                    'excerpt' => $career['excerpt'],
+                    'published' => 1,
+                    'meta_title' => $career['meta_title'],
+                    'meta_keywords' => $career['meta_keywords'],
+                    'meta_description' => $career['meta_description'],
+                    'meta_robots' => $career['meta_robots'],
+                    'meta_og_type' => $career['meta_og_type']
+                ];
+                $post = $this->postService->createPost($postData);
 
-        foreach ($careers as $career) {
-            $postData = [
-                'title' => $career['title'],
-                'excerpt' => $career['excerpt'],
-                'published' => 1,
-                'meta_title' => $career['meta_title'],
-                'meta_keywords' => $career['meta_keywords'],
-                'meta_description' => $career['meta_description'],
-                'meta_robots' => $career['meta_robots'],
-                'meta_og_type' => $career['meta_og_type']
-            ];
-            $post = $this->postService->createPost($postData);
+                $post->career()->create(['slug' => $career['slug']]);
 
-            $post->career()->create(['slug' => $career['slug']]);
-
-            $post->contents()->createMany($career['contents']);
+                $post->contents()->createMany($career['contents']);
+            }
+            DB::commit();
+        } catch (\Exception $e) {
+            DB::rollBack();
         }
     }
 }

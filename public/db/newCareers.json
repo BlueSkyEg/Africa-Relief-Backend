@@ -1,8 +1,8 @@
 [
     {
-        "title" : "Accounts Receivable & Accounts Payable Coordinator",
-        "slug" : "accounts-receivable-&-accounts-payable-coordinator",
-        "excerpt": "The Accounts Receivable & Payable Coordinator manages payments, donations, and financial records, ensuring accuracy and compliance. Experience with non-profit accounting, QuickBooks, and Salesforce is required.",
+        "title" : "Program Manager",
+        "slug" : "program-manager",
+        "excerpt": "The Program Manager will oversee the planning, implementation, and management of Africa Relief’s programs in Ghana. The role requires strong leadership, strategic planning, and coordination with various stakeholders to ensure the effective delivery of development projects, including education, healthcare, clean water, emergency response, and economic development initiatives. The Program Manager will manage day-to-day operations, ensure program compliance, and monitor the impact of interventions in alignment with ARCD’s mission.",
         "contents": [
             {
                 "type": "heading",
@@ -11,7 +11,7 @@
             },
             {
                 "type": "paragraph",
-                "body": "Position: Accounts Receivable & Accounts Payable Coordinator. /n Reports To: Finance Manager. /n Type: Full-Time. /n The Accounts Receivable & Accounts Payable Coordinator at ARCD will oversee the financial processes related to receivables and payables, ensuring timely payments, proper record-keeping, and adherence to organizational policies. The coordinator will also track fundraising efforts and manage fund allocation, ensuring alignment with project goals and the completion of project stages before processing payments. Additionally, they will prepare and send tax letters to donors as required. This role is crucial in supporting ARCD's mission by managing the finances of organization with transparency, accuracy, and professionalism.",
+                "body": "Reports to: Matrix reporting, solid line to Program Manager at HQ / dotted line to Country Operations Director. /n Location: Accra, Ghana.",
                 "order": 1
             },
             {
@@ -21,69 +21,193 @@
             },
             {
                 "type": "sub-heading",
-                "body": "Accounts Receivable (AR):",
+                "body": "Program Management and Implementation:",
                 "order": 3
             },
             {
                 "type": "sub-list",
                 "body": [
-                    "Process and monitor incoming payments through all available vendors to the organization, including donations, grants, and other receivables.",
-                    "Ensure accurate and timely posting of accounts receivable transactions into the accounting system",
-                    "Generate invoices and follow up on outstanding payments, working closely with donors, the Care Department and partners to resolve discrepancies",
-                    "Maintain detailed records of all AR transactions, preparing reports as required.",
-                    "Track funds for each fundraising team, ensuring that donations are appropriately allocated to their respective projects.",
-                    "Prepare and send tax letters to donors, ensuring compliance with tax regulations and timely.",
-                    "Collaborate with other departments to track funds related to projects and programs."
+                    "Oversee the planning, execution, and evaluation of all programs in Ghana across key sectors, including health, education, governance, and economic development.",
+                    "Create concept notes and proposals for new programs.",
+                    "Ensure the delivery of high-quality projects aligned with Africa Relief’s values and objectives.",
+                    "Manage day-to-day activities, including addressing project challenges, ensuring compliance with donor requirements, and meeting project timelines."
                 ],
                 "order": 4
             },
             {
                 "type": "sub-heading",
-                "body": "Accounts Payable (AP):",
+                "body": "Leadership and Staff Management:",
                 "order": 5
             },
             {
                 "type": "sub-list",
                 "body": [
-                    "Review, verify, and process invoices and payment requests for all vendors, contractors, and service providers",
-                    "Ensure that all payments are authorized, properly documented, and made on time.",
-                    "Reconcile vendor statements and handle any discrepancies or issues with payments",
-                    "Maintain organized records of all AP transactions, ensuring adherence to internal controls and external audit requirements."
+                    "Provide leadership, mentorship, and development opportunities for program staff, ensuring they have the resources needed to succeed.",
+                    "Foster a positive, collaborative work environment that promotes growth and teamwork."
                 ],
                 "order": 6
             },
             {
                 "type": "sub-heading",
-                "body": "General Finance Coordination:",
+                "body": "Financial and Compliance Oversight:",
                 "order": 7
             },
             {
                 "type": "sub-list",
                 "body": [
-                    "Assist in month-end and year-end financial closings, reconciling AR and AP ledgers with the general ledger.",
-                    "Prepare and submit periodic financial reports for internal review, audit, and donor compliance.",
-                    "Support the finance department with budget preparation, forecasting, and other financial planning initiatives.",
-                    "Work closely with the Finance Manager on cash flow management and expense reporting."
+                    "Ensure that project expenditures are in line with approved budgets and provide regular forecasts to headquarters.",
+                    "Monitor subawards, review partner budgets, and ensure timely financial reporting and adherence to technical and quality standards."
                 ],
                 "order": 8
             },
             {
-                "type": "heading",
-                "body": "Qualifications",
+                "type": "sub-heading",
+                "body": "Risk Management and Monitoring:",
                 "order": 9
             },
             {
-                "type": "list",
+                "type": "sub-list",
                 "body": [
-                    "Minimum of 3-5 years of experience in accounts receivable and payable roles, preferably within a non-profit organization.",
-                    "Proficiency with accounting and project software (QuickBooks and Salesforce).",
-                    "Strong attention to detail and organizational skills.",
-                    "Excellent communication skills, both written and verbal, with the ability to interact effectively with team members, vendors, and donors.",
-                    "Ability to prioritize tasks and manage time effectively to meet deadlines.",
-                    "Knowledge of non-profit accounting principles and donor compliance is a plus.",
-                    "Integrity, honesty, and a strong commitment to the mission and values of ARCD."
+                    "Identify and mitigate potential risks related to project performance, financial issues, and compliance with local and international regulations.",
+                    "Lead the development of risk management strategies and ensure program activities remain on track.",
+                    "Implement monitoring and evaluation (M&E) systems to track program performance and ensure impact targets are met."
                 ],
                 "order": 10
+            },
+            {
+                "type": "sub-heading",
+                "body": "Stakeholder Engagement and Representation:",
+                "order": 11
+            },
+            {
+                "type": "sub-list",
+                "body": [
+                    "Represent Africa Relief in Ghana, liaising with government authorities, donors, local NGOs, and other key stakeholders.",
+                    "Build and foster relationships with international NGOs and other organizations to form strategic partnerships.",
+                    "Develop and maintain strong relationships with community leaders, ensuring Africa Relief’s programs meet the needs of local populations.",
+                    "Engage in external networking opportunities to promote Africa Relief’s mission and explore opportunities for new partnerships and funding."
+                ],
+                "order": 12
+            },
+            {
+                "type": "sub-heading",
+                "body": "New Business Development:",
+                "order": 13
+            },
+            {
+                "type": "sub-list",
+                "body": [
+                     "Stay informed about emerging trends and needs in Ghana that may present new program opportunities for Africa Relief and create need assessment data.",
+                     "Submit grant requests to international organizations, including UN stakeholders, to secure funding for programs."
+                ],
+                "order": 14
+            },
+            {
+                "type": "sub-heading",
+                "body": "Reporting and Communication:",
+                "order": 15
+            },
+            {
+                "type": "sub-list",
+                "body": [
+                    "Provide regular updates and reports to the Program Director at headquarters on program progress, challenges, financials, and impacts, and keep the country operations director cc’d at all times.",
+                    "Ensure clear and transparent communication with all stakeholders, including staff, donors, and partners, to facilitate project success."
+                ],
+                "order": 16
+            },
+            {
+                "type": "sub-heading",
+                "body": "Technical Leadership:",
+                "order": 17
+            },
+            {
+                "type": "sub-list",
+                "body": [
+                    "Engage with technical practices and share information on best practices within the region to enhance program performance and innovation.",
+                    "Attend relevant external events, conferences, and forums to represent Africa Relief and stay updated on regional developments in international aid."
+                ],
+                "order": 18
+            },
+            {
+                "type": "sub-heading",
+                "body": "Travel and Site Visits:",
+                "order": 19
+            },
+            {
+                "type": "sub-list",
+                "body": [
+                    "Conduct regular field visits to project sites to monitor implementation and provide direct support to field teams.",
+                    "Ensure that programs are being executed as planned and address any challenges that may arise."
+                ],
+                "order": 20
+            },
+            {
+                "type": "heading",
+                "body": "Qualifications:",
+                "order": 21
+            },
+            {
+                "type": "sub-heading",
+                "body": "Education:",
+                "order": 22
+            },
+            {
+                "type": "sub-list",
+                "body": [
+                    "Bachelor’s degree in international development, Business Administration, Nonprofit Management, or a related field (Master’s degree preferred)."
+                ],
+                "order": 23
+            },
+            {
+                "type": "sub-heading",
+                "body": "Experience:",
+                "order": 24
+            },
+            {
+                "type": "sub-list",
+                "body": [
+                    "Minimum of 5-7 years of experience in program management, with at least 3 years in a leadership role managing complex programs or regional offices in international development."
+                ],
+                "order": 25
+            },
+            {
+                "type": "sub-heading",
+                "body": "Skills:",
+                "order": 26
+            },
+            {
+                "type": "sub-list",
+                "body": [
+                    "Strong leadership and people management skills, including experience mentoring and developing staff.",
+                    "Proven expertise in financial management, including budget tracking, financial reporting, and ensuring compliance with donor regulations.",
+                    "Strong knowledge of project management, M&E, risk management, and compliance with donor requirements.",
+                    "Ability to represent the organization at high-level meetings with donors, government officials, and other stakeholders.",
+                    "Excellent communication skills, both written and verbal, with the ability to report effectively to senior leadership.",
+                    "Fluency in English required; proficiency in local languages or French is an advantage."
+                ],
+                "order": 27
+            },
+            {
+                "type": "sub-heading",
+                "body": "Travel:",
+                "order": 28
+            },
+            {
+                "type": "sub-list",
+                "body": [
+                    "Willingness to travel within the region and to international headquarters as necessary."
+                ],
+                "order": 29
+            },
+            {
+                "type": "heading",
+                "body": "Application Process:",
+                "order": 30
+            },
+            {
+                "type": "paragraph",
+                "body": "Interested candidates should submit their resume, cover letter, and references to Jobs@africa-relief.org with the subject line: Program Manager/Ghana - [your last name].",
+                "order": 31
             }
         ],
         "meta_title": "Nonprofit Jobs at Africa Relief - Join Our Team",
@@ -92,5 +216,4 @@
         "meta_robots": "follow, index",
         "meta_og_type": "article"
     }
-
 ]
