@@ -26,8 +26,6 @@ use Illuminate\Support\Str;
 //    return 'Categories Created Successfully';
 //});
 
-//Route::post('/create-blogs', [BlogService::class, 'createBlogsFromJsonFile']);
-
 //Route::post('/create-project-categories', function () {
 //    $categories = json_decode(file_get_contents('db/project-categories.json'), true)['data'];
 //
@@ -40,10 +38,6 @@ use Illuminate\Support\Str;
 //    }
 //    return 'Categories Created Successfully';
 //});
-
-Route::post('/create-projects', [ProjectService::class, 'createProjectsFromJsonFile']);
-
-Route::post('/create-careers', [CareerService::class, 'createCareersFromJsonFile']);
 
 //Route::post('/create-home-slider', function () {
 //    $slides = json_decode(file_get_contents('db/home-slider.json'), true);
@@ -65,6 +59,12 @@ Route::post('/create-careers', [CareerService::class, 'createCareersFromJsonFile
 //
 //    return 'Home Slider Created Successfully';
 //});
+
+//Route::post('/create-blogs', [BlogService::class, 'createBlogsFromJsonFile']);
+
+//Route::post('/create-projects', [ProjectService::class, 'createProjectsFromJsonFile']);
+
+//Route::post('/create-careers', [CareerService::class, 'createCareersFromJsonFile']);
 
 
 /* --------------Blogs------------ */
