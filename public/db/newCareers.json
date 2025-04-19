@@ -36,11 +36,11 @@
             },
             {
                 "type": "sub-heading",
-                "body": "Accounts Payable (AP):",
+                "body": "Leadership and Staff Management:",
                 "order": 5
             },
             {
-                "type": "Leadership and Staff Management:",
+                "type": "sub-list",
                 "body": [
                     "Provide leadership, mentorship, and development opportunities for program staff, ensuring they have the resources needed to succeed.",
                     "Foster a positive, collaborative work environment that promotes growth and teamwork."
@@ -61,12 +61,12 @@
                 "order": 8
             },
             {
-                "type": "sub-list",
+                "type": "sub-heading",
                 "body": "Risk Management and Monitoring:",
                 "order": 9
             },
             {
-                "type": "list",
+                "type": "sub-list",
                 "body": [
                     "Identify and mitigate potential risks related to project performance, financial issues, and compliance with local and international regulations.",
                     "Lead the development of risk management strategies and ensure program activities remain on track.",
@@ -75,12 +75,12 @@
                 "order": 10
             },
             {
-                "type": "sub-list",
+                "type": "sub-heading",
                 "body": "Stakeholder Engagement and Representation:",
                 "order": 11
             },
             {
-                "type": "list",
+                "type": "sub-list",
                 "body": [
                     "Represent Africa Relief in Ghana, liaising with government authorities, donors, local NGOs, and other key stakeholders.",
                     "Build and foster relationships with international NGOs and other organizations to form strategic partnerships.",
@@ -90,12 +90,12 @@
                 "order": 12
             },
             {
-                "type": "sub-list",
+                "type": "sub-heading",
                 "body": "New Business Development:",
                 "order": 13
             },
             {
-                "type": "list",
+                "type": "sub-list",
                 "body": [
                      "Stay informed about emerging trends and needs in Ghana that may present new program opportunities for Africa Relief and create need assessment data.",
                      "Submit grant requests to international organizations, including UN stakeholders, to secure funding for programs."
@@ -103,12 +103,12 @@
                 "order": 14
             },
             {
-                "type": "sub-list",
+                "type": "sub-heading",
                 "body": "Reporting and Communication:",
                 "order": 15
             },
             {
-                "type": "list",
+                "type": "sub-list",
                 "body": [
                     "Provide regular updates and reports to the Program Director at headquarters on program progress, challenges, financials, and impacts, and keep the country operations director cc’d at all times.",
                     "Ensure clear and transparent communication with all stakeholders, including staff, donors, and partners, to facilitate project success."
@@ -116,12 +116,12 @@
                 "order": 16
             },
             {
-                "type": "sub-list",
+                "type": "sub-heading",
                 "body": "Technical Leadership:",
                 "order": 17
             },
             {
-                "type": "list",
+                "type": "sub-list",
                 "body": [
                     "Engage with technical practices and share information on best practices within the region to enhance program performance and innovation.",
                     "Attend relevant external events, conferences, and forums to represent Africa Relief and stay updated on regional developments in international aid."
@@ -129,12 +129,12 @@
                 "order": 18
             },
             {
-                "type": "sub-list",
+                "type": "sub-heading",
                 "body": "Travel and Site Visits:",
                 "order": 19
             },
             {
-                "type": "list",
+                "type": "sub-list",
                 "body": [
                     "Conduct regular field visits to project sites to monitor implementation and provide direct support to field teams.",
                     "Ensure that programs are being executed as planned and address any challenges that may arise."
@@ -147,36 +147,36 @@
                 "order": 21
             },
             {
-                "type": "sub-list",
+                "type": "sub-heading",
                 "body": "Education:",
                 "order": 22
             },
             {
-                "type": "list",
+                "type": "sub-list",
                 "body": [
                     "Bachelor’s degree in international development, Business Administration, Nonprofit Management, or a related field (Master’s degree preferred)."
                 ],
                 "order": 23
             },
             {
-                "type": "sub-list",
+                "type": "sub-heading",
                 "body": "Experience:",
                 "order": 24
             },
             {
-                "type": "list",
+                "type": "sub-list",
                 "body": [
                     "Minimum of 5-7 years of experience in program management, with at least 3 years in a leadership role managing complex programs or regional offices in international development."
                 ],
                 "order": 25
             },
             {
-                "type": "sub-list",
+                "type": "sub-heading",
                 "body": "Skills:",
                 "order": 26
             },
             {
-                "type": "list",
+                "type": "sub-list",
                 "body": [
                     "Strong leadership and people management skills, including experience mentoring and developing staff.",
                     "Proven expertise in financial management, including budget tracking, financial reporting, and ensuring compliance with donor regulations.",
@@ -188,12 +188,12 @@
                 "order": 27
             },
             {
-                "type": "sub-list",
+                "type": "sub-heading",
                 "body": "Travel:",
                 "order": 28
             },
             {
-                "type": "list",
+                "type": "sub-list",
                 "body": [
                     "Willingness to travel within the region and to international headquarters as necessary."
                 ],
