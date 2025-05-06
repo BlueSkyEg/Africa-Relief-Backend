@@ -62,7 +62,7 @@ use Illuminate\Support\Str;
 
 //Route::post('/create-blogs', [BlogService::class, 'createBlogsFromJsonFile']);
 
-//Route::post('/create-projects', [ProjectService::class, 'createProjectsFromJsonFile']);
+Route::post('/create-projects', [ProjectService::class, 'createProjectsFromJsonFile']);
 
 //Route::post('/create-careers', [CareerService::class, 'createCareersFromJsonFile']);
 

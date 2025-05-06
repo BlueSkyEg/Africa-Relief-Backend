@@ -1166,5 +1166,92 @@
         "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
         "meta_og_type": "article",
         "order" : 15
+    },
+    {
+        "title": "Aqiqah",
+        "slug": "aqiqah",
+        "excerpt": "Aqiqah is a beloved Islamic tradition involving the sacrifice of an animal, typically a sheep or goat, as an expression of gratitude for the birth of a child.",
+        "featured_image": {
+            "src": "https://staging3.africareliefa1.sg-host.com/storage/app/public/images/2024/09/aqiqah.webp",
+            "alt_text": "ARCD’s Aqiqah Program"
+        },
+        "categories": [
+            {
+                "name": "Islamic Giving",
+                "slug": "islamic-giving"
+            }
+        ],
+        "contents": [
+            {
+                "type": "heading",
+                "body": "Celebrate the Birth of Your Child with Africa Relief’s Aqiqah Program",
+                "order": 0
+            },
+            {
+                "type": "paragraph",
+                "body": "Childbirth is a moment of immense joy and gratitude. In Islam, the tradition of Aqiqah offers a way to celebrate this blessing while helping those in need. By donating your Aqiqah through Africa Relief, you can honor this Sunnah and bring relief to vulnerable families across Africa.",
+                "order": 1
+            },
+            {
+                "type": "heading",
+                "body": "What is Aqiqah?",
+                "order": 2
+            },
+            {
+                "type": "paragraph",
+                "body": "Aqiqah is a beloved Islamic tradition involving the sacrifice of an animal, typically a sheep or goat, as an expression of gratitude for the birth of a child. This act follows the example of the Prophet Muhammad (peace be upon him), who performed Aqiqah for his grandsons, Al-Hasan and Al-Husain (peace be upon them).",
+                "order": 3
+            },
+            {
+                "type": "heading",
+                "body": "Why Donate Your Aqiqah Through ARCD?",
+                "order": 4
+            },
+            {
+                "type": "list",
+                "body": [
+                    "** Spiritual Fulfillment: ** Follow the Sunnah of the Prophet Muhammad (peace be upon him) while expressing gratitude to Allah for your child’s birth.",
+                    "** Support for Vulnerable Families: ** In many communities across Africa, meat is a rare luxury. Your Aqiqah provides nutritious meals to widows, orphans, the elderly, and displaced families.",
+                    "** Strengthen Community Bonds: ** Share the joy of your celebration by offering fresh meat or communal meals to those who need it most."
+                ],
+                "order": 5
+            },
+            {
+                "type": "heading",
+                "body": "How ARCD’s Aqiqah Program Works",
+                "order": 6
+            },
+            {
+                "type": "list",
+                "body": [
+                    "** Select Your Aqiqah Package: **  Call our Donor Care team at 855-273-6628 to discuss your options. Prices for livestock vary by region, ensuring your donation has the greatest impact.",
+                    "** Optional Sadaqah: ** Fulfill another Sunnah by donating the weight of your child’s hair in silver to support families in need.",
+                    "** Distribution: **  ARCD’s teams prepare and distribute meat packs or cook communal meals for vulnerable families, ensuring your donation reaches those most in need across Africa."
+                ],
+                "order": 7
+            },
+            {
+                "type": "heading",
+                "body": "Donate Your Aqiqah Today",
+                "order": 8
+            },
+            {
+                "type": "paragraph",
+                "body": "Performing your Aqiqah through ARCD is simple, meaningful, and impactful. Every donation reflects gratitude for your blessing and brings hope to those in need.",
+                "order": 9
+            },
+            {
+                "type": "paragraph",
+                "body": "Celebrate your child’s birth by sharing the joy with families in need. Together, we can bring sustenance, joy, and hope across Africa.",
+                "order": 10
+            }
+        ],
+        "donation_form_id": 27410,
+        "meta_title": " Empower Lives, Transform Communities: Donate to ARCD - Donate now",
+        "meta_keywords": null,
+        "meta_description": "Join Africa Relief & Community Development (ARCD) in making a difference. Your donation will support life-saving initiatives, from emergency relief to sustainable development programs. Empower lives, transform communities. Donate now.",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "meta_og_type": "article",
+        "order": 18
     }
 ]
