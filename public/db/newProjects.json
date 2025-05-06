@@ -1,89 +1,86 @@
 [
     {
-        "title": "Aqiqah",
-        "slug": "aqiqah",
-        "excerpt": "Aqiqah is a beloved Islamic tradition involving the sacrifice of an animal, typically a sheep or goat, as an expression of gratitude for the birth of a child.",
+        "title": "Qurbani / Udhiya",
+        "slug": "qurbani-udhiya",
+        "excerpt": "As Eid Al Adha approaches, embrace the sacred act of Udhiya by sharing your blessings with families in need across Africa. For many, your Qurbani donation may be their only chance all year to enjoy a nourishing meal with meat.",
         "featured_image": {
-            "src": "https://staging3.africareliefa1.sg-host.com/storage/app/public/images/2024/09/aqiqah.webp",
-            "alt_text": "ARCD’s Aqiqah Program"
+            "src": "https://staging3.africareliefa1.sg-host.com/storage/app/public/images/2024/09/qurbani-udhiya.webp",
+            "alt_text": "Qurbani / Udhiya"
         },
         "categories": [
             {
-                "name": "Islamic Giving",
-                "slug": "islamic-giving"
+                "name": "Food Aid",
+                "slug": "food-aid"
             }
         ],
         "contents": [
             {
                 "type": "heading",
-                "body": "Celebrate the Birth of Your Child with Africa Relief’s Aqiqah Program",
+                "body": "Celebrate Udhiya During Eid Al Adha",
                 "order": 0
             },
             {
                 "type": "paragraph",
-                "body": "Childbirth is a moment of immense joy and gratitude. In Islam, the tradition of Aqiqah offers a way to celebrate this blessing while helping those in need. By donating your Aqiqah through Africa Relief, you can honor this Sunnah and bring relief to vulnerable families across Africa.",
+                "body": "The sacred occasion of Qurbani/Udhiya during Eid Al Adha is almost upon us, marking not only the best time to celebrate with your loved ones but also the perfect opportunity to manifest your devotion to Allah (SWT). It’s a time to actively participate in the act of Qurbani, sharing your blessings with those in need and embodying the spirit of generosity and gratitude.",
                 "order": 1
             },
             {
                 "type": "heading",
-                "body": "What is Aqiqah?",
+                "body": "Udhiya in Africa",
                 "order": 2
             },
             {
                 "type": "paragraph",
-                "body": "Aqiqah is a beloved Islamic tradition involving the sacrifice of an animal, typically a sheep or goat, as an expression of gratitude for the birth of a child. This act follows the example of the Prophet Muhammad (peace be upon him), who performed Aqiqah for his grandsons, Al-Hasan and Al-Husain (peace be upon them).",
+                "body": "For many families across Africa, Eid Al Adha represents a unique moment of joy and gratitude, primarily because of the Udhiya donations from generous individuals like you.",
                 "order": 3
             },
             {
-                "type": "heading",
-                "body": "Why Donate Your Aqiqah Through ARCD?",
+                "type": "paragraph",
+                "body": "This sacred occasion might be the only time of the year they’ll get to enjoy a meal that contains meat, a rare luxury brought directly by your kindness. Through Udhiya in Africa, donors are making a tangible difference, allowing children and families to partake in a delicious and nutritious meal, possibly for the very first time.",
                 "order": 4
             },
             {
-                "type": "list",
-                "body": [
-                    "** Spiritual Fulfillment: ** Follow the Sunnah of the Prophet Muhammad (peace be upon him) while expressing gratitude to Allah for your child’s birth.",
-                    "** Support for Vulnerable Families: ** In many communities across Africa, meat is a rare luxury. Your Aqiqah provides nutritious meals to widows, orphans, the elderly, and displaced families.",
-                    "** Strengthen Community Bonds: ** Share the joy of your celebration by offering fresh meat or communal meals to those who need it most."
-                ],
+                "type": "heading",
+                "body": "Eid Al Adha Donation",
                 "order": 5
             },
             {
-                "type": "heading",
-                "body": "How ARCD’s Aqiqah Program Works",
+                "type": "paragraph",
+                "body": "The Prophet (ﷺ) said, “No good deeds done on other days are superior to those done on these (first ten days of Dhul Hijjah).”",
                 "order": 6
             },
             {
-                "type": "list",
-                "body": [
-                    "** Select Your Aqiqah Package: **  Call our Donor Care team at 855-273-6628 to discuss your options. Prices for livestock vary by region, ensuring your donation has the greatest impact.",
-                    "** Optional Sadaqah: ** Fulfill another Sunnah by donating the weight of your child’s hair in silver to support families in need.",
-                    "** Distribution: **  ARCD’s teams prepare and distribute meat packs or cook communal meals for vulnerable families, ensuring your donation reaches those most in need across Africa."
-                ],
+                "type": "paragraph",
+                "body": "As we’re approaching Dhul Hijjah, make the first days of the “Month of the Pilgrimage” count. Even if you can’t fulfill your Hajj duty, there are many ways to reap the immense blessings of this sacred month.",
                 "order": 7
             },
             {
-                "type": "heading",
-                "body": "Donate Your Aqiqah Today",
+                "type": "paragraph",
+                "body": "Donating to those in need is your direct pathway to gain great rewards.",
                 "order": 8
             },
             {
                 "type": "paragraph",
-                "body": "Performing your Aqiqah through ARCD is simple, meaningful, and impactful. Every donation reflects gratitude for your blessing and brings hope to those in need.",
+                "body": "At Africa Relief, we channel your generous donations to empower vulnerable communities across Africa. It’s the best time of the year to support our projects – Water is Life, Food Aid, Orphan Care, Education, Healthcare, Islamic Giving, Emergency Response.",
                 "order": 9
             },
             {
-                "type": "paragraph",
-                "body": "Celebrate your child’s birth by sharing the joy with families in need. Together, we can bring sustenance, joy, and hope across Africa.",
+                "type": "heading",
+                "body": "Commemorate the Day of Arafah",
                 "order": 10
+            },
+            {
+                "type": "paragraph",
+                "body": "You don’t only earn your protection from punishment this month. You can also celebrate the day Allah (SWT) perfected his religion, completed His favors upon His beloved Prophet Muhammad (PBUH), and approved Islam as a way of life—the Day of Arafah. Make the most of it by helping those in need have a decent life.",
+                "order": 11
             }
         ],
-        "donation_form_id": 27410,
-        "meta_title": " Empower Lives, Transform Communities: Donate to ARCD - Donate now",
+        "donation_form_id": 16481,
+        "meta_title": "Qurbani / Udhiya",
         "meta_keywords": null,
         "meta_description": "Join Africa Relief & Community Development (ARCD) in making a difference. Your donation will support life-saving initiatives, from emergency relief to sustainable development programs. Empower lives, transform communities. Donate now.",
         "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
         "meta_og_type": "article",
-        "order": 18
+        "order": 19
     }
 ]
