@@ -45,6 +45,13 @@ class BlogController extends Controller
         return response()->success('Blog retrieved successfully.', new BlogResource($blog));
     }
 
+    public function getBlog(string $blogSlug): JsonResponse
+    {
+        $blog = $this->blogService->getBlog($blogSlug);
+
+        return response()->success('Blog retrieved successfully.', new BlogResource($blog));
+    }
+
 
     /**
      * @param string $blogSlug

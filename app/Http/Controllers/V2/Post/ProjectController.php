@@ -45,6 +45,13 @@ class ProjectController extends Controller
         return response()->success('Project retrieved successfully.', new ProjectResource($project));
     }
 
+    public function getProject(string $projectSlug): JsonResponse
+    {
+        $project = $this->projectService->getProject($projectSlug);
+
+        return response()->success('Project retrieved successfully.', new ProjectResource($project));
+    }
+
 
     /**
      * @param string $projectSlug

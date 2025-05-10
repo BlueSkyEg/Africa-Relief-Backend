@@ -74,6 +74,7 @@ Route::get('/blogs/gallery', [BlogController::class, 'getBlogsGallery']);
 Route::get('/blogs/search/{searchTerm}', [BlogController::class, 'searchBlogs']);
 Route::get('/blogs', [BlogController::class, 'getPublishedBlogs']);
 Route::get('/blogs/{blogSlug}', [BlogController::class, 'getPublishedBlog']);
+Route::get('/blogs/all/{blogSlug}', [BlogController::class, 'getBlog']);
 
 
 /* --------------Projects------------ */
@@ -82,11 +83,13 @@ Route::get('/projects/related/{projectSlug}', [ProjectController::class, 'getRel
 Route::get('/projects/search/{searchTerm}', [ProjectController::class, 'searchProjects']);
 Route::get('/projects', [ProjectController::class, 'getPublishedProjects']);
 Route::get('/projects/{projectSlug}', [ProjectController::class, 'getPublishedProject']);
+Route::get('/projects/all/{projectSlug}', [ProjectController::class, 'getProject']);
 
 
 /* --------------Careers------------ */
 Route::get('/careers', [CareerController::class, 'getPublishedCareers']);
 Route::get('/careers/{careerSlug}', [CareerController::class, 'getPublishedCareer']);
+Route::get('/careers/all/{careerSlug}', [CareerController::class, 'getCareer']);
 
 
 /* --------------Carousels------------ */
@@ -94,6 +97,7 @@ Route::get('/carousels/{carouselType}', [CarouselSlideController::class, 'getCar
 
 
 /* --------------Donation Forms------------ */
+Route::get('/donation-forms', [DonationFormController::class, 'getDonationForms']);
 Route::get('/donation-forms/home', [DonationFormController::class, 'getHomePageDonationForm']);
 
 
