@@ -43,4 +43,11 @@ class CareerController extends Controller
 
         return response()->success('Career retrieved successfully.', new CareerResource($career));
     }
+
+    public function getCareer(string $careerSlug): JsonResponse
+    {
+        $career = $this->careerService->getCareer($careerSlug);
+
+        return response()->success('Career retrieved successfully.', new CareerResource($career));
+    }
 }

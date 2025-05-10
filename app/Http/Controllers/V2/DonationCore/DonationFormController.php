@@ -28,4 +28,10 @@ class DonationFormController extends Controller
 
         return response()->success('Donation form retrieved successfully.', new DonationFormResource($donationForm));
     }
+
+    public function getDonationForms(): JsonResponse
+    {
+        $donationForms = \App\Models\DonationForm::all();
+        return response()->success('Donation form retrieved successfully.', DonationFormResource::collection($donationForms));
+    }
 }
